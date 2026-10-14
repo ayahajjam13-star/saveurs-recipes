@@ -1,0 +1,3148 @@
+[
+  {
+    "id": 1,
+    "name": "Italian Pumpkin Risotto",
+    "season": "Autumn",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-pumpkin-risotto.jpg",
+    "ingredients": [
+      "400 g peeled pumpkin, cubed",
+      "200 g Arborio rice",
+      "1 small onion, finely chopped",
+      "1 liter hot vegetable stock",
+      "100 ml dry white wine",
+      "40 g butter",
+      "40 g grated Parmesan",
+      "2 tbsp olive oil",
+      "Salt and black pepper to taste"
+    ],
+    "steps": [
+      "Heat the olive oil with half the butter in a wide pan and soften the onion for 5 minutes.",
+      "Add the pumpkin and cook for 5 minutes until it starts to soften and brown lightly.",
+      "Stir in the rice and toast for 2 minutes, then pour in the wine and let it evaporate.",
+      "Add the hot stock one ladle at a time, stirring often, for about 18 minutes until the rice is creamy and tender.",
+      "Off the heat, stir in the remaining butter and the Parmesan, season, and rest for 2 minutes before serving."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "French Onion Soup",
+    "season": "Autumn",
+    "cuisine": "French",
+    "country": "France",
+    "image": "french-onion-soup.jpg",
+    "ingredients": [
+      "4 large yellow onions, thinly sliced",
+      "40 g butter",
+      "1 tbsp olive oil",
+      "1 tsp sugar",
+      "100 ml dry white wine",
+      "1 liter beef stock",
+      "2 sprigs fresh thyme",
+      "4 slices baguette",
+      "150 g grated Gruyère",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt the butter with the oil in a heavy pot and add the onions with the sugar and a pinch of salt.",
+      "Cook over medium-low heat for 40 minutes, stirring occasionally, until deeply golden brown.",
+      "Pour in the wine and scrape up the browned bits, then simmer for 3 minutes.",
+      "Add the stock and thyme, simmer for 20 minutes, then season.",
+      "Ladle into oven-safe bowls, top with toasted baguette and Gruyère, and grill until bubbling and golden."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "American Pumpkin Pie",
+    "season": "Autumn",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "american-pumpkin-pie.jpg",
+    "ingredients": [
+      "1 pre-baked 23 cm pie crust",
+      "425 g pumpkin puree",
+      "2 large eggs",
+      "150 g brown sugar",
+      "1 tsp ground cinnamon",
+      "1/2 tsp ground ginger",
+      "1/4 tsp ground nutmeg",
+      "1/2 tsp salt",
+      "350 ml evaporated milk"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (400°F).",
+      "Whisk the pumpkin puree, eggs, sugar, spices, and salt until smooth.",
+      "Stir in the evaporated milk and pour the filling into the crust.",
+      "Bake for 15 minutes, then lower the heat to 175°C (350°F) and bake 40 minutes more until the center is just set.",
+      "Cool completely on a rack before slicing."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hungarian Goulash",
+    "season": "Autumn",
+    "cuisine": "Hungarian",
+    "country": "Hungary",
+    "image": "hungarian-goulash.jpg",
+    "ingredients": [
+      "600 g beef chuck, cubed",
+      "2 onions, chopped",
+      "2 tbsp lard or oil",
+      "2 tbsp sweet paprika",
+      "2 cloves garlic, minced",
+      "1 tsp caraway seeds",
+      "2 tbsp tomato paste",
+      "2 carrots, sliced",
+      "2 potatoes, cubed",
+      "1 liter beef stock",
+      "1 red bell pepper, chopped",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Brown the beef in the lard in a heavy pot, then remove and set aside.",
+      "Cook the onions in the same pot for 8 minutes until soft.",
+      "Off the heat, stir in the paprika, garlic, caraway, and tomato paste, then return the beef.",
+      "Add the stock, cover, and simmer gently for 1 hour 15 minutes.",
+      "Add the carrots, potatoes, and pepper and cook 25 minutes more until everything is tender, then season."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Japanese Mushroom Rice",
+    "season": "Autumn",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-mushroom-rice.jpg",
+    "ingredients": [
+      "300 g Japanese short-grain rice",
+      "200 g mixed mushrooms (shiitake, shimeji), sliced",
+      "350 ml dashi stock",
+      "2 tbsp soy sauce",
+      "2 tbsp mirin",
+      "1 tbsp sake",
+      "1 small piece fried tofu (aburaage), sliced",
+      "2 scallions, sliced"
+    ],
+    "steps": [
+      "Rinse the rice until the water runs clear and drain for 15 minutes.",
+      "Place the rice in a pot or rice cooker with the dashi, soy sauce, mirin, and sake.",
+      "Scatter the mushrooms and tofu on top without stirring.",
+      "Cook covered until done, about 15 minutes on the stove over low heat after boiling, then rest 10 minutes.",
+      "Fluff gently, fold in the mushrooms, and top with scallions."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Moroccan Chicken Tagine with Prunes",
+    "season": "Autumn",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "moroccan-chicken-tagine-prunes.jpg",
+    "ingredients": [
+      "4 chicken thighs, bone-in",
+      "2 onions, grated",
+      "2 cloves garlic, minced",
+      "1 tsp ground ginger",
+      "1 tsp ground cinnamon",
+      "1/2 tsp ground turmeric",
+      "1/4 tsp saffron threads",
+      "2 tbsp olive oil",
+      "200 g pitted prunes",
+      "2 tbsp honey",
+      "2 tbsp toasted almonds",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Toss the chicken with the garlic, ginger, turmeric, saffron, salt, and pepper and rest for 30 minutes.",
+      "Heat the oil in a tagine or heavy pot and brown the chicken on both sides.",
+      "Add the onions and 250 ml water, cover, and simmer for 40 minutes.",
+      "Add the prunes, honey, and cinnamon and cook uncovered for 15 minutes until the sauce thickens.",
+      "Serve topped with toasted almonds."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Spanish Mushroom Croquettes",
+    "season": "Autumn",
+    "cuisine": "Spanish",
+    "country": "Spain",
+    "image": "spanish-mushroom-croquettes.jpg",
+    "ingredients": [
+      "250 g mushrooms, finely chopped",
+      "50 g butter",
+      "60 g plain flour",
+      "500 ml whole milk",
+      "1 small onion, minced",
+      "1/4 tsp nutmeg",
+      "2 eggs, beaten",
+      "100 g breadcrumbs",
+      "Oil for frying",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt the butter and cook the onion and mushrooms for 10 minutes until all moisture evaporates.",
+      "Stir in the flour for 2 minutes, then add the milk gradually, whisking until a thick paste forms.",
+      "Season with nutmeg, salt, and pepper, spread on a tray, and chill for 3 hours.",
+      "Shape into small logs, dip in egg, then breadcrumbs.",
+      "Fry in hot oil at 180°C until golden, about 2 minutes, and drain on paper towels."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "German Apple Strudel",
+    "season": "Autumn",
+    "cuisine": "German",
+    "country": "Germany",
+    "image": "german-apple-strudel.jpg",
+    "ingredients": [
+      "4 sheets filo or strudel dough",
+      "4 apples, peeled and thinly sliced",
+      "80 g sugar",
+      "1 tsp cinnamon",
+      "50 g raisins",
+      "50 g breadcrumbs",
+      "50 g melted butter",
+      "Juice of 1/2 lemon",
+      "Powdered sugar for dusting"
+    ],
+    "steps": [
+      "Preheat the oven to 190°C (375°F).",
+      "Mix the apples with sugar, cinnamon, raisins, and lemon juice.",
+      "Layer the dough sheets, brushing each with butter, and sprinkle breadcrumbs over the top sheet.",
+      "Spoon the apples along one edge, roll up tightly, and tuck in the ends.",
+      "Brush with butter, bake for 35 minutes until golden, and dust with powdered sugar."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Korean Kimchi Jjigae",
+    "season": "Autumn",
+    "cuisine": "Korean",
+    "country": "South Korea",
+    "image": "korean-kimchi-jjigae.jpg",
+    "ingredients": [
+      "300 g aged kimchi, chopped",
+      "200 g pork belly, sliced",
+      "1 block (300 g) tofu, sliced",
+      "1 tbsp gochugaru",
+      "1 tbsp gochujang",
+      "3 cloves garlic, minced",
+      "500 ml water or anchovy stock",
+      "1 tbsp sesame oil",
+      "2 scallions, sliced"
+    ],
+    "steps": [
+      "Heat the sesame oil in a pot and fry the pork for 3 minutes.",
+      "Add the kimchi and garlic and sauté for 5 minutes.",
+      "Stir in the gochugaru and gochujang, then add the stock.",
+      "Simmer for 20 minutes until the flavors deepen.",
+      "Add the tofu and simmer 5 more minutes, then top with scallions."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "British Shepherd's Pie",
+    "season": "Autumn",
+    "cuisine": "British",
+    "country": "United Kingdom",
+    "image": "british-shepherds-pie.jpg",
+    "ingredients": [
+      "500 g ground lamb",
+      "1 onion, diced",
+      "2 carrots, diced",
+      "2 tbsp tomato paste",
+      "1 tbsp Worcestershire sauce",
+      "250 ml beef stock",
+      "1 tbsp flour",
+      "800 g potatoes, peeled",
+      "50 g butter",
+      "80 ml milk",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Boil the potatoes for 20 minutes, drain, and mash with the butter and milk.",
+      "Brown the lamb in a pan, then add the onion and carrots and cook 8 minutes.",
+      "Stir in the flour, tomato paste, Worcestershire, and stock and simmer for 15 minutes.",
+      "Spread the filling in a baking dish and top with the mash, marking with a fork.",
+      "Bake at 200°C (400°F) for 25 minutes until golden."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Irish Colcannon",
+    "season": "Autumn",
+    "cuisine": "Irish",
+    "country": "Ireland",
+    "image": "irish-colcannon.jpg",
+    "ingredients": [
+      "800 g floury potatoes, peeled and cubed",
+      "250 g kale or green cabbage, shredded",
+      "4 scallions, sliced",
+      "100 ml warm milk",
+      "60 g butter",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Boil the potatoes in salted water for 18 minutes until tender, then drain.",
+      "Steam or simmer the kale for 5 minutes until tender.",
+      "Mash the potatoes with the warm milk and half of the butter.",
+      "Fold in the kale and scallions and season well.",
+      "Serve hot with a well of the remaining butter in the center."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "French Tarte Tatin",
+    "season": "Autumn",
+    "cuisine": "French",
+    "country": "France",
+    "image": "french-tarte-tatin.jpg",
+    "ingredients": [
+      "6 firm apples, peeled, cored, and halved",
+      "100 g sugar",
+      "60 g butter",
+      "1 sheet puff pastry",
+      "1/2 tsp cinnamon",
+      "Pinch of salt"
+    ],
+    "steps": [
+      "Preheat the oven to 190°C (375°F).",
+      "Melt the butter and sugar in an oven-safe skillet until golden caramel, about 6 minutes.",
+      "Arrange the apples rounded side down, packed tightly, and cook for 10 minutes.",
+      "Cover with the pastry, tucking in the edges, and bake for 25 minutes until puffed and golden.",
+      "Rest for 5 minutes, then invert onto a plate carefully and serve warm."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Polish Pierogi with Potato and Cheese",
+    "season": "Autumn",
+    "cuisine": "Polish",
+    "country": "Poland",
+    "image": "polish-pierogi-potato-cheese.jpg",
+    "ingredients": [
+      "300 g plain flour",
+      "1 egg",
+      "150 ml warm water",
+      "1/2 tsp salt",
+      "400 g potatoes, boiled and mashed",
+      "150 g farmer's cheese or ricotta",
+      "1 onion, diced",
+      "30 g butter",
+      "Sour cream for serving"
+    ],
+    "steps": [
+      "Mix the flour, egg, water, and salt into a soft dough and rest for 30 minutes.",
+      "Fry the onion in butter until golden and mix with the potatoes and cheese, then season.",
+      "Roll the dough thin, cut into rounds, and fill each with a spoonful of filling.",
+      "Fold and pinch the edges to seal.",
+      "Boil in salted water until they float, about 4 minutes, then serve with sour cream."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Chinese Pumpkin Congee",
+    "season": "Autumn",
+    "cuisine": "Chinese",
+    "country": "China",
+    "image": "chinese-pumpkin-congee.jpg",
+    "ingredients": [
+      "150 g jasmine rice",
+      "400 g pumpkin, peeled and cubed",
+      "1.5 liters water or light stock",
+      "2 slices fresh ginger",
+      "1 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "2 scallions, sliced",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Rinse the rice and add it to a pot with the water and ginger.",
+      "Bring to a boil, then simmer for 30 minutes, stirring occasionally.",
+      "Add the pumpkin and cook for 25 minutes until the rice breaks down and the congee is thick.",
+      "Season with salt and soy sauce.",
+      "Serve drizzled with sesame oil and topped with scallions."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "British Sausage and Mash",
+    "season": "Autumn",
+    "cuisine": "British",
+    "country": "United Kingdom",
+    "image": "british-sausage-mash.jpg",
+    "ingredients": [
+      "8 pork sausages",
+      "800 g potatoes, peeled and cubed",
+      "60 g butter",
+      "100 ml hot milk",
+      "2 onions, sliced",
+      "1 tbsp flour",
+      "400 ml beef stock",
+      "1 tsp Worcestershire sauce",
+      "1 tbsp oil"
+    ],
+    "steps": [
+      "Boil the potatoes in salted water for 20 minutes, drain, and mash with butter and milk.",
+      "Brown the sausages in a pan for 15 minutes, turning, until cooked through, then set aside.",
+      "Cook the onions in the same pan for 12 minutes until soft and browned.",
+      "Stir in the flour, then the stock and Worcestershire, and simmer for 8 minutes until thickened.",
+      "Serve the sausages over the mash with onion gravy."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Turkish Pumpkin Dessert",
+    "season": "Autumn",
+    "cuisine": "Turkish",
+    "country": "Turkey",
+    "image": "turkish-pumpkin-dessert.jpg",
+    "ingredients": [
+      "800 g pumpkin, peeled and cut in chunks",
+      "250 g sugar",
+      "100 ml water",
+      "4 whole cloves",
+      "60 g walnuts, chopped",
+      "Tahini or clotted cream (kaymak) for serving"
+    ],
+    "steps": [
+      "Layer the pumpkin in a wide pot and sprinkle with the sugar.",
+      "Let it rest for 2 hours so the pumpkin releases its juices.",
+      "Add the water and cloves, cover, and cook over low heat for 35 minutes until tender and glossy.",
+      "Cool in the syrup.",
+      "Serve topped with walnuts and a spoonful of tahini or kaymak."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Japanese Kabocha Squash Soup",
+    "season": "Autumn",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-kabocha-squash-soup.jpg",
+    "ingredients": [
+      "500 g kabocha squash, peeled and cubed",
+      "1 onion, sliced",
+      "1 tbsp butter",
+      "600 ml dashi or vegetable stock",
+      "100 ml milk",
+      "1 tsp white miso",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt the butter and cook the onion for 5 minutes until soft.",
+      "Add the squash and stock and simmer for 20 minutes until very tender.",
+      "Blend until smooth.",
+      "Return to the pot, stir in the milk and miso, and warm gently without boiling.",
+      "Season and serve hot."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Spanish Chickpea and Spinach Stew",
+    "season": "Autumn",
+    "cuisine": "Spanish",
+    "country": "Spain",
+    "image": "spanish-chickpea-spinach-stew.jpg",
+    "ingredients": [
+      "400 g cooked chickpeas",
+      "300 g fresh spinach",
+      "3 cloves garlic, sliced",
+      "1 slice stale bread",
+      "2 tbsp olive oil",
+      "1 tsp smoked paprika",
+      "1/2 tsp ground cumin",
+      "1 tbsp sherry vinegar",
+      "250 ml water",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Fry the bread and garlic in the oil until golden and crush them into a paste.",
+      "Stir in the paprika and cumin, then add the vinegar and water.",
+      "Add the chickpeas and simmer for 10 minutes.",
+      "Add the spinach and cook until wilted, about 3 minutes.",
+      "Season and serve with crusty bread."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "American Apple Crisp",
+    "season": "Autumn",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "american-apple-crisp.jpg",
+    "ingredients": [
+      "5 apples, peeled and sliced",
+      "60 g sugar",
+      "1 tsp cinnamon",
+      "1 tbsp lemon juice",
+      "80 g rolled oats",
+      "80 g flour",
+      "80 g brown sugar",
+      "100 g cold butter, cubed"
+    ],
+    "steps": [
+      "Preheat the oven to 180°C (350°F).",
+      "Toss the apples with the sugar, cinnamon, and lemon juice and place in a baking dish.",
+      "Rub the oats, flour, brown sugar, and butter together until crumbly.",
+      "Cover the apples with the topping.",
+      "Bake for 40 minutes until golden and bubbling."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Georgian Khachapuri",
+    "season": "Autumn",
+    "cuisine": "Georgian",
+    "country": "Georgia",
+    "image": "georgian-khachapuri.jpg",
+    "ingredients": [
+      "300 g plain flour",
+      "1 tsp instant yeast",
+      "1 tsp sugar",
+      "150 ml warm milk",
+      "1 tbsp oil",
+      "200 g mozzarella, grated",
+      "150 g feta, crumbled",
+      "2 eggs",
+      "20 g butter",
+      "1/2 tsp salt"
+    ],
+    "steps": [
+      "Mix the flour, yeast, sugar, salt, milk, and oil into a dough, knead 8 minutes, and rise for 1 hour.",
+      "Combine the cheeses.",
+      "Divide the dough in two, shape into boat shapes, and fill with the cheese, pinching the ends.",
+      "Bake at 230°C (450°F) for 12 minutes.",
+      "Crack an egg into each center, bake 3 minutes more, and top with butter."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Korean Japchae",
+    "season": "Autumn",
+    "cuisine": "Korean",
+    "country": "South Korea",
+    "image": "korean-japchae.jpg",
+    "ingredients": [
+      "200 g sweet potato starch noodles",
+      "150 g beef sirloin, sliced thin",
+      "1 carrot, julienned",
+      "1 onion, sliced",
+      "150 g spinach",
+      "100 g shiitake mushrooms, sliced",
+      "3 tbsp soy sauce",
+      "1 tbsp sugar",
+      "2 tbsp sesame oil",
+      "2 cloves garlic, minced",
+      "1 tbsp toasted sesame seeds"
+    ],
+    "steps": [
+      "Boil the noodles for 6 minutes, drain, and toss with 1 tbsp soy sauce and 1 tbsp sesame oil.",
+      "Blanch the spinach for 30 seconds, squeeze dry, and season lightly.",
+      "Marinate the beef with garlic, 1 tbsp soy sauce, and a little sugar.",
+      "Stir-fry the onion, carrot, mushrooms, and beef separately until cooked.",
+      "Toss everything with the remaining soy sauce, sugar, and sesame oil, and top with sesame seeds."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Italian Mushroom Polenta",
+    "season": "Autumn",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-mushroom-polenta.jpg",
+    "ingredients": [
+      "150 g polenta (cornmeal)",
+      "750 ml water or stock",
+      "300 g mixed mushrooms, sliced",
+      "2 cloves garlic, minced",
+      "2 tbsp olive oil",
+      "30 g butter",
+      "40 g grated Parmesan",
+      "1 tbsp chopped parsley",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Bring the water to a boil with salt and whisk in the polenta in a steady stream.",
+      "Cook on low for 30 minutes, stirring often, until thick and creamy.",
+      "Sauté the mushrooms in the oil over high heat for 8 minutes until browned, adding the garlic at the end.",
+      "Stir the butter and Parmesan into the polenta.",
+      "Top with mushrooms and parsley."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Moroccan Bissara",
+    "season": "Autumn",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "moroccan-bissara.jpg",
+    "ingredients": [
+      "250 g dried split fava beans, soaked overnight",
+      "3 cloves garlic",
+      "1 liter water",
+      "3 tbsp olive oil",
+      "1 tsp ground cumin",
+      "1 tsp sweet paprika",
+      "Juice of 1/2 lemon",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Drain the soaked beans and place in a pot with the garlic and water.",
+      "Simmer for 45 minutes until very soft.",
+      "Blend until smooth and return to the pot over low heat.",
+      "Season with salt, cumin, and lemon juice and adjust consistency with hot water.",
+      "Serve in bowls drizzled with olive oil and paprika."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "German Potato Pancakes (Kartoffelpuffer)",
+    "season": "Autumn",
+    "cuisine": "German",
+    "country": "Germany",
+    "image": "german-kartoffelpuffer.jpg",
+    "ingredients": [
+      "700 g potatoes, peeled",
+      "1 small onion",
+      "2 eggs",
+      "3 tbsp flour",
+      "1 tsp salt",
+      "Oil for frying",
+      "Applesauce for serving"
+    ],
+    "steps": [
+      "Grate the potatoes and onion and squeeze out excess liquid in a clean towel.",
+      "Mix with the eggs, flour, and salt.",
+      "Heat 1 cm of oil in a skillet over medium-high heat.",
+      "Fry spoonfuls, flattened, for 3 to 4 minutes per side until crisp and golden.",
+      "Drain on paper towels and serve with applesauce."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Dutch Stamppot with Kale",
+    "season": "Autumn",
+    "cuisine": "Dutch",
+    "country": "Netherlands",
+    "image": "dutch-stamppot-kale.jpg",
+    "ingredients": [
+      "800 g potatoes, peeled and cubed",
+      "300 g kale, chopped",
+      "60 g butter",
+      "100 ml warm milk",
+      "1 smoked sausage (rookworst)",
+      "1 tsp mustard",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Boil the potatoes in salted water for 10 minutes.",
+      "Add the kale and sausage and cook 12 minutes more until tender.",
+      "Remove the sausage and drain the vegetables.",
+      "Mash with the butter, warm milk, and mustard, then season.",
+      "Slice the sausage and serve over the stamppot."
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Egyptian Koshari",
+    "season": "Autumn",
+    "cuisine": "Egyptian",
+    "country": "Egypt",
+    "image": "egyptian-koshari.jpg",
+    "ingredients": [
+      "150 g brown lentils",
+      "150 g short-grain rice",
+      "100 g elbow macaroni",
+      "200 g cooked chickpeas",
+      "2 onions, sliced thin",
+      "400 g crushed tomatoes",
+      "3 cloves garlic, minced",
+      "2 tbsp vinegar",
+      "1 tsp cumin",
+      "1 tsp chili flakes",
+      "Oil for frying",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Boil the lentils for 20 minutes until tender and drain.",
+      "Cook the rice with salt, and boil the macaroni separately.",
+      "Fry the onions in oil until deep golden and crisp.",
+      "Simmer the garlic, tomatoes, cumin, chili, and vinegar for 15 minutes into a sauce.",
+      "Layer rice, lentils, macaroni, and chickpeas, then top with sauce and crispy onions."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Algerian Chakhchoukha",
+    "season": "Autumn",
+    "cuisine": "Algerian",
+    "country": "Algeria",
+    "image": "algerian-chakhchoukha.jpg",
+    "ingredients": [
+      "300 g shredded flatbread (rougag)",
+      "500 g lamb shoulder, cubed",
+      "1 onion, chopped",
+      "2 tbsp tomato paste",
+      "200 g cooked chickpeas",
+      "1 tsp paprika",
+      "1 tsp ground cumin",
+      "1/2 tsp cayenne",
+      "2 tbsp olive oil",
+      "1 liter water",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Brown the lamb in the oil with the onion for 8 minutes.",
+      "Stir in the tomato paste and spices, then add the water.",
+      "Simmer covered for 1 hour until the lamb is tender.",
+      "Add the chickpeas and cook 10 minutes.",
+      "Steam the shredded bread over the broth or moisten with sauce, then serve topped with lamb."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Syrian Kibbeh",
+    "season": "Autumn",
+    "cuisine": "Syrian",
+    "country": "Syria",
+    "image": "syrian-kibbeh.jpg",
+    "ingredients": [
+      "250 g fine bulgur",
+      "400 g ground lamb",
+      "1 onion, grated",
+      "100 g pine nuts",
+      "1 onion, diced for filling",
+      "1 tsp allspice",
+      "1/2 tsp cinnamon",
+      "2 tbsp butter",
+      "Oil for frying",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Soak the bulgur for 15 minutes and squeeze dry, then knead with 250 g lamb, the grated onion, half the allspice, and salt into a smooth paste.",
+      "Cook the remaining lamb with the diced onion, pine nuts, cinnamon, and butter for 10 minutes for the filling.",
+      "Shape the shell mixture into hollow ovals and fill with the stuffing.",
+      "Seal and shape into torpedo forms.",
+      "Fry in hot oil for 5 minutes until deep brown and crisp."
+    ]
+  },
+  {
+    "id": 29,
+    "name": "French Beef Bourguignon",
+    "season": "Winter",
+    "cuisine": "French",
+    "country": "France",
+    "image": "french-beef-bourguignon.jpg",
+    "ingredients": [
+      "800 g beef chuck, cubed",
+      "150 g bacon lardons",
+      "2 carrots, sliced",
+      "1 onion, chopped",
+      "3 cloves garlic, minced",
+      "2 tbsp flour",
+      "500 ml red Burgundy wine",
+      "250 ml beef stock",
+      "2 tbsp tomato paste",
+      "250 g button mushrooms",
+      "2 sprigs thyme",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Brown the lardons and set aside, then brown the beef in the fat in batches.",
+      "Cook the onion and carrots for 5 minutes and add the garlic.",
+      "Sprinkle with flour, add the tomato paste, then the wine and stock, and return the beef and lardons with the thyme.",
+      "Cover and cook at 160°C (325°F) for 2 hours 30 minutes.",
+      "Sauté the mushrooms, stir them in, and cook 15 minutes more."
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Italian Lasagna",
+    "season": "Winter",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-lasagna.jpg",
+    "ingredients": [
+      "250 g lasagna sheets",
+      "400 g ground beef",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "600 g tomato passata",
+      "500 ml béchamel sauce",
+      "200 g grated mozzarella",
+      "50 g grated Parmesan",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Brown the beef with the onion and garlic in olive oil, add the passata, and simmer for 30 minutes.",
+      "Preheat the oven to 190°C (375°F).",
+      "Layer meat sauce, lasagna sheets, and béchamel in a baking dish, repeating the layers.",
+      "Top with mozzarella and Parmesan.",
+      "Bake covered for 25 minutes, then uncovered 15 minutes until golden, and rest 10 minutes."
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Mexican Chicken Tortilla Soup",
+    "season": "Winter",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "mexican-chicken-tortilla-soup.jpg",
+    "ingredients": [
+      "2 chicken breasts",
+      "1 liter chicken stock",
+      "400 g crushed tomatoes",
+      "1 onion, chopped",
+      "3 cloves garlic, minced",
+      "1 chipotle pepper in adobo, minced",
+      "1 tsp ground cumin",
+      "4 corn tortillas, cut into strips",
+      "1 avocado, diced",
+      "Juice of 1 lime",
+      "Fresh cilantro, chopped",
+      "Oil for frying"
+    ],
+    "steps": [
+      "Fry the tortilla strips in oil until crisp and set aside.",
+      "Sauté the onion and garlic until soft, then add the cumin, chipotle, tomatoes, and stock.",
+      "Add the chicken and simmer for 20 minutes until cooked, then shred it.",
+      "Return the shredded chicken and add the lime juice.",
+      "Serve topped with tortilla strips, avocado, and cilantro."
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Japanese Chicken Ramen",
+    "season": "Winter",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-chicken-ramen.jpg",
+    "ingredients": [
+      "200 g ramen noodles",
+      "1 liter chicken stock",
+      "2 chicken thighs",
+      "2 tbsp soy sauce",
+      "1 tbsp mirin",
+      "1 tsp sesame oil",
+      "2 soft-boiled eggs, halved",
+      "2 scallions, sliced",
+      "1 sheet nori",
+      "2 slices fresh ginger"
+    ],
+    "steps": [
+      "Simmer the stock with ginger, soy sauce, and mirin for 10 minutes.",
+      "Pan-sear the chicken thighs for 6 minutes per side, then slice.",
+      "Boil the noodles according to the package, drain well.",
+      "Divide the noodles between bowls and ladle over the hot broth.",
+      "Top with chicken, eggs, scallions, nori, and a drizzle of sesame oil."
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Indian Butter Chicken",
+    "season": "Winter",
+    "cuisine": "Indian",
+    "country": "India",
+    "image": "indian-butter-chicken.jpg",
+    "ingredients": [
+      "600 g boneless chicken thighs, cubed",
+      "150 g plain yogurt",
+      "2 tsp garam masala",
+      "1 tsp chili powder",
+      "1 tbsp ginger-garlic paste",
+      "50 g butter",
+      "1 onion, chopped",
+      "400 g tomato puree",
+      "150 ml heavy cream",
+      "1 tsp sugar",
+      "1 tsp dried fenugreek leaves",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Marinate the chicken in the yogurt, half the spices, ginger-garlic paste, and salt for at least 1 hour.",
+      "Grill or pan-sear the chicken until charred and cooked through.",
+      "Cook the onion in butter for 6 minutes, add the tomato puree and remaining spices, and simmer 15 minutes.",
+      "Blend the sauce smooth, then return to the pan with the cream and sugar.",
+      "Add the chicken and fenugreek and simmer for 8 minutes."
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Greek Avgolemono Soup",
+    "season": "Winter",
+    "cuisine": "Greek",
+    "country": "Greece",
+    "image": "greek-avgolemono-soup.jpg",
+    "ingredients": [
+      "1.2 liters chicken stock",
+      "100 g orzo or rice",
+      "2 cups shredded cooked chicken",
+      "3 eggs",
+      "Juice of 2 lemons",
+      "1 tbsp olive oil",
+      "Salt and pepper to taste",
+      "Fresh dill for serving"
+    ],
+    "steps": [
+      "Bring the stock to a boil, add the orzo, and cook for 10 minutes.",
+      "Whisk the eggs with the lemon juice until frothy.",
+      "Slowly whisk 2 ladles of hot broth into the eggs to temper them.",
+      "Pour the egg mixture back into the pot off the heat, stirring constantly, and add the chicken.",
+      "Warm gently without boiling, season, and serve with dill."
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Swiss Cheese Fondue",
+    "season": "Winter",
+    "cuisine": "Swiss",
+    "country": "Switzerland",
+    "image": "swiss-cheese-fondue.jpg",
+    "ingredients": [
+      "300 g Gruyère, grated",
+      "300 g Emmental, grated",
+      "1 clove garlic, halved",
+      "250 ml dry white wine",
+      "1 tbsp lemon juice",
+      "1 tbsp cornstarch",
+      "1 tbsp kirsch",
+      "Pinch of nutmeg",
+      "1 baguette, cubed"
+    ],
+    "steps": [
+      "Rub the inside of a fondue pot with the garlic.",
+      "Heat the wine and lemon juice until just simmering.",
+      "Toss the cheeses with the cornstarch and add gradually, stirring in a figure 8 until smooth.",
+      "Stir in the kirsch and nutmeg.",
+      "Serve warm with bread cubes on forks."
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Brazilian Feijoada",
+    "season": "Winter",
+    "cuisine": "Brazilian",
+    "country": "Brazil",
+    "image": "brazilian-feijoada.jpg",
+    "ingredients": [
+      "400 g dried black beans, soaked overnight",
+      "200 g smoked sausage, sliced",
+      "200 g pork ribs",
+      "150 g bacon, diced",
+      "1 onion, chopped",
+      "4 cloves garlic, minced",
+      "2 bay leaves",
+      "2 oranges, cut in wedges",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Drain the beans and simmer in fresh water with the bay leaves for 1 hour.",
+      "Brown the bacon, ribs, and sausage, then add the onion and garlic.",
+      "Add the meats to the beans and simmer for 1 hour 15 minutes until everything is tender.",
+      "Mash a few beans to thicken and season.",
+      "Serve with rice and orange wedges."
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Irish Beef Guinness Stew",
+    "season": "Winter",
+    "cuisine": "Irish",
+    "country": "Ireland",
+    "image": "irish-beef-guinness-stew.jpg",
+    "ingredients": [
+      "700 g beef chuck, cubed",
+      "2 tbsp flour",
+      "2 tbsp oil",
+      "1 onion, chopped",
+      "3 carrots, chunked",
+      "2 potatoes, cubed",
+      "330 ml Guinness stout",
+      "400 ml beef stock",
+      "1 tbsp tomato paste",
+      "2 sprigs thyme",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Toss the beef in flour and brown in oil in batches.",
+      "Cook the onion for 5 minutes, add the tomato paste, then pour in the Guinness and stock.",
+      "Return the beef with the thyme and simmer covered for 1 hour 30 minutes.",
+      "Add the carrots and potatoes and cook 30 minutes more.",
+      "Season to taste and serve hot."
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Austrian Wiener Schnitzel",
+    "season": "Winter",
+    "cuisine": "Austrian",
+    "country": "Austria",
+    "image": "austrian-wiener-schnitzel.jpg",
+    "ingredients": [
+      "4 veal cutlets (about 150 g each)",
+      "100 g flour",
+      "2 eggs, beaten",
+      "120 g breadcrumbs",
+      "100 ml clarified butter or oil",
+      "1 lemon, cut in wedges",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Pound the cutlets until 5 mm thick and season with salt and pepper.",
+      "Set up three plates with flour, beaten eggs, and breadcrumbs.",
+      "Dredge each cutlet in flour, then egg, then breadcrumbs without pressing hard.",
+      "Fry in hot butter for 2 to 3 minutes per side, swirling the pan so the breading puffs.",
+      "Drain on paper towels and serve with lemon."
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Russian Beef Stroganoff",
+    "season": "Winter",
+    "cuisine": "Russian",
+    "country": "Russia",
+    "image": "russian-beef-stroganoff.jpg",
+    "ingredients": [
+      "500 g beef sirloin, cut in strips",
+      "250 g mushrooms, sliced",
+      "1 onion, sliced",
+      "2 tbsp butter",
+      "1 tbsp flour",
+      "250 ml beef stock",
+      "150 ml sour cream",
+      "1 tsp Dijon mustard",
+      "Salt and pepper to taste",
+      "Egg noodles for serving"
+    ],
+    "steps": [
+      "Sear the beef strips quickly in hot butter and set aside.",
+      "Cook the onion and mushrooms until golden.",
+      "Stir in the flour, then the stock and mustard, and simmer 5 minutes until thickened.",
+      "Return the beef and warm through.",
+      "Stir in the sour cream off the heat, season, and serve over noodles."
+    ]
+  },
+  {
+    "id": 40,
+    "name": "French Raclette",
+    "season": "Winter",
+    "cuisine": "French",
+    "country": "France",
+    "image": "french-raclette.jpg",
+    "ingredients": [
+      "400 g raclette cheese, sliced",
+      "800 g small potatoes",
+      "150 g cured ham or charcuterie",
+      "100 g cornichons",
+      "100 g pickled onions",
+      "Black pepper to taste"
+    ],
+    "steps": [
+      "Boil the potatoes in salted water for 20 minutes until tender.",
+      "Heat the raclette grill or oven broiler.",
+      "Melt the cheese slices in small pans until bubbling and lightly browned.",
+      "Pour over the potatoes.",
+      "Serve with ham, cornichons, pickled onions, and pepper."
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Polish Bigos",
+    "season": "Winter",
+    "cuisine": "Polish",
+    "country": "Poland",
+    "image": "polish-bigos.jpg",
+    "ingredients": [
+      "500 g sauerkraut, drained",
+      "300 g fresh cabbage, shredded",
+      "300 g pork shoulder, cubed",
+      "200 g kielbasa, sliced",
+      "100 g bacon, diced",
+      "1 onion, chopped",
+      "10 g dried mushrooms, soaked",
+      "2 bay leaves",
+      "500 ml stock",
+      "1 tbsp tomato paste"
+    ],
+    "steps": [
+      "Brown the bacon, pork, and kielbasa in a large pot.",
+      "Add the onion and cook until soft.",
+      "Add both cabbages, the soaked mushrooms with their liquid, bay leaves, tomato paste, and stock.",
+      "Cover and simmer gently for 2 hours, stirring occasionally.",
+      "Season, and for best flavor rest overnight and reheat."
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Mexican Pozole Rojo",
+    "season": "Winter",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "mexican-pozole-rojo.jpg",
+    "ingredients": [
+      "600 g pork shoulder, cubed",
+      "800 g cooked hominy",
+      "4 dried guajillo chilies, seeded",
+      "2 dried ancho chilies, seeded",
+      "1 onion",
+      "4 cloves garlic",
+      "1 tsp dried oregano",
+      "1.5 liters water",
+      "Shredded cabbage, radishes, and lime for serving",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Simmer the pork with half the onion, 2 garlic cloves, and salt for 1 hour 15 minutes.",
+      "Soak the chilies in hot water for 15 minutes and blend with the remaining onion, garlic, and oregano into a sauce.",
+      "Strain the sauce into the pork pot and add the hominy.",
+      "Simmer 30 minutes until tender and rich.",
+      "Serve with cabbage, radishes, and lime."
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Swiss Rösti",
+    "season": "Winter",
+    "cuisine": "Swiss",
+    "country": "Switzerland",
+    "image": "swiss-rosti.jpg",
+    "ingredients": [
+      "700 g waxy potatoes, boiled and cooled",
+      "40 g butter",
+      "1 tbsp oil",
+      "1 small onion, grated",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Grate the cooled potatoes coarsely and mix with the onion, salt, and pepper.",
+      "Heat the butter and oil in a non-stick skillet over medium heat.",
+      "Press the potato mixture in evenly into a cake.",
+      "Cook for 12 minutes until golden underneath.",
+      "Flip using a plate and cook another 10 minutes until crisp on both sides."
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Japanese Oden",
+    "season": "Winter",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-oden.jpg",
+    "ingredients": [
+      "1.2 liters dashi stock",
+      "3 tbsp soy sauce",
+      "2 tbsp mirin",
+      "1 daikon radish, cut in thick rounds",
+      "4 hard-boiled eggs",
+      "200 g fish cakes",
+      "1 block konnyaku, sliced",
+      "2 potatoes, halved",
+      "Karashi mustard for serving"
+    ],
+    "steps": [
+      "Simmer the daikon in water for 15 minutes to soften and drain.",
+      "Combine the dashi, soy sauce, and mirin in a large pot.",
+      "Add the daikon, potatoes, and konnyaku and simmer for 30 minutes.",
+      "Add the eggs and fish cakes and simmer 15 minutes more.",
+      "Serve hot with karashi mustard."
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Hungarian Chicken Paprikash",
+    "season": "Winter",
+    "cuisine": "Hungarian",
+    "country": "Hungary",
+    "image": "hungarian-chicken-paprikash.jpg",
+    "ingredients": [
+      "800 g chicken pieces, bone-in",
+      "2 onions, chopped",
+      "2 tbsp lard or oil",
+      "2 tbsp sweet paprika",
+      "1 red bell pepper, chopped",
+      "1 tomato, chopped",
+      "300 ml chicken stock",
+      "150 ml sour cream",
+      "1 tbsp flour",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Brown the chicken in the lard and set aside.",
+      "Cook the onions until soft, then remove from heat and stir in the paprika.",
+      "Add the pepper, tomato, stock, and chicken and simmer covered for 35 minutes.",
+      "Whisk the sour cream with the flour and temper it with a little hot sauce.",
+      "Stir into the pot and simmer gently for 5 minutes, then serve with dumplings or noodles."
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Filipino Chicken Adobo",
+    "season": "Winter",
+    "cuisine": "Filipino",
+    "country": "Philippines",
+    "image": "filipino-chicken-adobo.jpg",
+    "ingredients": [
+      "800 g chicken thighs and drumsticks",
+      "100 ml soy sauce",
+      "100 ml cane or white vinegar",
+      "1 head garlic, crushed",
+      "3 bay leaves",
+      "1 tsp black peppercorns",
+      "1 tbsp sugar",
+      "200 ml water"
+    ],
+    "steps": [
+      "Marinate the chicken in soy sauce and garlic for 30 minutes.",
+      "Place the chicken and marinade in a pot with the vinegar, bay leaves, peppercorns, and water.",
+      "Bring to a boil without stirring, then simmer covered for 30 minutes.",
+      "Uncover and reduce the sauce for 10 minutes, adding the sugar.",
+      "Serve over steamed rice."
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Serbian Ćevapi",
+    "season": "Winter",
+    "cuisine": "Serbian",
+    "country": "Serbia",
+    "image": "serbian-cevapi.jpg",
+    "ingredients": [
+      "500 g ground beef",
+      "250 g ground lamb",
+      "1 small onion, grated",
+      "3 cloves garlic, minced",
+      "1 tsp baking soda",
+      "1 tsp salt",
+      "1/2 tsp black pepper",
+      "Flatbread, chopped onion, and ajvar for serving"
+    ],
+    "steps": [
+      "Mix the beef, lamb, onion, garlic, baking soda, salt, and pepper well by hand.",
+      "Cover and chill for at least 4 hours.",
+      "Shape into small fingers about 7 cm long.",
+      "Grill or pan-fry for 4 minutes per side until browned.",
+      "Serve with flatbread, chopped onion, and ajvar."
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Norwegian Fish Soup",
+    "season": "Winter",
+    "cuisine": "Norwegian",
+    "country": "Norway",
+    "image": "norwegian-fish-soup.jpg",
+    "ingredients": [
+      "500 g white fish fillets, cubed",
+      "200 g salmon, cubed",
+      "2 carrots, sliced",
+      "1 leek, sliced",
+      "2 potatoes, cubed",
+      "750 ml fish stock",
+      "200 ml cream",
+      "1 tbsp butter",
+      "1 tbsp chopped dill",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt the butter and soften the leek and carrots for 5 minutes.",
+      "Add the stock and potatoes and simmer for 12 minutes.",
+      "Pour in the cream and bring to a gentle simmer.",
+      "Add the fish and cook for 5 minutes until just opaque.",
+      "Season, sprinkle with dill, and serve."
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Chinese Hot Pot",
+    "season": "Winter",
+    "cuisine": "Chinese",
+    "country": "China",
+    "image": "chinese-hot-pot.jpg",
+    "ingredients": [
+      "1.5 liters chicken or beef stock",
+      "3 slices ginger",
+      "3 scallions, cut in pieces",
+      "2 tbsp soy sauce",
+      "300 g thinly sliced beef",
+      "200 g napa cabbage, chopped",
+      "150 g tofu, cubed",
+      "150 g mushrooms",
+      "200 g glass noodles",
+      "Sesame sauce for dipping"
+    ],
+    "steps": [
+      "Bring the stock to a simmer in a pot with the ginger, scallions, and soy sauce at the table.",
+      "Arrange the beef, vegetables, tofu, mushrooms, and noodles on plates.",
+      "Cook the vegetables and tofu in the broth first for 5 minutes.",
+      "Dip the thin beef slices for 20 to 30 seconds until cooked.",
+      "Dip in sesame sauce and finish with noodles in the broth."
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Spanish Fabada Asturiana",
+    "season": "Winter",
+    "cuisine": "Spanish",
+    "country": "Spain",
+    "image": "spanish-fabada-asturiana.jpg",
+    "ingredients": [
+      "400 g dried white fabes or cannellini beans, soaked overnight",
+      "150 g chorizo",
+      "150 g morcilla (blood sausage)",
+      "150 g pork belly",
+      "1 onion, halved",
+      "3 cloves garlic",
+      "1 tsp smoked paprika",
+      "Pinch of saffron",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Place the soaked beans, onion, garlic, and pork belly in a pot, covered with water.",
+      "Bring to a boil, skim, and simmer on low heat for 1 hour.",
+      "Add the chorizo, morcilla, paprika, and saffron.",
+      "Simmer gently another 45 minutes until the beans are creamy.",
+      "Season and let rest for 10 minutes before serving."
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Italian Ribollita",
+    "season": "Winter",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-ribollita.jpg",
+    "ingredients": [
+      "200 g dried cannellini beans, cooked",
+      "1 onion, chopped",
+      "2 carrots, diced",
+      "2 celery stalks, diced",
+      "200 g Tuscan kale, chopped",
+      "400 g crushed tomatoes",
+      "3 cloves garlic",
+      "4 slices stale bread",
+      "1 liter vegetable stock",
+      "4 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Sauté the onion, carrots, celery, and garlic in oil for 8 minutes.",
+      "Add the tomatoes, kale, and stock and simmer for 25 minutes.",
+      "Add the beans, mashing a third of them to thicken.",
+      "Stir in the torn bread and cook 10 minutes until thick.",
+      "Serve drizzled with olive oil."
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Lebanese Shish Barak",
+    "season": "Winter",
+    "cuisine": "Lebanese",
+    "country": "Lebanon",
+    "image": "lebanese-shish-barak.jpg",
+    "ingredients": [
+      "300 g plain flour",
+      "150 ml warm water",
+      "300 g ground beef",
+      "1 onion, minced",
+      "50 g pine nuts",
+      "500 g plain yogurt",
+      "1 egg white",
+      "1 tbsp cornstarch",
+      "3 cloves garlic, crushed",
+      "2 tbsp dried mint",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Knead the flour, water, and a pinch of salt into a smooth dough and rest for 30 minutes.",
+      "Cook the beef with the onion, pine nuts, and spices until browned.",
+      "Roll the dough thin, cut circles, fill with beef, and pinch into small dumplings, then bake at 200°C for 15 minutes until golden.",
+      "Heat the yogurt with the egg white and cornstarch, stirring in one direction until it thickens, and add garlic.",
+      "Simmer the dumplings in the yogurt sauce for 10 minutes and top with mint."
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Jamaican Oxtail Stew",
+    "season": "Winter",
+    "cuisine": "Jamaican",
+    "country": "Jamaica",
+    "image": "jamaican-oxtail-stew.jpg",
+    "ingredients": [
+      "1 kg oxtail pieces",
+      "1 onion, chopped",
+      "3 cloves garlic, minced",
+      "1 tbsp allspice berries",
+      "2 sprigs thyme",
+      "1 Scotch bonnet pepper, whole",
+      "2 tbsp soy sauce",
+      "2 tbsp brown sugar",
+      "400 g butter beans, canned",
+      "2 carrots, sliced",
+      "1 liter water",
+      "2 tbsp oil"
+    ],
+    "steps": [
+      "Season the oxtail with soy sauce, garlic, allspice, thyme, and salt and rest for 1 hour.",
+      "Caramelize the brown sugar in oil, then brown the oxtail on all sides.",
+      "Add the onion, Scotch bonnet, and water and simmer covered for 2 hours 30 minutes.",
+      "Add the carrots and cook 20 minutes.",
+      "Stir in the butter beans and simmer 10 minutes until the sauce is thick."
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Egyptian Molokhia",
+    "season": "Winter",
+    "cuisine": "Egyptian",
+    "country": "Egypt",
+    "image": "egyptian-molokhia.jpg",
+    "ingredients": [
+      "400 g fresh or frozen molokhia leaves, finely chopped",
+      "1 liter chicken stock",
+      "6 cloves garlic, crushed",
+      "1 tbsp ground coriander",
+      "2 tbsp ghee or butter",
+      "1 whole chicken leg and thigh set",
+      "Rice for serving",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Simmer the chicken in water or stock for 35 minutes until cooked and set aside.",
+      "Bring the stock to a simmer and add the molokhia, cooking 10 minutes without boiling hard.",
+      "Fry the garlic with the coriander in ghee until golden and fragrant.",
+      "Stir the garlic mixture into the molokhia with a hiss and cook 2 minutes.",
+      "Serve over rice with the chicken."
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Saudi Chicken Kabsa",
+    "season": "Winter",
+    "cuisine": "Saudi",
+    "country": "Saudi Arabia",
+    "image": "saudi-chicken-kabsa.jpg",
+    "ingredients": [
+      "1 whole chicken, cut in pieces",
+      "300 g basmati rice",
+      "2 onions, sliced",
+      "3 tomatoes, chopped",
+      "3 tbsp tomato paste",
+      "3 cloves garlic, minced",
+      "2 tbsp kabsa spice mix",
+      "3 tbsp oil",
+      "750 ml water",
+      "50 g raisins and toasted almonds for garnish"
+    ],
+    "steps": [
+      "Brown the chicken in oil and set aside.",
+      "Cook the onions until golden, add the garlic, spices, tomatoes, and tomato paste, and cook 8 minutes.",
+      "Add the chicken and water and simmer for 30 minutes.",
+      "Remove the chicken, add the soaked rice to the broth, and cook covered for 20 minutes.",
+      "Serve topped with the chicken, raisins, and almonds."
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Saudi Jareesh",
+    "season": "Winter",
+    "cuisine": "Saudi",
+    "country": "Saudi Arabia",
+    "image": "saudi-jareesh.jpg",
+    "ingredients": [
+      "250 g crushed wheat (jareesh)",
+      "1 liter chicken stock",
+      "2 cups plain yogurt or buttermilk",
+      "1 onion, sliced",
+      "3 tbsp ghee",
+      "1 tsp ground cumin",
+      "1 tsp ground cardamom",
+      "Salt to taste",
+      "Fried onions for garnish"
+    ],
+    "steps": [
+      "Soak the crushed wheat for 2 hours and drain.",
+      "Simmer the wheat in the stock for 45 minutes, stirring often.",
+      "Mash and stir with a wooden spoon until thick and porridge-like.",
+      "Stir in the yogurt, cumin, cardamom, and salt and cook 10 minutes.",
+      "Serve with ghee poured over and fried onions."
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Saudi Saleeg",
+    "season": "Winter",
+    "cuisine": "Saudi",
+    "country": "Saudi Arabia",
+    "image": "saudi-saleeg.jpg",
+    "ingredients": [
+      "250 g short-grain white rice",
+      "1 liter whole milk",
+      "500 ml chicken stock",
+      "2 chicken breasts",
+      "3 tbsp ghee",
+      "1 tsp ground cardamom",
+      "Pinch of saffron",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Simmer the chicken in the stock for 20 minutes, remove, and shred.",
+      "Rinse the rice and cook it in the stock until nearly tender, about 15 minutes.",
+      "Add the milk gradually and cook on low heat, stirring, until creamy.",
+      "Season with salt, cardamom, and saffron.",
+      "Top with the shredded chicken and ghee."
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Moroccan Couscous with Seven Vegetables",
+    "season": "Winter",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "moroccan-couscous-seven-vegetables.jpg",
+    "ingredients": [
+      "300 g couscous",
+      "300 g lamb or chicken pieces",
+      "2 carrots",
+      "2 turnips",
+      "2 zucchini",
+      "1/4 small cabbage",
+      "200 g pumpkin",
+      "200 g cooked chickpeas",
+      "1 onion, chopped",
+      "1 tsp turmeric",
+      "1 tsp ginger",
+      "2 tbsp oil",
+      "1.5 liters water",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Brown the meat with the onion, turmeric, and ginger in the oil.",
+      "Add the water and simmer for 30 minutes.",
+      "Add the carrots, turnips, and cabbage and cook 20 minutes, then add the zucchini, pumpkin, and chickpeas for 15 minutes.",
+      "Steam the couscous with a little water and butter, fluffing with a fork.",
+      "Serve the couscous topped with meat and vegetables and ladle the broth over it."
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Algerian Rechta",
+    "season": "Winter",
+    "cuisine": "Algerian",
+    "country": "Algeria",
+    "image": "algerian-rechta.jpg",
+    "ingredients": [
+      "300 g rechta noodles or thin fresh pasta",
+      "500 g chicken pieces",
+      "1 onion, chopped",
+      "2 turnips, cubed",
+      "2 carrots, cubed",
+      "150 g cooked chickpeas",
+      "1 tsp cinnamon",
+      "1 tsp turmeric",
+      "2 tbsp oil",
+      "1 liter water",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Brown the chicken with the onion and spices in the oil.",
+      "Add the water, turnips, carrots, and chickpeas and simmer for 35 minutes.",
+      "Steam the noodles for 15 minutes over the simmering broth.",
+      "Toss with a little butter or oil.",
+      "Serve covered with the chicken, vegetables, and sauce."
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Palestinian Maqluba",
+    "season": "Winter",
+    "cuisine": "Palestinian",
+    "country": "Palestine",
+    "image": "palestinian-maqluba.jpg",
+    "ingredients": [
+      "500 g chicken pieces",
+      "300 g basmati rice",
+      "1 eggplant, sliced",
+      "1 cauliflower, in florets",
+      "2 tomatoes, sliced",
+      "1 onion, sliced",
+      "1 tsp allspice",
+      "1 tsp turmeric",
+      "50 g toasted almonds",
+      "Oil for frying",
+      "700 ml chicken stock"
+    ],
+    "steps": [
+      "Fry the eggplant and cauliflower until golden and drain.",
+      "Simmer the chicken with the onion and spices for 20 minutes and reserve the stock.",
+      "Layer tomatoes, chicken, eggplant, and cauliflower in a pot, then add the rice on top.",
+      "Pour in the hot stock, cover, and cook for 30 minutes.",
+      "Rest 10 minutes, invert onto a platter, and sprinkle with almonds."
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Syrian Shish Barak",
+    "season": "Winter",
+    "cuisine": "Syrian",
+    "country": "Syria",
+    "image": "syrian-shish-barak.jpg",
+    "ingredients": [
+      "300 g plain flour",
+      "150 ml water",
+      "300 g ground lamb",
+      "1 onion, minced",
+      "60 g pine nuts",
+      "500 g plain yogurt",
+      "1 tbsp cornstarch",
+      "4 cloves garlic, crushed",
+      "2 tbsp dried mint",
+      "1 tbsp butter",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Knead the flour, water, and salt into a dough and rest for 30 minutes.",
+      "Cook the lamb with the onion, pine nuts, and spices until browned.",
+      "Roll out the dough, cut rounds, fill, and pinch into small dumplings, then bake until golden.",
+      "Heat the yogurt with the cornstarch, stirring in one direction until simmering, and add the garlic.",
+      "Simmer the dumplings in the yogurt and finish with mint fried in butter."
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Italian Pasta Primavera",
+    "season": "Spring",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-pasta-primavera.jpg",
+    "ingredients": [
+      "300 g penne or spaghetti",
+      "1 zucchini, sliced",
+      "150 g asparagus, cut in pieces",
+      "100 g peas",
+      "1 carrot, thinly sliced",
+      "150 g cherry tomatoes, halved",
+      "3 cloves garlic, minced",
+      "3 tbsp olive oil",
+      "40 g grated Parmesan",
+      "Fresh basil leaves",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Cook the pasta in salted water until al dente and reserve 100 ml of the cooking water.",
+      "Sauté the carrot and asparagus in olive oil for 4 minutes.",
+      "Add the zucchini, peas, garlic, and tomatoes and cook 4 minutes more.",
+      "Toss with the pasta and a splash of pasta water.",
+      "Finish with Parmesan, basil, salt, and pepper."
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Greek Spanakopita",
+    "season": "Spring",
+    "cuisine": "Greek",
+    "country": "Greece",
+    "image": "greek-spanakopita.jpg",
+    "ingredients": [
+      "500 g fresh spinach, chopped",
+      "200 g feta, crumbled",
+      "1 onion, chopped",
+      "3 scallions, sliced",
+      "2 eggs",
+      "2 tbsp chopped dill",
+      "8 sheets filo pastry",
+      "80 g melted butter or olive oil",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Wilt the spinach with the onion and scallions, then squeeze dry.",
+      "Mix with the feta, eggs, dill, and pepper.",
+      "Layer half the filo in a baking dish, brushing each sheet with butter.",
+      "Spread the filling and top with the remaining filo, brushing each sheet.",
+      "Score the top and bake at 180°C (350°F) for 40 minutes until golden."
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Japanese Chicken Teriyaki",
+    "season": "Spring",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-chicken-teriyaki.jpg",
+    "ingredients": [
+      "500 g chicken thighs, skin on",
+      "3 tbsp soy sauce",
+      "3 tbsp mirin",
+      "2 tbsp sake",
+      "1 tbsp sugar",
+      "1 tbsp oil",
+      "Toasted sesame seeds",
+      "Steamed rice for serving"
+    ],
+    "steps": [
+      "Mix the soy sauce, mirin, sake, and sugar for the sauce.",
+      "Sear the chicken skin-side down in oil for 6 minutes until crisp, then flip and cook 4 minutes.",
+      "Pour in the sauce and simmer, spooning it over the chicken, until thick and glossy, about 5 minutes.",
+      "Slice the chicken and spoon over extra sauce.",
+      "Serve with rice and sesame seeds."
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Lebanese Tabbouleh",
+    "season": "Spring",
+    "cuisine": "Lebanese",
+    "country": "Lebanon",
+    "image": "lebanese-tabbouleh.jpg",
+    "ingredients": [
+      "80 g fine bulgur",
+      "3 bunches flat-leaf parsley, finely chopped",
+      "1 bunch fresh mint, chopped",
+      "4 tomatoes, diced",
+      "4 scallions, sliced",
+      "60 ml olive oil",
+      "Juice of 2 lemons",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Soak the bulgur in cold water for 15 minutes and drain, squeezing out excess water.",
+      "Chop the parsley very finely and the mint, and dice the tomatoes.",
+      "Combine the herbs, tomatoes, scallions, and bulgur.",
+      "Dress with lemon juice, olive oil, and salt.",
+      "Chill for 20 minutes before serving."
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Vietnamese Fresh Spring Rolls",
+    "season": "Spring",
+    "cuisine": "Vietnamese",
+    "country": "Vietnam",
+    "image": "vietnamese-fresh-spring-rolls.jpg",
+    "ingredients": [
+      "12 rice paper wrappers",
+      "200 g cooked shrimp, halved",
+      "100 g rice vermicelli, cooked",
+      "1 carrot, julienned",
+      "1 cucumber, julienned",
+      "12 fresh mint leaves",
+      "Lettuce leaves",
+      "3 tbsp hoisin sauce",
+      "2 tbsp peanut butter",
+      "1 tbsp lime juice"
+    ],
+    "steps": [
+      "Prepare all the fillings and cook the vermicelli.",
+      "Dip one wrapper in warm water for 10 seconds until pliable.",
+      "Layer lettuce, noodles, vegetables, mint, and shrimp on the wrapper.",
+      "Fold in the sides and roll tightly.",
+      "Whisk the hoisin, peanut butter, and lime juice with a little water for the dipping sauce."
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Spanish Tortilla Española",
+    "season": "Spring",
+    "cuisine": "Spanish",
+    "country": "Spain",
+    "image": "spanish-tortilla-espanola.jpg",
+    "ingredients": [
+      "500 g potatoes, thinly sliced",
+      "1 onion, thinly sliced",
+      "6 eggs",
+      "150 ml olive oil",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Fry the potatoes and onion gently in the oil for 20 minutes until tender but not browned, then drain.",
+      "Beat the eggs with salt and fold in the warm potatoes and onion.",
+      "Let the mixture rest for 10 minutes.",
+      "Cook in a hot non-stick pan on medium-low for 5 minutes until the base is set.",
+      "Flip using a plate, cook 3 minutes more, and serve warm or at room temperature."
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Turkish Menemen",
+    "season": "Spring",
+    "cuisine": "Turkish",
+    "country": "Turkey",
+    "image": "turkish-menemen.jpg",
+    "ingredients": [
+      "4 eggs",
+      "3 ripe tomatoes, diced",
+      "2 green peppers, chopped",
+      "1 small onion, diced",
+      "2 tbsp olive oil",
+      "1 tsp Aleppo pepper",
+      "Salt to taste",
+      "Crusty bread for serving"
+    ],
+    "steps": [
+      "Heat the oil and soften the onion and peppers for 5 minutes.",
+      "Add the tomatoes and cook for 8 minutes until saucy.",
+      "Season with salt and Aleppo pepper.",
+      "Crack in the eggs and stir gently.",
+      "Cook until just set but still soft and serve with bread."
+    ]
+  },
+  {
+    "id": 69,
+    "name": "French Quiche Lorraine",
+    "season": "Spring",
+    "cuisine": "French",
+    "country": "France",
+    "image": "french-quiche-lorraine.jpg",
+    "ingredients": [
+      "1 shortcrust pastry shell, 23 cm",
+      "200 g bacon lardons",
+      "3 eggs",
+      "250 ml heavy cream",
+      "100 ml milk",
+      "100 g grated Gruyère",
+      "Pinch of nutmeg",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Preheat the oven to 190°C (375°F) and blind-bake the shell for 10 minutes.",
+      "Fry the lardons until crisp and scatter over the shell with the cheese.",
+      "Whisk the eggs, cream, milk, nutmeg, salt, and pepper.",
+      "Pour the custard into the shell.",
+      "Bake for 30 minutes until set and golden, and cool 10 minutes."
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Indian Palak Paneer",
+    "season": "Spring",
+    "cuisine": "Indian",
+    "country": "India",
+    "image": "indian-palak-paneer.jpg",
+    "ingredients": [
+      "500 g fresh spinach",
+      "250 g paneer, cubed",
+      "1 onion, chopped",
+      "2 tomatoes, chopped",
+      "3 cloves garlic",
+      "1 tbsp grated ginger",
+      "1 tsp cumin seeds",
+      "1 tsp garam masala",
+      "2 tbsp oil",
+      "3 tbsp cream",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Blanch the spinach for 2 minutes and blend into a puree.",
+      "Fry the cumin seeds, onion, garlic, and ginger in oil until golden.",
+      "Add the tomatoes and cook for 6 minutes, then add the garam masala and spinach puree.",
+      "Simmer for 8 minutes and stir in the paneer and cream.",
+      "Cook 3 minutes and season to taste."
+    ]
+  },
+  {
+    "id": 71,
+    "name": "American Strawberry Shortcake",
+    "season": "Spring",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "american-strawberry-shortcake.jpg",
+    "ingredients": [
+      "250 g flour",
+      "2 tbsp sugar",
+      "1 tbsp baking powder",
+      "1/2 tsp salt",
+      "100 g cold butter, cubed",
+      "150 ml milk",
+      "500 g strawberries, sliced",
+      "3 tbsp sugar for strawberries",
+      "250 ml whipped cream"
+    ],
+    "steps": [
+      "Preheat the oven to 220°C (425°F).",
+      "Mix the flour, sugar, baking powder, and salt, and rub in the butter until crumbly.",
+      "Stir in the milk to make a soft dough and drop in 4 mounds on a tray.",
+      "Bake for 14 minutes until golden.",
+      "Macerate the strawberries with the sugar, split the biscuits, and fill with strawberries and cream."
+    ]
+  },
+  {
+    "id": 72,
+    "name": "British Chicken and Leek Pie",
+    "season": "Spring",
+    "cuisine": "British",
+    "country": "United Kingdom",
+    "image": "british-chicken-leek-pie.jpg",
+    "ingredients": [
+      "500 g chicken breast, cubed",
+      "2 leeks, sliced",
+      "30 g butter",
+      "2 tbsp flour",
+      "300 ml chicken stock",
+      "100 ml cream",
+      "1 tbsp Dijon mustard",
+      "1 sheet puff pastry",
+      "1 egg, beaten",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Sauté the chicken in butter for 5 minutes, add the leeks, and cook 5 minutes more.",
+      "Stir in the flour, then the stock, cream, and mustard and simmer for 10 minutes to thicken.",
+      "Season and cool, then pour into a pie dish.",
+      "Cover with the pastry, trim, and brush with egg.",
+      "Bake at 200°C (400°F) for 25 minutes until golden."
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Turkish Sigara Böreği",
+    "season": "Spring",
+    "cuisine": "Turkish",
+    "country": "Turkey",
+    "image": "turkish-sigara-boregi.jpg",
+    "ingredients": [
+      "6 sheets yufka or filo, cut into triangles",
+      "250 g feta, crumbled",
+      "3 tbsp chopped parsley",
+      "1 egg",
+      "1 tsp flour mixed with water for sealing",
+      "Oil for frying"
+    ],
+    "steps": [
+      "Mix the feta, parsley, and egg for the filling.",
+      "Place a spoonful at the wide end of each triangle.",
+      "Fold in the sides and roll into a thin cigar, sealing with the flour paste.",
+      "Fry in medium-hot oil for 2 to 3 minutes per side until golden.",
+      "Drain and serve warm."
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Vietnamese Bánh Xèo",
+    "season": "Spring",
+    "cuisine": "Vietnamese",
+    "country": "Vietnam",
+    "image": "vietnamese-banh-xeo.jpg",
+    "ingredients": [
+      "150 g rice flour",
+      "1/2 tsp turmeric",
+      "300 ml coconut milk",
+      "100 ml water",
+      "200 g pork belly, thinly sliced",
+      "200 g shrimp, peeled",
+      "150 g bean sprouts",
+      "2 scallions, sliced",
+      "Oil for frying",
+      "Fresh herbs, lettuce, and nuoc cham for serving"
+    ],
+    "steps": [
+      "Whisk the rice flour, turmeric, coconut milk, water, scallions, and a pinch of salt into a thin batter.",
+      "Heat oil in a skillet and fry the pork and shrimp for 3 minutes.",
+      "Pour in a ladle of batter to coat the pan thinly.",
+      "Add bean sprouts, cover, and cook 3 minutes, then uncover until crisp.",
+      "Fold and serve with herbs, lettuce, and nuoc cham."
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Greek Keftedes",
+    "season": "Spring",
+    "cuisine": "Greek",
+    "country": "Greece",
+    "image": "greek-keftedes.jpg",
+    "ingredients": [
+      "500 g ground beef or lamb",
+      "1 onion, grated",
+      "2 cloves garlic, minced",
+      "1 egg",
+      "50 g breadcrumbs",
+      "2 tbsp chopped mint",
+      "1 tsp dried oregano",
+      "Flour for dusting",
+      "Oil for frying",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Mix the meat, onion, garlic, egg, breadcrumbs, mint, oregano, salt, and pepper.",
+      "Chill for 30 minutes.",
+      "Roll into small balls and dust lightly with flour.",
+      "Fry in oil for 8 minutes, turning, until browned and cooked through.",
+      "Serve with tzatziki and lemon."
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Indian Vegetable Pulao",
+    "season": "Spring",
+    "cuisine": "Indian",
+    "country": "India",
+    "image": "indian-vegetable-pulao.jpg",
+    "ingredients": [
+      "250 g basmati rice",
+      "1 carrot, diced",
+      "100 g green peas",
+      "100 g green beans, chopped",
+      "1 onion, sliced",
+      "1 tsp cumin seeds",
+      "2 cardamom pods",
+      "1 cinnamon stick",
+      "2 cloves",
+      "2 tbsp ghee",
+      "500 ml water",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Rinse the rice and soak for 20 minutes, then drain.",
+      "Heat the ghee and fry the whole spices and cumin for 30 seconds.",
+      "Cook the onion until golden, add the vegetables, and sauté for 3 minutes.",
+      "Add the rice, water, and salt and bring to a boil.",
+      "Cover and cook on low for 15 minutes, rest 5 minutes, and fluff."
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Japanese Okonomiyaki",
+    "season": "Spring",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-okonomiyaki.jpg",
+    "ingredients": [
+      "200 g cabbage, finely shredded",
+      "100 g flour",
+      "150 ml dashi or water",
+      "2 eggs",
+      "4 slices bacon",
+      "2 scallions, sliced",
+      "Okonomiyaki sauce and Japanese mayonnaise",
+      "Bonito flakes",
+      "Oil for cooking"
+    ],
+    "steps": [
+      "Mix the flour, dashi, and eggs into a batter and fold in the cabbage and scallions.",
+      "Heat oil in a skillet and pour in half the batter into a thick pancake.",
+      "Lay the bacon on top and cook 5 minutes per side until golden and cooked through.",
+      "Repeat with the remaining batter.",
+      "Brush with sauce, drizzle with mayonnaise, and top with bonito flakes."
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Spanish Patatas Bravas",
+    "season": "Spring",
+    "cuisine": "Spanish",
+    "country": "Spain",
+    "image": "spanish-patatas-bravas.jpg",
+    "ingredients": [
+      "700 g potatoes, cut in cubes",
+      "4 tbsp olive oil",
+      "3 tbsp tomato sauce",
+      "1 tsp smoked paprika",
+      "1/2 tsp cayenne",
+      "2 cloves garlic, minced",
+      "1 tsp vinegar",
+      "Salt to taste",
+      "Aioli for serving"
+    ],
+    "steps": [
+      "Toss the potatoes in oil and salt and roast at 220°C (425°F) for 35 minutes until crisp.",
+      "Heat a little oil and fry the garlic for 30 seconds.",
+      "Add the paprika, cayenne, tomato sauce, and vinegar and simmer for 5 minutes.",
+      "Season the sauce with salt.",
+      "Spoon over the potatoes and add aioli."
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Indonesian Gado-Gado",
+    "season": "Spring",
+    "cuisine": "Indonesian",
+    "country": "Indonesia",
+    "image": "indonesian-gado-gado.jpg",
+    "ingredients": [
+      "200 g green beans",
+      "200 g bean sprouts",
+      "200 g cabbage, shredded",
+      "2 potatoes, boiled and sliced",
+      "2 hard-boiled eggs",
+      "150 g fried tofu",
+      "1 cucumber, sliced",
+      "150 g peanut butter",
+      "1 tbsp palm sugar",
+      "1 tbsp soy sauce",
+      "1 tbsp lime juice",
+      "1 clove garlic",
+      "200 ml warm water"
+    ],
+    "steps": [
+      "Blanch the green beans, bean sprouts, and cabbage for 2 minutes each and drain.",
+      "Mash the garlic with the peanut butter, palm sugar, soy sauce, and lime juice.",
+      "Thin the sauce with warm water until pourable.",
+      "Arrange the vegetables, potatoes, tofu, eggs, and cucumber on a platter.",
+      "Pour the peanut sauce over and serve."
+    ]
+  },
+  {
+    "id": 80,
+    "name": "French Asparagus Quiche",
+    "season": "Spring",
+    "cuisine": "French",
+    "country": "France",
+    "image": "french-asparagus-quiche.jpg",
+    "ingredients": [
+      "1 shortcrust pastry shell, 23 cm",
+      "300 g asparagus, trimmed and cut",
+      "3 eggs",
+      "250 ml cream",
+      "100 ml milk",
+      "100 g grated Gruyère",
+      "1 shallot, chopped",
+      "1 tbsp butter",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Preheat the oven to 190°C (375°F) and blind-bake the shell for 10 minutes.",
+      "Blanch the asparagus for 2 minutes and sauté with the shallot in butter for 3 minutes.",
+      "Spread over the shell with the cheese.",
+      "Whisk the eggs, cream, milk, salt, and pepper and pour in.",
+      "Bake for 30 minutes until set and golden."
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Ethiopian Misir Wot",
+    "season": "Spring",
+    "cuisine": "Ethiopian",
+    "country": "Ethiopia",
+    "image": "ethiopian-misir-wot.jpg",
+    "ingredients": [
+      "250 g red lentils",
+      "2 onions, finely chopped",
+      "3 cloves garlic, minced",
+      "1 tbsp grated ginger",
+      "2 tbsp berbere spice",
+      "2 tbsp tomato paste",
+      "3 tbsp oil or niter kibbeh",
+      "700 ml water",
+      "Salt to taste",
+      "Injera for serving"
+    ],
+    "steps": [
+      "Cook the onions in a dry pot for 5 minutes, then add the oil and cook until golden.",
+      "Add the garlic, ginger, berbere, and tomato paste and cook for 3 minutes.",
+      "Add the rinsed lentils and water.",
+      "Simmer 25 minutes, stirring, until thick and creamy.",
+      "Season and serve with injera."
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Korean Bibimbap",
+    "season": "Spring",
+    "cuisine": "Korean",
+    "country": "South Korea",
+    "image": "korean-bibimbap.jpg",
+    "ingredients": [
+      "300 g cooked short-grain rice",
+      "150 g beef, thinly sliced",
+      "1 carrot, julienned",
+      "1 zucchini, julienned",
+      "100 g spinach",
+      "100 g bean sprouts",
+      "2 eggs",
+      "2 tbsp gochujang",
+      "2 tbsp soy sauce",
+      "2 tbsp sesame oil",
+      "1 tbsp sesame seeds"
+    ],
+    "steps": [
+      "Marinate the beef in soy sauce and a little sesame oil and stir-fry for 4 minutes.",
+      "Sauté the carrot and zucchini separately, and blanch the spinach and sprouts and season with sesame oil.",
+      "Fry the eggs sunny-side up.",
+      "Divide the rice into bowls and arrange the toppings.",
+      "Top with the egg, gochujang, and sesame seeds and mix before eating."
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Italian Arancini",
+    "season": "Spring",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-arancini.jpg",
+    "ingredients": [
+      "300 g Arborio rice, cooked and cooled",
+      "2 eggs",
+      "80 g grated Parmesan",
+      "100 g mozzarella, cubed",
+      "100 g peas",
+      "100 g breadcrumbs",
+      "50 g flour",
+      "Oil for frying",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Mix the cooled risotto rice with 1 egg and the Parmesan.",
+      "Scoop a portion, press a mozzarella cube and a few peas in the center, and shape into a ball.",
+      "Roll in flour, then beaten egg, then breadcrumbs.",
+      "Fry in oil at 170°C for 5 minutes until deep golden.",
+      "Drain and serve hot."
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Mexican Chiles Rellenos",
+    "season": "Spring",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "mexican-chiles-rellenos.jpg",
+    "ingredients": [
+      "4 poblano peppers",
+      "200 g Oaxaca or Monterey Jack cheese, sliced",
+      "3 eggs, separated",
+      "50 g flour",
+      "400 g crushed tomatoes",
+      "1/2 onion",
+      "1 clove garlic",
+      "Oil for frying",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Roast the poblanos until blistered, steam 10 minutes, peel, and make a slit to remove the seeds.",
+      "Stuff each with cheese.",
+      "Beat the egg whites to stiff peaks and fold in the yolks.",
+      "Dredge the peppers in flour, dip in the egg batter, and fry until golden on both sides.",
+      "Simmer the tomatoes with onion and garlic for 10 minutes and serve over the peppers."
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Thai Green Curry",
+    "season": "Spring",
+    "cuisine": "Thai",
+    "country": "Thailand",
+    "image": "thai-green-curry.jpg",
+    "ingredients": [
+      "500 g chicken breast, sliced",
+      "3 tbsp green curry paste",
+      "400 ml coconut milk",
+      "200 ml chicken stock",
+      "1 Thai eggplant, quartered",
+      "100 g green beans",
+      "1 tbsp fish sauce",
+      "1 tsp palm sugar",
+      "Thai basil leaves",
+      "Jasmine rice for serving"
+    ],
+    "steps": [
+      "Fry the curry paste in a little coconut cream for 2 minutes until fragrant.",
+      "Add the chicken and cook for 3 minutes.",
+      "Pour in the remaining coconut milk and stock and simmer for 10 minutes.",
+      "Add the eggplant and beans and cook 5 minutes.",
+      "Season with fish sauce and sugar and stir in basil."
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Dutch Asparagus with Ham and Egg",
+    "season": "Spring",
+    "cuisine": "Dutch",
+    "country": "Netherlands",
+    "image": "dutch-asparagus-ham-egg.jpg",
+    "ingredients": [
+      "800 g white asparagus, peeled",
+      "4 eggs, hard-boiled and chopped",
+      "150 g cooked ham",
+      "60 g butter, melted",
+      "500 g small potatoes, boiled",
+      "Nutmeg",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Boil the asparagus in salted water with a pinch of sugar for 12 minutes until tender.",
+      "Drain and arrange on plates with the ham and potatoes.",
+      "Melt the butter and mix with the chopped egg.",
+      "Season with nutmeg.",
+      "Spoon the butter and egg sauce over the asparagus."
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Tunisian Brik",
+    "season": "Spring",
+    "cuisine": "Tunisian",
+    "country": "Tunisia",
+    "image": "tunisian-brik.jpg",
+    "ingredients": [
+      "4 sheets malsouka or filo",
+      "4 eggs",
+      "150 g canned tuna, drained",
+      "2 tbsp capers",
+      "2 tbsp chopped parsley",
+      "1 tbsp harissa",
+      "1 lemon",
+      "Oil for frying",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Mix the tuna with the capers, parsley, and harissa.",
+      "Place a spoonful in the center of each sheet and make a well.",
+      "Crack an egg into the well.",
+      "Fold into a triangle and seal quickly.",
+      "Fry in hot oil for 1 to 2 minutes per side until crisp, keeping the yolk runny, and serve with lemon."
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Algerian Makroud",
+    "season": "Spring",
+    "cuisine": "Algerian",
+    "country": "Algeria",
+    "image": "algerian-makroud.jpg",
+    "ingredients": [
+      "300 g fine semolina",
+      "100 g butter, melted",
+      "250 g date paste",
+      "1 tsp cinnamon",
+      "100 ml orange blossom water",
+      "200 g honey",
+      "Oil for frying"
+    ],
+    "steps": [
+      "Rub the semolina with the butter and salt, then add orange blossom water to form a firm dough and rest 30 minutes.",
+      "Mix the dates with the cinnamon and roll into logs.",
+      "Roll the dough into a log, make a groove, fill with dates, and seal.",
+      "Cut into diamonds and fry until golden, about 5 minutes.",
+      "Soak in warm honey for 2 minutes and drain."
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Palestinian Musakhan",
+    "season": "Spring",
+    "cuisine": "Palestinian",
+    "country": "Palestine",
+    "image": "palestinian-musakhan.jpg",
+    "ingredients": [
+      "4 chicken legs",
+      "4 large onions, sliced",
+      "80 ml olive oil",
+      "3 tbsp sumac",
+      "1 tsp allspice",
+      "50 g pine nuts, toasted",
+      "4 taboon or flatbreads",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Season the chicken with sumac, allspice, and salt and roast at 200°C for 40 minutes.",
+      "Cook the onions in olive oil for 25 minutes until soft and sweet, adding sumac.",
+      "Spread the onions on the flatbreads.",
+      "Top with the chicken and bake for 5 minutes.",
+      "Garnish with pine nuts."
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Syrian Muhammara",
+    "season": "Spring",
+    "cuisine": "Syrian",
+    "country": "Syria",
+    "image": "syrian-muhammara.jpg",
+    "ingredients": [
+      "3 roasted red peppers, peeled",
+      "100 g walnuts, toasted",
+      "50 g breadcrumbs",
+      "2 tbsp pomegranate molasses",
+      "1 clove garlic",
+      "1 tsp Aleppo pepper",
+      "1 tsp cumin",
+      "60 ml olive oil",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Combine the peppers, walnuts, breadcrumbs, garlic, and spices in a food processor.",
+      "Blend until coarse.",
+      "Add the pomegranate molasses and the olive oil.",
+      "Blend until just smooth but still textured.",
+      "Season and serve with warm bread."
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Syrian Fatteh",
+    "season": "Spring",
+    "cuisine": "Syrian",
+    "country": "Syria",
+    "image": "syrian-fatteh.jpg",
+    "ingredients": [
+      "2 pitas, toasted and torn",
+      "400 g cooked chickpeas",
+      "300 g plain yogurt",
+      "2 cloves garlic, crushed",
+      "2 tbsp tahini",
+      "50 g pine nuts",
+      "30 g butter",
+      "1/2 tsp ground cumin",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Warm the chickpeas with a little water and cumin.",
+      "Mix the yogurt, garlic, tahini, and salt.",
+      "Layer the pita pieces in a dish and top with chickpeas and a little of the cooking liquid.",
+      "Spoon over the yogurt sauce.",
+      "Fry the pine nuts in butter until golden and pour over."
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Greek Horiatiki Salad",
+    "season": "Summer",
+    "cuisine": "Greek",
+    "country": "Greece",
+    "image": "greek-horiatiki-salad.jpg",
+    "ingredients": [
+      "4 ripe tomatoes, cut in wedges",
+      "1 cucumber, sliced",
+      "1 red onion, sliced",
+      "1 green pepper, sliced",
+      "150 g feta, in a block",
+      "80 g Kalamata olives",
+      "4 tbsp olive oil",
+      "1 tbsp red wine vinegar",
+      "1 tsp dried oregano",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Combine the tomatoes, cucumber, onion, pepper, and olives in a bowl.",
+      "Season with salt.",
+      "Dress with the olive oil and vinegar.",
+      "Top with the block of feta.",
+      "Sprinkle with oregano and serve."
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Italian Caprese Salad",
+    "season": "Summer",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-caprese-salad.jpg",
+    "ingredients": [
+      "4 ripe tomatoes, sliced",
+      "250 g fresh mozzarella, sliced",
+      "1 handful fresh basil leaves",
+      "3 tbsp extra virgin olive oil",
+      "1 tsp balsamic glaze",
+      "Sea salt and black pepper to taste"
+    ],
+    "steps": [
+      "Slice the tomatoes and mozzarella evenly.",
+      "Alternate them on a platter with basil leaves between.",
+      "Season with salt and pepper.",
+      "Drizzle with olive oil.",
+      "Finish with balsamic glaze and serve at room temperature."
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Mexican Fish Tacos",
+    "season": "Summer",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "mexican-fish-tacos.jpg",
+    "ingredients": [
+      "400 g white fish fillets",
+      "8 small corn tortillas",
+      "2 tsp chili powder",
+      "1 tsp cumin",
+      "2 limes",
+      "2 cups shredded cabbage",
+      "1 avocado, sliced",
+      "100 ml sour cream",
+      "Fresh cilantro",
+      "2 tbsp oil"
+    ],
+    "steps": [
+      "Season the fish with chili powder, cumin, salt, and lime juice.",
+      "Cook in oil for 3 minutes per side until flaky.",
+      "Mix the sour cream with lime juice for the sauce.",
+      "Warm the tortillas.",
+      "Fill with fish, cabbage, avocado, and sauce and top with cilantro."
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Thai Pad Thai",
+    "season": "Summer",
+    "cuisine": "Thai",
+    "country": "Thailand",
+    "image": "thai-pad-thai.jpg",
+    "ingredients": [
+      "200 g flat rice noodles",
+      "200 g shrimp or chicken",
+      "2 eggs",
+      "100 g bean sprouts",
+      "3 tbsp tamarind paste",
+      "2 tbsp fish sauce",
+      "2 tbsp palm sugar",
+      "3 scallions, sliced",
+      "50 g crushed peanuts",
+      "1 lime",
+      "3 tbsp oil"
+    ],
+    "steps": [
+      "Soak the noodles in warm water for 20 minutes and drain.",
+      "Stir-fry the shrimp in oil for 2 minutes and push aside.",
+      "Scramble the eggs, then add the noodles, tamarind, fish sauce, and sugar.",
+      "Toss for 3 minutes until the noodles are tender and coated.",
+      "Add the sprouts and scallions and serve with peanuts and lime."
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Spanish Gazpacho",
+    "season": "Summer",
+    "cuisine": "Spanish",
+    "country": "Spain",
+    "image": "spanish-gazpacho.jpg",
+    "ingredients": [
+      "1 kg ripe tomatoes",
+      "1 cucumber, peeled",
+      "1 green pepper",
+      "1 clove garlic",
+      "3 tbsp olive oil",
+      "2 tbsp sherry vinegar",
+      "1 slice stale bread, soaked",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Roughly chop the tomatoes, cucumber, and pepper.",
+      "Blend with the garlic and soaked bread until very smooth.",
+      "Add the oil and vinegar while blending.",
+      "Season with salt and strain if you prefer a finer texture.",
+      "Chill for 2 hours and serve cold."
+    ]
+  },
+  {
+    "id": 97,
+    "name": "American Classic Cheeseburger",
+    "season": "Summer",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "american-classic-cheeseburger.jpg",
+    "ingredients": [
+      "500 g ground beef (80/20)",
+      "4 burger buns",
+      "4 slices cheddar cheese",
+      "1 tomato, sliced",
+      "Lettuce leaves",
+      "1 onion, sliced",
+      "Pickles",
+      "Ketchup and mustard",
+      "1 tbsp butter",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Form the beef into 4 patties slightly larger than the buns and season both sides.",
+      "Cook in a hot skillet or grill for 3 minutes per side.",
+      "Add the cheese in the last minute and cover to melt.",
+      "Toast the buns in butter.",
+      "Assemble with the patty, lettuce, tomato, onion, pickles, and sauces."
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Japanese Chicken Yakitori",
+    "season": "Summer",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-chicken-yakitori.jpg",
+    "ingredients": [
+      "600 g chicken thighs, cut in cubes",
+      "4 scallions, cut in pieces",
+      "100 ml soy sauce",
+      "100 ml mirin",
+      "50 ml sake",
+      "2 tbsp sugar",
+      "Bamboo skewers, soaked"
+    ],
+    "steps": [
+      "Simmer the soy sauce, mirin, sake, and sugar for 10 minutes until slightly thick for the tare.",
+      "Thread the chicken and scallions alternately on skewers.",
+      "Grill over medium-high heat for 4 minutes per side.",
+      "Brush with tare and grill for 2 minutes per side, repeating until glazed.",
+      "Serve hot."
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Lebanese Chicken Shawarma",
+    "season": "Summer",
+    "cuisine": "Lebanese",
+    "country": "Lebanon",
+    "image": "lebanese-chicken-shawarma.jpg",
+    "ingredients": [
+      "700 g chicken thighs, boneless",
+      "3 tbsp yogurt",
+      "2 tbsp lemon juice",
+      "4 cloves garlic, minced",
+      "2 tsp shawarma spice mix",
+      "1 tsp paprika",
+      "3 tbsp olive oil",
+      "4 flatbreads",
+      "Garlic sauce, pickles, and tomatoes for serving"
+    ],
+    "steps": [
+      "Marinate the chicken in yogurt, lemon, garlic, spices, and oil for at least 3 hours.",
+      "Roast at 220°C (425°F) for 25 minutes or grill until charred.",
+      "Rest for 5 minutes and slice thinly.",
+      "Warm the flatbreads.",
+      "Fill with chicken, garlic sauce, pickles, and tomatoes and roll up."
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Italian Pesto Pasta",
+    "season": "Summer",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-pesto-pasta.jpg",
+    "ingredients": [
+      "300 g spaghetti or trofie",
+      "60 g fresh basil leaves",
+      "40 g pine nuts",
+      "40 g grated Parmesan",
+      "1 clove garlic",
+      "100 ml extra virgin olive oil",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Blend the basil, pine nuts, garlic, and Parmesan with the oil into a sauce.",
+      "Season with salt.",
+      "Cook the pasta in salted water until al dente and reserve a cup of the cooking water.",
+      "Toss the pasta with the pesto off the heat.",
+      "Loosen with pasta water as needed and serve."
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Brazilian Açaí Bowl",
+    "season": "Summer",
+    "cuisine": "Brazilian",
+    "country": "Brazil",
+    "image": "brazilian-acai-bowl.jpg",
+    "ingredients": [
+      "200 g frozen açaí puree",
+      "1 frozen banana",
+      "100 ml almond or regular milk",
+      "1 tbsp honey",
+      "40 g granola",
+      "1 banana, sliced",
+      "100 g strawberries, sliced",
+      "1 tbsp shredded coconut"
+    ],
+    "steps": [
+      "Blend the açaí, frozen banana, milk, and honey until thick and smooth.",
+      "Pour the mixture into a bowl.",
+      "Arrange the granola, sliced banana, and strawberries on top.",
+      "Sprinkle with coconut.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Greek Souvlaki",
+    "season": "Summer",
+    "cuisine": "Greek",
+    "country": "Greece",
+    "image": "greek-souvlaki.jpg",
+    "ingredients": [
+      "600 g pork or chicken, cubed",
+      "4 tbsp olive oil",
+      "Juice of 1 lemon",
+      "3 cloves garlic, minced",
+      "1 tbsp dried oregano",
+      "4 pitas",
+      "1 cup tzatziki",
+      "1 tomato, sliced",
+      "1 red onion, sliced",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Marinate the meat in oil, lemon, garlic, oregano, salt, and pepper for 2 hours.",
+      "Thread onto skewers.",
+      "Grill for 10 minutes, turning, until cooked and charred.",
+      "Warm the pitas.",
+      "Fill with meat, tzatziki, tomato, and onion."
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Vietnamese Bún Chả",
+    "season": "Summer",
+    "cuisine": "Vietnamese",
+    "country": "Vietnam",
+    "image": "vietnamese-bun-cha.jpg",
+    "ingredients": [
+      "400 g ground pork",
+      "200 g pork belly, sliced",
+      "3 tbsp fish sauce",
+      "2 tbsp sugar",
+      "3 cloves garlic, minced",
+      "200 g rice vermicelli, cooked",
+      "Fresh herbs and lettuce",
+      "1 carrot, thinly sliced",
+      "2 tbsp lime juice",
+      "100 ml water"
+    ],
+    "steps": [
+      "Mix the ground pork with 1 tbsp fish sauce, 1 tbsp sugar, and garlic, shape into patties, and marinate the pork belly the same way for 30 minutes.",
+      "Grill both until charred and cooked through.",
+      "Whisk the remaining fish sauce, sugar, lime juice, and water for the dipping broth and add the carrot.",
+      "Place the grilled pork in the broth.",
+      "Serve with noodles, herbs, and lettuce."
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Italian Panzanella Salad",
+    "season": "Summer",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "italian-panzanella-salad.jpg",
+    "ingredients": [
+      "300 g stale rustic bread, cubed",
+      "4 ripe tomatoes, chopped",
+      "1 cucumber, sliced",
+      "1 red onion, sliced thin",
+      "Fresh basil leaves",
+      "5 tbsp olive oil",
+      "2 tbsp red wine vinegar",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Toast the bread cubes with a little oil until crisp.",
+      "Toss the tomatoes with salt and let them release juices for 10 minutes.",
+      "Add the cucumber, onion, and basil.",
+      "Whisk the oil and vinegar and dress the salad.",
+      "Add the bread and rest for 15 minutes before serving."
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Brazilian Moqueca",
+    "season": "Summer",
+    "cuisine": "Brazilian",
+    "country": "Brazil",
+    "image": "brazilian-moqueca.jpg",
+    "ingredients": [
+      "600 g firm white fish fillets",
+      "2 tomatoes, sliced",
+      "1 onion, sliced",
+      "1 red bell pepper, sliced",
+      "3 cloves garlic, minced",
+      "400 ml coconut milk",
+      "2 tbsp dendê (palm) oil or olive oil",
+      "Juice of 1 lime",
+      "Fresh cilantro",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Marinate the fish in lime juice, garlic, and salt for 20 minutes.",
+      "Layer the onion, pepper, and tomatoes in a wide pot.",
+      "Add the fish on top and pour in the coconut milk and palm oil.",
+      "Cover and simmer for 15 minutes without stirring.",
+      "Sprinkle with cilantro and serve with rice."
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Turkish Çoban Salatası",
+    "season": "Summer",
+    "cuisine": "Turkish",
+    "country": "Turkey",
+    "image": "turkish-coban-salatasi.jpg",
+    "ingredients": [
+      "4 tomatoes, diced",
+      "3 cucumbers, diced",
+      "1 green pepper, diced",
+      "1 small red onion, diced",
+      "1 handful parsley, chopped",
+      "3 tbsp olive oil",
+      "2 tbsp lemon juice",
+      "1 tsp sumac",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Dice the tomatoes, cucumbers, pepper, and onion evenly.",
+      "Mix in the parsley.",
+      "Dress with olive oil and lemon juice.",
+      "Season with salt and sumac.",
+      "Toss and serve chilled."
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Japanese Cold Soba Noodles",
+    "season": "Summer",
+    "cuisine": "Japanese",
+    "country": "Japan",
+    "image": "japanese-cold-soba-noodles.jpg",
+    "ingredients": [
+      "200 g dried soba noodles",
+      "200 ml dashi",
+      "3 tbsp soy sauce",
+      "2 tbsp mirin",
+      "2 scallions, sliced",
+      "1 sheet nori, shredded",
+      "1 tsp wasabi",
+      "1 tbsp grated daikon"
+    ],
+    "steps": [
+      "Simmer the dashi, soy sauce, and mirin for 2 minutes and chill to make the dipping sauce.",
+      "Boil the soba for 4 to 5 minutes.",
+      "Drain and rinse under cold running water.",
+      "Place the noodles on a plate and top with nori.",
+      "Serve with the sauce, scallions, wasabi, and daikon."
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Moroccan Zaalouk",
+    "season": "Summer",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "moroccan-zaalouk.jpg",
+    "ingredients": [
+      "2 eggplants, peeled and cubed",
+      "4 tomatoes, grated",
+      "4 cloves garlic, minced",
+      "1 tsp paprika",
+      "1 tsp ground cumin",
+      "3 tbsp olive oil",
+      "Juice of 1/2 lemon",
+      "Fresh cilantro, chopped",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Steam or boil the eggplant for 15 minutes until soft and drain.",
+      "Cook the tomatoes with the garlic and spices in the oil for 10 minutes.",
+      "Add the eggplant and mash roughly.",
+      "Cook for 15 minutes until thick, stirring.",
+      "Finish with lemon and cilantro and serve warm or cold with bread."
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Spanish Pinchos Morunos",
+    "season": "Summer",
+    "cuisine": "Spanish",
+    "country": "Spain",
+    "image": "spanish-pinchos-morunos.jpg",
+    "ingredients": [
+      "600 g pork loin, cubed",
+      "3 tbsp olive oil",
+      "3 cloves garlic, minced",
+      "2 tsp smoked paprika",
+      "1 tsp ground cumin",
+      "1 tsp ground coriander",
+      "1 tsp dried oregano",
+      "1 tbsp lemon juice",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Mix the oil, garlic, spices, oregano, and lemon juice.",
+      "Marinate the pork for at least 4 hours.",
+      "Thread onto skewers.",
+      "Grill for 8 to 10 minutes, turning, until cooked through.",
+      "Serve hot with lemon and bread."
+    ]
+  },
+  {
+    "id": 110,
+    "name": "American Corn Chowder",
+    "season": "Summer",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "american-corn-chowder.jpg",
+    "ingredients": [
+      "4 ears fresh corn (or 500 g kernels)",
+      "100 g bacon, diced",
+      "1 onion, diced",
+      "2 potatoes, cubed",
+      "500 ml chicken stock",
+      "250 ml milk",
+      "100 ml cream",
+      "2 tbsp flour",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Cut the corn from the cobs.",
+      "Fry the bacon until crisp and remove, then cook the onion in the fat for 5 minutes.",
+      "Stir in the flour, then add the stock, potatoes, and corn and simmer 15 minutes.",
+      "Add the milk and cream and warm 5 minutes.",
+      "Blend a third of the soup for thickness, season, and top with bacon."
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Indonesian Nasi Goreng",
+    "season": "Summer",
+    "cuisine": "Indonesian",
+    "country": "Indonesia",
+    "image": "indonesian-nasi-goreng.jpg",
+    "ingredients": [
+      "300 g cooked cold rice",
+      "2 eggs",
+      "150 g chicken or shrimp, diced",
+      "3 shallots, sliced",
+      "3 cloves garlic, minced",
+      "2 tbsp kecap manis",
+      "1 tbsp soy sauce",
+      "1 tbsp chili paste (sambal)",
+      "2 tbsp oil",
+      "Cucumber and fried shallots for serving"
+    ],
+    "steps": [
+      "Fry the shallots and garlic in oil for 1 minute.",
+      "Add the chicken and cook for 4 minutes.",
+      "Push aside, scramble 1 egg, add the rice, and stir-fry on high heat.",
+      "Add the kecap manis, soy sauce, and sambal and toss for 3 minutes.",
+      "Top with a fried egg, cucumber, and fried shallots."
+    ]
+  },
+  {
+    "id": 112,
+    "name": "French Niçoise Salad",
+    "season": "Summer",
+    "cuisine": "French",
+    "country": "France",
+    "image": "french-nicoise-salad.jpg",
+    "ingredients": [
+      "200 g canned or seared tuna",
+      "300 g small potatoes, boiled",
+      "150 g green beans, blanched",
+      "4 tomatoes, quartered",
+      "3 eggs, hard-boiled",
+      "80 g Niçoise olives",
+      "6 anchovy fillets",
+      "4 tbsp olive oil",
+      "1 tbsp red wine vinegar",
+      "1 tsp Dijon mustard"
+    ],
+    "steps": [
+      "Whisk the oil, vinegar, and mustard for the dressing.",
+      "Boil the potatoes and blanch the green beans, then cool.",
+      "Arrange the lettuce, potatoes, beans, tomatoes, and halved eggs on a platter.",
+      "Top with tuna, olives, and anchovies.",
+      "Drizzle with the dressing."
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Peruvian Ceviche",
+    "season": "Summer",
+    "cuisine": "Peruvian",
+    "country": "Peru",
+    "image": "peruvian-ceviche.jpg",
+    "ingredients": [
+      "500 g very fresh white fish, cubed",
+      "Juice of 8 limes",
+      "1 red onion, thinly sliced",
+      "1 aji amarillo or chili, minced",
+      "3 tbsp chopped cilantro",
+      "1 sweet potato, boiled and sliced",
+      "1 corn on the cob, cooked and sliced",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Salt the fish and toss with the chili.",
+      "Pour over the lime juice and let it cure for 5 to 10 minutes.",
+      "Add the onion and cilantro.",
+      "Taste and adjust the seasoning.",
+      "Serve immediately with the sweet potato and corn."
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Lebanese Fattoush",
+    "season": "Summer",
+    "cuisine": "Lebanese",
+    "country": "Lebanon",
+    "image": "lebanese-fattoush.jpg",
+    "ingredients": [
+      "2 pitas, toasted and broken",
+      "1 head romaine lettuce, chopped",
+      "3 tomatoes, diced",
+      "2 cucumbers, diced",
+      "5 radishes, sliced",
+      "4 scallions, sliced",
+      "1 tbsp dried mint",
+      "2 tbsp sumac",
+      "4 tbsp olive oil",
+      "3 tbsp lemon juice",
+      "1 tbsp pomegranate molasses"
+    ],
+    "steps": [
+      "Whisk the olive oil, lemon juice, pomegranate molasses, sumac, and salt for the dressing.",
+      "Combine the lettuce, tomatoes, cucumbers, radishes, and scallions.",
+      "Add the dried mint.",
+      "Toss with the dressing.",
+      "Add the toasted pita just before serving to keep it crisp."
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Australian Pavlova",
+    "season": "Summer",
+    "cuisine": "Australian",
+    "country": "Australia",
+    "image": "australian-pavlova.jpg",
+    "ingredients": [
+      "4 egg whites",
+      "230 g caster sugar",
+      "1 tsp white vinegar",
+      "2 tsp cornstarch",
+      "1 tsp vanilla extract",
+      "300 ml whipped cream",
+      "Passion fruit and strawberries for topping"
+    ],
+    "steps": [
+      "Preheat the oven to 120°C (250°F) and line a tray.",
+      "Beat the egg whites to soft peaks, adding the sugar gradually until stiff and glossy.",
+      "Fold in the vinegar, cornstarch, and vanilla.",
+      "Shape into a round and bake for 1 hour 15 minutes, then cool in the turned-off oven.",
+      "Top with cream and fruit."
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Filipino Halo-Halo",
+    "season": "Summer",
+    "cuisine": "Filipino",
+    "country": "Philippines",
+    "image": "filipino-halo-halo.jpg",
+    "ingredients": [
+      "500 g shaved ice",
+      "200 ml evaporated milk",
+      "4 tbsp sweetened red beans",
+      "4 tbsp sweetened banana, sliced",
+      "4 tbsp nata de coco",
+      "4 tbsp jackfruit strips",
+      "2 scoops ube ice cream",
+      "4 slices leche flan",
+      "2 tbsp pinipig (toasted rice)"
+    ],
+    "steps": [
+      "Divide the beans, banana, nata de coco, and jackfruit among two tall glasses.",
+      "Fill with shaved ice.",
+      "Pour the evaporated milk over the ice.",
+      "Top with ube ice cream and leche flan.",
+      "Sprinkle with pinipig and mix before eating."
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Egyptian Ful Medames",
+    "season": "Summer",
+    "cuisine": "Egyptian",
+    "country": "Egypt",
+    "image": "egyptian-ful-medames.jpg",
+    "ingredients": [
+      "400 g canned fava beans",
+      "2 cloves garlic, minced",
+      "Juice of 1 lemon",
+      "3 tbsp olive oil",
+      "1 tsp ground cumin",
+      "1 tomato, diced",
+      "2 tbsp chopped parsley",
+      "2 hard-boiled eggs",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Warm the beans with a little of their liquid for 8 minutes.",
+      "Lightly mash some beans for thickness.",
+      "Stir in the garlic, cumin, and lemon juice.",
+      "Season with salt and pepper.",
+      "Top with olive oil, tomato, parsley, and eggs and serve with bread."
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Egyptian Hawawshi",
+    "season": "Summer",
+    "cuisine": "Egyptian",
+    "country": "Egypt",
+    "image": "egyptian-hawawshi.jpg",
+    "ingredients": [
+      "500 g ground beef",
+      "1 onion, grated",
+      "1 green pepper, minced",
+      "2 tomatoes, minced",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "1/2 tsp allspice",
+      "4 pita breads",
+      "2 tbsp parsley, chopped",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Mix the beef with the onion, pepper, tomatoes, parsley, and spices.",
+      "Open the pitas and stuff with the mixture, spreading evenly.",
+      "Brush the outside with oil.",
+      "Bake at 200°C (400°F) for 20 minutes until the meat is cooked.",
+      "Slice and serve hot."
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Tunisian Ojja",
+    "season": "Summer",
+    "cuisine": "Tunisian",
+    "country": "Tunisia",
+    "image": "tunisian-ojja.jpg",
+    "ingredients": [
+      "4 eggs",
+      "4 merguez sausages, sliced",
+      "3 tomatoes, chopped",
+      "2 red peppers, sliced",
+      "3 cloves garlic, minced",
+      "2 tbsp harissa",
+      "1 tsp caraway",
+      "3 tbsp olive oil",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Fry the sausages in oil for 5 minutes.",
+      "Add the peppers and garlic and cook 5 minutes.",
+      "Stir in the tomatoes, harissa, and caraway and simmer 15 minutes.",
+      "Make wells and crack in the eggs.",
+      "Cover and cook for 5 minutes until the eggs set."
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Palestinian Knafeh Nabulsiyeh",
+    "season": "Summer",
+    "cuisine": "Palestinian",
+    "country": "Palestine",
+    "image": "palestinian-knafeh-nabulsiyeh.jpg",
+    "ingredients": [
+      "300 g kataifi shredded pastry",
+      "150 g melted butter",
+      "400 g Nabulsi or mozzarella cheese, soaked and shredded",
+      "250 g sugar",
+      "250 ml water",
+      "1 tsp lemon juice",
+      "1 tbsp orange blossom water",
+      "Crushed pistachios"
+    ],
+    "steps": [
+      "Simmer the sugar, water, and lemon juice for 10 minutes and add the orange blossom water for the syrup.",
+      "Toss the kataifi with the melted butter.",
+      "Press half in a pan, cover with the cheese, and top with the rest.",
+      "Bake at 190°C (375°F) for 30 minutes until golden.",
+      "Pour the syrup over and sprinkle with pistachios."
+    ]
+  }
+]
