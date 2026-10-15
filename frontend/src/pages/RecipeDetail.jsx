@@ -9,6 +9,8 @@ import RatingForm from '../components/RatingForm';
 import RatingList from '../components/RatingList';
 import RatingStars from '../components/RatingStars';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
+
 function RecipeDetail() {
   const { t } = useTranslation();
   const { id } = useParams();
@@ -29,14 +31,14 @@ function RecipeDetail() {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://127.0.0.1:8000/api/ratings/${id}`)
+      axios.get(`${API_URL}/ratings/${id}`)
         .then(res => setRatings(res.data))
         .catch(err => console.error(err));
     }
   }, [id]);
 
   const refreshRatings = () => {
-    axios.get(`http://127.0.0.1:8000/api/ratings/${id}`)
+    axios.get(`${API_URL}/ratings/${id}`)
       .then(res => setRatings(res.data))
       .catch(err => console.error(err));
   };

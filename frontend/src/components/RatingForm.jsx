@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
 import RatingStars from './RatingStars';
 
-const API_URL = 'http://127.0.0.1:8000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 function RatingForm({ recipeId, onRatingChange }) {
   const { user } = useAuth();
@@ -13,7 +13,6 @@ function RatingForm({ recipeId, onRatingChange }) {
   const [existingRating, setExistingRating] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // Check if user already rated
   useEffect(() => {
     if (user) {
       axios.get(`${API_URL}/ratings/check/${recipeId}`)
