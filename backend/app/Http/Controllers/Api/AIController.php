@@ -34,7 +34,7 @@ class AIController extends Controller
         try {
             $response = Http::withHeaders([
                 'Content-Type' => 'application/json',
-            ])->post("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={$apiKey}", [
+            ])->post("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={$apiKey}", [
                 'contents' => [
                     [
                         'parts' => [
@@ -45,7 +45,12 @@ class AIController extends Controller
             ]);
 
             if (!$response->successful()) {
-                return response()->json(['message' => 'AI request failed'], 500);
+                $errorBody = $response->body();
+                return response()->json([
+                    'message' => 'AI request failed',
+                    'status' => $response->status(),
+                    'error' => $errorBody,
+                ], 500);
             }
 
             $data = $response->json();
