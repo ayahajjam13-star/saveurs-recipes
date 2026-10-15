@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
@@ -12,6 +12,11 @@ function Login() {
   
   const { login } = useAuth();
   const navigate = useNavigate();
+
+  // ✅ هادي: Scroll للأعلى ملي كتفتح الصفحة
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
