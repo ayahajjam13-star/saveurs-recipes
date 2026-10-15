@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { searchRecipes, getRecipes } from '../services/api';
 import RecipeCard from '../components/RecipeCard';
+import SkeletonCard from '../components/SkeletonCard';
+import EmptyState from '../components/EmptyState';
 
 function Search() {
   const { t } = useTranslation();
@@ -183,21 +185,21 @@ function Search() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         {loading && (
-          <div className="text-center py-20">
-            <div className="inline-block w-12 h-12 border-4 border-orange-accent/30 border-t-orange-accent rounded-full animate-spin"></div>
-            <p className="mt-4 text-warm-brown/60 dark:text-dark-text/60">{t('common.loading')}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[...Array(8)].map((_, i) => (
+              <SkeletonCard key={i} />
+            ))}
           </div>
         )}
 
         {!loading && results.length === 0 && (
-          <div className="text-center py-20">
-            <p className="text-7xl mb-6">🔍</p>
-            <h3 className="font-serif text-3xl text-warm-brown dark:text-dark-text mb-3">{t('search.noResults')}</h3>
-            <p className="text-warm-brown/60 dark:text-dark-text/60 mb-8 text-lg">{t('search.noResultsText')}</p>
-            <button onClick={clearAllFilters} className="px-6 py-3 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors">
-              {t('search.clearFilters')}
-            </button>
-          </div>
+          <EmptyState
+            icon="🔍"
+            title={t('search.noResults')}
+            description={t('search.noResultsText')}
+            actionLabel={t('search.clearFilters')}
+            onAction={clearAllFilters}
+          />
         )}
 
         {!loading && results.length > 0 && (

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getBySeason } from '../services/api';
 import RecipeCard from '../components/RecipeCard';
+import SkeletonCard from '../components/SkeletonCard';
 
 function Home() {
   const { t } = useTranslation();
@@ -110,14 +111,7 @@ function Home() {
         {loading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[...Array(8)].map((_, i) => (
-              <div key={i} className="bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm border border-warm-brown/5 dark:border-dark-text/5 animate-pulse">
-                <div className="aspect-[4/3] bg-cream dark:bg-dark-bg"></div>
-                <div className="p-5 space-y-3">
-                  <div className="h-3 bg-cream dark:bg-dark-bg rounded w-2/3"></div>
-                  <div className="h-5 bg-cream dark:bg-dark-bg rounded w-full"></div>
-                  <div className="h-3 bg-cream dark:bg-dark-bg rounded w-1/2"></div>
-                </div>
-              </div>
+              <SkeletonCard key={i} />
             ))}
           </div>
         ) : (

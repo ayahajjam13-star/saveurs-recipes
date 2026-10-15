@@ -5,6 +5,7 @@ use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\FavoriteController;
 use App\Http\Controllers\Api\RatingController;
+use App\Http\Controllers\Api\ProfileController;
 
 // Auth Routes
 Route::post('/register', [AuthController::class, 'register']);
@@ -18,6 +19,8 @@ Route::middleware('auth:sanctum')->group(function () {
     // Auth
     Route::get('/me', [AuthController::class, 'me']);
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::put('/profile', [ProfileController::class, 'update']);
+    Route::put('/profile/password', [ProfileController::class, 'updatePassword']);
     
     // Favorites
     Route::get('/favorites', [FavoriteController::class, 'index']);

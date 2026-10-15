@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import RecipeCard from '../components/RecipeCard';
+import EmptyState from '../components/EmptyState';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
@@ -26,18 +27,13 @@ function Favorites() {
   if (!user) {
     return (
       <div className="min-h-[70vh] flex items-center justify-center px-4 bg-cream dark:bg-dark-bg transition-colors">
-        <div className="text-center">
-          <p className="text-6xl mb-4">🔒</p>
-          <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text mb-4">
-            {t('favorites.signIn')}
-          </h2>
-          <p className="text-warm-brown/60 dark:text-dark-text/60 mb-8">
-            {t('favorites.signInText')}
-          </p>
-          <Link to="/login" className="inline-block px-6 py-3 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors">
-            {t('nav.signIn')}
-          </Link>
-        </div>
+        <EmptyState
+          icon="🔒"
+          title={t('favorites.signIn')}
+          description={t('favorites.signInText')}
+          actionLabel={t('nav.signIn')}
+          actionLink="/login"
+        />
       </div>
     );
   }
@@ -63,18 +59,13 @@ function Favorites() {
           <p className="mt-4 text-warm-brown/60 dark:text-dark-text/60">{t('favorites.loading')}</p>
         </div>
       ) : favorites.length === 0 ? (
-        <div className="text-center py-20">
-          <p className="text-6xl mb-4">🤍</p>
-          <h3 className="font-serif text-2xl text-warm-brown dark:text-dark-text mb-4">
-            {t('favorites.noFavorites')}
-          </h3>
-          <p className="text-warm-brown/60 dark:text-dark-text/60 mb-8">
-            {t('favorites.noFavoritesText')}
-          </p>
-          <Link to="/" className="inline-block px-6 py-3 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors">
-            {t('favorites.browseRecipes')}
-          </Link>
-        </div>
+        <EmptyState
+          icon="🤍"
+          title={t('favorites.noFavorites')}
+          description={t('favorites.noFavoritesText')}
+          actionLabel={t('favorites.browseRecipes')}
+          actionLink="/"
+        />
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {favorites.map(recipe => (

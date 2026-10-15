@@ -2,16 +2,18 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { useFavorites } from '../hooks/useFavorites';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 function RecipeCard({ recipe }) {
   const { user } = useAuth();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { ref, isVisible } = useScrollReveal();
 
   const favorite = isFavorite(recipe.id);
 
-  const handleFavoriteClick = (e) => {
+  const handleFavoriteClick = async (e) => {
     e.preventDefault();
     e.stopPropagation();
     
@@ -20,11 +22,16 @@ function RecipeCard({ recipe }) {
       return;
     }
     
-    toggleFavorite(recipe.id);
+    await toggleFavorite(recipe.id);
   };
 
   return (
-    <div className="group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-warm-brown/5 dark:border-dark-text/5 flex flex-col h-full animate-fade-in">
+    <div
+      ref={ref}
+      className={`group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-warm-brown/5 dark:border-dark-text/5 flex flex-col h-full ${
+        isVisible ? 'reveal-visible' : 'reveal-hidden'
+      }`}
+    >
       
       {/* Image Section */}
       <div className="relative aspect-[4/3] overflow-hidden bg-cream dark:bg-dark-bg">
@@ -50,13 +57,22 @@ function RecipeCard({ recipe }) {
         </div>
 
         {/* Favorite Button */}
-        <button
-          onClick={handleFavoriteClick}
-          className="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/95 dark:bg-dark-card/95 backdrop-blur-sm shadow-sm hover:scale-110 transition-transform flex items-center justify-center text-lg z-20 cursor-pointer"
-          type="button"
-        >
-          {favorite ? '❤️' : '🤍'}
-        </button>
+        {user ? (
+          <button
+            onClick={handleFavoriteClick}
+            className="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/95 dark:bg-dark-card/95 backdrop-blur-sm shadow-sm hover:scale-110 transition-transform flex items-center justify-center text-lg z-20 cursor-pointer"
+            type="button"
+          >
+            {favorite ? '❤️' : '🤍'}
+          </button>
+        ) : (
+          <Link
+            to="/login"
+            className="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/95 dark:bg-dark-card/95 backdrop-blur-sm shadow-sm hover:scale-110 transition-transform flex items-center justify-center text-lg z-20"
+          >
+            🤍
+          </Link>
+        )}
       </div>
 
       {/* Content Section */}
