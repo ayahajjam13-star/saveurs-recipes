@@ -12,6 +12,7 @@ import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
+import AIChatbot from './components/AIChatbot';
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
         </AnimatePresence>
       </main>
       <Footer />
+      <AIChatbot />
     </div>
   );
 }
