@@ -11,7 +11,7 @@ use App\Http\Controllers\Api\ProfileController;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
-// Public Rating (Read)
+// Public Rating
 Route::get('/ratings/{recipeId}', [RatingController::class, 'index']);
 
 // Protected Routes
@@ -19,8 +19,12 @@ Route::middleware('auth:sanctum')->group(function () {
     // Auth
     Route::get('/me', [AuthController::class, 'me']);
     Route::post('/logout', [AuthController::class, 'logout']);
+    
+    // Profile
     Route::put('/profile', [ProfileController::class, 'update']);
     Route::put('/profile/password', [ProfileController::class, 'updatePassword']);
+    Route::post('/profile/avatar', [ProfileController::class, 'updateAvatar']);
+    Route::delete('/profile/avatar', [ProfileController::class, 'removeAvatar']);
     
     // Favorites
     Route::get('/favorites', [FavoriteController::class, 'index']);

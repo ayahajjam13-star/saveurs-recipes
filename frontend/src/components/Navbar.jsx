@@ -67,9 +67,17 @@ function Navbar() {
             
             {user ? (
               <div className="flex items-center gap-3">
-                <span className="text-sm text-warm-brown/60 dark:text-dark-text/60">
-                  {t('nav.hi')}, {user.name}
-                </span>
+                <Link 
+                  to="/profile" 
+                  className="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-cream dark:hover:bg-dark-bg transition-colors"
+                >
+                  <div className="w-8 h-8 bg-orange-accent rounded-full flex items-center justify-center text-white text-xs font-bold">
+                    {user.name?.charAt(0).toUpperCase()}
+                  </div>
+                  <span className="text-sm text-warm-brown dark:text-dark-text">
+                    {user.name}
+                  </span>
+                </Link>
                 <button
                   onClick={handleLogout}
                   className="px-4 py-2 text-sm bg-warm-brown dark:bg-dark-bg text-cream rounded-xl hover:bg-warm-brown/90 transition-colors"
@@ -129,9 +137,21 @@ function Navbar() {
             </button>
             
             {user ? (
-              <button onClick={handleLogout} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
-                {t('nav.logout')} ({user.name})
-              </button>
+              <>
+                <Link 
+                  to="/profile" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-3 py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent"
+                >
+                  <div className="w-8 h-8 bg-orange-accent rounded-full flex items-center justify-center text-white text-xs font-bold">
+                    {user.name?.charAt(0).toUpperCase()}
+                  </div>
+                  <span>My Profile</span>
+                </Link>
+                <button onClick={handleLogout} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
+                  {t('nav.logout')}
+                </button>
+              </>
             ) : (
               <>
                 <Link to="/login" onClick={() => setMobileMenuOpen(false)} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">

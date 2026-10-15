@@ -9,6 +9,7 @@ import About from './pages/About';
 import Favorites from './pages/Favorites';        // ← زيدي هاد السطر
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/favorites" element={<Favorites />} />    {/* ← زيدي هاد السطر */}
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
       <Footer />
