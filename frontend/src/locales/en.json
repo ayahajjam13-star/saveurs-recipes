@@ -41,7 +41,8 @@
     "noRatings": "No ratings yet. Be the first!",
     "basedOn": "Based on",
     "reviewsCount": "reviews",
-    "reviewCount": "review"
+    "reviewCount": "review",
+    "print": "Print"
   },
   "rating": {
     "updateRating": "Update your rating",
@@ -107,6 +108,39 @@
     "creating": "Creating account...",
     "haveAccount": "Already have an account?",
     "signInLink": "Sign in"
+  },
+  "about": {
+    "hero": "Our Story",
+    "title1": "Cooking with",
+    "title2": "passion",
+    "subtitle": "Saveurs was born from a simple idea: good food should follow the seasons, and great recipes should be shared with the world.",
+    "why": "Why Saveurs?",
+    "whyText": "We believe that cooking is more than just following instructions — it's about connecting with the seasons, exploring cultures, and creating memories around the table.",
+    "stats": {
+      "recipes": "Recipes",
+      "countries": "Countries",
+      "seasons": "Seasons",
+      "free": "Free"
+    },
+    "features": {
+      "global": { "title": "Global Cuisine", "desc": "Recipes from Italy, Japan, Morocco, Mexico, Thailand, and many more countries." },
+      "seasonal": { "title": "Seasonal Selection", "desc": "Discover recipes perfectly suited for each season. Cook with what's fresh." },
+      "favorites": { "title": "Save Favorites", "desc": "Create your personal collection of favorite recipes with a simple click." },
+      "search": { "title": "Easy Search", "desc": "Find any recipe by name or explore by country and cuisine type." }
+    },
+    "cta": {
+      "title": "Ready to start cooking?",
+      "subtitle": "Explore 120 recipes from around the world, organized by season.",
+      "button": "Browse Recipes"
+    }
+  },
+  "share": {
+    "label": "Share:",
+    "twitter": "Share on Twitter",
+    "facebook": "Share on Facebook",
+    "whatsapp": "Share on WhatsApp",
+    "copy": "Copy link",
+    "copied": "Link copied!"
   },
   "footer": {
     "newsletter": "Get weekly recipes",

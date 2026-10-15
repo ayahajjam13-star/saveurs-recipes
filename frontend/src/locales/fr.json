@@ -10,16 +10,16 @@
     "hi": "Salut"
   },
   "home": {
-  "badge": "120 Recettes · 4 Saisons · 20+ Pays",
-  "title1": "Cuisinez avec",
-  "title2": "les saisons",
-  "subtitle": "Découvrez de délicieuses recettes du monde entier, soigneusement sélectionnées pour chaque saison.",
-  "browseRecipes": "Voir les Recettes",
-  "searchRecipes": "Rechercher",
-  "featured": "Collection Vedette",
-  "seasonRecipes": "Recettes {{season}}",
-  "deliciousRecipes": "recettes délicieuses"
-},
+    "badge": "120 Recettes · 4 Saisons · 20+ Pays",
+    "title1": "Cuisinez avec",
+    "title2": "les saisons",
+    "subtitle": "Découvrez de délicieuses recettes du monde entier, soigneusement sélectionnées pour chaque saison.",
+    "browseRecipes": "Voir les Recettes",
+    "searchRecipes": "Rechercher",
+    "featured": "Collection Vedette",
+    "seasonRecipes": "Recettes {{season}}",
+    "deliciousRecipes": "recettes délicieuses"
+  },
   "seasons": {
     "Autumn": "Automne",
     "Winter": "Hiver",
@@ -41,7 +41,8 @@
     "noRatings": "Aucun avis. Soyez le premier !",
     "basedOn": "Basé sur",
     "reviewsCount": "avis",
-    "reviewCount": "avis"
+    "reviewCount": "avis",
+    "print": "Imprimer"
   },
   "rating": {
     "updateRating": "Modifier votre note",
@@ -107,6 +108,39 @@
     "creating": "Création du compte...",
     "haveAccount": "Déjà un compte ?",
     "signInLink": "Se connecter"
+  },
+  "about": {
+    "hero": "Notre Histoire",
+    "title1": "Cuisiner avec",
+    "title2": "passion",
+    "subtitle": "Saveurs est né d'une idée simple : la bonne cuisine doit suivre les saisons, et les bonnes recettes doivent être partagées avec le monde.",
+    "why": "Pourquoi Saveurs ?",
+    "whyText": "Nous croyons que cuisiner est plus que suivre des instructions — c'est se connecter aux saisons, explorer les cultures et créer des souvenirs autour de la table.",
+    "stats": {
+      "recipes": "Recettes",
+      "countries": "Pays",
+      "seasons": "Saisons",
+      "free": "Gratuit"
+    },
+    "features": {
+      "global": { "title": "Cuisine Mondiale", "desc": "Recettes d'Italie, du Japon, du Maroc, du Mexique, de Thaïlande et bien plus." },
+      "seasonal": { "title": "Sélection Saisonnière", "desc": "Découvrez des recettes parfaitement adaptées à chaque saison." },
+      "favorites": { "title": "Favoris", "desc": "Créez votre collection personnelle de recettes préférées d'un simple clic." },
+      "search": { "title": "Recherche Facile", "desc": "Trouvez n'importe quelle recette par nom ou explorez par pays." }
+    },
+    "cta": {
+      "title": "Prêt à cuisiner ?",
+      "subtitle": "Explorez 120 recettes du monde entier, organisées par saison.",
+      "button": "Voir les Recettes"
+    }
+  },
+  "share": {
+    "label": "Partager :",
+    "twitter": "Partager sur Twitter",
+    "facebook": "Partager sur Facebook",
+    "whatsapp": "Partager sur WhatsApp",
+    "copy": "Copier le lien",
+    "copied": "Lien copié !"
   },
   "footer": {
     "newsletter": "Recevez des recettes hebdomadaires",

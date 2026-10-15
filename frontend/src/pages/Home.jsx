@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getBySeason } from '../services/api';
+import { getBySeason, getRecipes } from '../services/api';
 import RecipeCard from '../components/RecipeCard';
 import SkeletonCard from '../components/SkeletonCard';
+import SEO from '../components/SEO';
 
 function Home() {
   const { t } = useTranslation();
   const [recipes, setRecipes] = useState([]);
   const [season, setSeason] = useState('Autumn');
   const [loading, setLoading] = useState(true);
+  const [recipeOfDay, setRecipeOfDay] = useState(null);
 
   const seasons = [
     { name: 'Autumn', emoji: '🍂', color: 'from-orange-400' },
@@ -31,9 +33,25 @@ function Home() {
       });
   }, [season]);
 
+  useEffect(() => {
+    getRecipes().then(res => {
+      const day = new Date().getDate();
+      const allRecipes = res.data;
+      if (allRecipes.length > 0) {
+        setRecipeOfDay(allRecipes[day % allRecipes.length]);
+      }
+    }).catch(err => console.error(err));
+  }, []);
+
   return (
     <div className="bg-cream dark:bg-dark-bg transition-colors">
       
+      <SEO 
+        title="Home"
+        description="Discover 120 delicious recipes from around the world, organized by season."
+        url="/"
+      />
+
       {/* Hero */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -91,6 +109,52 @@ function Home() {
           ))}
         </div>
       </section>
+
+      {/* Recipe of the Day */}
+      {recipeOfDay && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="bg-gradient-to-r from-orange-accent/10 to-transparent dark:from-orange-accent/5 rounded-3xl p-6 md:p-8 border border-orange-accent/20 transition-colors">
+            <p className="text-orange-accent font-medium tracking-widest uppercase text-sm mb-6">
+              ⭐ Recipe of the Day
+            </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <Link to={`/recipe/${recipeOfDay.id}`} className="block overflow-hidden rounded-2xl">
+                <img
+                  src={`/images/${recipeOfDay.image}`}
+                  alt={recipeOfDay.name}
+                  className="w-full h-64 md:h-80 object-cover hover:scale-110 transition-transform duration-500"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+              </Link>
+              <div>
+                <div className="flex flex-wrap items-center gap-3 mb-4 text-sm">
+                  <span className="bg-orange-accent/10 text-orange-accent px-3 py-1 rounded-full font-medium">
+                    {recipeOfDay.season === 'Autumn' && '🍂 '}
+                    {recipeOfDay.season === 'Winter' && '❄️ '}
+                    {recipeOfDay.season === 'Spring' && '🌸 '}
+                    {recipeOfDay.season === 'Summer' && '☀️ '}
+                    {t(`seasons.${recipeOfDay.season}`)}
+                  </span>
+                  <span className="text-warm-brown/60 dark:text-dark-text/60">🌍 {recipeOfDay.country}</span>
+                  <span className="text-warm-brown/60 dark:text-dark-text/60">🍴 {recipeOfDay.cuisine}</span>
+                </div>
+                <h3 className="font-serif text-3xl md:text-4xl font-bold text-warm-brown dark:text-dark-text mb-4">
+                  {recipeOfDay.name}
+                </h3>
+                <p className="text-warm-brown/70 dark:text-dark-text/70 mb-6">
+                  {recipeOfDay.ingredients.length} ingredients · {recipeOfDay.steps.length} steps
+                </p>
+                <Link
+                  to={`/recipe/${recipeOfDay.id}`}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors"
+                >
+                  View Recipe →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Recipes Grid */}
       <section id="recipes" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

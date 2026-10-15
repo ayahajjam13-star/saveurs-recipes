@@ -8,6 +8,8 @@ import { useFavorites } from '../hooks/useFavorites';
 import RatingForm from '../components/RatingForm';
 import RatingList from '../components/RatingList';
 import RatingStars from '../components/RatingStars';
+import ShareButtons from '../components/ShareButtons';
+import SEO from '../components/SEO';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
@@ -72,6 +74,14 @@ function RecipeDetail() {
   return (
     <div className="animate-fade-in bg-cream dark:bg-dark-bg min-h-screen transition-colors">
       
+      <SEO 
+        title={recipe.name}
+        description={`${recipe.cuisine} recipe from ${recipe.country}. ${recipe.ingredients.length} ingredients, ${recipe.steps.length} steps.`}
+        image={recipe.image ? `https://saveurs-recipes.vercel.app/images/${recipe.image}` : null}
+        url={`/recipe/${recipe.id}`}
+        type="article"
+      />
+      
       {/* Hero */}
       <div className="relative h-[60vh] min-h-[450px] overflow-hidden bg-warm-brown dark:bg-dark-bg">
         <img
@@ -83,7 +93,7 @@ function RecipeDetail() {
         <div className="absolute inset-0 bg-gradient-to-t from-warm-brown via-warm-brown/50 to-transparent dark:from-dark-bg dark:via-dark-bg/70 dark:to-transparent"></div>
         
         <div className="absolute bottom-0 left-0 right-0 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-          <Link to="/" className="inline-flex items-center gap-2 text-cream/80 hover:text-cream mb-6 transition-colors bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+          <Link to="/" className="inline-flex items-center gap-2 text-cream/80 hover:text-cream mb-6 transition-colors bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full no-print">
             ← {t('recipe.backToRecipes')}
           </Link>
           
@@ -112,7 +122,7 @@ function RecipeDetail() {
             </div>
           )}
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 items-center no-print">
             <button
               onClick={handleFavoriteClick}
               className={`px-6 py-3 rounded-2xl font-medium transition-all flex items-center gap-2 ${
@@ -123,12 +133,21 @@ function RecipeDetail() {
             >
               {favorite ? `❤️ ${t('recipe.saved')}` : `🤍 ${t('recipe.save')}`}
             </button>
+            
+            <button
+              onClick={() => window.print()}
+              className="px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/30 text-cream rounded-2xl font-medium hover:bg-white/20 transition-all flex items-center gap-2"
+            >
+              🖨️ {t('recipe.print')}
+            </button>
+            
+            <ShareButtons recipe={recipe} />
           </div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div id="recipe-content" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 -mt-24 relative z-10">
           <div className="bg-white dark:bg-dark-card rounded-2xl p-5 shadow-lg border border-warm-brown/5 dark:border-dark-text/5 text-center transition-colors">
@@ -195,8 +214,7 @@ function RecipeDetail() {
               ))}
             </div>
 
-            {/* Ratings */}
-            <div className="mt-16 pt-16 border-t border-warm-brown/10 dark:border-dark-text/10">
+            <div className="mt-16 pt-16 border-t border-warm-brown/10 dark:border-dark-text/10 no-print">
               <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text mb-8">
                 ⭐ {t('recipe.reviews')}
               </h2>
@@ -234,7 +252,7 @@ function RecipeDetail() {
               <RatingList ratings={ratings.ratings} />
             </div>
 
-            <div className="mt-16 pt-8 border-t border-warm-brown/10 dark:border-dark-text/10">
+            <div className="mt-16 pt-8 border-t border-warm-brown/10 dark:border-dark-text/10 no-print">
               <Link to="/" className="inline-flex items-center gap-2 text-orange-accent font-medium hover:gap-3 transition-all">
                 ← {t('recipe.exploreMore')}
               </Link>

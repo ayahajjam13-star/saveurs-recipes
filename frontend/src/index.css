@@ -100,3 +100,17 @@ html.dark ::-webkit-scrollbar-track {
 .reveal-visible {
   animation: revealUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+@media print {
+  nav, footer, .no-print, button { 
+    display: none !important; 
+  }
+  body { 
+    background: white !important; 
+    color: black !important;
+  }
+  #recipe-content { 
+    padding: 20px !important; 
+    max-width: 100% !important;
+  }
+}

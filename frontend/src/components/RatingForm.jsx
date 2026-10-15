@@ -47,7 +47,10 @@ function RatingForm({ recipeId, onRatingChange }) {
         score,
         comment,
       });
-      toast.success(existingRating ? 'Rating updated!' : 'Thanks for your rating!');
+      toast.success(existingRating ? 'Rating updated!' : 'Thanks for your rating! ⭐', {
+        icon: '🎉',
+        duration: 3000,
+      });
       if (onRatingChange) onRatingChange();
     } catch (err) {
       console.error(err);
