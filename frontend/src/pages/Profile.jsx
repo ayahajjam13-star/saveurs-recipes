@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
@@ -11,13 +11,15 @@ function Profile() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { user, token, logout } = useAuth();
+  const fileInputRef = useRef(null);
   
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
+  const [avatarUrl, setAvatarUrl] = useState('');
   const [stats, setStats] = useState({ favorites: 0, ratings: 0 });
   const [loading, setLoading] = useState(false);
+  const [avatarLoading, setAvatarLoading] = useState(false);
   
-  // Password
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -31,14 +33,58 @@ function Profile() {
     }
     setName(user.name || '');
     setBio(user.bio || '');
+    setAvatarUrl(user.avatar_url || '');
 
-    // Fetch stats
     if (token) {
       axios.get(`${API_URL}/favorites`)
         .then(res => setStats(prev => ({ ...prev, favorites: res.data.length })))
         .catch(err => console.error(err));
     }
   }, [user, token, navigate]);
+
+  const handleAvatarUpload = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (file.size > 2 * 1024 * 1024) {
+      toast.error('Image must be less than 2MB');
+      return;
+    }
+
+    setAvatarLoading(true);
+    const formData = new FormData();
+    formData.append('avatar', file);
+
+    try {
+      const res = await axios.post(`${API_URL}/profile/avatar`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' },
+      });
+      setAvatarUrl(res.data.avatar_url);
+      toast.success('Avatar updated!');
+    } catch (err) {
+      console.error(err);
+      toast.error(err.response?.data?.message || 'Failed to upload avatar');
+    } finally {
+      setAvatarLoading(false);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
+    }
+  };
+
+  const handleRemoveAvatar = async () => {
+    setAvatarLoading(true);
+    try {
+      await axios.delete(`${API_URL}/profile/avatar`);
+      setAvatarUrl('');
+      toast.success('Avatar removed');
+    } catch (err) {
+      console.error(err);
+      toast.error('Failed to remove avatar');
+    } finally {
+      setAvatarLoading(false);
+    }
+  };
 
   const handleUpdateProfile = async (e) => {
     e.preventDefault();
@@ -89,9 +135,57 @@ function Profile() {
       {/* Header */}
       <section className="bg-gradient-to-br from-warm-brown via-warm-brown to-orange-accent/30 dark:from-dark-card dark:via-dark-card dark:to-orange-accent/20 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="w-24 h-24 bg-orange-accent rounded-full flex items-center justify-center text-white text-4xl font-bold mx-auto mb-4 shadow-xl">
-            {initials}
+          
+          {/* Avatar */}
+          <div className="relative inline-block mb-6">
+            {avatarUrl ? (
+              <img
+                src={avatarUrl}
+                alt={user.name}
+                className="w-32 h-32 rounded-full object-cover border-4 border-white dark:border-dark-card shadow-xl"
+              />
+            ) : (
+              <div className="w-32 h-32 bg-orange-accent rounded-full flex items-center justify-center text-white text-5xl font-bold shadow-xl">
+                {initials}
+              </div>
+            )}
+            
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              onChange={handleAvatarUpload}
+              className="hidden"
+            />
           </div>
+
+          {/* Upload Button */}
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <button
+              type="button"
+              onClick={() => fileInputRef.current?.click()}
+              disabled={avatarLoading}
+              className="px-5 py-2.5 bg-white text-warm-brown rounded-xl font-medium hover:bg-cream transition-colors shadow-lg disabled:opacity-50 flex items-center gap-2"
+            >
+              {avatarLoading ? (
+                <>⏳ Uploading...</>
+              ) : (
+                <>📷 {avatarUrl ? 'Change Photo' : 'Upload Photo'}</>
+              )}
+            </button>
+            
+            {avatarUrl && (
+              <button
+                type="button"
+                onClick={handleRemoveAvatar}
+                disabled={avatarLoading}
+                className="px-5 py-2.5 bg-red-500/20 text-red-100 rounded-xl font-medium hover:bg-red-500/30 transition-colors disabled:opacity-50"
+              >
+                🗑️ Remove
+              </button>
+            )}
+          </div>
+
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-cream mb-2">
             {user.name}
           </h1>
@@ -115,7 +209,7 @@ function Profile() {
           </div>
         </div>
 
-        {/* Update Profile */}
+        {/* Profile Info */}
         <div className="bg-white dark:bg-dark-card rounded-3xl p-8 shadow-sm border border-warm-brown/5 dark:border-dark-text/5 mb-6 transition-colors">
           <h2 className="font-serif text-2xl font-bold text-warm-brown dark:text-dark-text mb-6">
             👤 Profile Information
@@ -157,7 +251,7 @@ function Profile() {
           </form>
         </div>
 
-        {/* Update Password */}
+        {/* Password */}
         <div className="bg-white dark:bg-dark-card rounded-3xl p-8 shadow-sm border border-warm-brown/5 dark:border-dark-text/5 mb-6 transition-colors">
           <h2 className="font-serif text-2xl font-bold text-warm-brown dark:text-dark-text mb-6">
             🔒 Change Password
