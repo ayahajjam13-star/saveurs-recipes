@@ -1,18 +1,33 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
+
+const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 function Footer() {
   const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
-    if (email) {
+    if (!email) return;
+
+    setLoading(true);
+    try {
+      const res = await axios.post(`${API_URL}/newsletter/subscribe`, { email });
+      toast.success(res.data.message || 'Subscribed successfully! 🎉');
       setSubscribed(true);
       setEmail('');
-      setTimeout(() => setSubscribed(false), 3000);
+      setTimeout(() => setSubscribed(false), 5000);
+    } catch (err) {
+      console.error(err);
+      toast.error(err.response?.data?.message || 'Subscription failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -33,10 +48,15 @@ function Footer() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('footer.emailPlaceholder')}
                 required
-                className="flex-1 px-5 py-4 rounded-2xl bg-cream/10 border border-cream/20 text-cream placeholder:text-cream/40 focus:outline-none focus:border-orange-accent"
+                disabled={loading || subscribed}
+                className="flex-1 px-5 py-4 rounded-2xl bg-cream/10 border border-cream/20 text-cream placeholder:text-cream/40 focus:outline-none focus:border-orange-accent transition-colors disabled:opacity-50"
               />
-              <button type="submit" className="px-6 py-4 bg-orange-accent text-white rounded-2xl font-medium hover:bg-orange-accent/90 transition-colors whitespace-nowrap">
-                {subscribed ? `✓ ${t('footer.done')}` : t('footer.subscribe')}
+              <button 
+                type="submit" 
+                disabled={loading || subscribed}
+                className="px-6 py-4 bg-orange-accent text-white rounded-2xl font-medium hover:bg-orange-accent/90 transition-colors whitespace-nowrap disabled:opacity-50"
+              >
+                {loading ? '⏳' : subscribed ? '✓ Done' : t('footer.subscribe')}
               </button>
             </form>
           </div>

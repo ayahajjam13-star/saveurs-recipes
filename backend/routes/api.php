@@ -57,5 +57,6 @@ Route::middleware('auth:sanctum')->group(function () {
 // Recipe Routes (Public)
 Route::get('/recipes', [RecipeController::class, 'index']);
 Route::get('/recipes/search', [RecipeController::class, 'search']);
+Route::get('/recipes/search-by-ingredients', [RecipeController::class, 'searchByIngredients']);
 Route::get('/recipes/season/{season}', [RecipeController::class, 'bySeason']);
 Route::get('/recipes/{id}', [RecipeController::class, 'show']);
