@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\RatingController;
 use App\Http\Controllers\Api\ProfileController;
 use App\Http\Controllers\Api\AIController;
 use App\Http\Controllers\Api\MealPlanController;
+use App\Http\Controllers\Api\NewsletterController;
 
 // Auth Routes
 Route::post('/register', [AuthController::class, 'register']);
@@ -18,6 +19,9 @@ Route::get('/ratings/{recipeId}', [RatingController::class, 'index']);
 
 // AI (Public)
 Route::post('/ai/suggest', [AIController::class, 'suggestRecipes']);
+
+// Newsletter (Public)
+Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe']);
 
 // Protected Routes
 Route::middleware('auth:sanctum')->group(function () {
