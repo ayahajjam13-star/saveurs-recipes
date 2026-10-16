@@ -62,9 +62,13 @@ export function AuthProvider({ children }) {
     setToken(null);
     toast.success('Logged out successfully');
   };
+  const loginWithToken = (newToken) => {
+  setToken(newToken);
+  localStorage.setItem('token', newToken);
+  };
 
   return (
-    <AuthContext.Provider value={{ user, token, loading, register, login, logout }}>
+    <AuthContext.Provider value={{ user, token, loading, register, login, logout, loginWithToken }}>
       {children}
     </AuthContext.Provider>
   );

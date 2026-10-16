@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\ProfileController;
 use App\Http\Controllers\Api\AIController;
 use App\Http\Controllers\Api\MealPlanController;
 use App\Http\Controllers\Api\NewsletterController;
+use App\Http\Controllers\Api\GoogleAuthController;
 
 // Auth Routes
 Route::post('/register', [AuthController::class, 'register']);
@@ -22,6 +23,9 @@ Route::post('/ai/suggest', [AIController::class, 'suggestRecipes']);
 
 // Newsletter (Public)
 Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe']);
+// Google OAuth
+Route::get('/auth/google/redirect', [GoogleAuthController::class, 'redirect']);
+Route::get('/auth/google/callback', [GoogleAuthController::class, 'callback']);
 
 // Protected Routes
 Route::middleware('auth:sanctum')->group(function () {

@@ -16,6 +16,7 @@ import AIChatbot from './components/AIChatbot';
 import MealPlanner from './pages/MealPlanner';
 import ShoppingList from './pages/ShoppingList';
 import Stats from './pages/Stats';
+import AuthCallback from './pages/AuthCallback';
 
 function App() {
   const location = useLocation();
@@ -38,6 +39,7 @@ function App() {
             <Route path="/meal-planner" element={<PageTransition><MealPlanner /></PageTransition>} />
             <Route path="/shopping-list" element={<PageTransition><ShoppingList /></PageTransition>} />
             <Route path="/stats" element={<PageTransition><Stats /></PageTransition>} />
+            <Route path="/auth/callback" element={<AuthCallback />} />
           </Routes>
         </AnimatePresence>
       </main>
