@@ -7,14 +7,17 @@ use App\Http\Controllers\Api\FavoriteController;
 use App\Http\Controllers\Api\RatingController;
 use App\Http\Controllers\Api\ProfileController;
 use App\Http\Controllers\Api\AIController;
+use App\Http\Controllers\Api\MealPlanController;
 
 // Auth Routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
-Route::post('/ai/suggest', [AIController::class, 'suggestRecipes']);
 
 // Public Rating
 Route::get('/ratings/{recipeId}', [RatingController::class, 'index']);
+
+// AI (Public)
+Route::post('/ai/suggest', [AIController::class, 'suggestRecipes']);
 
 // Protected Routes
 Route::middleware('auth:sanctum')->group(function () {
@@ -38,6 +41,13 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/ratings', [RatingController::class, 'store']);
     Route::delete('/ratings/{recipeId}', [RatingController::class, 'destroy']);
     Route::get('/ratings/check/{recipeId}', [RatingController::class, 'check']);
+    
+    // Meal Plans
+    Route::get('/meal-plans', [MealPlanController::class, 'show']);
+    Route::post('/meal-plans', [MealPlanController::class, 'store']);
+    Route::post('/meal-plans/add', [MealPlanController::class, 'addRecipe']);
+    Route::post('/meal-plans/remove', [MealPlanController::class, 'removeRecipe']);
+    Route::get('/shopping-list', [MealPlanController::class, 'shoppingList']);
 });
 
 // Recipe Routes (Public)
