@@ -15,7 +15,7 @@ export function AuthProvider({ children }) {
     if (token) {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       localStorage.setItem('token', token);
-      
+
       axios.get(`${API_URL}/me`)
         .then(res => setUser(res.data))
         .catch(() => {
@@ -40,7 +40,7 @@ export function AuthProvider({ children }) {
     });
     setUser(res.data.user);
     setToken(res.data.token);
-    toast.success(`Welcome, ${res.data.user.name}!`);
+    toast.success(res.data.message || `Welcome, ${res.data.user.name}!`);
     return res.data;
   };
 
@@ -62,13 +62,27 @@ export function AuthProvider({ children }) {
     setToken(null);
     toast.success('Logged out successfully');
   };
+
   const loginWithToken = (newToken) => {
-  setToken(newToken);
-  localStorage.setItem('token', newToken);
+    setToken(newToken);
+    localStorage.setItem('token', newToken);
   };
 
+  const isEmailVerified = user?.email_verified_at ? true : false;
+
   return (
-    <AuthContext.Provider value={{ user, token, loading, register, login, logout, loginWithToken }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        token,
+        loading,
+        register,
+        login,
+        logout,
+        loginWithToken,
+        isEmailVerified,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
