@@ -114,3 +114,35 @@ html.dark ::-webkit-scrollbar-track {
     max-width: 100% !important;
   }
 }
+/* Print Meal Plan */
+.print-only {
+  display: none;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .print-only,
+  .print-only * {
+    visibility: visible;
+  }
+  
+  .print-only {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    color: black;
+  }
+  
+  .no-print,
+  nav,
+  footer {
+    display: none !important;
+  }
+}

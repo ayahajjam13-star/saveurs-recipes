@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
 import { getMealPlan, addRecipeToDay, removeRecipeFromDay } from '../services/mealPlanService';
 import { getRecipes } from '../services/api';
+import PrintMealPlan from '../components/PrintMealPlan';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
@@ -23,8 +24,9 @@ function MealPlanner() {
   const [meals, setMeals] = useState({});
   const [allRecipes, setAllRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [pickerOpen, setPickerOpen] = useState(null); // day key
+  const [pickerOpen, setPickerOpen] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [printOpen, setPrintOpen] = useState(false);
 
   function getMonday(d) {
     const date = new Date(d);
@@ -215,16 +217,31 @@ function MealPlanner() {
           </div>
         )}
 
-        {/* Shopping List Link */}
-        <div className="text-center mt-12">
+        {/* Actions */}
+        <div className="text-center mt-12 flex flex-wrap gap-3 justify-center">
           <a
             href="/shopping-list"
             className="inline-block px-8 py-4 bg-orange-accent text-white rounded-2xl font-semibold hover:bg-orange-accent/90 transition-all hover:scale-105"
           >
             🛒 View Shopping List
           </a>
+          <button
+            onClick={() => setPrintOpen(true)}
+            className="inline-block px-8 py-4 bg-white dark:bg-dark-card text-warm-brown dark:text-dark-text border border-warm-brown/10 dark:border-dark-text/10 rounded-2xl font-semibold hover:bg-cream dark:hover:bg-dark-bg transition-all hover:scale-105"
+          >
+            🖨️ Print Plan
+          </button>
         </div>
       </div>
+
+      {/* Print Meal Plan */}
+      {printOpen && (
+        <PrintMealPlan 
+          meals={meals} 
+          weekStart={weekStart} 
+          onClose={() => setPrintOpen(false)} 
+        />
+      )}
 
       {/* Recipe Picker Modal */}
       {pickerOpen && (
