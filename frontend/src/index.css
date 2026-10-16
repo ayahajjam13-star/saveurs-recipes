@@ -57,6 +57,7 @@ html.dark ::-webkit-scrollbar-track {
   background: #E07A5F;
 }
 
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -81,15 +82,11 @@ html.dark ::-webkit-scrollbar-track {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Scroll Reveal */
 @keyframes revealUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .reveal-hidden {
@@ -101,48 +98,51 @@ html.dark ::-webkit-scrollbar-track {
   animation: revealUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@media print {
-  nav, footer, .no-print, button { 
-    display: none !important; 
-  }
-  body { 
-    background: white !important; 
-    color: black !important;
-  }
-  #recipe-content { 
-    padding: 20px !important; 
-    max-width: 100% !important;
-  }
-}
-/* Print Meal Plan */
-.print-only {
+/* ============================================ */
+/* PRINT STYLES */
+/* ============================================ */
+
+/* Hidden on screen, visible when printing */
+.print-meal-plan {
   display: none;
 }
 
 @media print {
-  body * {
+  /* Recipe Detail Print */
+  body:not(:has(.print-meal-plan)) {
+    background: white !important;
+  }
+
+  body:not(:has(.print-meal-plan)) nav,
+  body:not(:has(.print-meal-plan)) footer,
+  body:not(:has(.print-meal-plan)) .no-print,
+  body:not(:has(.print-meal-plan)) button {
+    display: none !important;
+  }
+
+  body:not(:has(.print-meal-plan)) #recipe-content {
+    padding: 20px !important;
+    max-width: 100% !important;
+  }
+
+  /* Meal Plan Print */
+  body:has(.print-meal-plan) * {
     visibility: hidden;
   }
-  
-  .print-only,
-  .print-only * {
+
+  body:has(.print-meal-plan) .print-meal-plan,
+  body:has(.print-meal-plan) .print-meal-plan * {
     visibility: visible;
   }
-  
-  .print-only {
+
+  body:has(.print-meal-plan) .print-meal-plan {
     display: block !important;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     background: white;
     color: black;
-  }
-  
-  .no-print,
-  nav,
-  footer {
-    display: none !important;
   }
 }

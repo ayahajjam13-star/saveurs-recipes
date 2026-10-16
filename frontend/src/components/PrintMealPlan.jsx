@@ -107,7 +107,7 @@ function PrintMealPlan({ meals, weekStart, onClose }) {
       </div>
 
       {/* Print Content — Hidden on screen, visible when printing */}
-      <div className="print-only hidden">
+      <div className="print-meal-plan">
         <h1 style={{ textAlign: 'center', fontFamily: 'serif', fontSize: '28px', marginBottom: '8px' }}>
           Saveurs — Meal Plan
         </h1>
