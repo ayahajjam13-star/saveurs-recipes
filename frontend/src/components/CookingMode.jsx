@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import RecipeTimer from './RecipeTimer';
 
 function CookingMode({ recipe, onClose }) {
   const [currentStep, setCurrentStep] = useState(0);
   const [completedSteps, setCompletedSteps] = useState([]);
+  const [timerOpen, setTimerOpen] = useState(false);
   const steps = recipe.steps;
   const totalSteps = steps.length;
 
@@ -53,13 +54,22 @@ function CookingMode({ recipe, onClose }) {
             </p>
           </div>
         </div>
-        <button
-          onClick={onClose}
-          className="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-cream flex items-center justify-center transition-colors text-xl"
-          title="Exit cooking mode"
-        >
-          ✕
-        </button>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <button
+            onClick={() => setTimerOpen(true)}
+            className="w-10 h-10 rounded-full bg-orange-accent hover:bg-orange-accent/90 text-white flex items-center justify-center transition-colors text-xl"
+            title="Set a timer"
+          >
+            ⏱️
+          </button>
+          <button
+            onClick={onClose}
+            className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-cream flex items-center justify-center transition-colors text-xl"
+            title="Exit cooking mode"
+          >
+            ✕
+          </button>
+        </div>
       </div>
 
       {/* Progress Bar */}
@@ -137,6 +147,11 @@ function CookingMode({ recipe, onClose }) {
 
         </div>
       </div>
+
+      {/* Timer */}
+      {timerOpen && (
+        <RecipeTimer onClose={() => setTimerOpen(false)} />
+      )}
 
     </div>
   );
