@@ -9,6 +9,7 @@ import RatingForm from '../components/RatingForm';
 import RatingList from '../components/RatingList';
 import RatingStars from '../components/RatingStars';
 import ShareButtons from '../components/ShareButtons';
+import RecipeScaling from '../components/RecipeScaling';
 import SEO from '../components/SEO';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
@@ -178,18 +179,12 @@ function RecipeDetail() {
           
           <div className="md:col-span-2">
             <div className="bg-white dark:bg-dark-card rounded-3xl p-8 shadow-sm border border-warm-brown/5 dark:border-dark-text/5 md:sticky md:top-24 transition-colors">
-              <div className="flex items-center gap-3 mb-8">
+              <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-orange-accent/10 rounded-2xl flex items-center justify-center text-2xl">🧂</div>
                 <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text">{t('recipe.ingredients')}</h2>
               </div>
-              <ul className="space-y-4">
-                {recipe.ingredients.map((ing, i) => (
-                  <li key={i} className="flex items-start gap-3 text-warm-brown/80 dark:text-dark-text/80 pb-4 border-b border-warm-brown/5 dark:border-dark-text/5 last:border-0">
-                    <span className="w-2 h-2 rounded-full bg-orange-accent mt-2 flex-shrink-0"></span>
-                    <span className="leading-relaxed">{ing}</span>
-                  </li>
-                ))}
-              </ul>
+              
+              <RecipeScaling ingredients={recipe.ingredients} baseServings={4} />
             </div>
           </div>
 
@@ -214,6 +209,7 @@ function RecipeDetail() {
               ))}
             </div>
 
+            {/* Ratings */}
             <div className="mt-16 pt-16 border-t border-warm-brown/10 dark:border-dark-text/10 no-print">
               <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text mb-8">
                 ⭐ {t('recipe.reviews')}
