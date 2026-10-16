@@ -13,6 +13,7 @@ import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
 import AIChatbot from './components/AIChatbot';
+import MealPlanner from './pages/MealPlanner';
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
             <Route path="/about" element={<PageTransition><About /></PageTransition>} />
             <Route path="/profile" element={<PageTransition><Profile /></PageTransition>} />
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+            <Route path="/meal-planner" element={<PageTransition><MealPlanner /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </main>

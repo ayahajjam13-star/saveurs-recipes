@@ -39,7 +39,7 @@ function Navbar() {
             </div>
           </Link>
 
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-5">
             <Link to="/" className={`font-medium transition-colors ${isActive('/') ? 'text-orange-accent' : 'text-warm-brown dark:text-dark-text hover:text-orange-accent'}`}>
               {t('nav.home')}
             </Link>
@@ -50,9 +50,14 @@ function Navbar() {
               {t('nav.about')}
             </Link>
             {user && (
-              <Link to="/favorites" className={`font-medium transition-colors ${isActive('/favorites') ? 'text-orange-accent' : 'text-warm-brown dark:text-dark-text hover:text-orange-accent'}`}>
-                ❤️ {t('nav.favorites')}
-              </Link>
+              <>
+                <Link to="/favorites" className={`font-medium transition-colors ${isActive('/favorites') ? 'text-orange-accent' : 'text-warm-brown dark:text-dark-text hover:text-orange-accent'}`}>
+                  ❤️ {t('nav.favorites')}
+                </Link>
+                <Link to="/meal-planner" className={`font-medium transition-colors ${isActive('/meal-planner') ? 'text-orange-accent' : 'text-warm-brown dark:text-dark-text hover:text-orange-accent'}`}>
+                  🗓️ Plan
+                </Link>
+              </>
             )}
             
             <LanguageSwitcher />
@@ -60,7 +65,6 @@ function Navbar() {
             <button
               onClick={toggleTheme}
               className="w-10 h-10 rounded-full bg-cream dark:bg-dark-bg border border-warm-brown/10 dark:border-dark-text/10 flex items-center justify-center hover:scale-110 transition-transform"
-              title={theme === 'light' ? 'Dark mode' : 'Light mode'}
             >
               {theme === 'light' ? '🌙' : '☀️'}
             </button>
@@ -71,9 +75,17 @@ function Navbar() {
                   to="/profile" 
                   className="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-cream dark:hover:bg-dark-bg transition-colors"
                 >
-                  <div className="w-8 h-8 bg-orange-accent rounded-full flex items-center justify-center text-white text-xs font-bold">
-                    {user.name?.charAt(0).toUpperCase()}
-                  </div>
+                  {user.avatar_url ? (
+                    <img 
+                      src={user.avatar_url} 
+                      alt={user.name}
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-8 h-8 bg-orange-accent rounded-full flex items-center justify-center text-white text-xs font-bold">
+                      {user.name?.charAt(0).toUpperCase()}
+                    </div>
+                  )}
                   <span className="text-sm text-warm-brown dark:text-dark-text">
                     {user.name}
                   </span>
@@ -123,9 +135,14 @@ function Navbar() {
               {t('nav.about')}
             </Link>
             {user && (
-              <Link to="/favorites" onClick={() => setMobileMenuOpen(false)} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
-                ❤️ {t('nav.favorites')}
-              </Link>
+              <>
+                <Link to="/favorites" onClick={() => setMobileMenuOpen(false)} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
+                  ❤️ {t('nav.favorites')}
+                </Link>
+                <Link to="/meal-planner" onClick={() => setMobileMenuOpen(false)} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
+                  🗓️ Meal Planner
+                </Link>
+              </>
             )}
             
             <div className="py-3">
@@ -143,9 +160,17 @@ function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center gap-3 py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent"
                 >
-                  <div className="w-8 h-8 bg-orange-accent rounded-full flex items-center justify-center text-white text-xs font-bold">
-                    {user.name?.charAt(0).toUpperCase()}
-                  </div>
+                  {user.avatar_url ? (
+                    <img 
+                      src={user.avatar_url} 
+                      alt={user.name}
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-8 h-8 bg-orange-accent rounded-full flex items-center justify-center text-white text-xs font-bold">
+                      {user.name?.charAt(0).toUpperCase()}
+                    </div>
+                  )}
                   <span>My Profile</span>
                 </Link>
                 <button onClick={handleLogout} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
