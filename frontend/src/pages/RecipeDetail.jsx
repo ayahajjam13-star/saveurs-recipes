@@ -10,6 +10,7 @@ import RatingList from '../components/RatingList';
 import RatingStars from '../components/RatingStars';
 import ShareButtons from '../components/ShareButtons';
 import RecipeScaling from '../components/RecipeScaling';
+import CookingMode from '../components/CookingMode';
 import SEO from '../components/SEO';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
@@ -24,6 +25,7 @@ function RecipeDetail() {
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [ratings, setRatings] = useState({ ratings: [], average: 0, count: 0 });
+  const [cookingMode, setCookingMode] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -133,6 +135,13 @@ function RecipeDetail() {
               }`}
             >
               {favorite ? `❤️ ${t('recipe.saved')}` : `🤍 ${t('recipe.save')}`}
+            </button>
+            
+            <button
+              onClick={() => setCookingMode(true)}
+              className="px-6 py-3 bg-fresh-green text-white rounded-2xl font-medium hover:bg-fresh-green/90 transition-all flex items-center gap-2 shadow-lg shadow-fresh-green/30"
+            >
+              👨‍🍳 Start Cooking
             </button>
             
             <button
@@ -257,6 +266,11 @@ function RecipeDetail() {
 
         </div>
       </div>
+
+      {/* Cooking Mode */}
+      {cookingMode && (
+        <CookingMode recipe={recipe} onClose={() => setCookingMode(false)} />
+      )}
     </div>
   );
 }
