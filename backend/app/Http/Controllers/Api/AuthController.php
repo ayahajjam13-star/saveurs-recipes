@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
@@ -26,11 +25,15 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
+        // Send verification email
+        $user->sendEmailVerificationNotification();
+
         $token = $user->createToken('auth_token')->plainTextToken;
 
         return response()->json([
             'user' => $user,
             'token' => $token,
+            'message' => 'Account created! Please check your email to verify.',
         ], 201);
     }
 
