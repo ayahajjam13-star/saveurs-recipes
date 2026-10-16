@@ -59,4 +59,5 @@ Route::get('/recipes', [RecipeController::class, 'index']);
 Route::get('/recipes/search', [RecipeController::class, 'search']);
 Route::get('/recipes/search-by-ingredients', [RecipeController::class, 'searchByIngredients']);
 Route::get('/recipes/season/{season}', [RecipeController::class, 'bySeason']);
+Route::get('/recipes/stats/top-rated', [RecipeController::class, 'topRated']);
 Route::get('/recipes/{id}', [RecipeController::class, 'show']);

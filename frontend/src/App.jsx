@@ -15,6 +15,7 @@ import PageTransition from './components/PageTransition';
 import AIChatbot from './components/AIChatbot';
 import MealPlanner from './pages/MealPlanner';
 import ShoppingList from './pages/ShoppingList';
+import Stats from './pages/Stats';
 
 function App() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
             <Route path="/meal-planner" element={<PageTransition><MealPlanner /></PageTransition>} />
             <Route path="/shopping-list" element={<PageTransition><ShoppingList /></PageTransition>} />
+            <Route path="/stats" element={<PageTransition><Stats /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </main>

@@ -46,6 +46,9 @@ function Navbar() {
             <Link to="/search" className={`font-medium transition-colors ${isActive('/search') ? 'text-orange-accent' : 'text-warm-brown dark:text-dark-text hover:text-orange-accent'}`}>
               {t('nav.search')}
             </Link>
+            <Link to="/stats" className={`font-medium transition-colors ${isActive('/stats') ? 'text-orange-accent' : 'text-warm-brown dark:text-dark-text hover:text-orange-accent'}`}>
+              📊 Stats
+            </Link>
             <Link to="/about" className={`font-medium transition-colors ${isActive('/about') ? 'text-orange-accent' : 'text-warm-brown dark:text-dark-text hover:text-orange-accent'}`}>
               {t('nav.about')}
             </Link>
@@ -130,6 +133,9 @@ function Navbar() {
             </Link>
             <Link to="/search" onClick={() => setMobileMenuOpen(false)} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
               {t('nav.search')}
+            </Link>
+            <Link to="/stats" onClick={() => setMobileMenuOpen(false)} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
+              📊 Stats
             </Link>
             <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-3 text-warm-brown dark:text-dark-text font-medium hover:text-orange-accent">
               {t('nav.about')}
