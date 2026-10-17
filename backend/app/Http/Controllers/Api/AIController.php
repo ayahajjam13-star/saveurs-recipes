@@ -35,22 +35,26 @@ class AIController extends Controller
         $recipes = Recipe::select('id', 'name', 'cuisine', 'country')->get();
         $recipeList = $recipes->map(fn($r) => "{$r->id}. {$r->name} ({$r->cuisine}, {$r->country})")->implode("\n");
 
-        $prompt = "I have these ingredients: {$userIngredients}. " .
-            "Here is the list of available recipes:\n{$recipeList}\n\n" .
-            "Which 3 recipes can I make with these ingredients? " .
-            "Return ONLY a valid JSON array of recipe IDs, like this: [1, 5, 12]. " .
-            "No explanation, no text, just the JSON array.";
+        $prompt = "You are a JSON-only API. I have these ingredients: {$userIngredients}.\n\n" .
+            "Available recipes:\n{$recipeList}\n\n" .
+            "Task: Return the IDs of the 3 recipes that best match the ingredients.\n" .
+            "STRICT RULES:\n" .
+            "- Return ONLY a JSON array of integers, like [1, 5, 12].\n" .
+            "- Do NOT include any text, explanation, or markdown.\n" .
+            "- Do NOT wrap in ```json or any other syntax.\n" .
+            "- If no recipes match, return [].\n\n" .
+            "Output:";
 
         try {
             $response = Http::withHeaders([
                 'Content-Type' => 'application/json',
                 'Authorization' => "Bearer {$apiKey}",
             ])->post("https://api.groq.com/openai/v1/chat/completions", [
-                'model' => 'openai/gpt-oss-120b',
+                'model' => 'llama-3.1-8b-instant',
                 'messages' => [
                     ['role' => 'user', 'content' => $prompt],
                 ],
-                'temperature' => 0.3,
+                'temperature' => 0.1,
                 'max_tokens' => 100,
             ]);
 
@@ -64,7 +68,11 @@ class AIController extends Controller
             $data = $response->json();
             $text = $data['choices'][0]['message']['content'] ?? '[]';
 
-            preg_match('/\[[\d,\s]+\]/', $text, $matches);
+            // نظفو النص (إلا كان فيه markdown)
+            $text = preg_replace('/```json\s*|\s*```/', '', $text);
+            $text = trim($text);
+
+            preg_match('/\[[\d,\s]*\]/', $text, $matches);
             $ids = isset($matches[0]) ? json_decode($matches[0], true) : [];
 
             if (!is_array($ids) || empty($ids)) {
