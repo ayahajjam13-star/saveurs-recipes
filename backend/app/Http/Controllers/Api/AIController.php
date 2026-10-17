@@ -46,7 +46,7 @@ class AIController extends Controller
                 'Content-Type' => 'application/json',
                 'Authorization' => "Bearer {$apiKey}",
             ])->post("https://api.groq.com/openai/v1/chat/completions", [
-                'model' => 'llama-3.1-70b-versatile',
+                'model' => 'llama-3.3-70b-versatile',
                 'messages' => [
                     ['role' => 'user', 'content' => $prompt],
                 ],
