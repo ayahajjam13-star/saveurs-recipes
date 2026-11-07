@@ -1,44 +1,51 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
+import { useTranslation } from 'react-i18next'; // زدنا هاد السطر
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 export default function CommentsSection({ recipeId }) {
   const { user } = useAuth();
+  const { t, i18n } = useTranslation(); // زدنا i18n باش نعرفو شنو هي اللغة الحالية
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // دالة جلب التعليقات من الباك اند
+  // دالة باش نترجمو النصوص حسب اللغة
+  const getText = (en, fr, ar) => {
+    if (i18n.language === 'fr') return fr;
+    if (i18n.language === 'ar') return ar;
+    return en; // Default English
+  };
+
   const fetchComments = () => {
     axios.get(`${API_URL}/recipes/${recipeId}/comments`)
       .then(res => setComments(res.data))
       .catch(err => console.error(err));
   };
 
-  // ملي كتحل الصفحة، جيب التعليقات
   useEffect(() => {
     fetchComments();
   }, [recipeId]);
 
-  // دالة إضافة تعليق جديد
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!newComment.trim()) return;
     setLoading(true);
     
     try {
-      const token = localStorage.getItem('token'); // تأكدي بلي الـ token كيتخزن بهاد السمية
+      const token = localStorage.getItem('token');
       await axios.post(`${API_URL}/recipes/${recipeId}/comments`, 
         { content: newComment },
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setNewComment('');
-      fetchComments(); // عاودي جيبي التعليقات باش يبان الجديد
+      fetchComments();
     } catch (err) {
       console.error(err);
-      alert('خاصك تكوني مسجل الدخول باش تزيدي تعليق!');
+      alert(getText('You must be logged in to comment!', 'Vous devez être connecté pour commenter!', 'خاصك تكوني مسجل الدخول باش تزيدي تعليق!'));
     } finally {
       setLoading(false);
     }
@@ -46,31 +53,30 @@ export default function CommentsSection({ recipeId }) {
 
   return (
     <div className="mt-16 pt-16 border-t border-warm-brown/10 dark:border-dark-text/10 no-print">
+      
       <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text mb-8">
-        💬 التعليقات ({comments.length})
+        💬 {getText('Comments', 'Commentaires', 'التعليقات')} ({comments.length})
       </h2>
 
-      {/* فورم إضافة تعليق */}
       {user ? (
         <form onSubmit={handleSubmit} className="mb-8">
           <textarea
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            placeholder="شاركي رأيك ولا نصيحة على هاد الوصفة..."
+            placeholder={getText('Share your thoughts about this recipe...', 'Partagez votre avis sur cette recette...', 'شاركي رأيك ولا نصيحة على هاد الوصفة...')}
             className="w-full p-4 rounded-xl border border-warm-brown/20 dark:border-dark-text/20 bg-white dark:bg-dark-card text-warm-brown dark:text-dark-text focus:outline-none focus:border-orange-accent mb-3"
             rows={3}
           />
           <button type="submit" disabled={loading} className="px-6 py-2 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors disabled:opacity-50">
-            {loading ? 'جاري الإرسال...' : 'أضف تعليق'}
+            {loading ? getText('Posting...', 'Envoi...', 'جاري الإرسال...') : getText('Post Comment', 'Publier', 'أضف تعليق')}
           </button>
         </form>
       ) : (
         <p className="mb-8 text-warm-brown/60 dark:text-dark-text/60">
-          خاصك <a href="/login" className="text-orange-accent hover:underline">تسجلي الدخول</a> باش تزيدي تعليق.
+          {getText('Please', 'Veuillez', 'خاصك')} <Link to="/login" className="text-orange-accent hover:underline">{getText('log in', 'vous connecter', 'تسجلي الدخول')}</Link> {getText('to leave a comment.', 'pour laisser un commentaire.', 'باش تزيدي تعليق.')}
         </p>
       )}
 
-      {/* لائحة التعليقات */}
       <div className="space-y-4">
         {comments.map(comment => (
           <div key={comment.id} className="bg-white dark:bg-dark-card p-4 rounded-xl border border-warm-brown/5 dark:border-dark-text/5">
@@ -79,7 +85,12 @@ export default function CommentsSection({ recipeId }) {
                 {comment.user?.name?.charAt(0) || 'U'}
               </div>
               <div>
-                <p className="font-medium text-warm-brown dark:text-dark-text">{comment.user?.name || 'مستخدم'}</p>
+                <Link 
+  to={`/user/${comment.user?.id}`} 
+  className="font-medium text-warm-brown dark:text-dark-text hover:text-orange-accent hover:underline"
+>
+  {comment.user?.name || 'User'}
+</Link>
                 <p className="text-xs text-warm-brown/50 dark:text-dark-text/50">
                   {new Date(comment.created_at).toLocaleDateString()}
                 </p>
@@ -89,7 +100,9 @@ export default function CommentsSection({ recipeId }) {
           </div>
         ))}
         {comments.length === 0 && (
-          <p className="text-warm-brown/50 dark:text-dark-text/50 italic">ما كاين حتى تعليق دابا. كوني أول وحدة تزيدي!</p>
+          <p className="text-warm-brown/50 dark:text-dark-text/50 italic">
+            {getText('No comments yet. Be the first!', 'Aucun commentaire. Soyez le premier !', 'ما كاين حتى تعليق دابا. كوني أول وحدة تزيدي!')}
+          </p>
         )}
       </div>
     </div>
