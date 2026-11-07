@@ -19,6 +19,7 @@ import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
 import AIChatbot from './components/AIChatbot';
 import VerifyEmailBanner from './components/VerifyEmailBanner';
+import PublicProfile from './pages/PublicProfile';
 
 function App() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
             <Route path="/auth/callback" element={<AuthCallback />} />
             <Route path="/verify-email" element={<PageTransition><VerifyEmail /></PageTransition>} />
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+            <Route path="/user/:id" element={<PublicProfile />} />
           </Routes>
         </AnimatePresence>
       </main>

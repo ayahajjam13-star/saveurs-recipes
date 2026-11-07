@@ -80,3 +80,9 @@ Route::get('/recipes/{id}', [RecipeController::class, 'show']);
 // Comments
 Route::get('/recipes/{recipeId}/comments', [App\Http\Controllers\Api\CommentController::class, 'index']);
 Route::post('/recipes/{recipeId}/comments', [App\Http\Controllers\Api\CommentController::class, 'store'])->middleware('auth:sanctum');
+// Public Profiles
+Route::get('/users/{id}', [App\Http\Controllers\Api\UserController::class, 'show']);
+// Protected (Follow/Unfollow)
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/users/{id}/follow', [App\Http\Controllers\Api\UserController::class, 'toggleFollow']);
+});
