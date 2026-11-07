@@ -77,3 +77,6 @@ Route::get('/recipes/search-by-ingredients', [RecipeController::class, 'searchBy
 Route::get('/recipes/stats/top-rated', [RecipeController::class, 'topRated']);
 Route::get('/recipes/season/{season}', [RecipeController::class, 'bySeason']);
 Route::get('/recipes/{id}', [RecipeController::class, 'show']);
+// Comments
+Route::get('/recipes/{recipeId}/comments', [App\Http\Controllers\Api\CommentController::class, 'index']);
+Route::post('/recipes/{recipeId}/comments', [App\Http\Controllers\Api\CommentController::class, 'store'])->middleware('auth:sanctum');

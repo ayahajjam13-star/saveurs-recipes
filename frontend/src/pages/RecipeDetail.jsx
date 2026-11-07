@@ -12,6 +12,7 @@ import ShareButtons from '../components/ShareButtons';
 import RecipeScaling from '../components/RecipeScaling';
 import CookingMode from '../components/CookingMode';
 import SEO from '../components/SEO';
+import CommentsSection from '../components/CommentsSection';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
@@ -255,6 +256,7 @@ function RecipeDetail() {
               </div>
 
               <RatingList ratings={ratings.ratings} />
+              <CommentsSection recipeId={parseInt(id)} />
             </div>
 
             <div className="mt-16 pt-8 border-t border-warm-brown/10 dark:border-dark-text/10 no-print">
