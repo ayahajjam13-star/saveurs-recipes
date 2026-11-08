@@ -2,22 +2,22 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
-import { useTranslation } from 'react-i18next'; // زدنا هاد السطر
+import { useTranslation } from 'react-i18next';
+import { MessageSquare } from 'lucide-react';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 export default function CommentsSection({ recipeId }) {
   const { user } = useAuth();
-  const { t, i18n } = useTranslation(); // زدنا i18n باش نعرفو شنو هي اللغة الحالية
+  const { t, i18n } = useTranslation();
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // دالة باش نترجمو النصوص حسب اللغة
   const getText = (en, fr, ar) => {
     if (i18n.language === 'fr') return fr;
     if (i18n.language === 'ar') return ar;
-    return en; // Default English
+    return en;
   };
 
   const fetchComments = () => {
@@ -45,62 +45,60 @@ export default function CommentsSection({ recipeId }) {
       fetchComments();
     } catch (err) {
       console.error(err);
-      alert(getText('You must be logged in to comment!', 'Vous devez être connecté pour commenter!', 'خاصك تكوني مسجل الدخول باش تزيدي تعليق!'));
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="mt-16 pt-16 border-t border-warm-brown/10 dark:border-dark-text/10 no-print">
-      
-      <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text mb-8">
-        💬 {getText('Comments', 'Commentaires', 'التعليقات')} ({comments.length})
-      </h2>
+    <div className="mt-8">
+      <div className="flex items-center gap-3 mb-6 border-b border-warm-brown/10 pb-4">
+        <MessageSquare size={20} className="text-guava-pink" />
+        <h3 className="font-serif text-2xl font-bold text-warm-brown">
+          {getText('Comments', 'Commentaires', 'التعليقات')} ({comments.length})
+        </h3>
+      </div>
 
       {user ? (
         <form onSubmit={handleSubmit} className="mb-8">
           <textarea
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            placeholder={getText('Share your thoughts about this recipe...', 'Partagez votre avis sur cette recette...', 'شاركي رأيك ولا نصيحة على هاد الوصفة...')}
-            className="w-full p-4 rounded-xl border border-warm-brown/20 dark:border-dark-text/20 bg-white dark:bg-dark-card text-warm-brown dark:text-dark-text focus:outline-none focus:border-orange-accent mb-3"
+            placeholder={getText('Share your thoughts...', 'Partagez votre avis...', 'شاركي رأيك...')}
+            className="w-full p-4 rounded-xl border border-gray-200 bg-white text-warm-brown focus:outline-none focus:ring-2 focus:ring-guava-pink/30 transition-all resize-none text-sm font-sans"
             rows={3}
           />
-          <button type="submit" disabled={loading} className="px-6 py-2 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors disabled:opacity-50">
-            {loading ? getText('Posting...', 'Envoi...', 'جاري الإرسال...') : getText('Post Comment', 'Publier', 'أضف تعليق')}
+          <button type="submit" disabled={loading} className="mt-3 px-6 py-2.5 bg-guava-pink text-white rounded-full text-sm font-bold tracking-widest uppercase hover:bg-warm-brown transition-colors disabled:opacity-50">
+            {loading ? '...' : getText('Post Comment', 'Publier', 'أضف تعليق')}
           </button>
         </form>
       ) : (
-        <p className="mb-8 text-warm-brown/60 dark:text-dark-text/60">
-          {getText('Please', 'Veuillez', 'خاصك')} <Link to="/login" className="text-orange-accent hover:underline">{getText('log in', 'vous connecter', 'تسجلي الدخول')}</Link> {getText('to leave a comment.', 'pour laisser un commentaire.', 'باش تزيدي تعليق.')}
+        <p className="mb-8 text-gray-500 font-sans text-sm">
+          {getText('Please', 'Veuillez', 'خاصك')} <Link to="/login" className="text-guava-pink font-bold hover:underline">{getText('log in', 'vous connecter', 'تسجلي الدخول')}</Link> {getText('to leave a comment.', 'pour laisser un commentaire.', 'باش تزيدي تعليق.')}
         </p>
       )}
 
       <div className="space-y-4">
         {comments.map(comment => (
-          <div key={comment.id} className="bg-white dark:bg-dark-card p-4 rounded-xl border border-warm-brown/5 dark:border-dark-text/5">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 rounded-full bg-orange-accent/20 flex items-center justify-center text-sm font-bold text-orange-accent">
+          <div key={comment.id} className="bg-[#FAF7F0] p-5 rounded-xl border border-warm-brown/5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 rounded-full bg-guava-peach flex items-center justify-center text-xs font-bold text-warm-brown">
                 {comment.user?.name?.charAt(0) || 'U'}
               </div>
               <div>
-                <Link 
-  to={`/user/${comment.user?.id}`} 
-  className="font-medium text-warm-brown dark:text-dark-text hover:text-orange-accent hover:underline"
->
-  {comment.user?.name || 'User'}
-</Link>
-                <p className="text-xs text-warm-brown/50 dark:text-dark-text/50">
+                <Link to={`/user/${comment.user?.id}`} className="font-sans font-bold text-sm text-warm-brown hover:text-guava-pink transition-colors">
+                  {comment.user?.name || 'User'}
+                </Link>
+                <p className="text-xs text-gray-400 font-sans">
                   {new Date(comment.created_at).toLocaleDateString()}
                 </p>
               </div>
             </div>
-            <p className="text-warm-brown/80 dark:text-dark-text/80 text-sm">{comment.content}</p>
+            <p className="text-warm-brown/80 font-sans text-sm leading-relaxed">{comment.content}</p>
           </div>
         ))}
         {comments.length === 0 && (
-          <p className="text-warm-brown/50 dark:text-dark-text/50 italic">
+          <p className="text-gray-400 font-sans italic text-sm text-center py-6">
             {getText('No comments yet. Be the first!', 'Aucun commentaire. Soyez le premier !', 'ما كاين حتى تعليق دابا. كوني أول وحدة تزيدي!')}
           </p>
         )}

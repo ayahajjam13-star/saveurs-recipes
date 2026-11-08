@@ -41,7 +41,7 @@ function AIChatbot() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-br from-orange-accent to-red-500 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center text-white text-2xl"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#6C5CE7] rounded-full shadow-soft hover:scale-105 transition-transform flex items-center justify-center text-white text-2xl border border-gray-100"
         title="AI Recipe Assistant"
       >
         {isOpen ? '✕' : '🤖'}
@@ -49,10 +49,10 @@ function AIChatbot() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-28 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-white dark:bg-dark-card rounded-3xl shadow-2xl border border-warm-brown/10 dark:border-dark-text/10 overflow-hidden animate-fade-in">
+        <div className="fixed bottom-28 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-white dark:bg-dark-card rounded-[24px] shadow-soft border border-gray-100 dark:border-gray-800 overflow-hidden animate-fade-in">
           
           {/* Header */}
-          <div className="bg-gradient-to-r from-orange-accent to-red-500 p-5 text-white">
+          <div className="bg-orange-accent p-5 text-white">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-2xl">
                 🤖

@@ -1,107 +1,59 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { useFavorites } from '../hooks/useFavorites';
-import { useScrollReveal } from '../hooks/useScrollReveal';
+import { Clock, Star, Heart } from 'lucide-react';
 
 function RecipeCard({ recipe }) {
   const { user } = useAuth();
   const { isFavorite, toggleFavorite } = useFavorites();
-  const { t } = useTranslation();
   const navigate = useNavigate();
-  const { ref, isVisible } = useScrollReveal();
 
   const favorite = isFavorite(recipe.id);
 
   const handleFavoriteClick = async (e) => {
     e.preventDefault();
     e.stopPropagation();
-    
-    if (!user) {
-      navigate('/login');
-      return;
-    }
-    
+    if (!user) return navigate('/login');
     await toggleFavorite(recipe.id);
   };
 
+  // 🔥 هاد السطر كيتحقق واش الصورة رابط خارجي ولا محلية
+  const imageUrl = recipe.image?.startsWith('http') 
+    ? recipe.image 
+    : `/images/${recipe.image}`;
+
   return (
-    <div
-      ref={ref}
-      className={`group relative bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-warm-brown/5 dark:border-dark-text/5 flex flex-col h-full ${
-        isVisible ? 'reveal-visible' : 'reveal-hidden'
-      }`}
-    >
-      
-      {/* Image Section */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-cream dark:bg-dark-bg">
-        
-        <Link to={`/recipe/${recipe.id}`} className="block w-full h-full">
+    <div className="group bg-white dark:bg-dark-card rounded-[24px] overflow-hidden border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300">
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <Link to={`/recipe/${recipe.id}`}>
           <img
-            src={`/images/${recipe.image}`}
+            src={imageUrl}
             alt={recipe.name}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             onError={(e) => { e.target.style.display = 'none'; }}
           />
         </Link>
         
-        {/* Season Badge */}
-        <div className="absolute top-4 right-4 bg-white/95 dark:bg-dark-card/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm pointer-events-none z-10">
-          <span className="text-xs font-semibold text-warm-brown dark:text-dark-text tracking-wide">
-            {recipe.season === 'Autumn' && '🍂 '}
-            {recipe.season === 'Winter' && '❄️ '}
-            {recipe.season === 'Spring' && '🌸 '}
-            {recipe.season === 'Summer' && '☀️ '}
-            {t(`seasons.${recipe.season}`)}
-          </span>
-        </div>
-
-        {/* Favorite Button */}
-        {user ? (
-          <button
-            onClick={handleFavoriteClick}
-            className="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/95 dark:bg-dark-card/95 backdrop-blur-sm shadow-sm hover:scale-110 transition-transform flex items-center justify-center text-lg z-20 cursor-pointer"
-            type="button"
-          >
-            {favorite ? '❤️' : '🤍'}
-          </button>
-        ) : (
-          <Link
-            to="/login"
-            className="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/95 dark:bg-dark-card/95 backdrop-blur-sm shadow-sm hover:scale-110 transition-transform flex items-center justify-center text-lg z-20"
-          >
-            🤍
-          </Link>
-        )}
+        <button
+          onClick={handleFavoriteClick}
+          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/90 dark:bg-dark-card/90 backdrop-blur-sm flex items-center justify-center hover:scale-110 transition-transform z-10 shadow-sm"
+        >
+          <Heart size={16} className={favorite ? "fill-guava-pink text-guava-pink" : "text-gray-400"} />
+        </button>
       </div>
 
-      {/* Content Section */}
-      <Link to={`/recipe/${recipe.id}`} className="block flex-1 flex flex-col">
-        <div className="p-5 flex flex-col flex-1">
-          <div className="flex items-center gap-3 mb-2 text-xs">
-            <span className="flex items-center gap-1 text-fresh-green dark:text-green-400 font-medium">
-              🌍 {recipe.country}
-            </span>
-            <span className="w-1 h-1 rounded-full bg-warm-brown/30 dark:bg-dark-text/30"></span>
-            <span className="flex items-center gap-1 text-warm-brown/70 dark:text-dark-text/70">
-              🍴 {recipe.cuisine}
-            </span>
-          </div>
-
-          <h3 className="font-serif text-xl font-bold text-warm-brown dark:text-dark-text group-hover:text-orange-accent transition-colors leading-tight line-clamp-2 min-h-[3.5rem]">
+      <div className="p-5">
+        <Link to={`/recipe/${recipe.id}`}>
+          <h3 className="font-serif text-xl font-bold text-warm-brown dark:text-white mb-3 group-hover:text-guava-pink transition-colors">
             {recipe.name}
           </h3>
-
-          <div className="mt-auto pt-4 border-t border-warm-brown/10 dark:border-dark-text/10 flex items-center justify-between">
-            <span className="text-xs text-warm-brown/60 dark:text-dark-text/60">
-              {recipe.ingredients.length} {t('recipe.ingredients').toLowerCase()}
-            </span>
-            <span className="text-orange-accent text-sm font-medium group-hover:translate-x-1 transition-transform">
-              View →
-            </span>
-          </div>
+        </Link>
+        
+        <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
+          <span className="flex items-center gap-1"><Clock size={14}/> {recipe.steps.length * 5} min</span>
+          <span className="flex items-center gap-1 text-yellow-500"><Star size={14} fill="currentColor"/> 4.8</span>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }

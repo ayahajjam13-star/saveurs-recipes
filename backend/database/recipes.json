@@ -3144,5 +3144,101 @@
       "Bake at 190°C (375°F) for 30 minutes until golden.",
       "Pour the syrup over and sprinkle with pistachios."
     ]
-  }
+    
+  },
+      {
+        "name": "Fluffy American Pancakes",
+        "season": "Winter",
+        "cuisine": "American",
+        "country": "United States",
+        "image": "pancakes.jpg",
+        "ingredients": [
+            "200g all-purpose flour",
+            "2 tbsp sugar",
+            "2 tsp baking powder",
+            "1/2 tsp salt",
+            "2 large eggs",
+            "300ml milk",
+            "50g melted butter",
+            "Maple syrup for serving"
+        ],
+        "steps": [
+            "In a large bowl, whisk together flour, sugar, baking powder, and salt.",
+            "In another bowl, beat the eggs and mix with milk and melted butter.",
+            "Pour the wet ingredients into the dry ingredients and stir until just combined.",
+            "Heat a lightly oiled griddle or frying pan over medium-high heat.",
+            "Pour about 1/4 cup of batter onto the griddle for each pancake.",
+            "Cook until bubbles form and the edges are dry, then flip and cook until browned.",
+            "Serve hot with maple syrup."
+        ]
+    },
+    {
+        "name": "Avocado Toast with Poached Egg",
+        "season": "Spring",
+        "cuisine": "International",
+        "country": "Australia",
+        "image": "avocado-toast.jpg",
+        "ingredients": [
+            "2 slices sourdough bread",
+            "1 ripe avocado",
+            "2 fresh eggs",
+            "1 tbsp white vinegar",
+            "Salt and black pepper to taste",
+            "Red pepper flakes (optional)",
+            "Lemon juice"
+        ],
+        "steps": [
+            "Toast the sourdough bread until golden and crisp.",
+            "Mash the avocado in a bowl with lemon juice, salt, and pepper.",
+            "Bring a pot of water to a gentle simmer and add vinegar. Create a whirlpool and gently drop in the eggs.",
+            "Poach the eggs for about 3 minutes until the whites are set but the yolks are runny.",
+            "Spread the mashed avocado generously on the toast.",
+            "Top with the poached eggs and sprinkle with red pepper flakes."
+        ]
+    },
+    {
+        "name": "Cheese and Herb Omelette",
+        "season": "Autumn",
+        "cuisine": "French",
+        "country": "France",
+        "image": "omelette.jpg",
+        "ingredients": [
+            "3 large eggs",
+            "1 tbsp butter",
+            "50g grated cheddar or gruyere cheese",
+            "1 tbsp chopped fresh chives",
+            "Salt and pepper to taste"
+        ],
+        "steps": [
+            "Crack the eggs into a bowl and whisk with salt and pepper.",
+            "Melt butter in a non-stick skillet over medium heat.",
+            "Pour in the eggs and cook, stirring gently with a spatula, until almost set.",
+            "Sprinkle the cheese and chives over one half of the omelette.",
+            "Fold the omelette in half and slide onto a plate.",
+            "Serve immediately."
+        ]
+    },
+    {
+        "name": "Classic French Toast",
+        "season": "Winter",
+        "cuisine": "French",
+        "country": "France",
+        "image": "french-toast.jpg",
+        "ingredients": [
+            "4 slices thick bread",
+            "2 large eggs",
+            "120ml milk",
+            "1 tsp vanilla extract",
+            "1/2 tsp cinnamon",
+            "Butter for frying",
+            "Powdered sugar and berries for serving"
+        ],
+        "steps": [
+            "Whisk together eggs, milk, vanilla, and cinnamon in a shallow dish.",
+            "Dip each bread slice into the egg mixture, coating both sides.",
+            "Melt butter in a pan over medium heat.",
+            "Fry the bread until golden brown on both sides.",
+            "Serve hot with powdered sugar and fresh berries."
+        ]
+    }
 ]

@@ -24,8 +24,9 @@ Route::get('/email/verify/{id}/{hash}', [EmailVerificationController::class, 've
 // Public Rating
 Route::get('/ratings/{recipeId}', [RatingController::class, 'index']);
 
-// AI (Public)
+// AI (Public) - 🔥 هنا حطينا /ai/chat باش يخدم بلا تسجيل دخول
 Route::post('/ai/suggest', [AIController::class, 'suggestRecipes']);
+Route::post('/ai/chat', [AIController::class, 'chat']);
 
 // Newsletter (Public)
 Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe']);
@@ -77,11 +78,14 @@ Route::get('/recipes/search-by-ingredients', [RecipeController::class, 'searchBy
 Route::get('/recipes/stats/top-rated', [RecipeController::class, 'topRated']);
 Route::get('/recipes/season/{season}', [RecipeController::class, 'bySeason']);
 Route::get('/recipes/{id}', [RecipeController::class, 'show']);
+
 // Comments
 Route::get('/recipes/{recipeId}/comments', [App\Http\Controllers\Api\CommentController::class, 'index']);
 Route::post('/recipes/{recipeId}/comments', [App\Http\Controllers\Api\CommentController::class, 'store'])->middleware('auth:sanctum');
+
 // Public Profiles
 Route::get('/users/{id}', [App\Http\Controllers\Api\UserController::class, 'show']);
+
 // Protected (Follow/Unfollow)
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/users/{id}/follow', [App\Http\Controllers\Api\UserController::class, 'toggleFollow']);

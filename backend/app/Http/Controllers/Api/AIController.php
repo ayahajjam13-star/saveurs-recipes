@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Cache;
 
 class AIController extends Controller
 {
+    // الدالة القديمة (للـ Suggest Recipes)
     public function suggestRecipes(Request $request)
     {
         $request->validate([
@@ -31,7 +32,6 @@ class AIController extends Controller
             }
         }
 
-        // البحث بالكلمات المفتاحية فـ قاعدة البيانات (كاحتياطي)
         $keywords = explode(',', $userIngredients);
         $directResults = Recipe::where(function ($query) use ($keywords) {
             foreach ($keywords as $keyword) {
@@ -78,7 +78,6 @@ class AIController extends Controller
                 $suggested = Recipe::whereIn('id', $ids)->get();
             }
 
-            // 🔥 إلا الـ AI فشل ولا رجع خاوي، كنستعملو نتائج البحث المباشر
             if ($suggested->isEmpty() && $directResults->isNotEmpty()) {
                 $suggested = $directResults;
             }
@@ -90,11 +89,66 @@ class AIController extends Controller
             return response()->json(['recipes' => $suggested, 'cached' => false]);
             
         } catch (\Throwable $e) {
-            // إلا وقع شي خطأ فـ الاتصال، كنرجعو نتائج البحث المباشر
             if ($directResults->isNotEmpty()) {
                 return response()->json(['recipes' => $directResults, 'cached' => false]);
             }
             return response()->json(['message' => 'AI service unavailable'], 500);
+        }
+    }
+
+    // 🔥 الدالة الجديدة (للشات بوت AI Chef)
+    public function chat(Request $request)
+    {
+        $request->validate([
+            'message' => 'required|string|max:500',
+        ]);
+
+        $apiKey = env('GROQ_API_KEY');
+        if (!$apiKey) {
+            return response()->json(['message' => 'AI service not configured'], 500);
+        }
+
+        // جيب غير 20 وصفة باش الـ Prompt ما يطولش
+        $recipes = Recipe::select('name', 'country')->take(20)->get();
+        $recipeList = $recipes->map(fn($r) => "- {$r->name} ({$r->country})")->implode("\n");
+
+        $prompt = "You are Chef Saveurs. User said: \"{$request->message}\".\n" .
+                  "Recipes available:\n{$recipeList}\n" .
+                  "Reply in the same language. If the user mentions ingredients, suggest 1-3 recipes from the list. Keep it short (max 3 sentences).";
+
+        try {
+            $response = Http::withHeaders([
+                'Content-Type' => 'application/json',
+                'Authorization' => "Bearer {$apiKey}",
+            ])->post("https://api.groq.com/openai/v1/chat/completions", [
+                'model' => 'openai/gpt-oss-20b',
+                'messages' => [
+                    ['role' => 'user', 'content' => $prompt],
+                ],
+                'temperature' => 0.6,
+                'max_tokens' => 200,
+            ]);
+
+            if (!$response->successful()) {
+                return response()->json(['message' => 'AI request failed', 'error' => $response->body()], 500);
+            }
+
+            $data = $response->json();
+            $aiReply = $data['choices'][0]['message']['content'] ?? '';
+
+            if (empty(trim($aiReply))) {
+                $aiReply = "I'm here to help! Try asking me about a specific ingredient like 'chicken' or 'apple'.";
+            }
+
+            return response()->json([
+                'reply' => $aiReply,
+            ]);
+
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => 'AI error',
+                'error' => $e->getMessage(),
+            ], 500);
         }
     }
 }

@@ -1,43 +1,38 @@
 import RatingStars from './RatingStars';
+import { User } from 'lucide-react';
 
 function RatingList({ ratings }) {
   if (!ratings || ratings.length === 0) {
     return (
-      <div className="text-center py-8 text-warm-brown/60 dark:text-dark-text/60">
-        <p className="text-4xl mb-2">💬</p>
-        <p>No reviews yet. Be the first to rate!</p>
-      </div>
+      <p className="text-gray-400 text-center py-4 font-sans text-sm">
+        No ratings yet. Be the first to rate!
+      </p>
     );
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mt-6">
       {ratings.map((rating) => (
-        <div
-          key={rating.id}
-          className="bg-white dark:bg-dark-card rounded-2xl p-5 border border-warm-brown/5 dark:border-dark-text/5 transition-colors"
-        >
-          <div className="flex items-start justify-between mb-2">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-orange-accent/10 rounded-full flex items-center justify-center text-warm-brown dark:text-dark-text font-bold">
-                {rating.user?.name?.charAt(0).toUpperCase() || '?'}
-              </div>
-              <div>
-                <p className="font-medium text-warm-brown dark:text-dark-text">
-                  {rating.user?.name || 'Anonymous'}
-                </p>
-                <p className="text-xs text-warm-brown/50 dark:text-dark-text/50">
-                  {new Date(rating.created_at).toLocaleDateString()}
-                </p>
-              </div>
+        <div key={rating.id} className="p-4 bg-[#FAF7F0] rounded-xl border border-warm-brown/5">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-8 h-8 rounded-full bg-guava-peach flex items-center justify-center">
+              <User size={14} className="text-warm-brown" />
             </div>
-            <RatingStars rating={rating.score} size="sm" />
+            <div>
+              <p className="font-sans font-bold text-sm text-warm-brown">
+                {rating.user?.name || 'Anonymous'}
+              </p>
+              <p className="text-xs text-gray-400 font-sans">
+                {new Date(rating.created_at).toLocaleDateString()}
+              </p>
+            </div>
           </div>
-          {rating.comment && (
-            <p className="text-warm-brown/80 dark:text-dark-text/80 mt-3 leading-relaxed">
-              "{rating.comment}"
-            </p>
-          )}
+          <div className="flex items-center gap-3">
+             <RatingStars rating={rating.score} size="sm" />
+             {rating.comment && (
+               <p className="text-sm text-gray-600 font-sans">{rating.comment}</p>
+             )}
+          </div>
         </div>
       ))}
     </div>

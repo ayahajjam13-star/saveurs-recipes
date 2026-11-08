@@ -20,14 +20,21 @@ import PageTransition from './components/PageTransition';
 import AIChatbot from './components/AIChatbot';
 import VerifyEmailBanner from './components/VerifyEmailBanner';
 import PublicProfile from './pages/PublicProfile';
+import AIChef from './pages/AIChef';
 
 function App() {
   const location = useLocation();
+  const hideNavbar = ['/login', '/register', '/ai-chef'].includes(location.pathname) || location.pathname.startsWith('/recipe/');
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <VerifyEmailBanner />
+      
+      {/* Navbar (كيبان فـ كل الصفحات ماعدا Login/Register/AIChef) */}
+      {!hideNavbar && <Navbar />}
+      
+      {/* Verify Banner */}
+      {!hideNavbar && <VerifyEmailBanner />}
+      
       <main className="flex-1">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
@@ -44,13 +51,18 @@ function App() {
             <Route path="/stats" element={<PageTransition><Stats /></PageTransition>} />
             <Route path="/auth/callback" element={<AuthCallback />} />
             <Route path="/verify-email" element={<PageTransition><VerifyEmail /></PageTransition>} />
-            <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
             <Route path="/user/:id" element={<PublicProfile />} />
+            <Route path="/ai-chef" element={<AIChef />} />
+            <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </main>
-      <Footer />
-      <AIChatbot />
+      
+      {/* Footer (كيبان فـ كل الصفحات ماعدا Login/Register/AIChef) */}
+      {!hideNavbar && <Footer />}
+      
+      {/* AI Chatbot (كيبان فـ كل الصفحات ماعدا AIChef) */}
+      {location.pathname !== '/ai-chef' && <AIChatbot />}
     </div>
   );
 }

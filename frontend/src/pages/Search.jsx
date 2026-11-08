@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import { searchRecipes, getRecipes } from '../services/api';
@@ -11,6 +12,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 function Search() {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams(); // باش نقراو ?q=... من الرابط
   const [searchMode, setSearchMode] = useState('name');
   const [query, setQuery] = useState('');
   const [ingredientQuery, setIngredientQuery] = useState('');
@@ -26,14 +28,31 @@ function Search() {
   const cuisines = ['All', ...new Set(allRecipes.map(r => r.cuisine))].sort();
   const seasonKeys = ['All', 'Autumn', 'Winter', 'Spring', 'Summer'];
 
+  // 🔥 هاد الـ useEffect كيقرا الكلمة المفتاحية من الرابط ويبحث بها
   useEffect(() => {
-    getRecipes()
-      .then(res => {
-        setAllRecipes(res.data);
-        setResults(res.data);
-      })
-      .catch(err => console.error(err));
-  }, []);
+    const q = searchParams.get('q');
+    if (q) {
+      setQuery(q);
+      setLoading(true);
+      searchRecipes(q)
+        .then(res => {
+          setResults(res.data);
+          setLoading(false);
+          setSearched(true);
+        })
+        .catch(err => {
+          console.error(err);
+          setLoading(false);
+        });
+    } else {
+      getRecipes()
+        .then(res => {
+          setAllRecipes(res.data);
+          setResults(res.data);
+        })
+        .catch(err => console.error(err));
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     if (searchMode !== 'name') return;
@@ -112,27 +131,27 @@ function Search() {
   const hasActiveFilters = selectedSeason !== 'All' || selectedCuisine !== 'All' || sortBy !== 'default' || query || ingredientQuery;
 
   return (
-    <div className="animate-fade-in bg-cream dark:bg-dark-bg min-h-screen transition-colors">
+    <div className="animate-fade-in bg-[#FAF7F0] dark:bg-dark-bg min-h-screen transition-colors">
       
       <SEO title="Search" description="Search through 120 recipes from around the world." url="/search" />
 
-      <section className="bg-gradient-to-br from-warm-brown via-warm-brown to-orange-accent/30 dark:from-dark-card dark:via-dark-card dark:to-orange-accent/20 py-16 px-4">
+      <section className="bg-[#1A1A1A] dark:bg-dark-card py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-orange-accent font-medium tracking-widest uppercase text-sm mb-4">
+          <p className="text-guava-pink font-medium tracking-widest uppercase text-sm mb-4">
             Find your next meal
           </p>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-cream mb-6">
-            {t('search.title')}
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-6">
+            {t('search.title') || 'Search Recipes'}
           </h1>
-          <p className="text-cream/70 text-lg mb-8">{t('search.subtitle')}</p>
+          <p className="text-gray-300 text-lg mb-8">{t('search.subtitle') || 'Search through 120 recipes from around the world.'}</p>
 
           <div className="flex justify-center gap-2 mb-6">
             <button
               onClick={() => { setSearchMode('name'); clearAllFilters(); }}
               className={`px-5 py-2 rounded-xl font-medium transition-all ${
                 searchMode === 'name'
-                  ? 'bg-orange-accent text-white'
-                  : 'bg-white/10 text-cream hover:bg-white/20'
+                  ? 'bg-guava-pink text-white'
+                  : 'bg-white/10 text-white hover:bg-white/20'
               }`}
             >
               🔍 By Name
@@ -141,8 +160,8 @@ function Search() {
               onClick={() => { setSearchMode('ingredients'); clearAllFilters(); }}
               className={`px-5 py-2 rounded-xl font-medium transition-all ${
                 searchMode === 'ingredients'
-                  ? 'bg-orange-accent text-white'
-                  : 'bg-white/10 text-cream hover:bg-white/20'
+                  ? 'bg-guava-pink text-white'
+                  : 'bg-white/10 text-white hover:bg-white/20'
               }`}
             >
               🥕 By Ingredients
@@ -157,11 +176,11 @@ function Search() {
                   type="text"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder={t('search.placeholder')}
-                  className="w-full pl-16 pr-36 py-5 rounded-2xl border-2 border-white/20 bg-white dark:bg-dark-card text-warm-brown dark:text-dark-text placeholder:text-warm-brown/40 dark:placeholder:text-dark-text/40 focus:outline-none focus:border-orange-accent text-lg shadow-2xl transition-colors"
+                  placeholder={t('search.placeholder') || 'e.g. chicken, pasta, tagine...'}
+                  className="w-full pl-16 pr-36 py-5 rounded-[24px] border-none bg-white dark:bg-dark-card text-warm-brown dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-guava-pink text-lg shadow-soft transition-all"
                 />
-                <button type="submit" className="absolute right-2 top-2 bottom-2 px-8 bg-orange-accent text-white rounded-xl hover:bg-orange-accent/90 transition-colors font-semibold">
-                  {t('search.button')}
+                <button type="submit" className="absolute right-2 top-2 bottom-2 px-8 bg-guava-pink text-white rounded-xl hover:bg-guava-pink/90 transition-colors font-semibold">
+                  {t('search.button') || 'Search'}
                 </button>
               </div>
             </form>
@@ -174,9 +193,9 @@ function Search() {
                   value={ingredientQuery}
                   onChange={(e) => setIngredientQuery(e.target.value)}
                   placeholder="e.g. chicken, tomatoes, onion..."
-                  className="w-full pl-16 pr-36 py-5 rounded-2xl border-2 border-white/20 bg-white dark:bg-dark-card text-warm-brown dark:text-dark-text placeholder:text-warm-brown/40 dark:placeholder:text-dark-text/40 focus:outline-none focus:border-orange-accent text-lg shadow-2xl transition-colors"
+                  className="w-full pl-16 pr-36 py-5 rounded-[24px] border-none bg-white dark:bg-dark-card text-warm-brown dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-guava-pink text-lg shadow-soft transition-all"
                 />
-                <button type="submit" className="absolute right-2 top-2 bottom-2 px-8 bg-orange-accent text-white rounded-xl hover:bg-orange-accent/90 transition-colors font-semibold">
+                <button type="submit" className="absolute right-2 top-2 bottom-2 px-8 bg-guava-pink text-white rounded-xl hover:bg-guava-pink/90 transition-colors font-semibold">
                   Search
                 </button>
               </div>
@@ -187,68 +206,67 @@ function Search() {
 
       {searchMode === 'name' && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
-          <div className="bg-white dark:bg-dark-card rounded-3xl shadow-xl p-6 transition-colors">
-            
+          <div className="bg-white dark:bg-dark-card rounded-[24px] shadow-soft border border-gray-100 dark:border-gray-800 p-6 transition-colors">
             <div className="grid md:grid-cols-3 gap-4">
               <div>
-                <label className="block text-sm font-medium text-warm-brown dark:text-dark-text mb-2">
-                  🍂 {t('search.season')}
+                <label className="block text-sm font-medium text-warm-brown dark:text-white mb-2">
+                  🍂 {t('search.season') || 'Season'}
                 </label>
                 <select
                   value={selectedSeason}
                   onChange={(e) => setSelectedSeason(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border border-warm-brown/10 dark:border-dark-text/10 bg-cream/50 dark:bg-dark-bg/50 text-warm-brown dark:text-dark-text focus:outline-none focus:border-orange-accent transition-colors"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-dark-bg text-warm-brown dark:text-white focus:outline-none focus:ring-2 focus:ring-guava-pink transition-all"
                 >
                   {seasonKeys.map(s => (
                     <option key={s} value={s}>
-                      {s === 'All' ? t('search.all') : t(`seasons.${s}`)}
+                      {s === 'All' ? (t('search.all') || 'All') : t(`seasons.${s}`)}
                     </option>
                   ))}
                 </select>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-warm-brown dark:text-dark-text mb-2">
-                  🍴 {t('search.cuisine')}
+                <label className="block text-sm font-medium text-warm-brown dark:text-white mb-2">
+                  🍴 {t('search.cuisine') || 'Cuisine'}
                 </label>
                 <select
                   value={selectedCuisine}
                   onChange={(e) => setSelectedCuisine(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border border-warm-brown/10 dark:border-dark-text/10 bg-cream/50 dark:bg-dark-bg/50 text-warm-brown dark:text-dark-text focus:outline-none focus:border-orange-accent transition-colors"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-dark-bg text-warm-brown dark:text-white focus:outline-none focus:ring-2 focus:ring-guava-pink transition-all"
                 >
                   {cuisines.map(c => (
                     <option key={c} value={c}>
-                      {c === 'All' ? t('search.all') : c}
+                      {c === 'All' ? (t('search.all') || 'All') : c}
                     </option>
                   ))}
                 </select>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-warm-brown dark:text-dark-text mb-2">
-                  🔤 {t('search.sortBy')}
+                <label className="block text-sm font-medium text-warm-brown dark:text-white mb-2">
+                  🔤 {t('search.sortBy') || 'Sort by'}
                 </label>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border border-warm-brown/10 dark:border-dark-text/10 bg-cream/50 dark:bg-dark-bg/50 text-warm-brown dark:text-dark-text focus:outline-none focus:border-orange-accent transition-colors"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-dark-bg text-warm-brown dark:text-white focus:outline-none focus:ring-2 focus:ring-guava-pink transition-all"
                 >
-                  <option value="default">{t('search.default')}</option>
-                  <option value="az">{t('search.az')}</option>
-                  <option value="za">{t('search.za')}</option>
+                  <option value="default">Default</option>
+                  <option value="az">A-Z</option>
+                  <option value="za">Z-A</option>
                 </select>
               </div>
             </div>
 
             {hasActiveFilters && (
-              <div className="mt-4 pt-4 border-t border-warm-brown/10 dark:border-dark-text/10 flex flex-wrap items-center justify-between gap-3">
+              <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800 flex flex-wrap items-center justify-between gap-3">
                 <div className="flex flex-wrap gap-2 text-sm">
-                  {query && <span className="px-3 py-1 bg-orange-accent/10 text-orange-accent rounded-full">Search: {query}</span>}
-                  {selectedSeason !== 'All' && <span className="px-3 py-1 bg-orange-accent/10 text-orange-accent rounded-full">{t(`seasons.${selectedSeason}`)}</span>}
-                  {selectedCuisine !== 'All' && <span className="px-3 py-1 bg-orange-accent/10 text-orange-accent rounded-full">{selectedCuisine}</span>}
+                  {query && <span className="px-3 py-1 bg-guava-pink/10 text-guava-pink rounded-full">Search: {query}</span>}
+                  {selectedSeason !== 'All' && <span className="px-3 py-1 bg-guava-pink/10 text-guava-pink rounded-full">{t(`seasons.${selectedSeason}`)}</span>}
+                  {selectedCuisine !== 'All' && <span className="px-3 py-1 bg-guava-pink/10 text-guava-pink rounded-full">{selectedCuisine}</span>}
                 </div>
-                <button onClick={clearAllFilters} className="text-warm-brown/60 dark:text-dark-text/60 hover:text-orange-accent transition-colors text-sm font-medium">
-                  {t('search.clearAll')} ✕
+                <button onClick={clearAllFilters} className="text-gray-500 hover:text-guava-pink transition-colors text-sm font-medium">
+                  Clear All ✕
                 </button>
               </div>
             )}
@@ -269,9 +287,9 @@ function Search() {
         {!loading && results.length === 0 && (
           <EmptyState
             icon={searchMode === 'ingredients' ? '🥕' : '🔍'}
-            title={searchMode === 'ingredients' ? 'No recipes found with these ingredients' : t('search.noResults')}
-            description={searchMode === 'ingredients' ? 'Try fewer ingredients or different ones' : t('search.noResultsText')}
-            actionLabel={t('search.clearFilters')}
+            title={searchMode === 'ingredients' ? 'No recipes found with these ingredients' : (t('search.noResults') || 'No recipes found')}
+            description={searchMode === 'ingredients' ? 'Try fewer ingredients or different ones' : (t('search.noResultsText') || 'Try different keywords or clear your filters.')}
+            actionLabel={t('search.clearFilters') || 'Clear Filters'}
             onAction={clearAllFilters}
           />
         )}
@@ -280,11 +298,11 @@ function Search() {
           <>
             <div className="flex items-end justify-between mb-8">
               <div>
-                <p className="text-orange-accent font-medium tracking-widest uppercase text-sm mb-2">
-                  {t('search.results')}
+                <p className="text-guava-pink font-medium tracking-widest uppercase text-sm mb-2">
+                  {t('search.results') || 'Results'}
                 </p>
-                <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text">
-                  {results.length} {results.length === 1 ? t('search.recipeFound') : t('search.recipesFound')}
+                <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-white">
+                  {results.length} {(t('search.recipesFound') || 'recipes found')}
                 </h2>
               </div>
             </div>

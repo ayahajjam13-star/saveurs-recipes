@@ -1,141 +1,84 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Star } from 'lucide-react';
 import axios from 'axios';
-import toast from 'react-hot-toast';
-import { useAuth } from '../context/AuthContext';
-import RatingStars from './RatingStars';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 function RatingForm({ recipeId, onRatingChange }) {
-  const { user } = useAuth();
   const [score, setScore] = useState(0);
+  const [hover, setHover] = useState(0);
   const [comment, setComment] = useState('');
-  const [existingRating, setExistingRating] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    if (user) {
-      axios.get(`${API_URL}/ratings/check/${recipeId}`)
-        .then(res => {
-          if (res.data.has_rated) {
-            setExistingRating(res.data.rating);
-            setScore(res.data.rating.score);
-            setComment(res.data.rating.comment || '');
-          }
-        })
-        .catch(err => console.error(err));
-    }
-  }, [recipeId, user]);
+  const token = localStorage.getItem('token');
+  const isLoggedIn = !!token;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    if (!user) {
-      toast.error('Please login to rate');
-      return;
-    }
-
-    if (score === 0) {
-      toast.error('Please select a rating');
-      return;
-    }
-
+    if (score === 0) return;
     setLoading(true);
+
     try {
       await axios.post(`${API_URL}/ratings`, {
         recipe_id: recipeId,
         score,
-        comment,
+        comment
+      }, {
+        headers: { Authorization: `Bearer ${token}` }
       });
-      toast.success(existingRating ? 'Rating updated!' : 'Thanks for your rating! ⭐', {
-        icon: '🎉',
-        duration: 3000,
-      });
-      if (onRatingChange) onRatingChange();
-    } catch (err) {
-      console.error(err);
-      toast.error('Failed to save rating');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleDelete = async () => {
-    setLoading(true);
-    try {
-      await axios.delete(`${API_URL}/ratings/${recipeId}`);
       setScore(0);
       setComment('');
-      setExistingRating(null);
-      toast.success('Rating removed');
-      if (onRatingChange) onRatingChange();
+      onRatingChange();
     } catch (err) {
       console.error(err);
-      toast.error('Failed to delete rating');
     } finally {
       setLoading(false);
     }
   };
 
-  if (!user) {
+  if (!isLoggedIn) {
     return (
-      <div className="bg-white dark:bg-dark-card rounded-2xl p-6 border border-warm-brown/5 dark:border-dark-text/5 text-center transition-colors">
-        <p className="text-warm-brown/60 dark:text-dark-text/60 mb-3">
-          🔒 Login to rate this recipe
-        </p>
+      <div className="text-center p-6 bg-[#FAF7F0] rounded-xl border border-warm-brown/5 font-sans">
+        <p className="text-gray-500 text-sm">Please log in to rate this recipe.</p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white dark:bg-dark-card rounded-2xl p-6 border border-warm-brown/5 dark:border-dark-text/5 transition-colors">
-      <h3 className="font-serif text-xl font-bold text-warm-brown dark:text-dark-text mb-4">
-        {existingRating ? '⭐ Update your rating' : '⭐ Rate this recipe'}
-      </h3>
-
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-warm-brown dark:text-dark-text mb-2">
-          Your rating
-        </label>
-        <RatingStars rating={score} size="lg" interactive onRate={setScore} />
-      </div>
-
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-warm-brown dark:text-dark-text mb-2">
-          Comment (optional)
-        </label>
-        <textarea
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-          rows={3}
-          maxLength={500}
-          placeholder="Share your experience with this recipe..."
-          className="w-full px-4 py-3 rounded-xl border border-warm-brown/10 dark:border-dark-text/10 bg-cream/50 dark:bg-dark-bg/50 text-warm-brown dark:text-dark-text focus:outline-none focus:border-orange-accent transition-colors resize-none"
-        />
-        <p className="text-xs text-warm-brown/50 dark:text-dark-text/50 mt-1">
-          {comment.length}/500
-        </p>
-      </div>
-
-      <div className="flex gap-3">
-        <button
-          type="submit"
-          disabled={loading || score === 0}
-          className="flex-1 py-3 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors disabled:opacity-50"
-        >
-          {loading ? 'Saving...' : existingRating ? 'Update Rating' : 'Submit Rating'}
-        </button>
-        {existingRating && (
+    <form onSubmit={handleSubmit} className="space-y-4 font-sans">
+      <div className="flex justify-center gap-2">
+        {[1, 2, 3, 4, 5].map((star) => (
           <button
+            key={star}
             type="button"
-            onClick={handleDelete}
-            disabled={loading}
-            className="px-6 py-3 bg-red-500/10 text-red-500 rounded-xl font-medium hover:bg-red-500/20 transition-colors disabled:opacity-50"
+            onClick={() => setScore(star)}
+            onMouseEnter={() => setHover(star)}
+            onMouseLeave={() => setHover(0)}
+            className="transition-transform hover:scale-110"
           >
-            Delete
+            <Star
+              size={32}
+              className={`${
+                star <= (hover || score) ? 'fill-guava-pink text-guava-pink' : 'text-gray-300'
+              } transition-colors`}
+            />
           </button>
-        )}
+        ))}
       </div>
+      <textarea
+        value={comment}
+        onChange={(e) => setComment(e.target.value)}
+        placeholder="Leave a review (optional)..."
+        className="w-full p-4 rounded-xl border border-gray-200 bg-white text-warm-brown focus:outline-none focus:ring-2 focus:ring-guava-pink/30 transition-all resize-none text-sm"
+        rows={3}
+      />
+      <button
+        type="submit"
+        disabled={loading || score === 0}
+        className="w-full py-3 bg-warm-brown text-white rounded-full text-sm font-bold tracking-widest uppercase hover:bg-guava-pink transition-colors disabled:opacity-50"
+      >
+        {loading ? 'Submitting...' : 'Submit Review'}
+      </button>
     </form>
   );
 }

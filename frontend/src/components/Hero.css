@@ -1,0 +1,186 @@
+.saveurs-hero {
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #fffaf2;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(35, 20, 13, 0.96) 0%,
+      rgba(35, 20, 13, 0.83) 35%,
+      rgba(35, 20, 13, 0.12) 75%,
+      rgba(35, 20, 13, 0.05) 100%
+    ),
+    url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2000&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center 55%;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(30, 17, 10, 0.25), transparent 40%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(750px, 65%);
+  padding: 75px 0 90px 6%;
+}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #d98b63;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 28px;
+}
+
+.hero-eyebrow i {
+  width: 5px;
+  height: 5px;
+  background: #d98b63;
+  border-radius: 50%;
+}
+
+.hero-content h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(48px, 6.2vw, 88px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin: 0 0 25px;
+}
+
+.hero-content h1 em {
+  color: #c66b43;
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 480px;
+  color: #f0e5da;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 17px 27px;
+  background: #bb592f;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-primary:hover {
+  background: #d4774c;
+  transform: translateY(-3px);
+}
+
+.hero-primary span {
+  font-size: 22px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 65px;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-stats strong {
+  font-size: 23px;
+  font-family: "Playfair Display", serif;
+}
+
+.hero-stats span {
+  font-size: 12px;
+  color: #e2d1c2;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #f0e5da;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-scroll span {
+  width: 35px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .saveurs-hero {
+    min-height: 680px;
+    background-position: 68% center;
+  }
+  .hero-content {
+    width: 100%;
+    padding: 75px 25px 85px;
+  }
+  .hero-content h1 {
+    font-size: clamp(43px, 11vw, 64px);
+    letter-spacing: -1px;
+  }
+  .hero-description {
+    font-size: 15px;
+    max-width: 340px;
+  }
+  .hero-stats {
+    gap: 18px;
+    margin-top: 45px;
+  }
+  .hero-stats div {
+    padding-right: 15px;
+  }
+  .hero-stats strong {
+    font-size: 19px;
+  }
+  .hero-scroll {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .hero-actions {
+    gap: 16px;
+  }
+  .hero-primary {
+    padding: 14px 19px;
+  }
+}

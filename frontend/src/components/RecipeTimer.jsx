@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import toast from 'react-hot-toast';
+import { Timer, Play, Pause, RotateCcw, Bell, X } from 'lucide-react';
 
 function RecipeTimer({ onClose }) {
   const [minutes, setMinutes] = useState(5);
@@ -9,7 +10,6 @@ function RecipeTimer({ onClose }) {
   const [isPaused, setIsPaused] = useState(false);
   const intervalRef = useRef(null);
 
-  // Preset times (in minutes)
   const presets = [1, 5, 10, 15, 20, 30];
 
   useEffect(() => {
@@ -36,13 +36,11 @@ function RecipeTimer({ onClose }) {
     setIsRunning(false);
     setIsPaused(false);
     
-    // Toast
-    toast.success('⏰ Time\'s up!', {
+    toast.success("Time's up!", {
       duration: 10000,
-      icon: '🔔',
+      icon: <Bell className="text-guava-pink" />,
     });
 
-    // Sound (using Web Audio API)
     try {
       const audioContext = new (window.AudioContext || window.webkitAudioContext)();
       const oscillator = audioContext.createOscillator();
@@ -50,16 +48,13 @@ function RecipeTimer({ onClose }) {
 
       oscillator.connect(gainNode);
       gainNode.connect(audioContext.destination);
-
       oscillator.frequency.value = 800;
       oscillator.type = 'sine';
       gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
       gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1.5);
-
       oscillator.start(audioContext.currentTime);
       oscillator.stop(audioContext.currentTime + 1.5);
 
-      // Play 3 beeps
       setTimeout(() => {
         const osc2 = audioContext.createOscillator();
         const gain2 = audioContext.createGain();
@@ -87,9 +82,8 @@ function RecipeTimer({ onClose }) {
       console.log('Audio error:', e);
     }
 
-    // Browser notification
     if ('Notification' in window && Notification.permission === 'granted') {
-      new Notification('⏰ Time\'s up!', {
+      new Notification("Time's up!", {
         body: 'Your recipe timer has finished.',
         icon: '/pwa-192x192.png',
       });
@@ -103,7 +97,6 @@ function RecipeTimer({ onClose }) {
       return;
     }
 
-    // Request notification permission
     if ('Notification' in window && Notification.permission === 'default') {
       Notification.requestPermission();
     }
@@ -113,9 +106,7 @@ function RecipeTimer({ onClose }) {
     setIsPaused(false);
   };
 
-  const handlePause = () => {
-    setIsPaused(!isPaused);
-  };
+  const handlePause = () => setIsPaused(!isPaused);
 
   const handleReset = () => {
     setIsRunning(false);
@@ -141,25 +132,25 @@ function RecipeTimer({ onClose }) {
   })();
 
   return (
-    <div className="fixed inset-0 z-[100] bg-warm-brown/95 dark:bg-dark-bg/95 backdrop-blur-md flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-md flex items-center justify-center p-4 font-sans">
       
-      <div className="bg-white dark:bg-dark-card rounded-3xl p-8 max-w-md w-full shadow-2xl border border-warm-brown/10 dark:border-dark-text/10 relative">
+      <div className="bg-white dark:bg-dark-card rounded-[2rem] p-8 max-w-sm w-full shadow-2xl border border-warm-brown/10 dark:border-gray-800 relative">
         
-        {/* Close */}
+        {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 w-10 h-10 rounded-full bg-warm-brown/10 dark:bg-dark-text/10 hover:bg-warm-brown/20 dark:hover:bg-dark-text/20 text-warm-brown dark:text-dark-text flex items-center justify-center transition-colors text-xl"
+          className="absolute top-6 right-6 w-8 h-8 rounded-full bg-[#FAF7F0] dark:bg-gray-800 text-gray-400 hover:text-warm-brown flex items-center justify-center transition-colors"
         >
-          ✕
+          <X size={18} />
         </button>
 
         {/* Title */}
-        <div className="text-center mb-6">
-          <div className="w-16 h-16 bg-orange-accent/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">
-            ⏱️
+        <div className="text-center mb-8">
+          <div className="w-12 h-12 bg-guava-peach rounded-full flex items-center justify-center mx-auto mb-4">
+            <Timer size={24} className="text-warm-brown" />
           </div>
-          <h2 className="font-serif text-3xl font-bold text-warm-brown dark:text-dark-text">
-            Recipe Timer
+          <h2 className="font-serif text-2xl font-bold text-warm-brown dark:text-white">
+            Timer
           </h2>
         </div>
 
@@ -168,7 +159,7 @@ function RecipeTimer({ onClose }) {
           <div className="text-center mb-8">
             
             {/* Progress Circle */}
-            <div className="relative w-48 h-48 mx-auto mb-6">
+            <div className="relative w-56 h-56 mx-auto mb-8">
               <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
                 <circle
                   cx="50"
@@ -176,8 +167,8 @@ function RecipeTimer({ onClose }) {
                   r="45"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="6"
-                  className="text-warm-brown/10 dark:text-dark-text/10"
+                  strokeWidth="4"
+                  className="text-gray-100 dark:text-gray-800"
                 />
                 <circle
                   cx="50"
@@ -185,38 +176,36 @@ function RecipeTimer({ onClose }) {
                   r="45"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="6"
+                  strokeWidth="4"
                   strokeLinecap="round"
-                  className="text-orange-accent transition-all duration-1000"
+                  className="text-guava-pink transition-all duration-1000"
                   strokeDasharray={`${2 * Math.PI * 45}`}
                   strokeDashoffset={`${2 * Math.PI * 45 * (1 - progress / 100)}`}
                 />
               </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-serif text-5xl font-bold text-warm-brown dark:text-dark-text">
-                    {formatTime(timeLeft)}
-                  </p>
-                  {isPaused && (
-                    <p className="text-sm text-orange-accent font-medium mt-1">PAUSED</p>
-                  )}
-                </div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <p className="font-serif text-6xl font-bold text-warm-brown dark:text-white tracking-tight">
+                  {formatTime(timeLeft)}
+                </p>
+                {isPaused && (
+                  <p className="text-xs text-guava-pink font-bold tracking-widest uppercase mt-2">Paused</p>
+                )}
               </div>
             </div>
 
             {/* Controls */}
-            <div className="flex gap-3 justify-center">
+            <div className="flex gap-4 justify-center">
               <button
                 onClick={handlePause}
-                className="px-6 py-3 bg-orange-accent text-white rounded-xl font-medium hover:bg-orange-accent/90 transition-colors"
+                className="w-14 h-14 bg-guava-pink text-white rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg shadow-guava-pink/30"
               >
-                {isPaused ? '▶️ Resume' : '⏸️ Pause'}
+                {isPaused ? <Play size={24} fill="currentColor" className="ml-1" /> : <Pause size={24} fill="currentColor" />}
               </button>
               <button
                 onClick={handleReset}
-                className="px-6 py-3 bg-warm-brown/10 dark:bg-dark-text/10 text-warm-brown dark:text-dark-text rounded-xl font-medium hover:bg-warm-brown/20 dark:hover:bg-dark-text/20 transition-colors"
+                className="w-14 h-14 bg-gray-100 dark:bg-gray-800 text-warm-brown dark:text-white rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               >
-                🔄 Reset
+                <RotateCcw size={22} />
               </button>
             </div>
           </div>
@@ -224,18 +213,16 @@ function RecipeTimer({ onClose }) {
           <>
             {/* Presets */}
             <div className="mb-6">
-              <p className="text-sm font-medium text-warm-brown/60 dark:text-dark-text/60 mb-3 text-center">
-                Quick Presets
-              </p>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 text-center">Quick Presets</p>
               <div className="grid grid-cols-3 gap-2">
                 {presets.map(mins => (
                   <button
                     key={mins}
                     onClick={() => handlePreset(mins)}
-                    className={`py-3 rounded-xl font-medium transition-colors ${
+                    className={`py-3 rounded-xl text-sm font-bold transition-colors ${
                       minutes === mins && seconds === 0
-                        ? 'bg-orange-accent text-white'
-                        : 'bg-cream dark:bg-dark-bg text-warm-brown dark:text-dark-text hover:bg-orange-accent/10'
+                        ? 'bg-guava-pink text-white shadow-md'
+                        : 'bg-[#FAF7F0] dark:bg-gray-800 text-warm-brown dark:text-gray-300 hover:bg-guava-peach dark:hover:bg-gray-700'
                     }`}
                   >
                     {mins} min
@@ -245,48 +232,44 @@ function RecipeTimer({ onClose }) {
             </div>
 
             {/* Custom Time */}
-            <div className="grid grid-cols-2 gap-3 mb-6">
+            <div className="grid grid-cols-2 gap-4 mb-8">
               <div>
-                <label className="block text-sm font-medium text-warm-brown dark:text-dark-text mb-2">
-                  Minutes
-                </label>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 text-center">Min</label>
                 <input
                   type="number"
                   min="0"
                   max="99"
                   value={minutes}
                   onChange={(e) => setMinutes(Math.max(0, Math.min(99, parseInt(e.target.value) || 0)))}
-                  className="w-full px-4 py-3 rounded-xl border border-warm-brown/10 dark:border-dark-text/10 bg-cream/50 dark:bg-dark-bg/50 text-warm-brown dark:text-dark-text text-center font-serif text-2xl font-bold focus:outline-none focus:border-orange-accent transition-colors"
+                  className="w-full py-4 rounded-2xl border-none bg-[#FAF7F0] dark:bg-gray-800 text-warm-brown dark:text-white text-center font-serif text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-guava-pink transition-all"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-warm-brown dark:text-dark-text mb-2">
-                  Seconds
-                </label>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 text-center">Sec</label>
                 <input
                   type="number"
                   min="0"
                   max="59"
                   value={seconds}
                   onChange={(e) => setSeconds(Math.max(0, Math.min(59, parseInt(e.target.value) || 0)))}
-                  className="w-full px-4 py-3 rounded-xl border border-warm-brown/10 dark:border-dark-text/10 bg-cream/50 dark:bg-dark-bg/50 text-warm-brown dark:text-dark-text text-center font-serif text-2xl font-bold focus:outline-none focus:border-orange-accent transition-colors"
+                  className="w-full py-4 rounded-2xl border-none bg-[#FAF7F0] dark:bg-gray-800 text-warm-brown dark:text-white text-center font-serif text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-guava-pink transition-all"
                 />
               </div>
             </div>
 
-            {/* Start */}
+            {/* Start Button */}
             <button
               onClick={handleStart}
-              className="w-full py-4 bg-orange-accent text-white rounded-2xl font-semibold hover:bg-orange-accent/90 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-orange-accent/30"
+              className="w-full py-4 bg-warm-brown dark:bg-white text-white dark:text-warm-brown rounded-2xl font-bold text-sm tracking-widest uppercase hover:bg-guava-pink dark:hover:bg-guava-pink dark:hover:text-white transition-all shadow-lg flex items-center justify-center gap-2"
             >
-              ▶️ Start Timer
+              <Play size={18} fill="currentColor" /> Start Timer
             </button>
           </>
         )}
 
         {/* Info */}
-        <p className="text-xs text-warm-brown/40 dark:text-dark-text/40 text-center mt-6">
-          💡 You'll get a notification and sound when time is up.
+        <p className="text-xs text-gray-400 text-center mt-8 flex items-center justify-center gap-2">
+          <Bell size={14} /> You will be notified when time is up.
         </p>
       </div>
     </div>
