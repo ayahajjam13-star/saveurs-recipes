@@ -1,8 +1,46 @@
+
+/* =========================================
+   SAVEURS — GLOBAL STYLES
+========================================= */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* =========================================
+   CSS VARIABLES
+========================================= */
+
+:root {
+  --color-pink: #E88FA5;
+  --color-pink-dark: #D77F96;
+  --color-green: #718B68;
+  --color-peach: #F5D8C8;
+
+  --color-cream: #FAF7F0;
+  --color-white: #FFFEFC;
+  --color-dark: #1A1512;
+  --color-dark-card: #28221E;
+
+  --color-text: #28221E;
+  --color-text-light: #51453D;
+  --color-muted: #8B8179;
+
+  --color-border: #EEE7DF;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
 
 * {
   margin: 0;
@@ -11,82 +49,228 @@
 }
 
 html {
-  background-color: #FDF8F3;
+  scroll-behavior: smooth;
+  background-color: var(--color-cream);
   transition: background-color 0.3s ease;
-}
-
-html.dark {
-  background-color: #1A1410;
+  scrollbar-gutter: stable;
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
-  background-color: #FDF8F3;
-  color: #3D2817;
+  min-width: 320px;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
+html.dark,
 html.dark body {
-  background-color: #1A1410;
+  background-color: var(--color-dark);
   color: #E8DCC8;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: var(--color-pink);
+  color: white;
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+p {
+  line-height: 1.7;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #F5EBDD;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 9px;
+  height: 9px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #FDF8F3;
-}
-
-html.dark ::-webkit-scrollbar-track {
-  background: #1A1410;
+  background: var(--color-cream);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C9A961;
-  border-radius: 5px;
+  background: #D9B9AE;
+  border-radius: 20px;
+  border: 2px solid var(--color-cream);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #E07A5F;
+  background: var(--color-pink);
 }
 
-/* Animations */
+html.dark ::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #51453D;
+  border-color: var(--color-dark);
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pink);
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.6s ease-out;
+  animation: fadeIn 0.6s ease-out both;
 }
 
+
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-slide-up {
   animation: slideUp 0.6s ease-out forwards;
 }
 
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
-/* Scroll Reveal */
+.animate-slow-zoom {
+  animation: slowZoom 15s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton-shimmer {
+  animation: shimmer 1.8s infinite;
+}
+
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
 @keyframes revealUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .reveal-hidden {
@@ -98,20 +282,62 @@ html.dark ::-webkit-scrollbar-track {
   animation: revealUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* ============================================ */
-/* PRINT STYLES */
-/* ============================================ */
 
-/* Hidden on screen, visible when printing */
+/* =========================================
+   TEXT UTILITIES
+========================================= */
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   FOCUS ACCESSIBILITY
+========================================= */
+
+:focus-visible {
+  outline: 2px solid var(--color-pink);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+/* =========================================
+   PRINT STYLES
+========================================= */
+
 .print-meal-plan {
   display: none;
 }
 
 @media print {
-  /* Recipe Detail Print */
-  body:not(:has(.print-meal-plan)) {
-    background: white !important;
+
+  @page {
+    size: A4;
+    margin: 15mm;
   }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Recipe Detail Print */
 
   body:not(:has(.print-meal-plan)) nav,
   body:not(:has(.print-meal-plan)) footer,
@@ -123,9 +349,11 @@ html.dark ::-webkit-scrollbar-track {
   body:not(:has(.print-meal-plan)) #recipe-content {
     padding: 20px !important;
     max-width: 100% !important;
+    color: black !important;
   }
 
   /* Meal Plan Print */
+
   body:has(.print-meal-plan) * {
     visibility: hidden;
   }
@@ -141,18 +369,33 @@ html.dark ::-webkit-scrollbar-track {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 30px;
-    background: white;
-    color: black;
+    padding: 20px;
+    background: white !important;
+    color: black !important;
+  }
+
+  body:has(.print-meal-plan) .print-meal-plan button {
+    display: none !important;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
 }
-@keyframes slowZoom {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

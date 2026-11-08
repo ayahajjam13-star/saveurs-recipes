@@ -1,0 +1,76 @@
+
+/* =========================================
+   SAVEURS — RATING LIST
+========================================= */
+
+.rating-list {
+  width: 100%;
+  color: #28221E;
+}
+
+.rating-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.rating-list-card {
+  padding: 22px;
+  margin-bottom: 16px;
+  border: 1px solid #EEE7DF;
+  border-radius: 20px;
+  background: #FFFEFC;
+  box-shadow: 0 4px 20px rgba(40, 34, 30, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rating-list-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(40, 34, 30, 0.08);
+}
+
+.rating-list-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: #718B68;
+  background: #718B681A;
+}
+
+.rating-list-empty {
+  padding: 45px 20px;
+  text-align: center;
+  border: 1px dashed #E8DCD2;
+  border-radius: 20px;
+  background: #FFFEFC;
+}
+
+.rating-list-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  color: #E88FA5;
+  background: #E88FA51A;
+}
+
+@media (max-width: 640px) {
+  .rating-list-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .rating-list-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

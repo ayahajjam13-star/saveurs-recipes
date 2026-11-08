@@ -1,140 +1,319 @@
-import { Link } from 'react-router-dom';
+
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
+import {
+  ChefHat,
+  Send,
+  ArrowUpRight,
+  Heart,
+  CheckCircle2,
+  Leaf,
+  Snowflake,
+  Sun,
+  Mail,
+  ArrowUp,
+} from 'lucide-react';
+
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 function Footer() {
   const { t } = useTranslation();
+
   const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+
+  const seasons = [
+    {
+      name: 'Autumn',
+      icon: Leaf,
+      color: '#D99A68',
+    },
+    {
+      name: 'Winter',
+      icon: Snowflake,
+      color: '#91B8D4',
+    },
+    {
+      name: 'Spring',
+      icon: Leaf,
+      color: '#A8B995',
+    },
+    {
+      name: 'Summer',
+      icon: Sun,
+      color: '#E8B96C',
+    },
+  ];
+
+  const socialLinks = [
+    { label: 'Instagram', text: 'IG', url: null },
+    { label: 'Facebook', text: 'FB', url: null },
+    { label: 'YouTube', text: 'YT', url: null },
+  ];
+
+  const exploreLinks = [
+    { label: t('nav.home', 'Home'), path: '/' },
+    { label: t('nav.search', 'Explore Recipes'), path: '/search' },
+    { label: t('nav.favorites', 'Favorites'), path: '/favorites' },
+    { label: t('nav.about', 'About Us'), path: '/about' },
+  ];
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
-    if (!email) return;
 
-    setLoading(true);
+    if (!email.trim()) {
+      toast.error('Please enter your email address');
+      return;
+    }
+
     try {
-      const res = await axios.post(`${API_URL}/newsletter/subscribe`, { email });
-      toast.success(res.data.message || 'Subscribed successfully! 🎉');
+      setLoading(true);
+
+      await axios.post(`${API_URL}/newsletter/subscribe`, {
+        email: email.trim(),
+      });
+
       setSubscribed(true);
       setEmail('');
-      setTimeout(() => setSubscribed(false), 5000);
-    } catch (err) {
-      console.error(err);
-      toast.error(err.response?.data?.message || 'Subscription failed. Please try again.');
+      toast.success('Successfully subscribed!');
+
+      setTimeout(() => {
+        setSubscribed(false);
+      }, 5000);
+    } catch (error) {
+      toast.error(
+        error.response?.data?.message || 'Something went wrong. Please try again.'
+      );
     } finally {
       setLoading(false);
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <footer className="bg-warm-brown dark:bg-[#1A1512] text-cream mt-20 transition-colors">
-      
-      {/* Newsletter Section */}
-      <div className="border-b border-cream/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+    <footer className="relative mt-20 overflow-hidden bg-[#28221E] text-[#FAF7F0]">
+
+      {/* Decorative background */}
+      <div className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#E88FA5]/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-[#A8B995]/10 blur-3xl" />
+
+      <div className="relative mx-auto max-w-7xl px-6">
+
+        {/* Newsletter */}
+        <div className="border-b border-white/10 py-14">
+          <div className="grid items-center gap-8 md:grid-cols-2">
+
             <div>
-              <h3 className="font-serif text-4xl font-bold mb-4">
-                {t('footer.newsletter') || 'Join our newsletter'}
-              </h3>
-              <p className="text-cream/60 text-lg font-light leading-relaxed">
-                {t('footer.newsletterText') || 'Get the latest recipes and seasonal inspiration delivered straight to your inbox.'}
+              <span className="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-[#E88FA5]">
+                Stay inspired
+              </span>
+
+              <h2 className="font-serif text-3xl font-bold leading-tight md:text-4xl">
+                {t('footer.newsletterTitle', 'A little taste of inspiration')}
+              </h2>
+
+              <p className="mt-3 max-w-md text-sm leading-7 text-[#C7BDB4]">
+                {t(
+                  'footer.newsletterDesc',
+                  'Get seasonal recipes, cooking inspiration and delicious ideas delivered to your inbox.'
+                )}
               </p>
             </div>
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder={t('footer.emailPlaceholder') || 'Enter your email address'}
-                required
-                disabled={loading || subscribed}
-                className="flex-1 px-5 py-4 rounded-sm bg-transparent border border-cream/30 text-cream placeholder:text-cream/40 focus:outline-none focus:border-orange-accent transition-colors disabled:opacity-50"
-              />
-              <button 
-                type="submit" 
-                disabled={loading || subscribed}
-                className="px-8 py-4 bg-orange-accent text-white rounded-sm text-sm font-bold tracking-widest uppercase hover:bg-orange-accent/90 transition-colors whitespace-nowrap disabled:opacity-50"
-              >
-                {loading ? '⏳' : subscribed ? '✓' : t('footer.subscribe') || 'Subscribe'}
-              </button>
+
+            <form onSubmit={handleSubscribe} className="w-full">
+              <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-2 backdrop-blur-md sm:flex-row">
+
+                <div className="flex flex-1 items-center gap-3 px-3">
+                  <Mail size={19} className="shrink-0 text-[#E88FA5]" />
+
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder={t('footer.emailPlaceholder', 'Your email address')}
+                    required
+                    className="w-full bg-transparent py-3 text-sm text-white outline-none placeholder:text-[#A99D93]"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={loading || subscribed}
+                  className="flex items-center justify-center gap-2 rounded-xl bg-[#E88FA5] px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#D97991] disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {subscribed ? (
+                    <>
+                      <CheckCircle2 size={17} />
+                      Subscribed
+                    </>
+                  ) : loading ? (
+                    'Sending...'
+                  ) : (
+                    <>
+                      Subscribe
+                      <Send size={16} />
+                    </>
+                  )}
+                </button>
+
+              </div>
             </form>
+
           </div>
         </div>
-      </div>
 
-      {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-4 gap-12">
-          
+        {/* Main footer */}
+        <div className="grid gap-12 py-14 sm:grid-cols-2 lg:grid-cols-4">
+
           {/* Brand */}
-          <div className="md:col-span-2">
-            <Link to="/" className="inline-block mb-6">
-              <span className="font-serif text-4xl font-bold text-cream tracking-tight">
-                Saveurs
-              </span>
-              <span className="block text-[10px] tracking-[0.25em] uppercase text-cream/60 mt-1">
-                Recipes by Season
+          <div>
+            <Link to="/" className="mb-5 inline-flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#E88FA5] text-white shadow-lg shadow-[#E88FA5]/20">
+                <ChefHat size={27} />
+              </div>
+
+              <span className="font-serif text-3xl font-bold tracking-wide">
+                Saveurs<span className="text-[#E88FA5]">.</span>
               </span>
             </Link>
-            <p className="text-cream/60 text-sm leading-relaxed max-w-sm font-light mb-8">
-              {t('footer.description') || 'Discover delicious recipes from around the world, carefully curated for every season. Cook with love, eat with joy.'}
+
+            <p className="max-w-xs text-sm leading-7 text-[#C7BDB4]">
+              {t(
+                'footer.description',
+                'Discover the joy of cooking with beautiful seasonal recipes made with love.'
+              )}
             </p>
-            
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-cream/20 hover:border-orange-accent hover:text-orange-accent flex items-center justify-center transition-colors text-sm">IG</a>
-              <a href="#" className="w-10 h-10 rounded-full border border-cream/20 hover:border-orange-accent hover:text-orange-accent flex items-center justify-center transition-colors text-sm">FB</a>
-              <a href="#" className="w-10 h-10 rounded-full border border-cream/20 hover:border-orange-accent hover:text-orange-accent flex items-center justify-center transition-colors text-sm">PT</a>
-              <a href="#" className="w-10 h-10 rounded-full border border-cream/20 hover:border-orange-accent hover:text-orange-accent flex items-center justify-center transition-colors text-sm">YT</a>
+
+            <div className="mt-6 flex items-center gap-3">
+              {socialLinks.map(({ label, text }) => (
+                <a
+                  key={label}
+                  href="#"
+                  aria-label={label}
+                  onClick={(e) => e.preventDefault()}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-xs font-bold text-[#FAF7F0] transition-all duration-300 hover:border-[#E88FA5] hover:bg-[#E88FA5] hover:text-white"
+                >
+                  {text}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Links */}
+          {/* Explore */}
           <div>
-            <h4 className="font-bold tracking-widest uppercase text-sm mb-6 text-orange-accent">
-              {t('footer.explore') || 'Explore'}
-            </h4>
-            <ul className="space-y-3 text-sm text-cream/70">
-              <li><Link to="/" className="hover:text-orange-accent transition-colors">{t('nav.home')}</Link></li>
-              <li><Link to="/search" className="hover:text-orange-accent transition-colors">{t('nav.search')}</Link></li>
-              <li><Link to="/favorites" className="hover:text-orange-accent transition-colors">{t('nav.favorites')}</Link></li>
-              <li><Link to="/about" className="hover:text-orange-accent transition-colors">{t('nav.about')}</Link></li>
+            <h3 className="mb-6 font-serif text-xl font-bold text-white">
+              {t('footer.explore', 'Explore')}
+            </h3>
+
+            <ul className="space-y-4">
+              {exploreLinks.map((link) => (
+                <li key={link.path}>
+                  <Link
+                    to={link.path}
+                    className="group flex items-center gap-2 text-sm text-[#C7BDB4] transition-colors hover:text-[#E88FA5]"
+                  >
+                    <ArrowUpRight
+                      size={15}
+                      className="text-[#E88FA5] opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100"
+                    />
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Seasons */}
           <div>
-            <h4 className="font-bold tracking-widest uppercase text-sm mb-6 text-orange-accent">
-              {t('footer.seasonsTitle') || 'Seasons'}
-            </h4>
-            <ul className="space-y-3 text-sm text-cream/70">
-              <li><a href="#" className="hover:text-orange-accent transition-colors">🍂 {t('seasons.Autumn')}</a></li>
-              <li><a href="#" className="hover:text-orange-accent transition-colors">❄️ {t('seasons.Winter')}</a></li>
-              <li><a href="#" className="hover:text-orange-accent transition-colors">🌸 {t('seasons.Spring')}</a></li>
-              <li><a href="#" className="hover:text-orange-accent transition-colors">☀️ {t('seasons.Summer')}</a></li>
+            <h3 className="mb-6 font-serif text-xl font-bold text-white">
+              {t('footer.seasons', 'By Season')}
+            </h3>
+
+            <ul className="space-y-4">
+              {seasons.map((season) => {
+                const SeasonIcon = season.icon;
+
+                return (
+                  <li key={season.name}>
+                    <Link
+                      to={`/search?season=${season.name.toLowerCase()}`}
+                      className="group flex items-center gap-3 text-sm text-[#C7BDB4] transition-colors hover:text-white"
+                    >
+                      <SeasonIcon
+                        size={18}
+                        style={{ color: season.color }}
+                      />
+
+                      <span>{season.name}</span>
+
+                      <ArrowUpRight
+                        size={14}
+                        className="ml-auto opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100"
+                      />
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
-        </div>
-      </div>
+          {/* Contact */}
+          <div>
+            <h3 className="mb-6 font-serif text-xl font-bold text-white">
+              {t('footer.contact', 'Made with love')}
+            </h3>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-cream/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-cream/40 tracking-wider uppercase">
-            © {new Date().getFullYear()} Saveurs Recipes. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-xs text-cream/40 tracking-wider uppercase">
-            <a href="#" className="hover:text-orange-accent transition-colors">Privacy</a>
-            <a href="#" className="hover:text-orange-accent transition-colors">Terms</a>
-            <a href="#" className="hover:text-orange-accent transition-colors">Contact</a>
+            <p className="text-sm leading-7 text-[#C7BDB4]">
+              {t(
+                'footer.contactDesc',
+                'Good food brings people together. Explore, cook and share beautiful moments.'
+              )}
+            </p>
+
+            <div className="mt-5 flex items-center gap-2 text-sm text-[#E88FA5]">
+              <Heart size={17} fill="currentColor" />
+              Made for food lovers
+            </div>
           </div>
+
         </div>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-7 text-center sm:flex-row sm:text-left">
+
+          <p className="text-xs text-[#A99D93]">
+            © {new Date().getFullYear()} Saveurs.{' '}
+            {t('footer.rights', 'All rights reserved.')}
+          </p>
+
+          <p className="flex items-center gap-1 text-xs text-[#A99D93]">
+            {t('footer.madeWith', 'Made with')}
+            <Heart size={13} className="mx-1 text-[#E88FA5]" fill="currentColor" />
+            {t('footer.forFoodies', 'for food lovers')}
+          </p>
+
+          <button
+            type="button"
+            onClick={scrollToTop}
+            aria-label="Back to top"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-[#E88FA5] transition-all duration-300 hover:-translate-y-1 hover:bg-[#E88FA5] hover:text-white"
+          >
+            <ArrowUp size={18} />
+          </button>
+
+        </div>
+
       </div>
     </footer>
   );

@@ -1,0 +1,81 @@
+
+/* =========================================
+   SAVEURS — RATING FORM
+========================================= */
+
+.rating-form {
+  width: 100%;
+  padding: 26px;
+  border: 1px solid #EEE7DF;
+  border-radius: 22px;
+  background: #FFFEFC;
+  color: #28221E;
+  box-shadow: 0 8px 25px rgba(40, 34, 30, 0.04);
+}
+
+.rating-form-title {
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #28221E;
+}
+
+.rating-form-description {
+  margin-bottom: 22px;
+  color: #8B8179;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.rating-form textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px 16px;
+  border: 1px solid #EEE7DF;
+  border-radius: 14px;
+  outline: none;
+  resize: vertical;
+  background: #FAF7F0;
+  color: #28221E;
+  font: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.rating-form textarea:focus {
+  border-color: #E88FA5;
+  box-shadow: 0 0 0 3px rgba(232, 143, 165, 0.13);
+}
+
+.rating-form button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 30px;
+  background: #E88FA5;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.rating-form button[type="submit"]:hover {
+  background: #D77F96;
+  transform: translateY(-2px);
+}
+
+.rating-form button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 640px) {
+  .rating-form {
+    padding: 18px;
+    border-radius: 17px;
+  }
+}

@@ -1,38 +1,107 @@
+
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   darkMode: 'class',
+
   theme: {
     extend: {
       colors: {
-        // الألوان من صورة الجوافة
-        'guava-green': '#87A93D',      // أخضر زيتي غامق
-        'guava-light': '#C6D97A',      // أخضر فاتح
-        'guava-pink': '#F16D7A',       // وردي جوافة (اللون الأساسي)
-        'guava-soft': '#F7A1B3',       // وردي فاتح
-        'guava-peach': '#F9E3C7',      // خوخي فاتح (خلفية)
-        
-        // ألوان مساعدة باش الموقع يبان نقي
-        'cream': '#FDFBF7',            // خلفية بيضا دافئة
-        'warm-brown': '#2C2A29',       // كحل/بني غامق للنصوص
-        'dark-bg': '#1A1A1A',
-        'dark-card': '#262626',
-        'dark-text': '#F3F4F6',
-        
-        // خلينا orange-accent باش ما يتخربقش الكود القديم، ولكن عطيناه لون الجوافة
-        'orange-accent': '#F16D7A', 
+        // =====================================
+        // SAVEURS — GUAVA COLOR PALETTE
+        // =====================================
+
+        'guava-green': '#718B68',
+        'guava-light': '#A8BA9B',
+
+        'guava-pink': '#E88FA5',
+        'guava-soft': '#F3B9C7',
+
+        'guava-peach': '#F5D8C8',
+
+        // =====================================
+        // BACKGROUNDS
+        // =====================================
+
+        'cream': '#FAF7F0',
+        'warm-white': '#FFFEFC',
+
+        'dark-bg': '#1A1512',
+        'dark-card': '#28221E',
+
+        // =====================================
+        // TEXT COLORS
+        // =====================================
+
+        'warm-brown': '#28221E',
+        'dark-text': '#E8DCC8',
+
+        'muted': '#8B8179',
+        'muted-light': '#A49A91',
+
+        // =====================================
+        // BORDERS
+        // =====================================
+
+        'warm-border': '#EEE7DF',
+
+        // =====================================
+        // BACKWARD COMPATIBILITY
+        // Keep old classes working
+        // =====================================
+
+        'orange-accent': '#E88FA5',
       },
+
+      // =====================================
+      // TYPOGRAPHY
+      // =====================================
+
       fontFamily: {
-        'serif': ['Poppins', 'sans-serif'], // خط عصري للعناوين
-        'sans': ['Inter', 'sans-serif'],    // خط نقي للنصوص
+        'serif': ['Playfair Display', 'Georgia', 'serif'],
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
       },
+
+      // =====================================
+      // SHADOWS
+      // =====================================
+
       boxShadow: {
-        'soft': '0 10px 40px -10px rgba(0, 0, 0, 0.05)',
-      }
+        'soft': '0 10px 40px -10px rgba(40, 34, 30, 0.06)',
+
+        'card': '0 4px 20px rgba(40, 34, 30, 0.05)',
+
+        'card-hover': '0 15px 35px rgba(40, 34, 30, 0.10)',
+
+        'pink': '0 8px 25px rgba(232, 143, 165, 0.20)',
+      },
+
+      // =====================================
+      // BORDER RADIUS
+      // =====================================
+
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '2.5rem',
+      },
+
+      // =====================================
+      // ANIMATIONS
+      // =====================================
+
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-out both',
+        'slide-up': 'slideUp 0.6s ease-out both',
+        'float': 'float 4s ease-in-out infinite',
+        'slow-zoom': 'slowZoom 15s ease-in-out infinite',
+      },
     },
   },
+
   plugins: [],
-}
+};
