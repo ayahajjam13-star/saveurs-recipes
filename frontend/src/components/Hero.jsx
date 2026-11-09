@@ -1,7 +1,13 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Sparkles, ChefHat } from 'lucide-react';
+import {
+  ArrowRight,
+  Sparkles,
+  ChefHat,
+  Leaf,
+  Heart,
+  Star,
+} from 'lucide-react';
 import './Hero.css';
 
 export default function Hero() {
@@ -12,6 +18,7 @@ export default function Hero() {
 
       <div className="hero-decoration hero-decoration-one" />
       <div className="hero-decoration hero-decoration-two" />
+      <div className="hero-decoration hero-decoration-three" />
 
       <div className="hero-content">
         <div className="hero-eyebrow">
@@ -47,7 +54,9 @@ export default function Hero() {
 
         <div className="hero-stats">
           <div className="hero-stat">
-            <ChefHat size={22} />
+            <div className="hero-stat-icon">
+              <ChefHat size={21} />
+            </div>
             <div>
               <strong>120+</strong>
               <span>Recipes</span>
@@ -57,7 +66,9 @@ export default function Hero() {
           <div className="hero-stat-divider" />
 
           <div className="hero-stat">
-            <Sparkles size={21} />
+            <div className="hero-stat-icon hero-stat-icon-pink">
+              <Leaf size={20} />
+            </div>
             <div>
               <strong>4</strong>
               <span>Seasons</span>
@@ -66,9 +77,20 @@ export default function Hero() {
         </div>
       </div>
 
+      <div className="hero-floating-card">
+        <div className="hero-floating-icon">
+          <Heart size={17} fill="currentColor" />
+        </div>
+        <div>
+          <strong>Made with love</strong>
+          <span>For every food lover</span>
+        </div>
+        <Star className="hero-floating-star" size={17} />
+      </div>
+
       <a href="#home-content" className="hero-scroll">
         <span className="hero-scroll-line" />
-        Scroll to discover
+        <span>Scroll to discover</span>
         <span className="hero-scroll-line" />
       </a>
 

@@ -8,6 +8,7 @@ import {
   RotateCcw,
   Sparkles,
   Scale,
+  Leaf,
 } from 'lucide-react';
 
 // Approximate unit conversions
@@ -17,6 +18,33 @@ const CONVERSIONS = {
   kg: { cup: 4.2, tbsp: 67, tsp: 200 },
   l: { cup: 4.2, tbsp: 67, tsp: 200 },
 };
+
+const ingredientStyles = [
+  {
+    background: 'bg-[#EAF7F5]',
+    number: 'text-[#55A49A]',
+    quantity: 'text-[#397D75]',
+    decoration: 'bg-[#BFE8C8]',
+  },
+  {
+    background: 'bg-[#FFF0F5]',
+    number: 'text-[#C18BB5]',
+    quantity: 'text-[#A47791]',
+    decoration: 'bg-[#F2C7DB]',
+  },
+  {
+    background: 'bg-[#F1EDFA]',
+    number: 'text-[#9983C6]',
+    quantity: 'text-[#75619F]',
+    decoration: 'bg-[#CBB7F5]',
+  },
+  {
+    background: 'bg-[#EAF7FC]',
+    number: 'text-[#58A9C1]',
+    quantity: 'text-[#397D88]',
+    decoration: 'bg-[#B8E8EE]',
+  },
+];
 
 function RecipeScaling({ ingredients = [], baseServings = 4 }) {
   const [servings, setServings] = useState(baseServings);
@@ -30,7 +58,7 @@ function RecipeScaling({ ingredients = [], baseServings = 4 }) {
       return { quantity: null, unit: null, name: ing };
     }
 
-    let quantityStr = match[1];
+    const quantityStr = match[1];
     let quantity;
 
     if (quantityStr.includes('/')) {
@@ -106,7 +134,6 @@ function RecipeScaling({ ingredients = [], baseServings = 4 }) {
 
       const newQty = parsed.quantity * scale;
       const converted = convertUnit(newQty, parsed.unit);
-
       const formattedQty = formatQuantity(converted.quantity);
 
       return `${formattedQty} ${converted.unit} ${parsed.name}`
@@ -117,153 +144,257 @@ function RecipeScaling({ ingredients = [], baseServings = 4 }) {
     setScaledIngredients(scaled);
   }, [servings, ingredients, unitSystem, baseServings]);
 
+  // Separate the quantity from the ingredient name for visual display
+  const getIngredientDisplay = (ingredient) => {
+    const match = ingredient.match(
+      /^((?:\d+\s)?[¼⅓½⅔¾]|\d+(?:\.\d+)?|[¼⅓½⅔¾])\s*(.*)$/
+    );
+
+    if (!match) {
+      return {
+        quantity: '',
+        name: ingredient,
+      };
+    }
+
+    return {
+      quantity: match[1],
+      name: match[2],
+    };
+  };
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-10">
 
-      {/* Scaling Controls */}
-      <div className="rounded-[24px] border border-[#EEE7DF] bg-[#FAF7F0] p-5 sm:p-6">
+      {/* EDITORIAL HEADER */}
+      <div className="relative overflow-hidden border-b border-[#DCEBE8] pb-8 dark:border-white/10">
 
-        <div className="flex items-center gap-2 mb-5">
-          <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-[#E88FA5]/15">
-            <Scale size={19} className="text-[#D77F96]" />
-          </div>
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
 
           <div>
-            <h3 className="font-serif text-lg font-bold text-[#28221E]">
-              Adjust Your Recipe
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-px w-8 bg-[#C18BB5]" />
+              <span className="text-[9px] font-black uppercase tracking-[0.3em] text-[#A47791]">
+                THE INGREDIENT COLLECTION
+              </span>
+            </div>
+
+            <h3 className="font-serif text-4xl font-black leading-none tracking-tight text-[#294B55] sm:text-5xl dark:text-white">
+              Ingredients<span className="text-[#7ADDF2]">.</span>
             </h3>
-            <p className="text-xs text-[#8B8179]">
-              Customize quantities to your needs
+
+            <p className="mt-4 text-xs leading-6 text-[#789197] dark:text-gray-300">
+              Every little detail makes the difference.
             </p>
           </div>
-        </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-
-          {/* Servings Counter */}
-          <div className="space-y-2">
-            <span className="flex items-center gap-2 text-sm font-semibold text-[#51453D]">
-              <Users size={16} className="text-[#718B68]" />
-              Number of servings
-            </span>
-
-            <div className="flex items-center gap-3">
-              <button
-                type="button"
-                onClick={() => setServings((prev) => Math.max(1, prev - 1))}
-                disabled={servings <= 1}
-                aria-label="Decrease servings"
-                className="flex items-center justify-center w-9 h-9 rounded-xl bg-white border border-[#E8DED4] text-[#51453D] hover:bg-[#E88FA5] hover:text-white hover:border-[#E88FA5] disabled:opacity-40 disabled:cursor-not-allowed transition-all"
-              >
-                <Minus size={16} />
-              </button>
-
-              <span className="w-9 text-center font-serif text-2xl font-bold text-[#28221E] tabular-nums">
-                {servings}
-              </span>
-
-              <button
-                type="button"
-                onClick={() => setServings((prev) => prev + 1)}
-                aria-label="Increase servings"
-                className="flex items-center justify-center w-9 h-9 rounded-xl bg-white border border-[#E8DED4] text-[#51453D] hover:bg-[#E88FA5] hover:text-white hover:border-[#E88FA5] transition-all"
-              >
-                <Plus size={16} />
-              </button>
-
-              {servings !== baseServings && (
-                <button
-                  type="button"
-                  onClick={() => setServings(baseServings)}
-                  className="flex items-center gap-1.5 ml-1 text-xs font-semibold text-[#D77F96] hover:text-[#B9657E] transition-colors"
-                >
-                  <RotateCcw size={13} />
-                  Reset
-                </button>
-              )}
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#B8E8EE]/40 text-[#397D88]">
+              <Leaf size={20} />
             </div>
-          </div>
 
-          {/* Unit System */}
-          <div className="space-y-2">
-            <span className="flex items-center gap-2 text-sm font-semibold text-[#51453D]">
-              <Ruler size={16} className="text-[#718B68]" />
-              Measurement units
-            </span>
-
-            <div className="flex items-center gap-1 p-1 rounded-xl bg-white border border-[#E8DED4]">
-              <button
-                type="button"
-                onClick={() => setUnitSystem('metric')}
-                className={`px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
-                  unitSystem === 'metric'
-                    ? 'bg-[#718B68] text-white shadow-sm'
-                    : 'text-[#8B8179] hover:text-[#28221E]'
-                }`}
-              >
-                Metric
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setUnitSystem('imperial')}
-                className={`px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
-                  unitSystem === 'imperial'
-                    ? 'bg-[#718B68] text-white shadow-sm'
-                    : 'text-[#8B8179] hover:text-[#28221E]'
-                }`}
-              >
-                Imperial
-              </button>
+            <div>
+              <p className="text-2xl font-black tabular-nums text-[#294B55] dark:text-white">
+                {scaledIngredients.length.toString().padStart(2, '0')}
+              </p>
+              <p className="text-[8px] font-black uppercase tracking-[0.2em] text-[#91A9AD]">
+                Ingredients
+              </p>
             </div>
           </div>
 
         </div>
       </div>
 
-      {/* Ingredients List */}
-      <div className="space-y-4">
+      {/* COMPACT RECIPE CONTROLS */}
+      <div className="flex flex-col gap-6 border-b border-[#DCEBE8] pb-7 dark:border-white/10 sm:flex-row sm:items-center sm:justify-between">
 
-        <div className="flex items-center justify-between">
-          <h4 className="font-serif text-lg font-bold text-[#28221E]">
-            Adjusted Ingredients
-          </h4>
+        {/* SERVINGS */}
+        <div>
+          <div className="mb-3 flex items-center gap-2">
+            <Users size={15} className="text-[#54BFD2]" />
+            <span className="text-[9px] font-black uppercase tracking-[0.2em] text-[#789197]">
+              Servings
+            </span>
+          </div>
 
-          <span className="text-xs font-medium text-[#718B68] bg-[#718B68]/10 px-3 py-1.5 rounded-full">
-            {scaledIngredients.length} ingredients
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={() => setServings((prev) => Math.max(1, prev - 1))}
+              disabled={servings <= 1}
+              aria-label="Decrease servings"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[#DCEBE8] text-[#397D88] transition hover:border-[#7ADDF2] hover:bg-[#B8E8EE]/30 disabled:cursor-not-allowed disabled:opacity-30 dark:border-white/15"
+            >
+              <Minus size={15} />
+            </button>
+
+            <span className="min-w-[25px] text-center font-serif text-3xl font-black tabular-nums text-[#294B55] dark:text-white">
+              {servings}
+            </span>
+
+            <button
+              type="button"
+              onClick={() => setServings((prev) => prev + 1)}
+              aria-label="Increase servings"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[#DCEBE8] text-[#397D88] transition hover:border-[#7ADDF2] hover:bg-[#B8E8EE]/30 dark:border-white/15"
+            >
+              <Plus size={15} />
+            </button>
+
+            {servings !== baseServings && (
+              <button
+                type="button"
+                onClick={() => setServings(baseServings)}
+                className="ml-1 flex items-center gap-1.5 text-[9px] font-black uppercase tracking-wider text-[#B987B4] transition hover:text-[#A47791]"
+              >
+                <RotateCcw size={12} />
+                Reset
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* MEASUREMENT SYSTEM */}
+        <div>
+          <div className="mb-3 flex items-center gap-2">
+            <Ruler size={15} className="text-[#C18BB5]" />
+            <span className="text-[9px] font-black uppercase tracking-[0.2em] text-[#789197]">
+              Measurement system
+            </span>
+          </div>
+
+          <div className="inline-flex items-center gap-1 rounded-full bg-[#EDF4F2] p-1 dark:bg-white/10">
+
+            <button
+              type="button"
+              onClick={() => setUnitSystem('metric')}
+              aria-pressed={unitSystem === 'metric'}
+              className={`rounded-full px-5 py-2.5 text-[10px] font-black uppercase tracking-wider transition-all ${
+                unitSystem === 'metric'
+                  ? 'bg-[#294B55] text-white shadow-sm dark:bg-[#7ADDF2] dark:text-[#24515B]'
+                  : 'text-[#789197] hover:text-[#294B55] dark:text-gray-300'
+              }`}
+            >
+              Metric
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setUnitSystem('imperial')}
+              aria-pressed={unitSystem === 'imperial'}
+              className={`rounded-full px-5 py-2.5 text-[10px] font-black uppercase tracking-wider transition-all ${
+                unitSystem === 'imperial'
+                  ? 'bg-[#294B55] text-white shadow-sm dark:bg-[#7ADDF2] dark:text-[#24515B]'
+                  : 'text-[#789197] hover:text-[#294B55] dark:text-gray-300'
+              }`}
+            >
+              Imperial
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+      {/* INGREDIENT COMPOSITION BOARD */}
+      <div>
+
+        <div className="mb-6 flex items-center justify-between">
+          <p className="text-[9px] font-black uppercase tracking-[0.25em] text-[#91A9AD]">
+            THE COMPOSITION
+          </p>
+
+          <span className="text-[9px] font-bold text-[#91A9AD]">
+            {servings} servings · {unitSystem}
           </span>
         </div>
 
-        <ul className="space-y-2">
-          {scaledIngredients.map((ing, index) => (
-            <li
-              key={index}
-              className="flex items-center gap-3 p-3.5 rounded-xl bg-[#FFFEFC] border border-[#F0EAE3] hover:border-[#E88FA5]/40 transition-colors"
-            >
-              <span className="flex items-center justify-center w-7 h-7 shrink-0 rounded-full bg-[#E88FA5]/10 text-[#D77F96] text-xs font-bold">
-                {index + 1}
-              </span>
+        {scaledIngredients.length > 0 ? (
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
 
-              <span className="text-sm leading-relaxed text-[#51453D]">
-                {ing}
-              </span>
-            </li>
-          ))}
-        </ul>
+            {scaledIngredients.map((ingredient, index) => {
+              const display = getIngredientDisplay(ingredient);
+              const style = ingredientStyles[index % ingredientStyles.length];
+
+              return (
+                <article
+                  key={index}
+                  className={`group relative flex min-h-[150px] flex-col justify-between overflow-hidden p-4 transition duration-300 hover:-translate-y-1 sm:min-h-[175px] sm:p-5 ${style.background}`}
+                >
+
+                  {/* DECORATIVE NUMBER */}
+                  <div className="flex items-start justify-between">
+                    <span className={`font-serif text-xs font-black ${style.number}`}>
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+
+                    <span className={`h-2 w-2 rounded-full ${style.decoration}`} />
+                  </div>
+
+                  {/* QUANTITY */}
+                  <div className="relative z-10 mt-6">
+                    {display.quantity && (
+                      <p className={`break-words font-serif text-2xl font-black leading-tight sm:text-3xl ${style.quantity}`}>
+                        {display.quantity}
+                      </p>
+                    )}
+
+                    <p className="mt-2 break-words text-xs font-bold leading-5 text-[#45666C] sm:text-sm dark:text-[#294B55]">
+                      {display.name}
+                    </p>
+                  </div>
+
+                  {/* SUBTLE DECORATION */}
+                  <div className={`absolute -bottom-8 -right-8 h-20 w-20 rounded-full opacity-30 transition duration-500 group-hover:scale-150 ${style.decoration}`} />
+
+                </article>
+              );
+            })}
+
+          </div>
+        ) : (
+          <div className="py-12 text-center text-sm text-[#789197]">
+            No ingredients available.
+          </div>
+        )}
+
       </div>
 
-      {/* Scaling Note */}
+      {/* SCALING FEEDBACK */}
       {servings !== baseServings && (
-        <div className="flex items-start gap-3 p-4 rounded-xl bg-[#718B68]/10 border border-[#718B68]/15">
-          <Sparkles size={17} className="text-[#718B68] shrink-0 mt-0.5" />
+        <div className="flex items-start gap-3 border-l-2 border-[#CBB7F5] bg-[#F1EDFA] px-4 py-4 dark:bg-white/5">
 
-          <p className="text-xs leading-relaxed text-[#596D52]">
-            Ingredient quantities have been adjusted from{' '}
-            <strong>{baseServings} servings</strong> to{' '}
-            <strong>{servings} servings</strong>.
-          </p>
+          <Sparkles size={17} className="mt-0.5 shrink-0 text-[#9983C6]" />
+
+          <div>
+            <p className="text-[10px] font-black uppercase tracking-[0.15em] text-[#75619F]">
+              Recipe adjusted
+            </p>
+
+            <p className="mt-1 text-xs leading-6 text-[#75619F]">
+              Quantities have been recalculated from{' '}
+              <strong>{baseServings} servings</strong> to{' '}
+              <strong>{servings} servings</strong>.
+            </p>
+          </div>
+
         </div>
       )}
+
+      {/* FOOTNOTE */}
+      <div className="flex items-center justify-between border-t border-[#DCEBE8] pt-5 dark:border-white/10">
+        <span className="text-[8px] font-black uppercase tracking-[0.25em] text-[#91A9AD]">
+          PREPARE WITH LOVE
+        </span>
+
+        <div className="flex items-center gap-2 text-[#B987B4]">
+          <Scale size={13} />
+          <span className="text-[8px] font-black uppercase tracking-[0.2em]">
+            Measure · Prepare · Enjoy
+          </span>
+        </div>
+      </div>
 
     </div>
   );

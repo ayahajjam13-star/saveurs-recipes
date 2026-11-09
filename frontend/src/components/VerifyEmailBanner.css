@@ -1,0 +1,368 @@
+
+/* =========================================
+   SAVEURS — VERIFY EMAIL BANNER
+========================================= */
+
+.verify-banner-wrapper {
+  position: relative;
+  z-index: 60;
+  width: 100%;
+  padding: 12px 16px 20px;
+}
+
+.verify-banner {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #D5EDF0;
+  border-radius: 21px;
+  background: linear-gradient(
+    110deg,
+    #F5FCFD 0%,
+    #FFFFFF 55%,
+    #F7F3FD 100%
+  );
+  box-shadow: 0 7px 24px rgba(36, 81, 91, 0.055);
+}
+
+/* Decorations */
+
+.verify-decoration {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(35px);
+}
+
+.verify-decoration-one {
+  top: -65px;
+  right: 12%;
+  width: 160px;
+  height: 150px;
+  background: rgba(122, 221, 242, 0.22);
+}
+
+.verify-decoration-two {
+  bottom: -75px;
+  left: 28%;
+  width: 150px;
+  height: 130px;
+  background: rgba(242, 199, 219, 0.22);
+}
+
+.verify-decoration-three {
+  top: 10px;
+  right: 35%;
+  width: 100px;
+  height: 100px;
+  background: rgba(203, 183, 245, 0.13);
+}
+
+/* Main Content */
+
+.verify-banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 17px 22px;
+}
+
+/* Icon */
+
+.verify-icon-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.verify-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  border: 1px solid #CDECF0;
+  border-radius: 17px;
+  background: linear-gradient(
+    135deg,
+    #DDF5F8,
+    #B8E8EE
+  );
+  color: #367D89;
+}
+
+.verify-icon-sparkle {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  background: #CBB7F5;
+  color: #FFFFFF;
+}
+
+/* Message */
+
+.verify-message {
+  flex: 1;
+  min-width: 0;
+}
+
+.verify-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 5px;
+}
+
+.verify-eyebrow {
+  color: #6AAAB4;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.verify-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border: 1px solid #F0DCE6;
+  border-radius: 20px;
+  background: #FFF6FA;
+  color: #BD7897;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.verify-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D58DAA;
+}
+
+.verify-message h3 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: #24515B;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.verify-message h3 svg {
+  color: #B49ADB;
+}
+
+.verify-message p {
+  margin: 5px 0 0;
+  color: #78949B;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* Actions */
+
+.verify-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.verify-action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 17px;
+  border: 1px solid #24515B;
+  border-radius: 13px;
+  background: #24515B;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 750;
+  text-decoration: none;
+  box-shadow: 0 5px 12px rgba(36, 81, 91, 0.13);
+  transition: all 0.25s ease;
+}
+
+.verify-action-button:hover {
+  transform: translateY(-2px);
+  background: #367D89;
+  border-color: #367D89;
+  box-shadow: 0 8px 18px rgba(36, 81, 91, 0.18);
+}
+
+.verify-arrow {
+  transition: transform 0.2s ease;
+}
+
+.verify-action-button:hover .verify-arrow {
+  transform: translateX(3px);
+}
+
+.verify-dismiss-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #E1EFF1;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #7F9BA1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.verify-dismiss-button:hover {
+  border-color: #F2C7DB;
+  background: #FCEEF4;
+  color: #BD7897;
+  transform: rotate(5deg);
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark .verify-banner {
+  background: linear-gradient(
+    110deg,
+    #193B43 0%,
+    #214A53 58%,
+    #302D49 100%
+  );
+  border-color: rgba(184, 232, 238, 0.15);
+  box-shadow: 0 7px 24px rgba(0, 0, 0, 0.15);
+}
+
+.dark .verify-decoration-one {
+  background: rgba(122, 221, 242, 0.12);
+}
+
+.dark .verify-decoration-two {
+  background: rgba(242, 199, 219, 0.1);
+}
+
+.dark .verify-decoration-three {
+  background: rgba(203, 183, 245, 0.1);
+}
+
+.dark .verify-icon {
+  background: rgba(122, 221, 242, 0.16);
+  border-color: rgba(122, 221, 242, 0.2);
+  color: #7ADDF2;
+}
+
+.dark .verify-icon-sparkle {
+  border-color: #193B43;
+}
+
+.dark .verify-eyebrow {
+  color: #7ADDF2;
+}
+
+.dark .verify-status {
+  background: rgba(242, 199, 219, 0.1);
+  border-color: rgba(242, 199, 219, 0.2);
+  color: #F2C7DB;
+}
+
+.dark .verify-message h3 {
+  color: #EAF8FA;
+}
+
+.dark .verify-message p {
+  color: #B1CFD4;
+}
+
+.dark .verify-action-button {
+  background: #7ADDF2;
+  border-color: #7ADDF2;
+  color: #193B43;
+  box-shadow: none;
+}
+
+.dark .verify-action-button:hover {
+  background: #B8E8EE;
+  border-color: #B8E8EE;
+}
+
+.dark .verify-dismiss-button {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(184, 232, 238, 0.15);
+  color: #B1CFD4;
+}
+
+.dark .verify-dismiss-button:hover {
+  background: rgba(242, 199, 219, 0.12);
+  border-color: rgba(242, 199, 219, 0.25);
+  color: #F2C7DB;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .verify-banner-content {
+    flex-wrap: wrap;
+    gap: 13px;
+    padding: 16px;
+  }
+
+  .verify-message {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .verify-actions {
+    width: 100%;
+    padding-left: 64px;
+  }
+
+  .verify-action-button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .verify-banner-wrapper {
+    padding: 10px 10px 0;
+  }
+
+  .verify-banner-content {
+    gap: 11px;
+    padding: 14px;
+  }
+
+  .verify-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .verify-message h3 {
+    font-size: 14px;
+  }
+
+  .verify-message p {
+    font-size: 10px;
+  }
+
+  .verify-actions {
+    padding-left: 0;
+  }
+}

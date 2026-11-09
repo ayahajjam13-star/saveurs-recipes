@@ -32,10 +32,11 @@ function RecipeCard({ recipe }) {
   const preparationTime = (recipe.steps?.length || 0) * 5;
 
   return (
-    <article className="group relative overflow-hidden rounded-[26px] bg-[#FFFEFC] border border-[#EEE7DF] shadow-[0_5px_20px_rgba(40,34,30,0.04)] hover:shadow-[0_15px_35px_rgba(40,34,30,0.10)] hover:-translate-y-1.5 transition-all duration-300">
+    <article className="group relative overflow-hidden rounded-[30px] bg-white dark:bg-[#28221E] border border-[#E8F1EF] dark:border-white/10 shadow-[0_8px_28px_rgba(50,100,100,0.07)] hover:shadow-[0_18px_40px_rgba(80,170,175,0.17)] hover:-translate-y-2 transition-all duration-500">
 
-      {/* Recipe Image */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-[#F5D8C8]">
+      {/* Large Food Photography */}
+      <div className="relative aspect-[4/5] overflow-hidden bg-[#E5F5F1]">
+
         <Link
           to={`/recipe/${recipe.id}`}
           className="block w-full h-full"
@@ -51,74 +52,84 @@ function RecipeCard({ recipe }) {
               }}
             />
           ) : (
-            <div className="flex items-center justify-center w-full h-full text-5xl">
-              🍽️
+            <div className="flex items-center justify-center w-full h-full text-7xl bg-gradient-to-br from-[#B8E8EE] via-[#F2C7DB] to-[#BFE8C8]">
+              🍓
             </div>
           )}
         </Link>
 
-        {/* Image Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
+        {/* Image Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-black/10 pointer-events-none" />
 
-        {/* Favorite Button */}
+        {/* Favorite */}
         <button
           type="button"
           onClick={handleFavoriteClick}
           aria-label={favorite ? 'Remove from favorites' : 'Add to favorites'}
           aria-pressed={favorite}
-          className="absolute top-4 right-4 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-[#FFFEFC]/95 backdrop-blur-md shadow-md hover:scale-110 active:scale-95 transition-all duration-200"
+          className="absolute top-4 right-4 z-10 flex items-center justify-center w-11 h-11 rounded-full bg-white/95 shadow-lg hover:scale-110 active:scale-95 transition-all duration-200"
         >
           <Heart
-            size={19}
+            size={20}
             strokeWidth={2}
             className={
               favorite
-                ? 'fill-[#E88FA5] text-[#E88FA5]'
-                : 'text-[#8B8179] hover:text-[#E88FA5]'
+                ? 'fill-[#E88FAF] text-[#E88FAF]'
+                : 'text-[#8C8997] hover:text-[#E88FAF]'
             }
           />
         </button>
 
-        {/* Recipe Label */}
-        <div className="absolute bottom-4 left-4 px-3 py-1.5 rounded-full bg-[#FFFEFC]/90 backdrop-blur-sm text-[#718B68] text-[10px] font-bold tracking-[1.5px] uppercase">
+        {/* Chef Label */}
+        <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#BFE8C8]/95 text-[#386B50] text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+          <Star size={12} fill="currentColor" />
           Chef's choice
+        </div>
+
+        {/* Recipe Name on Image */}
+        <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 pointer-events-none">
+          <p className="text-white/80 text-[10px] font-bold uppercase tracking-[2px] mb-2">
+            Discover the taste
+          </p>
+
+          <h3 className="font-bold text-[22px] sm:text-[24px] leading-tight text-white line-clamp-2 drop-shadow-md">
+            {recipe.name}
+          </h3>
+
+          <div className="mt-3 flex items-center gap-2 text-white/90 text-xs font-medium">
+            <Clock size={14} />
+            <span>{preparationTime} min preparation</span>
+          </div>
         </div>
       </div>
 
-      {/* Recipe Information */}
-      <div className="p-5 sm:p-6">
+      {/* Card Bottom */}
+      <div className="px-5 py-4 flex items-center justify-between">
+
+        <div className="flex items-center gap-2">
+          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#F2C7DB]/35 text-[#C77F9D]">
+            <Star size={16} fill="currentColor" />
+          </span>
+
+          <div>
+            <p className="text-sm font-bold text-[#465B5D] dark:text-white">
+              4.8
+            </p>
+            <p className="text-[10px] text-[#9BA9A7]">
+              Food lovers
+            </p>
+          </div>
+        </div>
 
         <Link
           to={`/recipe/${recipe.id}`}
-          className="block"
+          aria-label={`View ${recipe.name}`}
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#B8E8EE]/45 text-[#398C98] hover:bg-[#7ADDF2] hover:text-[#285E68] transition-all duration-300 text-xs font-bold"
         >
-          <h3 className="font-serif text-[21px] font-bold leading-snug text-[#28221E] group-hover:text-[#D77F96] transition-colors duration-200 line-clamp-2 min-h-[3.5rem]">
-            {recipe.name}
-          </h3>
+          View recipe
+          <ArrowUpRight size={16} />
         </Link>
 
-        {/* Recipe Details */}
-        <div className="flex items-center justify-between mt-5 pt-4 border-t border-[#F0EAE3]">
-
-          <div className="flex items-center gap-1.5 text-[#8B8179] text-xs font-medium">
-            <Clock size={15} className="text-[#718B68]" />
-            <span>{preparationTime} min</span>
-          </div>
-
-          <div className="flex items-center gap-1.5 text-[#B88A42] text-xs font-semibold">
-            <Star size={15} fill="currentColor" />
-            <span>4.8</span>
-          </div>
-
-          <Link
-            to={`/recipe/${recipe.id}`}
-            aria-label={`View ${recipe.name}`}
-            className="flex items-center justify-center w-9 h-9 rounded-full bg-[#F5D8C8]/50 text-[#A96F69] group-hover:bg-[#E88FA5] group-hover:text-white transition-all duration-300"
-          >
-            <ArrowUpRight size={18} />
-          </Link>
-
-        </div>
       </div>
     </article>
   );

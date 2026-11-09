@@ -10,6 +10,8 @@ function SEO({
 }) {
   const siteName = 'Saveurs - Recipes by Season';
 
+  const baseUrl = 'https://saveurs-recipes.vercel.app';
+
   const fullTitle = title
     ? `${title} | ${siteName}`
     : siteName;
@@ -19,14 +21,12 @@ function SEO({
 
   const desc = description || defaultDesc;
 
-  const baseUrl = 'https://saveurs-recipes.vercel.app';
-
-  // Build canonical URL
+  // Canonical URL
   const fullUrl = url
     ? new URL(url, baseUrl).href
     : baseUrl;
 
-  // Default sharing image
+  // Social sharing image
   const defaultImage = `${baseUrl}/images/saveurs-og.jpg`;
 
   const fullImage = image
@@ -35,81 +35,60 @@ function SEO({
 
   return (
     <Helmet>
-      {/* Basic SEO */}
+      {/* =================================
+          BASIC SEO
+      ================================= */}
+
       <title>{fullTitle}</title>
 
       <meta name="description" content={desc} />
 
       <meta
         name="theme-color"
-        content="#E88FA5"
+        content="#B8E8EE"
       />
 
       <meta name="robots" content="index, follow" />
 
-      <link
-        rel="canonical"
-        href={fullUrl}
-      />
+      <link rel="canonical" href={fullUrl} />
 
-      {/* Open Graph - Facebook / WhatsApp */}
+      {/* =================================
+          OPEN GRAPH — FACEBOOK / WHATSAPP
+      ================================= */}
+
       <meta property="og:locale" content="en_US" />
 
-      <meta
-        property="og:title"
-        content={fullTitle}
-      />
+      <meta property="og:type" content={type} />
 
-      <meta
-        property="og:description"
-        content={desc}
-      />
+      <meta property="og:site_name" content={siteName} />
 
-      <meta
-        property="og:type"
-        content={type}
-      />
+      <meta property="og:title" content={fullTitle} />
 
-      <meta
-        property="og:url"
-        content={fullUrl}
-      />
+      <meta property="og:description" content={desc} />
 
-      <meta
-        property="og:site_name"
-        content={siteName}
-      />
+      <meta property="og:url" content={fullUrl} />
 
-      <meta
-        property="og:image"
-        content={fullImage}
-      />
+      <meta property="og:image" content={fullImage} />
 
       <meta
         property="og:image:alt"
-        content="Saveurs - Delicious recipes by season"
+        content="Saveurs — Delicious seasonal recipes and cooking inspiration"
       />
 
-      {/* Twitter / X */}
+      {/* =================================
+          TWITTER / X
+      ================================= */}
+
       <meta
         name="twitter:card"
         content="summary_large_image"
       />
 
-      <meta
-        name="twitter:title"
-        content={fullTitle}
-      />
+      <meta name="twitter:title" content={fullTitle} />
 
-      <meta
-        name="twitter:description"
-        content={desc}
-      />
+      <meta name="twitter:description" content={desc} />
 
-      <meta
-        name="twitter:image"
-        content={fullImage}
-      />
+      <meta name="twitter:image" content={fullImage} />
 
     </Helmet>
   );

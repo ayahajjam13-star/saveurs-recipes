@@ -1,15 +1,15 @@
 
-import { X, Printer, CalendarDays, Utensils, Leaf } from 'lucide-react';
+import { X, Printer, CalendarDays, Utensils, Leaf, Clock3 } from 'lucide-react';
 import './PrintMealPlan.css';
 
 const DAYS = [
-  { key: 'monday', label: 'Monday' },
-  { key: 'tuesday', label: 'Tuesday' },
-  { key: 'wednesday', label: 'Wednesday' },
-  { key: 'thursday', label: 'Thursday' },
-  { key: 'friday', label: 'Friday' },
-  { key: 'saturday', label: 'Saturday' },
-  { key: 'sunday', label: 'Sunday' },
+  { key: 'monday', label: 'Monday', short: 'MON' },
+  { key: 'tuesday', label: 'Tuesday', short: 'TUE' },
+  { key: 'wednesday', label: 'Wednesday', short: 'WED' },
+  { key: 'thursday', label: 'Thursday', short: 'THU' },
+  { key: 'friday', label: 'Friday', short: 'FRI' },
+  { key: 'saturday', label: 'Saturday', short: 'SAT' },
+  { key: 'sunday', label: 'Sunday', short: 'SUN' },
 ];
 
 function PrintMealPlan({ meals, weekStart, onClose }) {
@@ -18,6 +18,11 @@ function PrintMealPlan({ meals, weekStart, onClose }) {
     month: 'long',
     year: 'numeric',
   });
+
+  const totalMeals = DAYS.reduce(
+    (total, day) => total + (meals?.[day.key]?.length || 0),
+    0
+  );
 
   const handlePrint = () => {
     window.print();
@@ -29,11 +34,14 @@ function PrintMealPlan({ meals, weekStart, onClose }) {
     return (
       <div key={day.key} className="meal-plan-day">
         <div className="meal-day-heading">
-          <span className="meal-day-dot" />
-          <h3>{day.label}</h3>
-          <span className="meal-count">
-            {dayMeals.length} {dayMeals.length === 1 ? 'meal' : 'meals'}
-          </span>
+          <span className="meal-day-short">{day.short}</span>
+
+          <div className="meal-day-title">
+            <h3>{day.label}</h3>
+            <span className="meal-count">
+              {dayMeals.length} {dayMeals.length === 1 ? 'meal' : 'meals'}
+            </span>
+          </div>
         </div>
 
         {dayMeals.length === 0 ? (
@@ -73,8 +81,9 @@ function PrintMealPlan({ meals, weekStart, onClose }) {
               </div>
 
               <div>
+                <span className="meal-print-eyebrow">YOUR PLANNER</span>
                 <h2 id="meal-print-title">Print Meal Plan</h2>
-                <p>Your weekly menu, ready to print</p>
+                <p>Your weekly menu, beautifully organized</p>
               </div>
             </div>
 
@@ -88,20 +97,49 @@ function PrintMealPlan({ meals, weekStart, onClose }) {
             </button>
           </div>
 
+          {/* Summary */}
+          <div className="meal-print-summary">
+            <div className="meal-summary-item">
+              <div className="meal-summary-icon">
+                <CalendarDays size={18} />
+              </div>
+              <div>
+                <span>WEEK STARTING</span>
+                <strong>{formattedDate}</strong>
+              </div>
+            </div>
+
+            <div className="meal-summary-divider" />
+
+            <div className="meal-summary-item">
+              <div className="meal-summary-icon meal-summary-icon-pink">
+                <Utensils size={18} />
+              </div>
+              <div>
+                <span>TOTAL MEALS</span>
+                <strong>{totalMeals} {totalMeals === 1 ? 'meal' : 'meals'}</strong>
+              </div>
+            </div>
+          </div>
+
           {/* Preview */}
           <div className="meal-print-body">
             <div className="meal-preview-label">
               <span />
-              PRINT PREVIEW
+              <strong>PRINT PREVIEW</strong>
               <span />
             </div>
 
             <div className="meal-preview-paper">
-              <div className="meal-paper-brand">
-                <div className="meal-paper-logo">
-                  <Leaf size={19} />
+              <div className="meal-paper-top">
+                <div className="meal-paper-brand">
+                  <div className="meal-paper-logo">
+                    <Leaf size={19} />
+                  </div>
+                  <span>SAVEURS</span>
                 </div>
-                <span>SAVEURS</span>
+
+                <span className="meal-paper-tag">WEEKLY PLANNER</span>
               </div>
 
               <h1>My Weekly Meal Plan</h1>
@@ -118,7 +156,9 @@ function PrintMealPlan({ meals, weekStart, onClose }) {
               </div>
 
               <div className="meal-paper-footer">
-                <Utensils size={14} />
+                <div className="meal-paper-footer-icon">
+                  <Utensils size={14} />
+                </div>
                 <span>Made with love by Saveurs Recipes</span>
               </div>
             </div>

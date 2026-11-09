@@ -9,7 +9,11 @@ import {
   ArrowRight,
   Sparkles,
   Utensils,
-  ChefHat
+  ChefHat,
+  CookingPot,
+  Flower2,
+  Star,
+  MoveUpRight,
 } from 'lucide-react';
 import SEO from '../components/SEO';
 
@@ -25,282 +29,374 @@ function About() {
 
   const features = [
     {
+      number: '01',
       icon: Globe2,
       title: t('about.features.global.title'),
       description: t('about.features.global.desc'),
-      color: 'bg-[#C6D97A]/30',
-      iconColor: 'text-[#87A93D]',
+      bg: 'bg-[#E7F7F8]',
+      iconColor: 'text-[#438B98]',
     },
     {
+      number: '02',
       icon: Leaf,
       title: t('about.features.seasonal.title'),
       description: t('about.features.seasonal.desc'),
-      color: 'bg-[#F9E3C7]',
-      iconColor: 'text-[#87A93D]',
+      bg: 'bg-[#EAF6EB]',
+      iconColor: 'text-[#629B72]',
     },
     {
+      number: '03',
       icon: Heart,
       title: t('about.features.favorites.title'),
       description: t('about.features.favorites.desc'),
-      color: 'bg-[#F7A1B3]/30',
-      iconColor: 'text-[#F16D7A]',
+      bg: 'bg-[#FCEBF2]',
+      iconColor: 'text-[#C77E9E]',
     },
     {
+      number: '04',
       icon: Search,
       title: t('about.features.search.title'),
       description: t('about.features.search.desc'),
-      color: 'bg-[#F16D7A]/10',
-      iconColor: 'text-[#F16D7A]',
+      bg: 'bg-[#F0EBFC]',
+      iconColor: 'text-[#8B78BC]',
     },
   ];
 
   return (
-    <main className="bg-[#FDF8F0] text-[#394323] overflow-hidden animate-fade-in">
-
+    <main className="overflow-hidden bg-[#F8FCFC] text-[#24515B]">
       <SEO
         title="About"
         description="Discover the story behind Saveurs - recipes by season from around the world."
       />
 
-      {/* HERO SECTION */}
-      <section className="relative min-h-[570px] md:min-h-[650px] flex items-center justify-center overflow-hidden">
+      {/* HERO */}
+      <section className="relative px-5 pb-20 pt-12 sm:px-8 lg:px-12 lg:pb-28 lg:pt-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
 
-        <img
-          src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1800&q=85"
-          alt="Fresh ingredients and delicious food"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+          <div className="relative z-10">
+            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#B8E8EE] bg-white px-4 py-2">
+              <Sparkles size={14} className="text-[#63B9C8]" />
+              <span className="text-[10px] font-bold uppercase tracking-[2px] text-[#568D97]">
+                {t('about.hero')}
+              </span>
+            </div>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#394323]/85 via-[#394323]/65 to-[#394323]/35" />
+            <h1 className="max-w-2xl font-serif text-5xl font-medium leading-[1.12] tracking-tight text-[#24515B] sm:text-6xl lg:text-7xl">
+              {t('about.title1')}
+              <span className="mt-2 block font-serif italic text-[#65B9C8]">
+                {t('about.title2')}
+              </span>
+            </h1>
 
-        <div className="absolute top-16 right-10 w-48 h-48 rounded-full bg-[#F7A1B3]/20 blur-3xl" />
+            <p className="mt-7 max-w-lg text-base leading-8 text-[#718F95] sm:text-lg">
+              {t('about.subtitle')}
+            </p>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center py-24">
+            <div className="mt-9 flex flex-wrap items-center gap-5">
+              <Link
+                to="/"
+                className="group inline-flex items-center gap-3 rounded-full bg-[#24515B] px-7 py-4 text-sm font-bold text-white shadow-lg shadow-[#24515B]/15 transition-all hover:-translate-y-1 hover:bg-[#34717D]"
+              >
+                Explore recipes
+                <ArrowRight
+                  size={17}
+                  className="transition-transform group-hover:translate-x-1"
+                />
+              </Link>
 
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-white text-xs tracking-[0.25em] uppercase mb-8">
-            <Sparkles size={14} />
-            {t('about.hero')}
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#77969B]">
+                <Heart size={15} className="fill-[#F2C7DB] text-[#D99AB8]" />
+                Made with love
+              </div>
+            </div>
+
+            <div className="mt-12 flex items-center gap-4 border-t border-[#DCEEEF] pt-6">
+              <div className="flex -space-x-2">
+                <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#F8FCFC] bg-[#B8E8EE]">
+                  <ChefHat size={16} className="text-[#24515B]" />
+                </div>
+                <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#F8FCFC] bg-[#F2C7DB]">
+                  <Heart size={15} className="text-[#A75D7D]" />
+                </div>
+                <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#F8FCFC] bg-[#BFE8C8]">
+                  <Leaf size={15} className="text-[#568C68]" />
+                </div>
+              </div>
+              <p className="text-xs leading-5 text-[#829DA1]">
+                Good food, beautiful moments
+                <span className="block font-bold text-[#527D85]">
+                  Welcome to Saveurs
+                </span>
+              </p>
+            </div>
           </div>
 
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-normal text-white leading-tight mb-7">
-            {t('about.title1')}
-            <span className="block text-[#F7A1B3] italic mt-2">
-              {t('about.title2')}
-            </span>
-          </h1>
+          {/* Hero image composition */}
+          <div className="relative mx-auto w-full max-w-[600px]">
+            <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-[#B8E8EE]/60 blur-3xl" />
+            <div className="absolute -bottom-10 -left-8 h-44 w-44 rounded-full bg-[#F2C7DB]/50 blur-3xl" />
 
-          <p className="text-white/85 text-base md:text-xl max-w-2xl mx-auto leading-8 font-light">
-            {t('about.subtitle')}
-          </p>
+            <div className="relative grid grid-cols-[1.2fr_0.8fr] items-center gap-3 sm:gap-5">
+              <div className="relative overflow-hidden rounded-[110px_110px_24px_24px] border-[6px] border-white shadow-2xl shadow-[#24515B]/10">
+                <img
+                  src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1000&q=85"
+                  alt="Fresh ingredients and colorful food"
+                  className="h-[390px] w-full object-cover sm:h-[490px]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#163F48]/35 to-transparent" />
+              </div>
 
-          <div className="flex justify-center mt-10">
-            <span className="w-16 h-[2px] bg-[#C6D97A]" />
-            <span className="w-3 h-3 rounded-full bg-[#F16D7A] -mt-[5px] mx-3" />
-            <span className="w-16 h-[2px] bg-[#C6D97A]" />
+              <div className="flex flex-col gap-4">
+                <div className="overflow-hidden rounded-[24px] border-4 border-white shadow-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=700&q=85"
+                    alt="Warm and welcoming kitchen"
+                    className="h-44 w-full object-cover sm:h-56"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="overflow-hidden rounded-[24px] border-4 border-white shadow-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700&q=85"
+                    alt="Fresh healthy meal"
+                    className="h-36 w-full object-cover sm:h-44"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute -bottom-5 left-2 flex items-center gap-3 rounded-2xl border border-white/80 bg-white/95 p-4 shadow-xl sm:-left-7">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#BFE8C8]/50 text-[#548D67]">
+                <CookingPot size={23} />
+              </div>
+              <div>
+                <p className="font-serif text-lg font-bold text-[#24515B]">
+                  Made with love
+                </p>
+                <p className="text-[9px] font-bold uppercase tracking-[1.5px] text-[#91A9AC]">
+                  Shared with passion
+                </p>
+              </div>
+            </div>
+
+            <div className="absolute -right-3 top-8 flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-[#F2C7DB] text-[#A75D7D] shadow-lg sm:-right-5">
+              <Flower2 size={24} />
+            </div>
           </div>
-
         </div>
-
       </section>
 
-      {/* STATS SECTION */}
-      <section className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 -mt-12">
-
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-
+      {/* STATS */}
+      <section className="relative border-y border-[#DCEEEF] bg-white px-5 py-10 sm:px-8 lg:py-12">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-9 lg:grid-cols-4">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
 
             return (
               <div
                 key={index}
-                className="group bg-white rounded-[25px] p-6 md:p-8 text-center shadow-lg shadow-[#53652C]/5 border border-[#C6D97A]/20 hover:-translate-y-2 hover:shadow-xl transition-all duration-500"
+                className={`flex items-center justify-center gap-4 ${
+                  index !== 0 ? 'lg:border-l lg:border-[#E4F0F1]' : ''
+                }`}
               >
-
-                <div className="w-14 h-14 mx-auto rounded-2xl bg-[#F9E3C7]/60 flex items-center justify-center mb-5 group-hover:bg-[#F7A1B3]/30 transition-colors">
-                  <Icon size={26} className="text-[#87A93D]" />
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#EAF7F8] text-[#5C9DA8]">
+                  <Icon size={21} />
                 </div>
 
-                <p className="font-serif text-4xl md:text-5xl text-[#87A93D] mb-3">
-                  {stat.number}
-                </p>
-
-                <p className="text-[#88816F] text-[10px] md:text-xs uppercase tracking-[0.16em] font-medium">
-                  {stat.label}
-                </p>
-
+                <div>
+                  <p className="font-serif text-3xl font-bold text-[#24515B] sm:text-4xl">
+                    {stat.number}
+                  </p>
+                  <p className="mt-1 text-[9px] font-bold uppercase tracking-[1.4px] text-[#8AA4A8] sm:text-[10px]">
+                    {stat.label}
+                  </p>
+                </div>
               </div>
             );
           })}
-
         </div>
-
       </section>
 
-      {/* OUR STORY SECTION */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32">
-
-        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+      {/* OUR STORY */}
+      <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
+        <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2 lg:gap-24">
 
           <div className="relative">
+            <div className="absolute -left-7 -top-7 h-32 w-32 rounded-full border border-[#B8E8EE] sm:-left-10 sm:-top-10" />
+            <div className="absolute -bottom-8 -right-5 h-40 w-40 rounded-full bg-[#F2C7DB]/35 blur-2xl" />
 
-            <div className="absolute -top-5 -left-5 w-28 h-28 rounded-full bg-[#C6D97A]/30 blur-2xl" />
-
-            <div className="relative rounded-[35px] overflow-hidden shadow-2xl shadow-[#53652C]/10">
-
+            <div className="relative overflow-hidden rounded-[28px] rounded-tr-[120px] border-[7px] border-white shadow-2xl shadow-[#24515B]/10">
               <img
                 src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=1000&q=85"
-                alt="Beautiful kitchen and cooking"
+                alt="A beautiful kitchen ready for cooking"
                 loading="lazy"
-                className="w-full h-[380px] md:h-[530px] object-cover hover:scale-105 transition-transform duration-700"
+                className="h-[400px] w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-[540px]"
               />
-
             </div>
 
-            <div className="absolute -bottom-7 -right-3 md:-right-8 bg-[#87A93D] text-white rounded-3xl p-6 md:p-8 shadow-xl max-w-[210px]">
-              <ChefHat size={32} className="mb-3 text-[#F9E3C7]" />
+            <div className="absolute -bottom-8 left-5 max-w-[230px] rounded-2xl bg-[#24515B] p-5 text-white shadow-xl sm:left-10 sm:p-6">
+              <Star size={20} className="mb-3 fill-[#7ADDF2] text-[#7ADDF2]" />
               <p className="font-serif text-2xl italic">
-                Made with love
+                Every dish tells a story.
               </p>
-              <p className="text-white/75 text-xs mt-2 tracking-wider">
-                SHARED WITH PASSION
+              <p className="mt-2 text-[9px] font-bold uppercase tracking-[2px] text-[#B8E8EE]">
+                The Saveurs philosophy
               </p>
             </div>
-
           </div>
 
-          <div className="pt-8 lg:pt-0">
-
-            <p className="text-[#F16D7A] uppercase tracking-[0.3em] text-xs font-semibold mb-5">
-              Our Story
-            </p>
-
-            <h2 className="font-serif text-4xl md:text-6xl text-[#53652C] leading-tight mb-8">
-              {t('about.why')}
-            </h2>
-
-            <p className="text-[#88816F] text-base md:text-lg leading-9">
-              {t('about.whyText')}
-            </p>
-
-            <div className="flex items-center gap-3 mt-9">
-              <span className="w-12 h-[2px] bg-[#87A93D]" />
-              <Heart size={18} className="text-[#F16D7A]" />
-              <span className="text-[#87A93D] uppercase tracking-widest text-xs">
-                Saveurs Recipes
+          <div className="pt-5 lg:pt-0">
+            <div className="mb-6 flex items-center gap-3">
+              <span className="h-px w-10 bg-[#7ADDF2]" />
+              <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#6CAAB5]">
+                Our story
               </span>
             </div>
 
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* FEATURES SECTION */}
-      <section className="bg-[#F9E3C7]/35 py-24 md:py-28 px-6">
-
-        <div className="max-w-7xl mx-auto">
-
-          <div className="text-center max-w-2xl mx-auto mb-16">
-
-            <p className="text-[#F16D7A] uppercase tracking-[0.3em] text-xs font-semibold mb-5">
-              What Makes Us Special
-            </p>
-
-            <h2 className="font-serif text-4xl md:text-6xl text-[#53652C] mb-6">
-              Discover Our World
+            <h2 className="max-w-xl font-serif text-4xl font-medium leading-tight text-[#24515B] sm:text-5xl lg:text-6xl">
+              {t('about.why')}
             </h2>
 
-            <p className="text-[#88816F] leading-8">
-              Explore everything that makes your culinary
-              experience special, inspiring and delicious.
+            <div className="my-7 h-1 w-20 rounded-full bg-gradient-to-r from-[#7ADDF2] to-[#BFE8C8]" />
+
+            <p className="text-base leading-9 text-[#718F95] sm:text-lg">
+              {t('about.whyText')}
             </p>
 
-            <div className="flex justify-center mt-7">
-              <span className="w-12 h-px bg-[#C6D97A]" />
-              <Heart size={16} className="text-[#F16D7A] mx-3" />
-              <span className="w-12 h-px bg-[#C6D97A]" />
+            <div className="mt-9 flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FCEBF2] text-[#C77E9E]">
+                <Heart size={21} />
+              </div>
+              <div>
+                <p className="font-serif text-lg font-bold text-[#24515B]">
+                  Saveurs Recipes
+                </p>
+                <p className="text-xs text-[#91A9AC]">
+                  Food, culture and inspiration
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURES */}
+      <section className="relative overflow-hidden bg-[#EDF8F9] px-5 py-24 sm:px-8 lg:px-12 lg:py-28">
+        <div className="absolute -right-24 top-0 h-72 w-72 rounded-full bg-[#B8E8EE]/50 blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-[#F2C7DB]/30 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div className="max-w-2xl">
+              <div className="mb-5 flex items-center gap-3">
+                <span className="h-px w-10 bg-[#7ADDF2]" />
+                <span className="text-[10px] font-bold uppercase tracking-[3px] text-[#6CAAB5]">
+                  What makes us special
+                </span>
+              </div>
+
+              <h2 className="font-serif text-4xl font-medium leading-tight text-[#24515B] sm:text-5xl lg:text-6xl">
+                Discover our
+                <span className="block italic text-[#68B6C3]">
+                  little world.
+                </span>
+              </h2>
             </div>
 
+            <p className="max-w-sm text-sm leading-7 text-[#78969B]">
+              Explore everything that makes your culinary experience special,
+              inspiring and delicious.
+            </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-            {features.map((feature, index) => {
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map((feature) => {
               const Icon = feature.icon;
 
               return (
-                <div
-                  key={index}
-                  className="group bg-white rounded-[28px] p-8 border border-[#C6D97A]/20 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500"
+                <article
+                  key={feature.number}
+                  className="group relative overflow-hidden rounded-[26px] border border-white bg-white p-7 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#24515B]/8 sm:p-8"
                 >
+                  <div className="mb-9 flex items-center justify-between">
+                    <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${feature.bg} ${feature.iconColor} transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110`}>
+                      <Icon size={25} />
+                    </div>
 
-                  <div className={`w-16 h-16 ${feature.color} rounded-2xl flex items-center justify-center mb-7 group-hover:rotate-6 transition-transform duration-300`}>
-                    <Icon size={29} className={feature.iconColor} />
+                    <span className="font-serif text-3xl text-[#DCEEEF]">
+                      {feature.number}
+                    </span>
                   </div>
 
-                  <h3 className="font-serif text-2xl text-[#53652C] mb-4 group-hover:text-[#F16D7A] transition-colors">
+                  <h3 className="mb-4 font-serif text-2xl font-bold text-[#24515B] transition-colors group-hover:text-[#5BABB9]">
                     {feature.title}
                   </h3>
 
-                  <p className="text-[#88816F] leading-7 text-sm">
+                  <p className="text-sm leading-7 text-[#819A9E]">
                     {feature.description}
                   </p>
 
-                  <div className="w-10 h-[2px] bg-[#C6D97A] mt-7 group-hover:w-16 group-hover:bg-[#F16D7A] transition-all duration-500" />
-
-                </div>
+                  <div className="mt-8 flex items-center justify-between">
+                    <span className="h-[3px] w-10 rounded-full bg-[#B8E8EE] transition-all duration-500 group-hover:w-20 group-hover:bg-[#7ADDF2]" />
+                    <MoveUpRight
+                      size={18}
+                      className="text-[#A5C6CA] transition-all group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-[#5BABB9]"
+                    />
+                  </div>
+                </article>
               );
             })}
-
           </div>
-
         </div>
-
       </section>
 
-      {/* CTA SECTION */}
-      <section className="relative overflow-hidden py-24 md:py-32 px-6 bg-[#53652C]">
-
-        <div className="absolute -top-24 -right-20 w-80 h-80 rounded-full border border-white/10" />
-        <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full border border-white/10" />
-
-        <div className="absolute top-16 right-[15%] text-[#C6D97A]/20">
+      {/* CTA */}
+      <section className="relative overflow-hidden bg-[#24515B] px-5 py-24 sm:px-8 lg:py-32">
+        <div className="absolute -right-24 -top-32 h-96 w-96 rounded-full border border-white/10" />
+        <div className="absolute -right-12 -top-20 h-72 w-72 rounded-full border border-white/10" />
+        <div className="absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-[#7ADDF2]/10 blur-3xl" />
+        <div className="absolute left-[12%] top-14 rotate-12 text-[#B8E8EE]/15">
           <Utensils size={75} />
         </div>
 
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
-
-          <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-8">
-            <Heart size={30} className="text-[#F7A1B3]" />
+        <div className="relative mx-auto max-w-3xl text-center">
+          <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-[22px] border border-white/15 bg-white/10 text-[#F2C7DB]">
+            <Heart size={29} />
           </div>
 
-          <p className="text-[#C6D97A] uppercase tracking-[0.3em] text-xs font-semibold mb-6">
-            A World of Flavors
+          <p className="mb-6 text-[10px] font-bold uppercase tracking-[3px] text-[#7ADDF2]">
+            A world of flavors
           </p>
 
-          <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight mb-7">
+          <h2 className="font-serif text-4xl font-medium leading-tight text-white sm:text-5xl lg:text-6xl">
             {t('about.cta.title')}
           </h2>
 
-          <p className="text-white/70 text-base md:text-lg leading-8 mb-10 max-w-xl mx-auto">
+          <p className="mx-auto mt-6 max-w-xl text-sm leading-8 text-white/65 sm:text-base">
             {t('about.cta.subtitle')}
           </p>
 
           <Link
             to="/"
-            className="inline-flex items-center gap-3 px-9 py-4 bg-[#F16D7A] text-white rounded-full font-semibold hover:bg-[#E45C69] hover:scale-105 transition-all duration-300 shadow-xl shadow-black/10"
+            className="group mt-10 inline-flex items-center gap-3 rounded-full bg-[#B8E8EE] px-8 py-4 text-sm font-bold text-[#24515B] shadow-lg shadow-black/10 transition-all duration-300 hover:-translate-y-1 hover:bg-white"
           >
-            <Utensils size={19} />
+            <Utensils size={18} />
             {t('about.cta.button')}
-            <ArrowRight size={19} />
+            <ArrowRight
+              size={18}
+              className="transition-transform group-hover:translate-x-1"
+            />
           </Link>
 
+          <div className="mt-12 flex items-center justify-center gap-3 text-[10px] font-medium tracking-[2px] text-white/40">
+            <span className="h-px w-8 bg-white/20" />
+            GOOD FOOD, GOOD MOOD
+            <span className="h-px w-8 bg-white/20" />
+          </div>
         </div>
-
       </section>
-
     </main>
   );
 }

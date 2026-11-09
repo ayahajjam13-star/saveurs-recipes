@@ -1,5 +1,5 @@
-
 import { Link } from 'react-router-dom';
+import './NotFound.css';
 import {
   ChefHat,
   Home,
@@ -7,101 +7,187 @@ import {
   ArrowRight,
   Sparkles,
   UtensilsCrossed,
+  Leaf,
+  MoveUpRight,
+  CookingPot,
 } from 'lucide-react';
 
 function NotFound() {
   return (
-    <div className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-[#FAF7F0] px-4 py-20 transition-colors dark:bg-[#1A1512]">
+    <main className="not-found-page">
 
-      {/* Background decorations */}
-      <div className="pointer-events-none absolute -left-24 top-10 h-64 w-64 rounded-full bg-[#E88FA5]/10 blur-3xl" />
-      <div className="pointer-events-none absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-[#718B68]/10 blur-3xl" />
+      {/* Background */}
+      <div className="nf-bg-circle nf-bg-circle-one" />
+      <div className="nf-bg-circle nf-bg-circle-two" />
+      <div className="nf-background-dots" />
 
-      <div className="relative mx-auto w-full max-w-2xl text-center">
+      <div className="nf-container">
 
-        {/* Small label */}
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[#E88FA5]/20 bg-[#E88FA5]/10 px-5 py-2 text-sm font-medium text-[#E88FA5]">
-          <Sparkles size={16} />
-          Oops! Something went wrong
+        {/* Top label */}
+        <div className="nf-top-label">
+          <span className="nf-label-icon">
+            <Sparkles size={15} />
+          </span>
+          <span> A LITTLE DETOUR </span>
+          <span className="nf-label-line" />
+          <span className="nf-label-number">404</span>
         </div>
 
-        {/* Illustration */}
-        <div className="relative mx-auto mb-8 flex h-52 w-52 items-center justify-center sm:h-64 sm:w-64">
+        {/* Main content */}
+        <div className="nf-main">
 
-          <div className="absolute inset-0 rounded-full bg-[#E88FA5]/10" />
-          <div className="absolute inset-5 rounded-full border border-dashed border-[#718B68]/30" />
+          {/* Left content */}
+          <div className="nf-content">
 
-          <div className="relative flex h-36 w-36 items-center justify-center rounded-[2.5rem] bg-[#F5D8C8] shadow-xl shadow-[#E88FA5]/10 sm:h-44 sm:w-44">
-            <ChefHat
-              size={90}
-              strokeWidth={1.3}
-              className="text-[#1A1512] sm:hidden"
-            />
-            <ChefHat
-              size={110}
-              strokeWidth={1.3}
-              className="hidden text-[#1A1512] sm:block"
-            />
+            <span className="nf-eyebrow">
+              <span />
+              WELL, THIS IS UNEXPECTED
+            </span>
 
-            <div className="absolute -right-3 -top-3 flex h-12 w-12 items-center justify-center rounded-full border-4 border-[#FAF7F0] bg-[#E88FA5] text-white dark:border-[#1A1512]">
-              <UtensilsCrossed size={21} />
+            <h1>
+              Lost in the
+              <br />
+              <em>recipe book?</em>
+            </h1>
+
+            <p className="nf-description">
+              It seems this page has gone missing from our kitchen.
+              But don't worry, there's always something delicious
+              waiting to be discovered.
+            </p>
+
+            <div className="nf-error-code">
+              <span>ERROR CODE</span>
+              <strong>PAGE_NOT_FOUND</strong>
             </div>
+
+            {/* Actions */}
+            <div className="nf-actions">
+
+              <Link to="/" className="nf-home-button">
+                <Home size={18} />
+                <span>Back to Home</span>
+                <span className="nf-button-arrow">
+                  <ArrowRight size={17} />
+                </span>
+              </Link>
+
+              <Link to="/search" className="nf-search-button">
+                <Search size={18} />
+                Explore Recipes
+                <MoveUpRight size={15} />
+              </Link>
+
+            </div>
+
+            <div className="nf-reassurance">
+              <div className="nf-reassurance-icon">
+                <ChefHat size={17} />
+              </div>
+              <span>
+                Your next favorite recipe is just one click away.
+              </span>
+            </div>
+
           </div>
 
-          <span className="absolute -left-1 top-8 rotate-[-15deg] text-3xl">
-            🍓
-          </span>
-          <span className="absolute -right-2 bottom-8 rotate-12 text-3xl">
-            🥑
-          </span>
+          {/* Right illustration */}
+          <div className="nf-illustration">
+
+            <div className="nf-illustration-glow" />
+
+            {/* Decorative circles */}
+            <div className="nf-orbit nf-orbit-one" />
+            <div className="nf-orbit nf-orbit-two" />
+
+            {/* Floating decorative elements */}
+            <div className="nf-floating-icon nf-float-leaf">
+              <Leaf size={25} />
+            </div>
+
+            <div className="nf-floating-icon nf-float-chef">
+              <ChefHat size={24} />
+            </div>
+
+            <div className="nf-floating-number">
+              <span>404</span>
+              <small>OH NO!</small>
+            </div>
+
+            {/* Main plate */}
+            <div className="nf-plate-wrapper">
+
+              <div className="nf-plate-shadow" />
+
+              <div className="nf-plate">
+                <div className="nf-plate-inner">
+
+                  <div className="nf-plate-food">
+                    <div className="nf-food-leaf nf-food-leaf-one" />
+                    <div className="nf-food-leaf nf-food-leaf-two" />
+                    <div className="nf-food-leaf nf-food-leaf-three" />
+
+                    <div className="nf-food-tomato nf-tomato-one" />
+                    <div className="nf-food-tomato nf-tomato-two" />
+
+                    <div className="nf-food-center">
+                      <CookingPot size={49} strokeWidth={1.25} />
+                      <span>Oops!</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div className="nf-plate-decoration">
+                <UtensilsCrossed size={22} />
+              </div>
+
+            </div>
+
+            {/* Floating mini card */}
+            <div className="nf-mini-card">
+              <div className="nf-mini-card-icon">
+                <Sparkles size={17} />
+              </div>
+
+              <div>
+                <strong>Still hungry?</strong>
+                <span>Let's find something tasty.</span>
+              </div>
+            </div>
+
+            {/* Small decorations */}
+            <span className="nf-decoration-dot nf-dot-one" />
+            <span className="nf-decoration-dot nf-dot-two" />
+            <span className="nf-decoration-star">✳</span>
+
+          </div>
+
         </div>
 
-        {/* 404 */}
-        <h1 className="mb-2 font-serif text-7xl font-bold tracking-tight text-[#E88FA5] sm:text-9xl">
-          404
-        </h1>
+        {/* Bottom footer */}
+        <div className="nf-bottom">
 
-        <h2 className="mb-4 font-serif text-2xl font-bold text-[#1A1512] dark:text-[#FAF7F0] sm:text-3xl">
-          Oops! Page Not Found
-        </h2>
+          <div className="nf-bottom-brand">
+            <ChefHat size={18} />
+            <span>SAVEURS</span>
+          </div>
 
-        <p className="mx-auto mb-9 max-w-md text-base leading-7 text-[#1A1512]/60 dark:text-[#FAF7F0]/60 sm:text-lg">
-          Looks like this recipe is missing! The page you're looking for
-          doesn't exist or may have been moved.
-        </p>
+          <div className="nf-bottom-message">
+            <span>GOOD FOOD</span>
+            <span className="nf-bottom-dot" />
+            <span>GOOD MOOD</span>
+            <span className="nf-bottom-dot" />
+            <span>GOOD MEMORIES</span>
+          </div>
 
-        {/* Buttons */}
-        <div className="flex flex-col justify-center gap-3 sm:flex-row">
+          <span className="nf-bottom-code">404 / 2026</span>
 
-          <Link
-            to="/"
-            className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#E88FA5] px-7 py-4 font-semibold text-white shadow-lg shadow-[#E88FA5]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#dc7e95]"
-          >
-            <Home size={19} />
-            Back to Home
-            <ArrowRight
-              size={17}
-              className="transition-transform group-hover:translate-x-1"
-            />
-          </Link>
-
-          <Link
-            to="/search"
-            className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[#718B68]/25 bg-white px-7 py-4 font-semibold text-[#718B68] transition-all duration-300 hover:-translate-y-1 hover:bg-[#718B68] hover:text-white dark:bg-[#28221E] dark:text-[#F5D8C8] dark:hover:bg-[#718B68]"
-          >
-            <Search size={19} />
-            Search Recipes
-          </Link>
-        </div>
-
-        {/* Bottom message */}
-        <div className="mt-12 flex items-center justify-center gap-2 text-sm text-[#718B68]/70">
-          <ChefHat size={17} />
-          <span>Don't worry, delicious recipes are waiting for you!</span>
         </div>
 
       </div>
-    </div>
+    </main>
   );
 }
 

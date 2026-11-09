@@ -1,4 +1,3 @@
-
 import { useTranslation } from 'react-i18next';
 
 function LanguageSwitcher() {
@@ -12,15 +11,14 @@ function LanguageSwitcher() {
 
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
-
     document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = code;
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-wrap items-center gap-2">
       {languages.map((lang) => {
-        const isActive = i18n.language.startsWith(lang.code);
+        const isActive = i18n.language?.startsWith(lang.code);
 
         return (
           <button
@@ -30,16 +28,17 @@ function LanguageSwitcher() {
             aria-label={`Change language to ${lang.label}`}
             aria-pressed={isActive}
             className={`
-              flex items-center gap-2 rounded-xl border px-3 py-2
-              text-xs font-semibold transition-all duration-300
+              flex items-center justify-center gap-1.5
+              rounded-full border px-3 py-2
+              text-xs font-bold transition-all duration-300
               ${
                 isActive
-                  ? 'border-[#E88FA5] bg-[#E88FA5] text-white shadow-md shadow-[#E88FA5]/20'
-                  : 'border-[#E8DFD7] bg-[#FFFEFC] text-[#51453D] hover:border-[#E88FA5] hover:bg-[#E88FA5]/10 dark:border-[#51453D] dark:bg-[#28221E] dark:text-[#FAF7F0]'
+                  ? 'border-[#7ADDF2] bg-[#7ADDF2] text-[#24515B] shadow-md'
+                  : 'border-[#B8E8EE] bg-white text-[#397D88] hover:bg-[#B8E8EE] dark:border-white/10 dark:bg-white/5 dark:text-[#B8E8EE] dark:hover:bg-white/10'
               }
             `}
           >
-            <span className="text-base">{lang.flag}</span>
+            <span className="text-sm">{lang.flag}</span>
             <span>{lang.label}</span>
           </button>
         );

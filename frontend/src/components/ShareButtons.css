@@ -1,0 +1,220 @@
+
+/* =========================================
+   SAVEURS — SHARE BUTTONS
+========================================= */
+
+.saveurs-share {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Heading */
+
+.saveurs-share-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #24515B;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.saveurs-share-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  background: #DDF5F8;
+  color: #367D89;
+}
+
+/* Buttons Container */
+
+.saveurs-share-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+/* Individual Button */
+
+.saveurs-share-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border: 1px solid #E1EFF1;
+  border-radius: 13px;
+  background: #F5FAFB;
+  color: #527982;
+  cursor: pointer;
+  transition:
+    transform 0.22s ease,
+    background 0.22s ease,
+    color 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.saveurs-share-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 7px 15px rgba(36, 81, 91, 0.12);
+}
+
+.saveurs-share-button:active {
+  transform: scale(0.93);
+}
+
+.saveurs-share-button:focus-visible {
+  outline: 2px solid #7ADDF2;
+  outline-offset: 3px;
+}
+
+/* Platform Colors */
+
+.share-twitter:hover {
+  background: #1DA1F2;
+  border-color: #1DA1F2;
+  color: #FFFFFF;
+}
+
+.share-facebook:hover {
+  background: #1877F2;
+  border-color: #1877F2;
+  color: #FFFFFF;
+}
+
+.share-whatsapp:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: #FFFFFF;
+}
+
+.share-copy:hover,
+.share-copy.is-copied {
+  background: #BFE8C8;
+  border-color: #BFE8C8;
+  color: #24515B;
+}
+
+.share-native:hover {
+  background: #CBB7F5;
+  border-color: #CBB7F5;
+  color: #FFFFFF;
+}
+
+/* Tooltip */
+
+.saveurs-share-tooltip {
+  position: absolute;
+  bottom: calc(100% + 9px);
+  left: 50%;
+  z-index: 20;
+  width: max-content;
+  max-width: 140px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #24515B;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 650;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 5px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.saveurs-share-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #24515B;
+}
+
+.saveurs-share-button:hover .saveurs-share-tooltip,
+.saveurs-share-button:focus-visible .saveurs-share-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark .saveurs-share-heading {
+  color: #EAF8FA;
+}
+
+.dark .saveurs-share-icon {
+  background: rgba(122, 221, 242, 0.15);
+  color: #7ADDF2;
+}
+
+.dark .saveurs-share-button {
+  background: #214A53;
+  border-color: rgba(184, 232, 238, 0.15);
+  color: #C5E0E4;
+}
+
+.dark .share-twitter:hover {
+  background: #1DA1F2;
+  border-color: #1DA1F2;
+  color: #FFFFFF;
+}
+
+.dark .share-facebook:hover {
+  background: #1877F2;
+  border-color: #1877F2;
+  color: #FFFFFF;
+}
+
+.dark .share-whatsapp:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: #FFFFFF;
+}
+
+.dark .share-copy:hover,
+.dark .share-copy.is-copied {
+  background: #BFE8C8;
+  border-color: #BFE8C8;
+  color: #24515B;
+}
+
+.dark .share-native:hover {
+  background: #9278BD;
+  border-color: #9278BD;
+  color: #FFFFFF;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .saveurs-share {
+    gap: 11px;
+  }
+
+  .saveurs-share-actions {
+    gap: 7px;
+  }
+
+  .saveurs-share-button {
+    width: 37px;
+    height: 37px;
+    border-radius: 12px;
+  }
+}

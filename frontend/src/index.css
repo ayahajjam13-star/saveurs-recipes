@@ -399,3 +399,31 @@ button:disabled {
     transition-duration: 0.01ms !important;
   }
 }
+/* =========================================
+   COOKING MODE - STEP TEXT
+========================================= */
+
+.step-text-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+}
+
+.step-instruction {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .step-instruction {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}

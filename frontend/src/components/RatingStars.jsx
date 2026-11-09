@@ -1,4 +1,6 @@
 
+import { Star } from 'lucide-react';
+
 function RatingStars({
   rating = 0,
   size = 'md',
@@ -6,9 +8,9 @@ function RatingStars({
   onRate = null,
 }) {
   const sizes = {
-    sm: 'text-base',
-    md: 'text-2xl',
-    lg: 'text-4xl',
+    sm: 'w-[13px] h-[13px]',
+    md: 'w-[21px] h-[21px]',
+    lg: 'w-[32px] h-[32px]',
   };
 
   const handleClick = (value) => {
@@ -19,7 +21,7 @@ function RatingStars({
 
   return (
     <div
-      className={`inline-flex items-center gap-1 ${sizes[size] || sizes.md}`}
+      className={`rating-stars ${interactive ? 'rating-stars-interactive' : ''}`}
       role={interactive ? 'group' : 'img'}
       aria-label={`Rating: ${rating} out of 5`}
     >
@@ -34,26 +36,13 @@ function RatingStars({
             onClick={() => handleClick(star)}
             aria-label={`Rate ${star} out of 5`}
             aria-pressed={interactive ? rating === star : undefined}
-            className={`
-              leading-none border-0 bg-transparent p-0
-              transition-all duration-200
-              ${interactive
-                ? 'cursor-pointer hover:scale-125 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E88FA5] rounded-sm'
-                : 'cursor-default'
-              }
-            `}
+            className={`rating-star-button ${isActive ? 'active' : ''}`}
           >
-            <span
-              className={`
-                inline-block transition-colors duration-200
-                ${isActive
-                  ? 'text-[#E88FA5] drop-shadow-[0_1px_2px_rgba(232,143,165,0.25)]'
-                  : 'text-[#DED8D1]'
-                }
-              `}
-            >
-              ★
-            </span>
+            <Star
+              className={sizes[size] || sizes.md}
+              fill={isActive ? 'currentColor' : 'none'}
+              strokeWidth={isActive ? 1.8 : 1.6}
+            />
           </button>
         );
       })}

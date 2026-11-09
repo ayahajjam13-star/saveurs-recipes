@@ -1,81 +1,644 @@
 
 /* =========================================
    SAVEURS — RATING FORM
+   PREMIUM AQUA DESIGN
 ========================================= */
 
 .rating-form {
+  position: relative;
   width: 100%;
-  padding: 26px;
-  border: 1px solid #EEE7DF;
-  border-radius: 22px;
-  background: #FFFEFC;
-  color: #28221E;
-  box-shadow: 0 8px 25px rgba(40, 34, 30, 0.04);
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid #DCEFF1;
+  border-radius: 25px;
+  background: #FFFFFF;
+  color: #24515B;
+  box-shadow: 0 10px 35px rgba(36, 81, 91, 0.055);
 }
 
-.rating-form-title {
-  margin-bottom: 8px;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #28221E;
+/* Top Decoration */
+
+.rating-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #7ADDF2,
+    #B8E8EE,
+    #CBB7F5,
+    #F2C7DB
+  );
 }
 
-.rating-form-description {
-  margin-bottom: 22px;
-  color: #8B8179;
-  font-size: 0.9rem;
+/* Header */
+
+.rating-form-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.rating-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  flex-shrink: 0;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #DDF5F8, #B8E8EE);
+  color: #24515B;
+}
+
+.rating-heading-text {
+  min-width: 0;
+}
+
+.rating-form-eyebrow {
+  display: block;
+  margin-bottom: 5px;
+  color: #69AEB9;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.rating-form-heading h3 {
+  margin: 0;
+  color: #24515B;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.rating-form-heading p {
+  margin: 5px 0 0;
+  color: #829DA3;
+  font-size: 12px;
   line-height: 1.6;
 }
 
+.rating-heading-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #FCEEF4;
+  color: #D58DAA;
+}
+
+/* Stars Section */
+
+.rating-stars-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 15px 22px;
+  border: 1px solid #E3F1F3;
+  border-radius: 19px;
+  background: linear-gradient(
+    135deg,
+    #F5FBFC,
+    #EFFAFC
+  );
+}
+
+.rating-stars-section h4 {
+  margin: 0 0 17px;
+  color: #426B74;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rating-star-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border: 1px solid #DCEBED;
+  border-radius: 13px;
+  background: #FFFFFF;
+  color: #B9C9CC;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rating-star-button:hover {
+  transform: translateY(-4px);
+  border-color: #F1D48A;
+  color: #E9B94E;
+}
+
+.rating-star-button.active {
+  border-color: #F1D48A;
+  background: #FFF8E7;
+  color: #E6AE36;
+  box-shadow: 0 4px 12px rgba(230, 174, 54, 0.12);
+}
+
+.rating-selected-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 25px;
+  margin-top: 15px;
+  color: #91A9AE;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.rating-selected-label.selected {
+  color: #24515B;
+}
+
+.rating-score-number {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.rating-score-divider {
+  color: #9BB3B8;
+}
+
+.rating-score-description {
+  margin-left: 4px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #E0F4F6;
+  color: #367D89;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* Comment */
+
+.rating-comment-section {
+  margin-top: 25px;
+}
+
+.rating-comment-section label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 11px;
+  color: #24515B;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.rating-label-icon {
+  display: flex;
+  color: #63AEBB;
+}
+
+.rating-optional {
+  margin-left: auto;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #F1EAFB;
+  color: #9275BB;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.rating-textarea-wrapper {
+  position: relative;
+}
+
 .rating-form textarea {
+  display: block;
   width: 100%;
-  min-height: 120px;
-  padding: 14px 16px;
-  border: 1px solid #EEE7DF;
-  border-radius: 14px;
+  min-height: 125px;
+  padding: 16px;
+  padding-bottom: 35px;
+  border: 1px solid #DCEBED;
+  border-radius: 15px;
   outline: none;
   resize: vertical;
-  background: #FAF7F0;
-  color: #28221E;
+  background: #F8FCFD;
+  color: #24515B;
   font: inherit;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  font-size: 12px;
+  line-height: 1.7;
+  transition: all 0.2s ease;
+}
+
+.rating-form textarea::placeholder {
+  color: #9BB5BA;
 }
 
 .rating-form textarea:focus {
-  border-color: #E88FA5;
-  box-shadow: 0 0 0 3px rgba(232, 143, 165, 0.13);
+  border-color: #7ADDF2;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(122, 221, 242, 0.13);
 }
 
-.rating-form button[type="submit"] {
+.rating-character-count {
+  position: absolute;
+  right: 13px;
+  bottom: 11px;
+  color: #9AB3B8;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+/* Submit Button */
+
+.rating-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+  min-height: 51px;
+  margin-top: 22px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 14px;
+  background: #24515B;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 7px 18px rgba(36, 81, 91, 0.15);
+  transition: all 0.25s ease;
+}
+
+.rating-submit-button:hover:not(:disabled) {
+  background: #367987;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(36, 81, 91, 0.2);
+}
+
+.rating-submit-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.rating-submit-button svg {
+  transition: transform 0.2s ease;
+}
+
+.rating-submit-button:hover:not(:disabled) svg {
+  transform: translateX(3px);
+}
+
+/* Loading Spinner */
+
+.rating-spinner {
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: ratingSpin 0.7s linear infinite;
+}
+
+@keyframes ratingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer Note */
+
+.rating-form-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 16px 0 0;
+  color: #8AA5AA;
+  font-size: 10px;
+  text-align: center;
+}
+
+.rating-form-note svg {
+  color: #70B7C2;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.rating-login-card {
+  position: relative;
+  width: 100%;
+  padding: 38px 28px;
+  overflow: hidden;
+  border: 1px solid #DCEFF1;
+  border-radius: 25px;
+  background: linear-gradient(
+    145deg,
+    #FFFFFF 0%,
+    #F1FAFB 100%
+  );
+  color: #24515B;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(36, 81, 91, 0.055);
+}
+
+.rating-login-decoration {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background: #FCEEF4;
+  color: #D58DAA;
+}
+
+.rating-login-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 67px;
+  margin: 0 auto 18px;
+  border-radius: 21px;
+  background: linear-gradient(135deg, #DDF5F8, #B8E8EE);
+  color: #24515B;
+}
+
+.rating-login-eyebrow {
+  display: block;
+  margin-bottom: 9px;
+  color: #69AEB9;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.rating-login-card h3 {
+  margin: 0;
+  color: #24515B;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.rating-login-card p {
+  max-width: 390px;
+  margin: 13px auto 22px;
+  color: #78969D;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.rating-login-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
-  padding: 12px 22px;
-  border: none;
+  gap: 10px;
+  padding: 13px 24px;
   border-radius: 30px;
-  background: #E88FA5;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  background: #24515B;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(36, 81, 91, 0.15);
+  transition: all 0.25s ease;
 }
 
-.rating-form button[type="submit"]:hover {
-  background: #D77F96;
-  transform: translateY(-2px);
+.rating-login-link:hover {
+  background: #367987;
+  transform: translateY(-3px);
 }
 
-.rating-form button:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-  transform: none;
+.rating-login-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+  padding-top: 17px;
+  border-top: 1px solid #E3F0F2;
+  color: #8BA6AC;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark .rating-form {
+  background: #193B43;
+  border-color: rgba(184, 232, 238, 0.15);
+  color: #EAF8FA;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.dark .rating-form-heading h3,
+.dark .rating-comment-section label {
+  color: #EAF8FA;
+}
+
+.dark .rating-form-heading p {
+  color: #A5C3C9;
+}
+
+.dark .rating-heading-icon {
+  background: rgba(122, 221, 242, 0.16);
+  color: #7ADDF2;
+}
+
+.dark .rating-heading-decoration {
+  background: rgba(242, 199, 219, 0.13);
+  color: #F2C7DB;
+}
+
+.dark .rating-stars-section {
+  background: #214A53;
+  border-color: rgba(184, 232, 238, 0.13);
+}
+
+.dark .rating-stars-section h4 {
+  color: #D5EDF0;
+}
+
+.dark .rating-star-button {
+  background: #193B43;
+  border-color: rgba(184, 232, 238, 0.2);
+  color: #75969D;
+}
+
+.dark .rating-star-button.active {
+  background: #594D35;
+  border-color: #E6AE36;
+  color: #F1C45D;
+}
+
+.dark .rating-selected-label.selected {
+  color: #EAF8FA;
+}
+
+.dark .rating-score-description {
+  background: rgba(122, 221, 242, 0.14);
+  color: #7ADDF2;
+}
+
+.dark .rating-optional {
+  background: rgba(203, 183, 245, 0.15);
+  color: #CBB7F5;
+}
+
+.dark .rating-form textarea {
+  background: #214A53;
+  border-color: rgba(184, 232, 238, 0.18);
+  color: #F4FBFC;
+}
+
+.dark .rating-form textarea:focus {
+  background: #24515B;
+  border-color: #7ADDF2;
+}
+
+.dark .rating-form textarea::placeholder {
+  color: #91B5BC;
+}
+
+.dark .rating-submit-button {
+  background: #7ADDF2;
+  color: #173B43;
+}
+
+.dark .rating-submit-button:hover:not(:disabled) {
+  background: #B8E8EE;
+}
+
+.dark .rating-spinner {
+  border-color: rgba(23, 59, 67, 0.25);
+  border-top-color: #173B43;
+}
+
+.dark .rating-form-note {
+  color: #A5C3C9;
+}
+
+.dark .rating-login-card {
+  background: linear-gradient(145deg, #193B43, #214A53);
+  border-color: rgba(184, 232, 238, 0.15);
+}
+
+.dark .rating-login-card h3 {
+  color: #EAF8FA;
+}
+
+.dark .rating-login-card p {
+  color: #A5C3C9;
+}
+
+.dark .rating-login-icon {
+  background: rgba(122, 221, 242, 0.16);
+  color: #7ADDF2;
+}
+
+.dark .rating-login-footer {
+  border-color: rgba(184, 232, 238, 0.13);
+  color: #A5C3C9;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
 
 @media (max-width: 640px) {
   .rating-form {
-    padding: 18px;
-    border-radius: 17px;
+    padding: 20px 17px;
+    border-radius: 19px;
+  }
+
+  .rating-form-heading {
+    gap: 11px;
+  }
+
+  .rating-heading-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .rating-form-heading h3 {
+    font-size: 18px;
+  }
+
+  .rating-form-heading p {
+    font-size: 11px;
+  }
+
+  .rating-heading-decoration {
+    display: none;
+  }
+
+  .rating-stars-section {
+    padding: 22px 10px;
+  }
+
+  .rating-stars {
+    gap: 7px;
+  }
+
+  .rating-star-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+  }
+
+  .rating-star-button svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .rating-login-card {
+    padding: 32px 19px;
+    border-radius: 20px;
+  }
+
+  .rating-login-card h3 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 360px) {
+  .rating-stars {
+    gap: 5px;
+  }
+
+  .rating-star-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .rating-star-button svg {
+    width: 24px;
+    height: 24px;
   }
 }

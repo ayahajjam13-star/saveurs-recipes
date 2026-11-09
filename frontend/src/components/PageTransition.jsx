@@ -4,23 +4,26 @@ import { motion } from 'framer-motion';
 const pageVariants = {
   initial: {
     opacity: 0,
-    y: 18,
-    filter: 'blur(4px)',
+    y: 14,
+    scale: 0.995,
+    filter: 'blur(3px)',
   },
   animate: {
     opacity: 1,
     y: 0,
+    scale: 1,
     filter: 'blur(0px)',
   },
   exit: {
     opacity: 0,
-    y: -12,
+    y: -8,
+    scale: 0.998,
     filter: 'blur(2px)',
   },
 };
 
 const pageTransition = {
-  duration: 0.35,
+  duration: 0.32,
   ease: [0.22, 1, 0.36, 1],
 };
 
@@ -35,6 +38,8 @@ function PageTransition({ children }) {
       style={{
         width: '100%',
         minHeight: '100%',
+        transformOrigin: 'center top',
+        willChange: 'opacity, transform, filter',
       }}
     >
       {children}

@@ -12,6 +12,7 @@ import {
   Info,
   Heart,
   CalendarDays,
+  ShoppingBasket,
   LogOut,
   Sun,
   Moon,
@@ -20,7 +21,8 @@ import {
   Menu,
   X,
   Sparkles,
-  Utensils
+  Utensils,
+  ArrowRight
 } from 'lucide-react';
 
 function Navbar() {
@@ -46,9 +48,7 @@ function Navbar() {
     );
   };
 
-  const closeMobileMenu = () => {
-    setMobileMenuOpen(false);
-  };
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   useEffect(() => {
     closeMobileMenu();
@@ -61,9 +61,7 @@ function Navbar() {
 
     window.addEventListener('keydown', handleEscape);
 
-    return () => {
-      window.removeEventListener('keydown', handleEscape);
-    };
+    return () => window.removeEventListener('keydown', handleEscape);
   }, []);
 
   const handleLogout = async () => {
@@ -88,27 +86,12 @@ function Navbar() {
     closeMobileMenu();
   };
 
+  // NAVIGATION LINKS
   const navLinks = [
-    {
-      to: '/',
-      label: t('nav.home', 'Home'),
-      icon: ChefHat
-    },
-    {
-      to: '/search',
-      label: t('nav.search', 'Search'),
-      icon: Search
-    },
-    {
-      to: '/stats',
-      label: t('nav.stats', 'Stats'),
-      icon: BarChart2
-    },
-    {
-      to: '/about',
-      label: t('nav.about', 'About'),
-      icon: Info
-    }
+    { to: '/', label: t('nav.home', 'Home'), icon: ChefHat },
+    { to: '/search', label: t('nav.search', 'Search'), icon: Search },
+    { to: '/stats', label: t('nav.stats', 'Stats'), icon: BarChart2 },
+    { to: '/about', label: t('nav.about', 'About'), icon: Info }
   ];
 
   if (user) {
@@ -120,207 +103,178 @@ function Navbar() {
       },
       {
         to: '/meal-planner',
-        label: t('nav.plan', 'Plan'),
+        label: 'Meal Planner',
         icon: CalendarDays
+      },
+      {
+        to: '/shopping-list',
+        label: 'Shopping List',
+        icon: ShoppingBasket
       }
     );
   }
 
-  const mainText = 'text-[#51453D] dark:text-[#FAF7F0]';
-  const mutedText = 'text-[#74675E] dark:text-[#C9BDB3]';
+  const mainText = 'text-[#34313B] dark:text-white';
 
   return (
     <nav
       dir={isArabic ? 'rtl' : 'ltr'}
-      className="relative z-50 w-full pt-4"
+      className="relative z-50 w-full px-4 pt-5 sm:px-6 lg:px-10"
     >
-      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto max-w-[1500px]">
 
-        {/* MAIN NAVBAR */}
-        <div
-          className="
-            relative flex items-center justify-between gap-4
-            px-4 sm:px-6 py-3 rounded-2xl
-            bg-gradient-to-r
-            from-[#E88FA5]/25 via-[#FAF7F0]/45 to-[#A8B995]/30
-            backdrop-blur-xl
-            border border-[#E88FA5]/30
-            shadow-xl shadow-[#718B68]/10
-            transition-all duration-300
-            dark:from-[#E88FA5]/15 dark:via-[#28221E]/65 dark:to-[#A8B995]/15
-            dark:border-[#E88FA5]/20
-          "
-        >
+        {/* NAVBAR DESIGN */}
+        <div className="relative rounded-[30px] border border-[#B8E8EE]/70 bg-gradient-to-r from-[#EAF9FA] via-[#FFF7FA] to-[#F3EEFF] p-2 shadow-[0_12px_35px_rgba(115,155,165,0.12)] dark:border-white/10 dark:from-[#273B43] dark:via-[#34303D] dark:to-[#343047]">
 
-          {/* LOGO */}
-          <Link
-            to="/"
-            onClick={closeMobileMenu}
-            className="flex items-center gap-3 shrink-0 group"
-          >
-            <div className="w-11 h-11 rounded-xl bg-[#E88FA5] flex items-center justify-center shadow-lg shadow-[#E88FA5]/20 group-hover:rotate-6 group-hover:scale-105 transition-all duration-300">
-              <Utensils size={23} className="text-white" />
+          <div className="flex min-h-[76px] items-center justify-between gap-3 px-2 sm:px-4">
+
+            {/* BRAND */}
+            <Link
+              to="/"
+              onClick={closeMobileMenu}
+              className="group flex shrink-0 items-center gap-3"
+            >
+              <div className="relative flex h-12 w-12 items-center justify-center rounded-[17px] bg-white text-[#4C9BA7] shadow-md shadow-[#7ADDF2]/20 transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110 dark:bg-white/10 dark:text-[#B8E8EE]">
+                <Utensils size={23} strokeWidth={2.2} />
+                <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#F2C7DB] text-[11px] text-[#A65D80]">
+                  ♥
+                </span>
+              </div>
+
+              <div>
+                <h1 className={`font-serif text-[25px] font-extrabold leading-none tracking-tight ${mainText}`}>
+                  Saveurs<span className="text-[#70C9DA]">.</span>
+                </h1>
+                <p className="mt-1.5 text-[9px] font-bold uppercase tracking-[0.2em] text-[#B17C9B]">
+                  Cook with love
+                </p>
+              </div>
+            </Link>
+
+            {/* DESKTOP NAVIGATION */}
+            <div className="hidden items-center rounded-full border border-white/80 bg-white/65 p-1.5 shadow-sm backdrop-blur-md xl:flex dark:border-white/10 dark:bg-black/10">
+              {navLinks.map((link) => {
+                const Icon = link.icon;
+                const active = isActive(link.to);
+
+                return (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className={`relative flex items-center gap-2 rounded-full px-3.5 py-3 text-[12px] font-bold transition-all duration-300 2xl:px-4 2xl:text-[13px] ${
+                      active
+                        ? 'bg-[#7ADDF2] text-[#24515B] shadow-md shadow-[#7ADDF2]/25'
+                        : `${mainText} hover:bg-[#F2C7DB]/50 hover:text-[#A65D80]`
+                    }`}
+                  >
+                    <Icon size={15} strokeWidth={2.2} />
+                    {link.label}
+                  </Link>
+                );
+              })}
             </div>
 
-            <div>
-              <h1 className={`font-serif text-2xl font-bold ${mainText} leading-none tracking-tight`}>
-                Saveurs
-              </h1>
+            {/* DESKTOP ACTIONS */}
+            <div className="hidden items-center gap-2 xl:flex">
 
-              <p className="text-[9px] text-[#B96F83] dark:text-[#E88FA5] tracking-[0.3em] uppercase mt-1.5">
-                Taste the joy
-              </p>
-            </div>
-          </Link>
+              {/* SEARCH */}
+              <form onSubmit={handleSearch} className="group relative">
+                <input
+                  type="search"
+                  value={searchQuery}
+                  onChange={(event) => setSearchQuery(event.target.value)}
+                  placeholder={t('nav.searchPlaceholder', 'Search recipes...')}
+                  aria-label={t('nav.searchPlaceholder', 'Search recipes...')}
+                  className="w-10 cursor-pointer rounded-full border border-transparent bg-white/70 py-3 ps-10 pe-3 text-xs text-[#34313B] outline-none transition-all duration-300 placeholder:text-transparent focus:w-44 focus:cursor-text focus:border-[#7ADDF2] focus:placeholder:text-gray-400 2xl:focus:w-48 dark:bg-white/10 dark:text-white"
+                />
+                <Search
+                  size={17}
+                  className="pointer-events-none absolute start-3 top-1/2 -translate-y-1/2 text-[#4C9BA7]"
+                />
+              </form>
 
-          {/* DESKTOP NAVIGATION */}
-          <div className="hidden xl:flex items-center gap-5 2xl:gap-7">
-            {navLinks.map((link) => {
-              const Icon = link.icon;
-              const active = isActive(link.to);
+              {/* LANGUAGE */}
+              <div className="rounded-full bg-white/70 p-1.5 dark:bg-white/10">
+                <LanguageSwitcher />
+              </div>
 
-              return (
+              {/* THEME */}
+              <button
+                type="button"
+                onClick={toggleTheme}
+                title={isDark ? 'Light mode' : 'Dark mode'}
+                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#CBB7F5]/50 text-[#8068B4] transition-all duration-300 hover:rotate-12 hover:bg-[#CBB7F5] dark:text-[#E1D5FF]"
+              >
+                {isDark ? <Sun size={18} /> : <Moon size={18} />}
+              </button>
+
+              {/* ACCOUNT */}
+              {user ? (
+                <div className="flex items-center gap-2 rounded-full border border-white/80 bg-white/70 p-1.5 ps-2 dark:border-white/10 dark:bg-white/10">
+                  <Link
+                    to={`/user/${user.id}`}
+                    title={user.name}
+                    className="flex h-9 w-9 items-center justify-center rounded-full bg-[#F2C7DB] font-bold text-[#70465B] transition-transform hover:scale-105"
+                  >
+                    {user.name?.charAt(0)?.toUpperCase() || (
+                      <UserRound size={17} />
+                    )}
+                  </Link>
+
+                  <button
+                    type="button"
+                    onClick={handleLogout}
+                    title={t('nav.logout', 'Logout')}
+                    aria-label={t('nav.logout', 'Logout')}
+                    className="flex h-9 w-9 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-red-50 hover:text-red-500 dark:hover:bg-red-500/10"
+                  >
+                    <LogOut size={17} />
+                  </button>
+                </div>
+              ) : (
                 <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`relative flex items-center gap-2 py-2 text-sm font-semibold transition-colors duration-300 ${
-                    active
-                      ? 'text-[#C96F88] dark:text-[#E88FA5]'
-                      : `${mainText} hover:text-[#C96F88] dark:hover:text-[#E88FA5]`
-                  }`}
+                  to="/login"
+                  className="flex shrink-0 items-center gap-2 rounded-full bg-[#7ADDF2] px-4 py-3 text-xs font-extrabold text-[#24515B] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#62CFE8] hover:shadow-md"
                 >
-                  <Icon size={16} />
-                  {link.label}
-
-                  {active && (
-                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-[#E88FA5]" />
-                  )}
+                  <UserRound size={15} />
+                  {t('nav.signIn', 'Sign In')}
+                  <ArrowRight size={13} />
                 </Link>
-              );
-            })}
-          </div>
+              )}
+            </div>
 
-          {/* DESKTOP ACTIONS */}
-          <div className="hidden xl:flex items-center gap-3">
-
-            {/* SEARCH */}
-            <form onSubmit={handleSearch} className="relative">
-              <input
-                type="search"
-                value={searchQuery}
-                onChange={(event) => setSearchQuery(event.target.value)}
-                placeholder={t('nav.searchPlaceholder', 'Search recipes...')}
-                aria-label={t('nav.searchPlaceholder', 'Search recipes...')}
-                className="
-                  w-40 2xl:w-48 focus:w-56
-                  transition-all duration-300
-                  bg-white/35 dark:bg-black/20
-                  border border-[#8F9E80]/30
-                  rounded-full py-2.5 ps-10 pe-4
-                  text-xs text-[#51453D] dark:text-[#FAF7F0]
-                  placeholder:text-[#8B8179] dark:placeholder:text-[#B9ADA3]
-                  outline-none focus:border-[#E88FA5]
-                "
-              />
-
-              <Search
-                size={16}
-                className="absolute start-4 top-1/2 -translate-y-1/2 text-[#8B8179] dark:text-[#B9ADA3]"
-              />
-            </form>
-
-            {/* LANGUAGE */}
-            <LanguageSwitcher />
-
-            {/* THEME */}
+            {/* MOBILE BUTTON */}
             <button
               type="button"
-              onClick={toggleTheme}
-              title={isDark ? 'Light mode' : 'Dark mode'}
-              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-              className="
-                w-10 h-10 rounded-full
-                bg-white/35 dark:bg-black/20
-                border border-[#8F9E80]/30
-                flex items-center justify-center
-                text-[#51453D] dark:text-[#FAF7F0]
-                hover:text-[#C96F88]
-                hover:border-[#E88FA5]
-                hover:bg-[#E88FA5]/15
-                transition-all duration-300
-              "
+              onClick={() => setMobileMenuOpen((previous) => !previous)}
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white text-[#397D88] shadow-sm transition-all hover:bg-[#7ADDF2] xl:hidden dark:bg-white/10 dark:text-white"
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileMenuOpen}
             >
-              {isDark ? <Sun size={18} /> : <Moon size={18} />}
+              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
-
-            {/* ACCOUNT */}
-            {user ? (
-              <div className="flex items-center gap-2 ps-3 border-s border-[#8F9E80]/30">
-
-                <Link
-                  to={`/user/${user.id}`}
-                  title={user.name}
-                  className="w-10 h-10 rounded-full bg-[#E88FA5] border-2 border-white/60 flex items-center justify-center text-white font-bold hover:scale-105 transition-transform"
-                >
-                  {user.name?.charAt(0)?.toUpperCase() || (
-                    <UserRound size={18} />
-                  )}
-                </Link>
-
-                <button
-                  type="button"
-                  onClick={handleLogout}
-                  title={t('nav.logout', 'Logout')}
-                  aria-label={t('nav.logout', 'Logout')}
-                  className="w-9 h-9 rounded-full flex items-center justify-center text-[#8B8179] dark:text-[#C9BDB3] hover:text-red-500 hover:bg-red-400/10 transition-all"
-                >
-                  <LogOut size={18} />
-                </button>
-              </div>
-            ) : (
-              <Link
-                to="/login"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#E88FA5] text-white text-xs font-bold hover:bg-[#D77F96] hover:shadow-lg hover:shadow-[#E88FA5]/20 transition-all duration-300"
-              >
-                <UserRound size={15} />
-                {t('nav.signIn', 'Sign In')}
-              </Link>
-            )}
           </div>
-
-          {/* MOBILE / TABLET BUTTON */}
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen((previous) => !previous)}
-            className="
-              xl:hidden w-10 h-10 rounded-xl
-              bg-white/35 dark:bg-black/20
-              border border-[#8F9E80]/30
-              text-[#51453D] dark:text-[#FAF7F0]
-              flex items-center justify-center
-              hover:bg-[#E88FA5] hover:text-white
-              hover:border-[#E88FA5]
-              transition-all duration-300
-            "
-            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={mobileMenuOpen}
-          >
-            {mobileMenuOpen ? <X size={21} /> : <Menu size={21} />}
-          </button>
         </div>
 
-        {/* MOBILE & TABLET MENU */}
+        {/* MOBILE MENU */}
         {mobileMenuOpen && (
-          <div
-            className="
-              xl:hidden mt-3 p-5 rounded-2xl
-              bg-[#FAF7F0]/95 dark:bg-[#28221E]/95
-              backdrop-blur-xl
-              border border-[#E88FA5]/30
-              shadow-2xl shadow-[#718B68]/10
-              animate-fade-in
-            "
-          >
+          <div className="mt-3 overflow-hidden rounded-[28px] border border-[#B8E8EE]/70 bg-gradient-to-br from-[#F0FAFC] via-white to-[#FFF1F7] p-5 shadow-xl animate-fade-in xl:hidden dark:border-white/10 dark:from-[#273B43] dark:via-[#34303D] dark:to-[#343047]">
+
+            {/* MOBILE HEADER */}
+            <div className="mb-5 flex items-center justify-between">
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#A47791]">
+                  Welcome to
+                </p>
+                <h2 className={`mt-1 font-serif text-xl font-bold ${mainText}`}>
+                  Saveurs<span className="text-[#70C9DA]">.</span>
+                </h2>
+              </div>
+              <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#F2C7DB]/60 text-[#A65D80]">
+                <Sparkles size={20} />
+              </div>
+            </div>
 
             {/* MOBILE SEARCH */}
             <form onSubmit={handleSearch} className="relative mb-5">
@@ -329,24 +283,17 @@ function Navbar() {
                 value={searchQuery}
                 onChange={(event) => setSearchQuery(event.target.value)}
                 placeholder={t('nav.searchPlaceholder', 'Search recipes...')}
-                className="
-                  w-full bg-white/70 dark:bg-black/20
-                  border border-[#A8B995]/40
-                  rounded-xl py-3 ps-10 pe-4 text-sm
-                  text-[#51453D] dark:text-[#FAF7F0]
-                  placeholder:text-[#8B8179] dark:placeholder:text-[#B9ADA3]
-                  outline-none focus:border-[#E88FA5]
-                "
+                aria-label={t('nav.searchPlaceholder', 'Search recipes...')}
+                className="w-full rounded-2xl border border-[#B8E8EE] bg-white/80 py-3.5 ps-11 pe-4 text-sm text-[#34313B] outline-none placeholder:text-gray-400 focus:border-[#70C9DA] dark:bg-white/5 dark:text-white"
               />
-
               <Search
-                size={17}
-                className="absolute start-3 top-1/2 -translate-y-1/2 text-[#8B8179] dark:text-[#B9ADA3]"
+                size={18}
+                className="absolute start-4 top-1/2 -translate-y-1/2 text-[#69BACA]"
               />
             </form>
 
-            {/* NAVIGATION LINKS */}
-            <div className="space-y-1">
+            {/* MOBILE LINKS */}
+            <div className="grid grid-cols-2 gap-2">
               {navLinks.map((link) => {
                 const Icon = link.icon;
                 const active = isActive(link.to);
@@ -356,80 +303,72 @@ function Navbar() {
                     key={link.to}
                     to={link.to}
                     onClick={closeMobileMenu}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
+                    className={`flex min-h-[62px] items-center gap-2 rounded-2xl border p-3 text-sm font-bold transition-all ${
                       active
-                        ? 'bg-[#E88FA5]/20 text-[#C96F88] dark:text-[#E88FA5]'
-                        : `${mainText} hover:bg-[#A8B995]/15 hover:text-[#C96F88]`
+                        ? 'border-[#7ADDF2] bg-[#B8E8EE]/60 text-[#397D88] dark:bg-[#B8E8EE]/15 dark:text-[#B8E8EE]'
+                        : 'border-white bg-white/70 text-[#55505D] hover:bg-[#F2C7DB]/40 dark:border-white/10 dark:bg-white/5 dark:text-white'
                     }`}
                   >
-                    <Icon size={18} />
-                    {link.label}
-
-                    {active && (
-                      <Sparkles size={15} className="ms-auto text-[#E88FA5]" />
-                    )}
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/80 dark:bg-white/10">
+                      <Icon size={17} />
+                    </span>
+                    <span className="truncate">{link.label}</span>
                   </Link>
                 );
               })}
             </div>
 
-            <div className="my-4 border-t border-[#A8B995]/30 dark:border-white/10" />
+            <div className="my-5 border-t border-[#B8E8EE]/70 dark:border-white/10" />
 
-            {/* LANGUAGE */}
-            <div className="flex items-center justify-between gap-3 py-2">
-              <span className={`text-xs ${mutedText}`}>
-                {t('nav.language', 'Language')}
-              </span>
+            {/* LANGUAGE AND THEME */}
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="rounded-full bg-white/70 p-2 dark:bg-white/10">
+                <LanguageSwitcher />
+              </div>
 
-              <LanguageSwitcher />
+              <button
+                type="button"
+                onClick={toggleTheme}
+                className="flex items-center gap-2 rounded-full bg-[#CBB7F5]/40 px-4 py-3 text-xs font-bold text-[#8068B4] transition-all hover:bg-[#CBB7F5]/70 dark:text-[#E1D5FF]"
+              >
+                {isDark ? <Sun size={17} /> : <Moon size={17} />}
+                {isDark
+                  ? t('nav.lightMode', 'Light Mode')
+                  : t('nav.darkMode', 'Dark Mode')}
+              </button>
             </div>
 
-            {/* THEME */}
-            <button
-              type="button"
-              onClick={toggleTheme}
-              className={`
-                w-full flex items-center gap-3 px-4 py-3
-                rounded-xl text-sm ${mainText}
-                hover:bg-[#A8B995]/15 transition-all
-              `}
-            >
-              {isDark ? <Sun size={18} /> : <Moon size={18} />}
+            <div className="my-5 border-t border-[#B8E8EE]/70 dark:border-white/10" />
 
-              {isDark
-                ? t('nav.lightMode', 'Light Mode')
-                : t('nav.darkMode', 'Dark Mode')}
-            </button>
-
-            <div className="my-4 border-t border-[#A8B995]/30 dark:border-white/10" />
-
-            {/* ACCOUNT */}
+            {/* USER ACCOUNT */}
             {user ? (
-              <>
+              <div className="space-y-2">
                 <Link
                   to={`/user/${user.id}`}
                   onClick={closeMobileMenu}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm ${mainText} hover:bg-[#A8B995]/15 transition-all`}
+                  className="flex items-center gap-3 rounded-2xl bg-white/70 p-3.5 text-sm font-bold text-[#55505D] dark:bg-white/5 dark:text-white"
                 >
-                  <UserRound size={18} />
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#F2C7DB] text-[#70465B]">
+                    <UserRound size={18} />
+                  </span>
                   {t('nav.profile', 'My Profile')}
                 </Link>
 
                 <button
                   type="button"
                   onClick={handleLogout}
-                  className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-red-500 hover:bg-red-400/10 transition-all"
+                  className="flex w-full items-center gap-3 rounded-2xl p-3.5 text-sm font-bold text-red-500 transition-all hover:bg-red-50 dark:hover:bg-red-500/10"
                 >
                   <LogOut size={18} />
                   {t('nav.logout', 'Logout')}
                 </button>
-              </>
+              </div>
             ) : (
               <div className="grid grid-cols-2 gap-3">
                 <Link
                   to="/login"
                   onClick={closeMobileMenu}
-                  className="py-3 rounded-xl text-center text-sm font-bold text-[#51453D] dark:text-[#FAF7F0] bg-[#A8B995]/25 hover:bg-[#A8B995]/40 transition-all"
+                  className="rounded-2xl bg-[#B8E8EE] py-3.5 text-center text-sm font-extrabold text-[#397D88] transition-all hover:bg-[#7ADDF2]"
                 >
                   {t('nav.signIn', 'Sign In')}
                 </Link>
@@ -437,7 +376,7 @@ function Navbar() {
                 <Link
                   to="/register"
                   onClick={closeMobileMenu}
-                  className="py-3 rounded-xl text-center text-sm font-bold text-white bg-[#E88FA5] hover:bg-[#D77F96] transition-all"
+                  className="rounded-2xl bg-[#F2C7DB] py-3.5 text-center text-sm font-extrabold text-[#70465B] transition-all hover:bg-[#EAB4CE]"
                 >
                   {t('nav.signUp', 'Sign Up')}
                 </Link>
