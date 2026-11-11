@@ -1,0 +1,1820 @@
+
+[
+  {
+    "name": "Fluffy Buttermilk Pancakes",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "2 tbsp sugar",
+      "2 tsp baking powder",
+      "1/2 tsp baking soda",
+      "1/4 tsp salt",
+      "1 1/4 cups buttermilk",
+      "1 large egg",
+      "3 tbsp melted butter",
+      "1 tsp vanilla extract",
+      "Maple syrup for serving"
+    ],
+    "steps": [
+      "Mix flour, sugar, baking powder, baking soda and salt in a bowl.",
+      "Whisk buttermilk, egg, melted butter and vanilla in another bowl.",
+      "Combine wet and dry ingredients without overmixing.",
+      "Heat a lightly buttered pan over medium heat.",
+      "Pour small portions of batter into the pan.",
+      "Cook until bubbles appear, flip and cook until golden.",
+      "Serve warm with maple syrup."
+    ]
+  },
+  {
+    "name": "Avocado Egg Toast",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "Modern",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "1 ripe avocado",
+      "2 eggs",
+      "1 tsp lemon juice",
+      "1 tbsp olive oil",
+      "Salt and black pepper",
+      "Chili flakes"
+    ],
+    "steps": [
+      "Toast the bread until golden.",
+      "Mash the avocado with lemon juice, salt and pepper.",
+      "Heat olive oil in a pan and cook the eggs.",
+      "Spread mashed avocado over the toast.",
+      "Place one egg on each slice.",
+      "Finish with chili flakes and serve."
+    ]
+  },
+  {
+    "name": "Berry Yogurt Parfait",
+    "category": "Breakfast",
+    "season": "Summer",
+    "cuisine": "Healthy",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups Greek yogurt",
+      "1 cup strawberries",
+      "1/2 cup blueberries",
+      "1/2 cup granola",
+      "2 tbsp honey",
+      "1 tbsp chia seeds"
+    ],
+    "steps": [
+      "Add a layer of yogurt into two glasses.",
+      "Add strawberries and blueberries.",
+      "Sprinkle with granola and chia seeds.",
+      "Repeat the layers.",
+      "Drizzle with honey and serve chilled."
+    ]
+  },
+  {
+    "name": "Banana Oat Pancakes",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "Healthy",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 ripe bananas",
+      "2 eggs",
+      "1 cup rolled oats",
+      "1/2 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "1/4 cup milk",
+      "1 tsp vanilla extract"
+    ],
+    "steps": [
+      "Blend bananas, eggs, oats, baking powder, cinnamon, milk and vanilla.",
+      "Let the batter rest for 5 minutes.",
+      "Heat a lightly oiled pan.",
+      "Pour small portions of batter into the pan.",
+      "Cook for 2 to 3 minutes and flip.",
+      "Cook the other side until golden.",
+      "Serve with fresh fruit."
+    ]
+  },
+  {
+    "name": "Spinach and Feta Omelette",
+    "category": "Breakfast",
+    "season": "Spring",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "3 large eggs",
+      "1 cup fresh spinach",
+      "40 g feta cheese",
+      "1 tbsp milk",
+      "1 tsp olive oil",
+      "Salt and black pepper",
+      "1 tbsp chopped parsley"
+    ],
+    "steps": [
+      "Whisk eggs with milk, salt and pepper.",
+      "Heat olive oil in a non-stick pan.",
+      "Add spinach and cook until wilted.",
+      "Pour in the egg mixture.",
+      "Add feta and parsley.",
+      "Fold the omelette and cook until set.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Classic French Toast",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "French",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "4 slices brioche bread",
+      "2 eggs",
+      "1/2 cup milk",
+      "1 tsp vanilla extract",
+      "1/2 tsp cinnamon",
+      "1 tbsp sugar",
+      "1 tbsp butter",
+      "Fresh berries"
+    ],
+    "steps": [
+      "Whisk eggs, milk, vanilla, cinnamon and sugar.",
+      "Dip each bread slice into the mixture.",
+      "Melt butter in a frying pan.",
+      "Cook bread for 2 to 3 minutes on each side.",
+      "Continue until golden.",
+      "Serve with fresh berries."
+    ]
+  },
+  {
+    "name": "Blueberry Overnight Oats",
+    "category": "Breakfast",
+    "season": "Summer",
+    "cuisine": "Healthy",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 cup rolled oats",
+      "1 cup milk",
+      "1/2 cup Greek yogurt",
+      "1 tbsp chia seeds",
+      "1 tbsp honey",
+      "1/2 cup blueberries",
+      "1/4 tsp cinnamon"
+    ],
+    "steps": [
+      "Combine oats, milk, yogurt, chia seeds, honey and cinnamon.",
+      "Mix everything in a jar.",
+      "Cover and refrigerate overnight.",
+      "Stir the mixture in the morning.",
+      "Add blueberries on top.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "name": "Cheese and Herb Scrambled Eggs",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "European",
+    "country": "United Kingdom",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "4 large eggs",
+      "2 tbsp milk",
+      "1 tbsp butter",
+      "30 g grated cheddar",
+      "1 tbsp chopped chives",
+      "Salt and black pepper"
+    ],
+    "steps": [
+      "Whisk eggs with milk, salt and pepper.",
+      "Melt butter in a pan over low heat.",
+      "Pour in the eggs.",
+      "Stir slowly until soft curds form.",
+      "Add grated cheddar.",
+      "Remove from heat and sprinkle with chives.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Strawberry Banana Smoothie Bowl",
+    "category": "Breakfast",
+    "season": "Summer",
+    "cuisine": "Healthy",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 frozen banana",
+      "1 cup frozen strawberries",
+      "1/2 cup Greek yogurt",
+      "1/4 cup milk",
+      "2 tbsp granola",
+      "1 tbsp sliced almonds"
+    ],
+    "steps": [
+      "Place banana, strawberries, yogurt and milk in a blender.",
+      "Blend until thick and smooth.",
+      "Pour into a bowl.",
+      "Add granola and sliced almonds.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Moroccan Msemen with Honey",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "300 g all-purpose flour",
+      "150 g fine semolina",
+      "1 tsp salt",
+      "1 tsp sugar",
+      "250 ml warm water",
+      "80 ml vegetable oil",
+      "50 g soft butter",
+      "Honey for serving"
+    ],
+    "steps": [
+      "Mix flour, semolina, salt and sugar.",
+      "Gradually add warm water and knead until smooth.",
+      "Divide into small balls and coat with oil.",
+      "Cover and rest for 20 minutes.",
+      "Flatten each ball very thinly.",
+      "Brush with butter and oil, then fold into a square.",
+      "Cook on a pan until golden on both sides.",
+      "Serve warm with honey."
+    ]
+  },
+  {
+    "name": "Breakfast Cheese Quesadilla",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 flour tortillas",
+      "2 eggs",
+      "1/2 cup grated cheddar",
+      "1 small tomato",
+      "2 tbsp spring onions",
+      "1 tsp olive oil",
+      "Salt and black pepper"
+    ],
+    "steps": [
+      "Whisk eggs with salt and pepper.",
+      "Cook the eggs in olive oil until scrambled.",
+      "Place one tortilla in a clean pan.",
+      "Add half the cheese, scrambled eggs, tomato and spring onions.",
+      "Add the remaining cheese and cover with the second tortilla.",
+      "Cook on both sides until golden and the cheese melts.",
+      "Cut into wedges and serve."
+    ]
+  },
+  {
+    "name": "Apple Cinnamon Porridge",
+    "category": "Breakfast",
+    "season": "Autumn",
+    "cuisine": "British",
+    "country": "United Kingdom",
+    "image": "https://images.unsplash.com/photo-1571748982800-fa51082c2224?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 cup rolled oats",
+      "2 cups milk",
+      "1 apple, diced",
+      "1/2 tsp cinnamon",
+      "1 tbsp maple syrup",
+      "1 tbsp chopped walnuts",
+      "Pinch of salt"
+    ],
+    "steps": [
+      "Add oats, milk and salt to a saucepan.",
+      "Bring to a gentle simmer.",
+      "Add diced apple and cinnamon.",
+      "Cook for 5 to 7 minutes while stirring.",
+      "Pour into bowls.",
+      "Top with maple syrup and walnuts."
+    ]
+  },
+  {
+    "name": "Mushroom Cheese Toast",
+    "category": "Breakfast",
+    "season": "Autumn",
+    "cuisine": "European",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 slices sourdough bread",
+      "200 g mushrooms",
+      "1 tbsp olive oil",
+      "1 garlic clove",
+      "40 g grated cheese",
+      "1 tbsp chopped parsley",
+      "Salt and black pepper"
+    ],
+    "steps": [
+      "Toast the bread until crisp.",
+      "Heat olive oil in a pan.",
+      "Add mushrooms and cook until browned.",
+      "Add garlic, salt and pepper.",
+      "Place mushrooms over the toast.",
+      "Sprinkle with cheese.",
+      "Grill until the cheese melts.",
+      "Finish with parsley."
+    ]
+  },
+  {
+    "name": "Breakfast Egg Muffins",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "6 large eggs",
+      "1/4 cup milk",
+      "1/2 red bell pepper",
+      "1 cup fresh spinach",
+      "1/3 cup grated cheddar",
+      "2 tbsp chopped onion",
+      "Salt and black pepper"
+    ],
+    "steps": [
+      "Preheat oven to 180°C.",
+      "Grease a muffin tin.",
+      "Whisk eggs, milk, salt and pepper.",
+      "Divide vegetables and cheese between muffin cups.",
+      "Pour egg mixture into each cup.",
+      "Bake for 18 to 22 minutes until set.",
+      "Cool slightly and serve."
+    ]
+  },
+  {
+    "name": "Peanut Butter Banana Toast",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "2 tbsp peanut butter",
+      "1 banana",
+      "1 tsp honey",
+      "1 tbsp chia seeds",
+      "A pinch of cinnamon"
+    ],
+    "steps": [
+      "Toast the bread until crisp.",
+      "Spread peanut butter over each slice.",
+      "Arrange banana slices on top.",
+      "Drizzle with honey.",
+      "Sprinkle with chia seeds and cinnamon.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Fruit Bowl",
+    "category": "Breakfast",
+    "season": "Summer",
+    "cuisine": "Healthy",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple chunks",
+      "1/2 cup strawberries",
+      "1/4 cup blueberries",
+      "2 tbsp chopped almonds",
+      "1 tsp honey"
+    ],
+    "steps": [
+      "Place cottage cheese in a serving bowl.",
+      "Arrange pineapple, strawberries and blueberries on top.",
+      "Sprinkle with chopped almonds.",
+      "Drizzle with honey if desired.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "name": "Belgian Style Waffles",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "Belgian",
+    "country": "Belgium",
+    "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "2 tbsp sugar",
+      "2 tsp baking powder",
+      "1/2 tsp salt",
+      "2 eggs",
+      "1 3/4 cups milk",
+      "1/2 cup melted butter",
+      "1 tsp vanilla extract"
+    ],
+    "steps": [
+      "Preheat the waffle iron.",
+      "Mix flour, sugar, baking powder and salt.",
+      "Whisk eggs, milk, butter and vanilla separately.",
+      "Combine wet and dry ingredients.",
+      "Pour batter into the waffle iron.",
+      "Cook until golden and crisp.",
+      "Serve with fruit or maple syrup."
+    ]
+  },
+  {
+    "name": "Smoked Salmon Cream Cheese Bagel",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 plain bagels",
+      "100 g cream cheese",
+      "100 g smoked salmon",
+      "1/4 red onion",
+      "1/2 cucumber",
+      "1 tbsp capers",
+      "1 tsp lemon juice",
+      "Fresh dill"
+    ],
+    "steps": [
+      "Cut the bagels in half and toast lightly.",
+      "Spread cream cheese over each half.",
+      "Add smoked salmon.",
+      "Arrange cucumber and red onion slices.",
+      "Add capers and lemon juice.",
+      "Garnish with fresh dill and serve."
+    ]
+  },
+  {
+    "name": "Shakshuka Breakfast Eggs",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "North African",
+    "country": "Tunisia",
+    "image": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "4 eggs",
+      "1 tbsp olive oil",
+      "1 small onion",
+      "1 red bell pepper",
+      "2 garlic cloves",
+      "400 g chopped tomatoes",
+      "1 tsp ground cumin",
+      "1/2 tsp paprika",
+      "Salt and black pepper",
+      "2 tbsp chopped parsley"
+    ],
+    "steps": [
+      "Heat olive oil in a skillet.",
+      "Add onion and bell pepper and cook until softened.",
+      "Add garlic, cumin and paprika.",
+      "Add chopped tomatoes, salt and pepper.",
+      "Simmer for 10 to 12 minutes until thickened.",
+      "Make four wells in the sauce and add the eggs.",
+      "Cover and cook until egg whites are set.",
+      "Sprinkle with parsley and serve with bread."
+    ]
+  },
+  {
+    "name": "Cinnamon French Crepes",
+    "category": "Breakfast",
+    "season": "All",
+    "cuisine": "French",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "2 eggs",
+      "1 1/4 cups milk",
+      "1 tbsp melted butter",
+      "1 tbsp sugar",
+      "1/2 tsp vanilla extract",
+      "1/4 tsp cinnamon"
+    ],
+    "steps": [
+      "Whisk flour, eggs, milk, butter, sugar, vanilla and cinnamon until smooth.",
+      "Rest the batter for 15 minutes.",
+      "Heat a lightly buttered non-stick pan.",
+      "Pour a small amount of batter and swirl to cover the pan.",
+      "Cook for about one minute.",
+      "Flip and cook the other side briefly.",
+      "Repeat with remaining batter and serve."
+    ]
+  },
+  {
+    "name": "Spinach Feta Breakfast Wrap",
+    "category": "Breakfast",
+    "season": "Spring",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1200&q=85",
+    "ingredients": [
+      "2 whole-wheat tortillas",
+      "3 eggs",
+      "1 cup fresh spinach",
+      "40 g feta cheese",
+      "1 tsp olive oil",
+      "2 tbsp plain yogurt",
+      "1 tbsp chopped dill",
+      "Salt and black pepper"
+    ],
+    "steps": [
+      "Whisk eggs with salt and pepper.",
+      "Heat olive oil and cook spinach until wilted.",
+      "Add eggs and scramble gently.",
+      "Stir in feta and dill.",
+      "Spread yogurt over each tortilla.",
+      "Divide the egg mixture between the tortillas.",
+      "Fold and roll tightly.",
+      "Toast briefly in a dry pan and serve."
+    ]
+  },
+  {
+    "name": "Moroccan Chicken Tagine",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["500g chicken", "2 onions", "2 potatoes", "2 carrots", "Olive oil", "Ginger", "Turmeric", "Salt", "Pepper", "Preserved lemon"],
+    "steps": ["Chop the onions and vegetables.", "Heat olive oil in a tagine.", "Add chicken and spices.", "Add vegetables and preserved lemon.", "Add a little water.", "Cover and cook until chicken is tender."]
+  },
+  {
+    "name": "Moroccan Couscous with Vegetables",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["250g couscous", "2 carrots", "2 zucchini", "1 onion", "Chickpeas", "Tomatoes", "Olive oil", "Cumin", "Salt"],
+    "steps": ["Prepare the couscous according to package instructions.", "Chop all vegetables.", "Cook onion and tomatoes with spices.", "Add vegetables and chickpeas.", "Simmer until tender.", "Serve vegetables over couscous."]
+  },
+  {
+    "name": "Grilled Chicken Rice Bowl",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+    "ingredients": ["200g chicken breast", "150g rice", "1 cucumber", "1 tomato", "Olive oil", "Paprika", "Salt", "Pepper"],
+    "steps": ["Cook the rice.", "Season chicken with paprika, salt and pepper.", "Grill chicken until fully cooked.", "Chop cucumber and tomato.", "Place rice in a bowl.", "Add chicken and vegetables."]
+  },
+  {
+    "name": "Creamy Mushroom Pasta",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["250g pasta", "200g mushrooms", "150ml cooking cream", "2 garlic cloves", "Parmesan", "Olive oil", "Salt", "Black pepper"],
+    "steps": ["Cook pasta in salted water.", "Slice mushrooms and garlic.", "Cook garlic in olive oil.", "Add mushrooms and cook until soft.", "Add cream and seasoning.", "Mix with pasta and Parmesan."]
+  },
+  {
+    "name": "Tuna and Avocado Salad",
+    "category": "Lunch",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["1 can tuna", "1 avocado", "1 cucumber", "2 tomatoes", "Lettuce", "Lemon juice", "Olive oil", "Salt"],
+    "steps": ["Wash and chop vegetables.", "Slice the avocado.", "Drain tuna.", "Combine all ingredients in a bowl.", "Add lemon juice and olive oil.", "Mix gently and serve."]
+  },
+  {
+    "name": "Beef Vegetable Stir Fry",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+    "ingredients": ["250g beef strips", "1 bell pepper", "1 carrot", "1 onion", "2 tbsp soy sauce", "Garlic", "Olive oil"],
+    "steps": ["Slice all vegetables.", "Heat oil in a pan.", "Cook beef strips until browned.", "Add garlic and vegetables.", "Add soy sauce.", "Stir fry until vegetables are tender."]
+  },
+  {
+    "name": "Baked Salmon with Potatoes",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Mediterranean",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288",
+    "ingredients": ["2 salmon fillets", "3 potatoes", "1 lemon", "Olive oil", "Garlic", "Rosemary", "Salt", "Pepper"],
+    "steps": ["Preheat oven to 200°C.", "Cut potatoes into wedges.", "Season potatoes with oil and rosemary.", "Bake potatoes for 20 minutes.", "Add seasoned salmon.", "Bake until salmon is cooked through."]
+  },
+  {
+    "name": "Chicken Caesar Salad",
+    "category": "Lunch",
+    "season": "Summer",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1551248429-40975aa4de74",
+    "ingredients": ["200g chicken breast", "Lettuce", "Croutons", "Parmesan", "Caesar dressing", "Olive oil", "Black pepper"],
+    "steps": ["Season and grill chicken.", "Wash and chop lettuce.", "Slice cooked chicken.", "Place lettuce in a bowl.", "Add croutons and Parmesan.", "Top with chicken and dressing."]
+  },
+  {
+    "name": "Vegetable Fried Rice",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    "ingredients": ["250g cooked rice", "1 carrot", "Peas", "2 eggs", "Spring onions", "Soy sauce", "Olive oil"],
+    "steps": ["Chop vegetables.", "Heat oil in a wok.", "Scramble eggs and set aside.", "Cook vegetables briefly.", "Add cooked rice and soy sauce.", "Return eggs and mix well."]
+  },
+  {
+    "name": "Moroccan Kefta Tagine",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["300g minced beef", "3 tomatoes", "1 onion", "2 eggs", "Parsley", "Cumin", "Paprika", "Salt"],
+    "steps": ["Mix minced beef with spices and parsley.", "Form small meatballs.", "Cook chopped onion and tomatoes.", "Add meatballs to the sauce.", "Simmer until meatballs are cooked.", "Crack eggs on top and cook until set."]
+  },
+  {
+    "name": "Greek Chicken Pita",
+    "category": "Lunch",
+    "season": "Summer",
+    "cuisine": "Greek",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783",
+    "ingredients": ["2 pita breads", "200g chicken breast", "1 tomato", "1 cucumber", "Greek yogurt", "Lemon juice", "Garlic", "Oregano"],
+    "steps": ["Season chicken with oregano and lemon.", "Grill chicken until cooked.", "Mix yogurt with garlic.", "Chop tomato and cucumber.", "Warm pita breads.", "Fill with chicken, vegetables and yogurt sauce."]
+  },
+  {
+    "name": "Lentil Vegetable Soup",
+    "category": "Lunch",
+    "season": "Winter",
+    "cuisine": "Mediterranean",
+    "country": "Turkey",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["200g red lentils", "1 carrot", "1 onion", "1 tomato", "Garlic", "Cumin", "Vegetable stock", "Salt"],
+    "steps": ["Wash lentils.", "Chop onion, carrot and tomato.", "Cook onion and garlic in a pot.", "Add vegetables, lentils and stock.", "Add cumin and salt.", "Simmer until soft and blend if desired."]
+  },
+  {
+    "name": "Shrimp Garlic Spaghetti",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9",
+    "ingredients": ["250g spaghetti", "200g shrimp", "3 garlic cloves", "Olive oil", "Lemon juice", "Parsley", "Salt", "Pepper"],
+    "steps": ["Cook spaghetti.", "Heat olive oil and garlic.", "Add shrimp and cook until pink.", "Season with salt and pepper.", "Add lemon juice and parsley.", "Mix with spaghetti and serve."]
+  },
+  {
+    "name": "Chicken Shawarma Wrap",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Middle Eastern",
+    "country": "Lebanon",
+    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783",
+    "ingredients": ["250g chicken breast", "2 flatbreads", "Yogurt", "Garlic", "Paprika", "Cumin", "Lettuce", "Tomato"],
+    "steps": ["Slice chicken into strips.", "Mix yogurt, garlic and spices.", "Marinate chicken.", "Cook chicken in a pan until fully cooked.", "Chop lettuce and tomato.", "Fill flatbreads with chicken and vegetables."]
+  },
+  {
+    "name": "Caprese Pasta Salad",
+    "category": "Lunch",
+    "season": "Summer",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["200g pasta", "Cherry tomatoes", "Mozzarella", "Fresh basil", "Olive oil", "Balsamic vinegar", "Salt"],
+    "steps": ["Cook pasta and cool it.", "Halve cherry tomatoes.", "Cut mozzarella into pieces.", "Combine pasta, tomatoes and mozzarella.", "Add basil.", "Dress with olive oil and balsamic vinegar."]
+  },
+  {
+    "name": "Moroccan Fish Chermoula",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2",
+    "ingredients": ["2 fish fillets", "Coriander", "Parsley", "Garlic", "Lemon juice", "Paprika", "Cumin", "Olive oil"],
+    "steps": ["Chop coriander, parsley and garlic.", "Mix with lemon juice and spices.", "Coat fish with chermoula.", "Marinate for 20 minutes in the refrigerator.", "Bake or grill until fish is fully cooked.", "Serve with vegetables."]
+  },
+  {
+    "name": "Stuffed Bell Peppers",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Mediterranean",
+    "country": "Turkey",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["3 bell peppers", "150g rice", "1 tomato", "1 onion", "Parsley", "Olive oil", "Salt", "Pepper"],
+    "steps": ["Cook rice until partially tender.", "Chop onion and tomato.", "Mix rice with vegetables and seasoning.", "Cut the tops off peppers and remove seeds.", "Fill peppers with the mixture.", "Bake until peppers are tender."]
+  },
+  {
+    "name": "Chicken Pesto Pasta",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["250g pasta", "200g chicken breast", "3 tbsp pesto", "Cherry tomatoes", "Parmesan", "Olive oil", "Salt"],
+    "steps": ["Cook pasta.", "Cut chicken into small pieces.", "Cook chicken in olive oil until done.", "Add cherry tomatoes.", "Mix in pesto and pasta.", "Serve with Parmesan."]
+  },
+  {
+    "name": "Falafel Chickpea Bowl",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Middle Eastern",
+    "country": "Egypt",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["200g chickpeas", "Parsley", "Coriander", "1 garlic clove", "Cumin", "Lettuce", "Tomato", "Tahini"],
+    "steps": ["Soak dried chickpeas overnight.", "Blend chickpeas with herbs, garlic and cumin.", "Shape into small balls.", "Cook thoroughly until golden.", "Prepare a salad with lettuce and tomato.", "Serve falafel with salad and tahini sauce."]
+  },
+  {
+    "name": "Beef Burger with Salad",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+    "ingredients": ["300g minced beef", "2 burger buns", "Lettuce", "Tomato", "Onion", "Cheese", "Salt", "Pepper"],
+    "steps": ["Season minced beef.", "Shape into burger patties.", "Cook patties thoroughly.", "Toast burger buns.", "Add lettuce, tomato and onion.", "Assemble burgers with cheese and serve."]
+  },
+  {
+    "name": "Spinach and Ricotta Lasagna",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3",
+    "ingredients": ["Lasagna sheets", "200g spinach", "250g ricotta", "Tomato sauce", "Mozzarella", "Parmesan", "Salt", "Pepper"],
+    "steps": ["Cook spinach and drain excess water.", "Mix spinach with ricotta.", "Spread tomato sauce in a baking dish.", "Layer lasagna sheets with spinach mixture.", "Add mozzarella and sauce between layers.", "Bake until tender and golden."]
+  },
+  {
+    "name": "Moroccan Vegetable Briouats",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["Pastilla sheets", "2 potatoes", "1 carrot", "Peas", "Parsley", "Olive oil", "Salt", "Pepper"],
+    "steps": ["Boil potatoes and carrot.", "Mash potatoes and chop carrot.", "Mix with peas, parsley and seasoning.", "Place filling in pastry sheets.", "Fold into triangles.", "Bake until golden and crispy."]
+  },
+  {
+    "name": "Asian Chicken Noodle Bowl",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Asian",
+    "country": "Thailand",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
+    "ingredients": ["200g noodles", "200g chicken", "1 carrot", "Spring onions", "Soy sauce", "Garlic", "Ginger", "Sesame oil"],
+    "steps": ["Cook noodles according to package instructions.", "Slice chicken and vegetables.", "Cook chicken with garlic and ginger.", "Add vegetables and soy sauce.", "Add noodles and sesame oil.", "Toss together and serve."]
+  },
+  {
+    "name": "Baked Potato with Tuna",
+    "category": "Lunch",
+    "season": "Winter",
+    "cuisine": "International",
+    "country": "United Kingdom",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655",
+    "ingredients": ["2 large potatoes", "1 can tuna", "2 tbsp yogurt", "Sweetcorn", "Lemon juice", "Black pepper", "Parsley"],
+    "steps": ["Wash and pierce potatoes.", "Bake until soft.", "Drain tuna.", "Mix tuna with yogurt, sweetcorn and lemon juice.", "Cut potatoes open.", "Fill with tuna mixture and garnish with parsley."]
+  },
+  {
+    "name": "Chicken and Broccoli Rice",
+    "category": "Lunch",
+    "season": "All Seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+    "ingredients": ["200g chicken breast", "150g rice", "200g broccoli", "Garlic", "Soy sauce", "Olive oil", "Black pepper"],
+    "steps": ["Cook rice.", "Cut chicken into cubes.", "Steam broccoli until tender.", "Cook chicken with garlic and oil.", "Add broccoli and soy sauce.", "Serve over rice."]
+  },
+  {
+    "name": "Mediterranean Chickpea Salad",
+    "category": "Lunch",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["250g cooked chickpeas", "1 cucumber", "2 tomatoes", "Red onion", "Feta cheese", "Olive oil", "Lemon juice", "Oregano"],
+    "steps": ["Drain and rinse chickpeas.", "Chop cucumber, tomatoes and onion.", "Combine vegetables and chickpeas.", "Add crumbled feta.", "Mix olive oil, lemon and oregano.", "Pour dressing over salad and serve."]
+  },
+  {
+    "name": "Grilled Vegetable and Halloumi Wrap",
+    "category": "Lunch",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Cyprus",
+    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783",
+    "ingredients": ["2 tortillas", "150g halloumi", "1 zucchini", "1 bell pepper", "Lettuce", "Olive oil", "Lemon juice"],
+    "steps": ["Slice zucchini and bell pepper.", "Grill vegetables until tender.", "Slice and grill halloumi.", "Warm tortillas.", "Add lettuce, vegetables and halloumi.", "Drizzle with lemon juice and wrap."]
+  },
+    {
+    "name": "Moroccan Chicken with Preserved Lemon",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d",
+    "ingredients": ["500g chicken thighs", "1 preserved lemon", "2 onions", "2 garlic cloves", "Olive oil", "Ginger", "Turmeric", "Black pepper", "Green olives", "Cilantro"],
+    "steps": ["Chop the onions and garlic.", "Heat olive oil in a pot.", "Add chicken and spices.", "Add onions and garlic.", "Add a little water and simmer.", "Add preserved lemon and olives.", "Cook until chicken is tender.", "Garnish with cilantro and serve."]
+  },
+  {
+    "name": "Creamy Garlic Mushroom Chicken",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435",
+    "ingredients": ["2 chicken breasts", "200g mushrooms", "3 garlic cloves", "200ml cooking cream", "1 tablespoon butter", "Salt", "Black pepper", "Parsley"],
+    "steps": ["Season the chicken with salt and pepper.", "Heat butter in a pan.", "Cook chicken until golden and fully cooked.", "Remove chicken and cook mushrooms.", "Add garlic and cream.", "Simmer until the sauce thickens.", "Return chicken to the pan.", "Garnish with parsley."]
+  },
+  {
+    "name": "Baked Salmon with Lemon",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288",
+    "ingredients": ["2 salmon fillets", "1 lemon", "2 garlic cloves", "Olive oil", "Dried oregano", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 200°C.", "Place salmon in a baking dish.", "Mix olive oil, garlic, lemon juice and oregano.", "Pour the mixture over salmon.", "Season with salt and pepper.", "Bake for 12 to 15 minutes or until cooked through.", "Serve with vegetables."]
+  },
+  {
+    "name": "Vegetable Lasagna",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3",
+    "ingredients": ["Lasagna sheets", "2 zucchini", "1 eggplant", "1 carrot", "400g tomato sauce", "200g mozzarella", "Olive oil", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 180°C.", "Slice the vegetables.", "Cook vegetables in olive oil until tender.", "Spread tomato sauce in a baking dish.", "Add lasagna sheets and vegetables.", "Repeat the layers.", "Top with mozzarella.", "Bake for 35 to 40 minutes."]
+  },
+  {
+    "name": "Beef and Broccoli Stir Fry",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+    "ingredients": ["300g beef strips", "1 broccoli", "2 garlic cloves", "3 tablespoons soy sauce", "1 tablespoon honey", "1 tablespoon sesame oil", "1 teaspoon cornstarch", "Black pepper"],
+    "steps": ["Cut broccoli into florets.", "Mix soy sauce, honey and cornstarch.", "Heat sesame oil in a pan.", "Cook beef strips until browned.", "Add garlic and broccoli.", "Pour in the sauce.", "Stir fry until broccoli is tender-crisp and beef is cooked.", "Serve with rice."]
+  },
+  {
+    "name": "Moroccan Kefta with Tomato Sauce",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947",
+    "ingredients": ["400g ground beef", "3 tomatoes", "1 onion", "2 garlic cloves", "Cumin", "Paprika", "Cilantro", "Parsley", "Olive oil", "Salt"],
+    "steps": ["Mix ground beef with cumin, paprika, cilantro and salt.", "Shape into small meatballs.", "Grate tomatoes and chop onion.", "Heat olive oil and cook onion and garlic.", "Add tomatoes and simmer for 10 minutes.", "Add meatballs to the sauce.", "Cook until meatballs are fully cooked.", "Garnish with parsley."]
+  },
+  {
+    "name": "Creamy Spinach Pasta",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["250g pasta", "150g fresh spinach", "150ml cooking cream", "2 garlic cloves", "Parmesan cheese", "Olive oil", "Salt", "Black pepper"],
+    "steps": ["Cook pasta according to package instructions.", "Heat olive oil in a pan.", "Add garlic and spinach.", "Cook until spinach wilts.", "Add cooking cream and seasoning.", "Simmer for a few minutes.", "Add cooked pasta and mix.", "Finish with Parmesan cheese."]
+  },
+  {
+    "name": "Stuffed Bell Peppers with Rice",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Turkey",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+    "ingredients": ["4 bell peppers", "200g cooked rice", "200g ground beef", "1 onion", "200g tomato sauce", "Olive oil", "Paprika", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 190°C.", "Cut the tops off the peppers and remove seeds.", "Cook onion and ground beef in olive oil.", "Mix with cooked rice and some tomato sauce.", "Stuff the peppers with the mixture.", "Place in a baking dish.", "Pour remaining tomato sauce around them.", "Bake for 35 to 40 minutes until tender."]
+  },
+  {
+    "name": "Chicken Fajitas",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "https://images.unsplash.com/photo-1534352956036-cd81e27dd615",
+    "ingredients": ["400g chicken breast", "2 bell peppers", "1 onion", "2 tablespoons olive oil", "Paprika", "Cumin", "Garlic powder", "Salt", "4 tortillas"],
+    "steps": ["Slice chicken, peppers and onion.", "Mix chicken with paprika, cumin, garlic powder and salt.", "Heat olive oil in a pan.", "Cook chicken until fully cooked.", "Add peppers and onion.", "Cook until vegetables are tender.", "Warm tortillas.", "Serve chicken and vegetables inside tortillas."]
+  },
+  {
+    "name": "Lentil and Vegetable Curry",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Indian",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["200g red lentils", "1 onion", "2 tomatoes", "2 garlic cloves", "1 tablespoon curry powder", "400ml coconut milk", "Olive oil", "Salt", "Fresh cilantro"],
+    "steps": ["Rinse the lentils.", "Chop onion, tomatoes and garlic.", "Heat olive oil in a pot.", "Cook onion and garlic until soft.", "Add curry powder and tomatoes.", "Add lentils and coconut milk.", "Simmer for 20 to 25 minutes until lentils are tender.", "Garnish with cilantro and serve with rice."]
+  },
+  {
+    "name": "Grilled Chicken with Roasted Vegetables",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["2 chicken breasts", "1 zucchini", "1 red bell pepper", "1 carrot", "1 red onion", "Olive oil", "Oregano", "Garlic powder", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 200°C.", "Cut vegetables into medium pieces.", "Season vegetables with olive oil and spices.", "Season chicken with oregano, garlic, salt and pepper.", "Place chicken and vegetables on a baking tray.", "Roast for 25 to 30 minutes until chicken is fully cooked.", "Serve warm."]
+  },
+  {
+    "name": "Creamy Shrimp Garlic Pasta",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1563379091339-03246963d51a",
+    "ingredients": ["250g spaghetti", "250g peeled shrimp", "3 garlic cloves", "200ml cooking cream", "2 tablespoons butter", "Parmesan cheese", "Parsley", "Salt", "Black pepper"],
+    "steps": ["Cook spaghetti according to package instructions.", "Melt butter in a pan.", "Add garlic and shrimp.", "Cook shrimp until pink and opaque.", "Add cooking cream and seasoning.", "Simmer for 3 minutes.", "Add drained spaghetti and mix.", "Finish with Parmesan and parsley."]
+  },
+  {
+    "name": "Moroccan Vegetable Couscous",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["250g couscous", "2 carrots", "1 zucchini", "1 turnip", "1 onion", "1 tomato", "200g chickpeas", "Vegetable broth", "Olive oil", "Cumin", "Turmeric", "Salt"],
+    "steps": ["Prepare couscous according to package instructions.", "Chop all vegetables.", "Heat olive oil in a large pot.", "Cook onion and tomato with spices.", "Add vegetables, chickpeas and broth.", "Simmer until vegetables are tender.", "Fluff couscous with a fork.", "Serve vegetables and broth over couscous."]
+  },
+  {
+    "name": "Baked Chicken Parmesan",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8",
+    "ingredients": ["2 chicken breasts", "100g breadcrumbs", "1 egg", "100g mozzarella", "50g Parmesan", "200g tomato sauce", "Dried oregano", "Olive oil", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 190°C.", "Beat the egg in a bowl.", "Coat chicken in egg, then breadcrumbs mixed with Parmesan.", "Place chicken in a baking dish.", "Bake for 20 minutes.", "Add tomato sauce and mozzarella on top.", "Bake another 10 minutes until chicken is fully cooked and cheese melts.", "Serve with pasta or salad."]
+  },
+  {
+    "name": "Asian Sesame Chicken Bowl",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+    "ingredients": ["300g chicken breast", "200g cooked rice", "2 tablespoons soy sauce", "1 tablespoon honey", "1 teaspoon sesame oil", "1 garlic clove", "1 carrot", "1 cucumber", "Sesame seeds"],
+    "steps": ["Cut chicken into bite-sized pieces.", "Mix soy sauce, honey, sesame oil and minced garlic.", "Cook chicken in a pan until fully cooked.", "Pour the sauce over chicken and simmer briefly.", "Prepare rice in serving bowls.", "Slice carrot and cucumber.", "Add chicken and vegetables over rice.", "Sprinkle with sesame seeds."]
+  },
+  {
+    "name": "Baked Eggplant with Tomato and Cheese",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1625944525533-473f1a3d54e7",
+    "ingredients": ["2 eggplants", "300g tomato sauce", "150g mozzarella", "50g Parmesan", "2 garlic cloves", "Olive oil", "Basil", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 190°C.", "Slice eggplants and brush with olive oil.", "Roast eggplant slices for 15 minutes.", "Heat tomato sauce with garlic.", "Layer eggplant and tomato sauce in a baking dish.", "Add mozzarella and Parmesan.", "Bake for 20 minutes until cheese is melted.", "Garnish with basil."]
+  },
+  {
+    "name": "Turkey Meatballs with Rice",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "Turkey",
+    "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468",
+    "ingredients": ["400g ground turkey", "1 egg", "50g breadcrumbs", "1 onion", "2 garlic cloves", "300ml tomato sauce", "Olive oil", "Paprika", "Parsley", "Salt", "Black pepper", "200g rice"],
+    "steps": ["Mix ground turkey with egg, breadcrumbs, chopped onion and seasoning.", "Shape into meatballs.", "Heat olive oil in a pan.", "Brown meatballs on all sides.", "Add tomato sauce and garlic.", "Cover and simmer until meatballs are fully cooked.", "Cook rice separately.", "Serve meatballs over rice."]
+  },
+  {
+    "name": "Tuna Potato Bake",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655",
+    "ingredients": ["4 potatoes", "1 can tuna", "150ml cooking cream", "100g grated cheese", "1 onion", "Olive oil", "Salt", "Black pepper", "Parsley"],
+    "steps": ["Preheat oven to 190°C.", "Peel and slice potatoes.", "Boil potatoes for 8 minutes.", "Mix tuna with chopped onion and cream.", "Layer potatoes and tuna mixture in a baking dish.", "Season with salt and pepper.", "Top with grated cheese.", "Bake for 25 minutes until golden."]
+  },
+  {
+    "name": "Chickpea Spinach Coconut Curry",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Indian",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398",
+    "ingredients": ["1 can chickpeas", "150g fresh spinach", "400ml coconut milk", "1 onion", "2 garlic cloves", "2 tomatoes", "1 tablespoon curry powder", "Olive oil", "Salt"],
+    "steps": ["Chop onion, garlic and tomatoes.", "Heat olive oil in a pot.", "Cook onion and garlic until soft.", "Add tomatoes and curry powder.", "Add chickpeas and coconut milk.", "Simmer for 10 minutes.", "Add spinach and cook until wilted.", "Serve with rice."]
+  },
+  {
+    "name": "Grilled Beef Kofta with Yogurt Sauce",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Middle Eastern",
+    "country": "Lebanon",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947",
+    "ingredients": ["400g ground beef", "1 small onion", "2 tablespoons parsley", "1 teaspoon cumin", "1 teaspoon paprika", "Salt", "Black pepper", "150g plain yogurt", "1 garlic clove", "Lemon juice"],
+    "steps": ["Mix beef with grated onion, parsley and spices.", "Shape mixture into long kofta pieces.", "Grill or pan-cook until fully cooked.", "Mix yogurt with minced garlic and lemon juice.", "Season yogurt sauce with salt.", "Serve kofta with yogurt sauce and salad."]
+  },
+  {
+    "name": "Moroccan Harira Soup",
+    "category": "Dinner",
+    "season": "Winter",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["100g lentils", "100g chickpeas", "2 tomatoes", "1 onion", "50g celery", "Fresh cilantro", "Fresh parsley", "2 tablespoons tomato paste", "1 teaspoon ginger", "Turmeric", "Salt", "Water"],
+    "steps": ["Soak chickpeas overnight and cook until tender.", "Chop onion, tomatoes, celery and herbs.", "Add ingredients to a large pot with lentils and spices.", "Add water and simmer until lentils are tender.", "Add tomato paste and cooked chickpeas.", "Simmer until the soup reaches the desired consistency.", "Adjust seasoning and serve hot."]
+  },
+  {
+    "name": "Lemon Herb Roasted Chicken",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435",
+    "ingredients": ["4 chicken thighs", "1 lemon", "3 garlic cloves", "2 tablespoons olive oil", "Rosemary", "Thyme", "Salt", "Black pepper", "4 potatoes"],
+    "steps": ["Preheat oven to 200°C.", "Mix olive oil, lemon juice, garlic and herbs.", "Coat chicken with the mixture.", "Cut potatoes into wedges.", "Place chicken and potatoes in a baking dish.", "Season with salt and pepper.", "Roast for 35 to 45 minutes until chicken is fully cooked.", "Serve with the pan juices."]
+  },
+  {
+    "name": "Vegetarian Mexican Rice Bowl",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["200g cooked rice", "1 can black beans", "1 corn cob or 100g corn", "1 avocado", "2 tomatoes", "1 lime", "1 teaspoon cumin", "Fresh cilantro", "Salt"],
+    "steps": ["Warm the cooked rice.", "Rinse and heat black beans with cumin.", "Cook corn until tender.", "Dice tomatoes and avocado.", "Arrange rice, beans and corn in bowls.", "Add tomato and avocado.", "Squeeze lime juice over the bowls.", "Garnish with cilantro."]
+  },
+  {
+    "name": "Baked White Fish with Vegetables",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2",
+    "ingredients": ["2 white fish fillets", "1 zucchini", "1 red bell pepper", "1 tomato", "1 lemon", "2 garlic cloves", "Olive oil", "Paprika", "Cumin", "Cilantro", "Salt"],
+    "steps": ["Preheat oven to 190°C.", "Slice the vegetables and place them in a baking dish.", "Mix olive oil, garlic, paprika, cumin and salt.", "Coat the fish with the spice mixture.", "Place fish over the vegetables.", "Add lemon slices and cilantro.", "Bake for 15 to 20 minutes until fish flakes easily.", "Serve warm."]
+  },
+  {
+    "name": "Quick Chicken Vegetable Noodles",
+    "category": "Dinner",
+    "season": "All seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
+    "ingredients": ["200g noodles", "250g chicken breast", "1 carrot", "1 bell pepper", "100g cabbage", "2 tablespoons soy sauce", "1 garlic clove", "1 tablespoon sesame oil", "Black pepper"],
+    "steps": ["Cook noodles according to package instructions.", "Slice chicken and vegetables.", "Heat sesame oil in a wok or pan.", "Cook chicken until fully cooked.", "Add garlic and vegetables.", "Stir fry until vegetables are tender-crisp.", "Add soy sauce and cooked noodles.", "Toss everything together and serve."]
+  },
+    {
+    "name": "Classic Chocolate Cake",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+    "ingredients": ["200g flour", "200g sugar", "50g cocoa powder", "2 eggs", "120ml milk", "100ml vegetable oil", "1 teaspoon baking powder", "1 teaspoon vanilla extract"],
+    "steps": ["Preheat oven to 180°C.", "Mix flour, sugar, cocoa and baking powder.", "Add eggs, milk, oil and vanilla.", "Mix until smooth.", "Pour into a greased cake pan.", "Bake for 30 to 35 minutes.", "Let cool before serving."]
+  },
+  {
+    "name": "Strawberry Cheesecake",
+    "category": "Desserts",
+    "season": "Spring",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad",
+    "ingredients": ["200g digestive biscuits", "80g melted butter", "400g cream cheese", "100g sugar", "200ml whipping cream", "1 teaspoon vanilla", "200g fresh strawberries"],
+    "steps": ["Crush the biscuits.", "Mix with melted butter.", "Press into a cake tin.", "Beat cream cheese with sugar and vanilla.", "Whip the cream and fold it into the mixture.", "Spread over the biscuit base.", "Refrigerate for at least 4 hours.", "Decorate with fresh strawberries."]
+  },
+  {
+    "name": "Moroccan Orange Cinnamon Cake",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3",
+    "ingredients": ["200g flour", "150g sugar", "3 eggs", "100ml orange juice", "Zest of 1 orange", "100ml vegetable oil", "1 teaspoon baking powder", "1 teaspoon cinnamon"],
+    "steps": ["Preheat oven to 180°C.", "Beat eggs and sugar.", "Add oil and orange juice.", "Mix in flour, baking powder and cinnamon.", "Add orange zest.", "Pour into a greased cake pan.", "Bake for 30 minutes.", "Cool before serving."]
+  },
+  {
+    "name": "Classic Tiramisu",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9",
+    "ingredients": ["250g mascarpone", "200ml whipping cream", "80g sugar", "200g ladyfinger biscuits", "200ml cooled coffee", "Cocoa powder", "1 teaspoon vanilla"],
+    "steps": ["Whip the cream until thick.", "Mix mascarpone with sugar and vanilla.", "Fold whipped cream into mascarpone.", "Dip ladyfingers briefly in cooled coffee.", "Arrange a layer in a dish.", "Spread half the cream mixture over them.", "Repeat the layers.", "Refrigerate for at least 4 hours and dust with cocoa."]
+  },
+  {
+    "name": "Apple Cinnamon Crumble",
+    "category": "Desserts",
+    "season": "Autumn",
+    "cuisine": "British",
+    "country": "United Kingdom",
+    "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2",
+    "ingredients": ["4 apples", "100g flour", "80g butter", "70g brown sugar", "1 teaspoon cinnamon", "1 tablespoon lemon juice", "40g oats"],
+    "steps": ["Preheat oven to 180°C.", "Peel and slice the apples.", "Mix apples with cinnamon and lemon juice.", "Place apples in a baking dish.", "Rub butter into flour and sugar.", "Mix in oats.", "Spread crumble topping over apples.", "Bake for 30 to 35 minutes until golden."]
+  },
+  {
+    "name": "Chocolate Brownies",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c",
+    "ingredients": ["150g dark chocolate", "120g butter", "150g sugar", "2 eggs", "80g flour", "30g cocoa powder", "1 teaspoon vanilla", "50g chopped walnuts"],
+    "steps": ["Preheat oven to 180°C.", "Melt chocolate and butter together.", "Whisk eggs and sugar.", "Add melted chocolate and vanilla.", "Fold in flour and cocoa powder.", "Add chopped walnuts.", "Pour into a lined baking pan.", "Bake for 20 to 25 minutes and cool before cutting."]
+  },
+  {
+    "name": "Vanilla Panna Cotta",
+    "category": "Desserts",
+    "season": "Summer",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777",
+    "ingredients": ["400ml heavy cream", "100ml milk", "60g sugar", "1 teaspoon vanilla extract", "2 teaspoons gelatin", "3 tablespoons cold water", "Fresh berries"],
+    "steps": ["Sprinkle gelatin over cold water.", "Heat cream, milk, sugar and vanilla gently.", "Remove from heat before boiling.", "Stir in the gelatin until dissolved.", "Pour into small serving glasses.", "Refrigerate for at least 4 hours.", "Serve with fresh berries."]
+  },
+  {
+    "name": "Lemon Drizzle Cake",
+    "category": "Desserts",
+    "season": "Spring",
+    "cuisine": "British",
+    "country": "United Kingdom",
+    "image": "https://images.unsplash.com/photo-1519869325930-281384150729",
+    "ingredients": ["200g flour", "150g sugar", "150g butter", "3 eggs", "2 lemons", "1 teaspoon baking powder", "80g powdered sugar"],
+    "steps": ["Preheat oven to 180°C.", "Cream butter and sugar together.", "Add eggs one at a time.", "Fold in flour and baking powder.", "Add zest of one lemon.", "Bake for 35 to 40 minutes.", "Mix lemon juice with powdered sugar.", "Pour drizzle over the warm cake."]
+  },
+  {
+    "name": "Banana Bread",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1605286978633-2dec93ff88a2",
+    "ingredients": ["3 ripe bananas", "200g flour", "100g sugar", "2 eggs", "80g melted butter", "1 teaspoon baking soda", "1 teaspoon vanilla", "1 teaspoon cinnamon"],
+    "steps": ["Preheat oven to 180°C.", "Mash the ripe bananas.", "Mix bananas with eggs, sugar, butter and vanilla.", "Add flour, baking soda and cinnamon.", "Mix until just combined.", "Pour into a loaf pan.", "Bake for 45 to 55 minutes.", "Cool before slicing."]
+  },
+  {
+    "name": "Coconut Rice Pudding",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "Asian",
+    "country": "Thailand",
+    "image": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf",
+    "ingredients": ["100g rice", "400ml coconut milk", "200ml milk", "60g sugar", "1 teaspoon vanilla", "Pinch of salt", "Fresh mango"],
+    "steps": ["Rinse the rice.", "Combine rice, coconut milk, milk and salt in a saucepan.", "Bring to a gentle simmer.", "Cook over low heat for 25 to 30 minutes, stirring regularly.", "Add sugar and vanilla.", "Cook until creamy and rice is tender.", "Let cool slightly.", "Serve with fresh mango."]
+  }
+    ,
+  {
+    "name": "French Chocolate Mousse",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "French",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1511715112108-9accb2c0b4e4",
+    "ingredients": ["200g dark chocolate", "3 eggs", "30g sugar", "100ml whipping cream", "1 teaspoon vanilla"],
+    "steps": ["Melt the chocolate gently.", "Separate egg yolks and whites.", "Mix yolks with sugar.", "Add melted chocolate and vanilla.", "Whip egg whites until stiff.", "Fold egg whites gently into chocolate mixture.", "Whip cream and fold it in.", "Refrigerate for at least 3 hours."]
+  },
+  {
+    "name": "Carrot Cake with Cream Cheese",
+    "category": "Desserts",
+    "season": "Autumn",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1621303837174-89787a7d4729",
+    "ingredients": ["200g grated carrots", "200g flour", "150g brown sugar", "2 eggs", "120ml vegetable oil", "1 teaspoon cinnamon", "1 teaspoon baking powder", "100g cream cheese", "50g butter", "60g powdered sugar"],
+    "steps": ["Preheat oven to 180°C.", "Mix eggs, sugar and oil.", "Add grated carrots.", "Fold in flour, cinnamon and baking powder.", "Pour into a greased cake pan.", "Bake for 30 to 35 minutes.", "Beat cream cheese, butter and powdered sugar.", "Cool cake completely and spread frosting on top."]
+  },
+  {
+    "name": "Moroccan Almond Briouats",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1514516345957-556ca7d90a29",
+    "ingredients": ["200g ground almonds", "80g sugar", "1 teaspoon cinnamon", "1 tablespoon orange blossom water", "10 sheets warqa or filo pastry", "50g melted butter", "Honey", "Sesame seeds"],
+    "steps": ["Mix ground almonds with sugar, cinnamon and orange blossom water.", "Cut pastry sheets into strips.", "Place a small amount of filling at one end.", "Fold into triangle shapes.", "Brush with melted butter.", "Bake at 180°C until golden.", "Warm honey gently.", "Dip briouats in honey and sprinkle with sesame seeds."]
+  },
+  {
+    "name": "Blueberry Muffins",
+    "category": "Desserts",
+    "season": "Summer",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa",
+    "ingredients": ["200g flour", "100g sugar", "2 eggs", "120ml milk", "80g melted butter", "150g blueberries", "2 teaspoons baking powder", "1 teaspoon vanilla"],
+    "steps": ["Preheat oven to 180°C.", "Mix flour, sugar and baking powder.", "Whisk eggs, milk, butter and vanilla.", "Combine wet and dry ingredients.", "Fold in blueberries gently.", "Divide batter into muffin cases.", "Bake for 18 to 22 minutes.", "Cool before serving."]
+  },
+  {
+    "name": "Strawberry Yogurt Parfait",
+    "category": "Desserts",
+    "season": "Summer",
+    "cuisine": "International",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777",
+    "ingredients": ["200g plain Greek yogurt", "150g fresh strawberries", "50g granola", "1 tablespoon honey", "1 teaspoon chia seeds"],
+    "steps": ["Wash and slice strawberries.", "Mix yogurt with honey.", "Add a layer of yogurt to serving glasses.", "Add strawberries and granola.", "Repeat the layers.", "Sprinkle chia seeds on top.", "Serve immediately or chill briefly."]
+  },
+  {
+    "name": "Classic Crème Brûlée",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "French",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3",
+    "ingredients": ["400ml heavy cream", "4 egg yolks", "70g sugar", "1 teaspoon vanilla extract", "4 tablespoons sugar for topping"],
+    "steps": ["Preheat oven to 150°C.", "Heat cream and vanilla gently.", "Whisk egg yolks with sugar.", "Slowly pour warm cream into yolks while whisking.", "Divide mixture into ramekins.", "Place ramekins in a hot water bath.", "Bake for 30 to 35 minutes until just set.", "Chill, sprinkle sugar on top and caramelize before serving."]
+  },
+  {
+    "name": "Chocolate Chip Cookies",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e",
+    "ingredients": ["200g flour", "120g butter", "100g brown sugar", "50g white sugar", "1 egg", "1 teaspoon vanilla", "1/2 teaspoon baking soda", "150g chocolate chips"],
+    "steps": ["Preheat oven to 180°C.", "Cream butter with both sugars.", "Add egg and vanilla.", "Mix flour with baking soda.", "Combine wet and dry ingredients.", "Fold in chocolate chips.", "Shape dough into small balls on a baking tray.", "Bake for 10 to 12 minutes and cool."]
+  },
+  {
+    "name": "Mango Coconut Pudding",
+    "category": "Desserts",
+    "season": "Summer",
+    "cuisine": "Asian",
+    "country": "Thailand",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777",
+    "ingredients": ["2 ripe mangoes", "300ml coconut milk", "50g sugar", "2 teaspoons gelatin", "3 tablespoons cold water", "Fresh mint"],
+    "steps": ["Blend mangoes until smooth.", "Sprinkle gelatin over cold water.", "Heat coconut milk with sugar gently.", "Stir in gelatin until dissolved.", "Mix mango puree with coconut mixture.", "Pour into small glasses.", "Refrigerate for at least 4 hours.", "Garnish with fresh mint."]
+  },
+  {
+    "name": "Cinnamon Sugar Donuts",
+    "category": "Desserts",
+    "season": "All seasons",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307",
+    "ingredients": ["250g flour", "120ml warm milk", "40g sugar", "1 egg", "30g melted butter", "1 teaspoon dry yeast", "1/2 teaspoon salt", "50g sugar for coating", "1 teaspoon cinnamon"],
+    "steps": ["Mix warm milk, yeast and a little sugar.", "Add flour, remaining sugar, egg, butter and salt.", "Knead into a soft dough.", "Cover and let rise until doubled.", "Roll out and cut donut shapes.", "Let rise again for 30 minutes.", "Fry carefully in hot oil until golden.", "Coat with cinnamon sugar while warm."]
+  },
+  {
+    "name": "Lemon Cheesecake Cups",
+    "category": "Desserts",
+    "season": "Spring",
+    "cuisine": "International",
+    "country": "United Kingdom",
+    "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad",
+    "ingredients": ["150g digestive biscuits", "50g melted butter", "250g cream cheese", "100ml whipping cream", "60g powdered sugar", "1 lemon", "1 teaspoon vanilla"],
+    "steps": ["Crush digestive biscuits.", "Mix crumbs with melted butter.", "Divide biscuit mixture into serving glasses.", "Beat cream cheese with powdered sugar.", "Add lemon juice, zest and vanilla.", "Whip cream and fold into the cheese mixture.", "Spoon mixture over biscuit bases.", "Refrigerate for at least 3 hours."]
+  },
+    {
+    "name": "Grilled Chicken Quinoa Bowl",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["150g chicken breast", "100g quinoa", "1 cucumber", "1 tomato", "1 avocado", "Lemon juice", "Olive oil", "Parsley", "Salt", "Black pepper"],
+    "steps": ["Rinse quinoa and cook according to package instructions.", "Season chicken with salt and pepper.", "Grill chicken until fully cooked.", "Slice cucumber, tomato and avocado.", "Prepare a bowl with quinoa.", "Add chicken and vegetables.", "Drizzle with olive oil and lemon juice.", "Garnish with parsley."]
+  },
+  {
+    "name": "Healthy Avocado Egg Toast",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8",
+    "ingredients": ["2 slices whole grain bread", "1 ripe avocado", "2 eggs", "1 teaspoon lemon juice", "Chili flakes", "Salt", "Black pepper"],
+    "steps": ["Toast the bread slices.", "Mash avocado with lemon juice, salt and pepper.", "Cook eggs to your preference.", "Spread mashed avocado over toast.", "Place eggs on top.", "Sprinkle with chili flakes and serve."]
+  },
+  {
+    "name": "Mediterranean Chickpea Salad",
+    "category": "Healthy",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["1 can chickpeas", "1 cucumber", "2 tomatoes", "1 red onion", "50g feta cheese", "Olives", "Lemon juice", "Olive oil", "Oregano"],
+    "steps": ["Rinse and drain chickpeas.", "Dice cucumber and tomatoes.", "Thinly slice red onion.", "Combine vegetables and chickpeas in a bowl.", "Add olives and crumbled feta.", "Mix lemon juice, olive oil and oregano.", "Pour dressing over salad and toss gently."]
+  },
+  {
+    "name": "Baked Salmon with Broccoli",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "Norway",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288",
+    "ingredients": ["2 salmon fillets", "200g broccoli", "1 lemon", "1 tablespoon olive oil", "2 garlic cloves", "Dried herbs", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 200°C.", "Place salmon and broccoli in a baking dish.", "Mix olive oil, garlic, lemon juice and herbs.", "Pour mixture over salmon and broccoli.", "Season with salt and pepper.", "Bake for 12 to 18 minutes until salmon is cooked and broccoli is tender."]
+  },
+  {
+    "name": "Green Spinach Smoothie",
+    "category": "Healthy",
+    "season": "Spring",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888",
+    "ingredients": ["1 banana", "1 cup fresh spinach", "1 green apple", "200ml milk or plant milk", "1 tablespoon chia seeds", "Ice cubes"],
+    "steps": ["Wash spinach and apple.", "Chop the apple and banana.", "Add all ingredients to a blender.", "Blend until smooth.", "Add more milk if needed.", "Serve immediately."]
+  },
+  {
+    "name": "Lentil and Carrot Soup",
+    "category": "Healthy",
+    "season": "Winter",
+    "cuisine": "Mediterranean",
+    "country": "Turkey",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["150g red lentils", "2 carrots", "1 onion", "2 garlic cloves", "1 teaspoon cumin", "750ml vegetable broth", "1 tablespoon olive oil", "Salt", "Black pepper"],
+    "steps": ["Rinse lentils.", "Chop carrots, onion and garlic.", "Heat olive oil in a pot.", "Cook onion and garlic until soft.", "Add carrots, lentils, cumin and broth.", "Simmer for 20 to 25 minutes.", "Blend until smooth if desired.", "Season and serve warm."]
+  },
+  {
+    "name": "Grilled Chicken Caesar Salad",
+    "category": "Healthy",
+    "season": "Summer",
+    "cuisine": "American",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1",
+    "ingredients": ["1 chicken breast", "1 romaine lettuce", "30g Parmesan", "Whole grain croutons", "2 tablespoons plain yogurt", "1 teaspoon mustard", "Lemon juice", "Black pepper"],
+    "steps": ["Season chicken with black pepper.", "Grill chicken until fully cooked.", "Wash and chop lettuce.", "Mix yogurt, mustard and lemon juice for dressing.", "Slice the cooked chicken.", "Arrange lettuce in a bowl.", "Add chicken, Parmesan and croutons.", "Drizzle with dressing."]
+  },
+  {
+    "name": "Quinoa Stuffed Bell Peppers",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Spain",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+    "ingredients": ["3 bell peppers", "150g cooked quinoa", "100g black beans", "1 tomato", "1 small onion", "50g corn", "Olive oil", "Paprika", "Salt"],
+    "steps": ["Preheat oven to 190°C.", "Cut peppers in half and remove seeds.", "Chop tomato and onion.", "Mix quinoa, beans, tomato, onion and corn.", "Season with paprika, olive oil and salt.", "Fill pepper halves with the mixture.", "Place in a baking dish.", "Bake for 25 to 30 minutes until peppers are tender."]
+  },
+  {
+    "name": "Greek Yogurt Berry Bowl",
+    "category": "Healthy",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061",
+    "ingredients": ["200g plain Greek yogurt", "50g strawberries", "50g blueberries", "1 banana", "30g oats", "1 tablespoon chia seeds", "1 teaspoon honey"],
+    "steps": ["Place Greek yogurt in a bowl.", "Slice banana and strawberries.", "Arrange fruit over yogurt.", "Add blueberries and oats.", "Sprinkle chia seeds.", "Drizzle with honey and serve."]
+  },
+  {
+    "name": "Baked Sweet Potato with Chickpeas",
+    "category": "Healthy",
+    "season": "Autumn",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655",
+    "ingredients": ["2 medium sweet potatoes", "150g cooked chickpeas", "100g plain yogurt", "1 teaspoon paprika", "1 teaspoon cumin", "1 tablespoon olive oil", "Lemon juice", "Fresh parsley", "Salt"],
+    "steps": ["Preheat oven to 200°C.", "Wash and pierce sweet potatoes with a fork.", "Bake for 40 to 50 minutes until soft.", "Season chickpeas with paprika, cumin and olive oil.", "Roast chickpeas for 15 minutes.", "Mix yogurt with lemon juice.", "Cut sweet potatoes open.", "Fill with chickpeas, add yogurt sauce and parsley."]
+  }
+    ,
+  {
+    "name": "Tuna and White Bean Salad",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["1 can tuna", "150g white beans", "1 tomato", "1 cucumber", "1 red onion", "Fresh parsley", "Lemon juice", "Olive oil", "Black pepper"],
+    "steps": ["Drain tuna and rinse beans.", "Dice tomato and cucumber.", "Slice red onion thinly.", "Combine tuna, beans and vegetables.", "Add chopped parsley.", "Mix lemon juice, olive oil and pepper.", "Pour dressing over salad and toss gently."]
+  },
+  {
+    "name": "Oven Roasted Vegetable Bowl",
+    "category": "Healthy",
+    "season": "Autumn",
+    "cuisine": "Mediterranean",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999",
+    "ingredients": ["1 zucchini", "1 red bell pepper", "1 carrot", "1 red onion", "150g cooked quinoa", "Olive oil", "Paprika", "Dried oregano", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 200°C.", "Chop all vegetables.", "Toss vegetables with olive oil and spices.", "Spread on a baking tray.", "Roast for 20 to 25 minutes until tender.", "Prepare quinoa according to package instructions.", "Serve roasted vegetables over quinoa."]
+  },
+  {
+    "name": "Healthy Chicken Lettuce Wraps",
+    "category": "Healthy",
+    "season": "Summer",
+    "cuisine": "Asian",
+    "country": "Thailand",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+    "ingredients": ["250g ground chicken", "8 lettuce leaves", "1 carrot", "1 garlic clove", "2 tablespoons low-sodium soy sauce", "1 teaspoon sesame oil", "1 teaspoon ginger", "Spring onions"],
+    "steps": ["Wash and dry lettuce leaves.", "Grate carrot and chop garlic.", "Heat sesame oil in a pan.", "Cook chicken until fully cooked.", "Add garlic, ginger and carrot.", "Add soy sauce and stir.", "Spoon chicken mixture into lettuce leaves.", "Garnish with spring onions."]
+  },
+  {
+    "name": "Oatmeal Banana Pancakes",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93",
+    "ingredients": ["1 ripe banana", "2 eggs", "80g rolled oats", "1 teaspoon baking powder", "1 teaspoon cinnamon", "50ml milk", "Fresh berries"],
+    "steps": ["Blend banana, eggs, oats, baking powder, cinnamon and milk.", "Heat a non-stick pan over medium heat.", "Pour small portions of batter into the pan.", "Cook until bubbles appear.", "Flip and cook the other side.", "Serve with fresh berries."]
+  },
+  {
+    "name": "Mediterranean Baked Cod",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2",
+    "ingredients": ["2 cod fillets", "2 tomatoes", "1 zucchini", "1 lemon", "2 garlic cloves", "Olive oil", "Oregano", "Fresh parsley", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 190°C.", "Place sliced tomatoes and zucchini in a baking dish.", "Add cod fillets on top.", "Mix olive oil, garlic, lemon juice and oregano.", "Pour mixture over fish and vegetables.", "Season with salt and pepper.", "Bake for 15 to 20 minutes until fish flakes easily.", "Garnish with parsley."]
+  },
+  {
+    "name": "Avocado Chickpea Toast",
+    "category": "Healthy",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "Australia",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8",
+    "ingredients": ["2 slices whole grain bread", "1 ripe avocado", "100g cooked chickpeas", "1 tablespoon lemon juice", "1 teaspoon olive oil", "Paprika", "Salt", "Black pepper"],
+    "steps": ["Toast whole grain bread.", "Mash avocado with lemon juice.", "Lightly mash chickpeas with olive oil and paprika.", "Spread avocado over toast.", "Add chickpeas on top.", "Season with salt and pepper and serve."]
+  },
+  {
+    "name": "Broccoli and Quinoa Salad",
+    "category": "Healthy",
+    "season": "Spring",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["150g quinoa", "200g broccoli", "1 cucumber", "50g feta cheese", "1 tablespoon lemon juice", "Olive oil", "Fresh mint", "Salt"],
+    "steps": ["Rinse and cook quinoa.", "Steam broccoli until tender-crisp.", "Dice cucumber.", "Allow quinoa and broccoli to cool slightly.", "Combine quinoa, broccoli and cucumber.", "Add crumbled feta and mint.", "Dress with lemon juice and olive oil.", "Season and serve."]
+  },
+  {
+    "name": "Turkey and Avocado Salad",
+    "category": "Healthy",
+    "season": "Summer",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1",
+    "ingredients": ["200g cooked turkey breast", "1 avocado", "1 cucumber", "2 tomatoes", "Mixed salad leaves", "Lemon juice", "Olive oil", "Black pepper"],
+    "steps": ["Slice cooked turkey breast.", "Wash and chop salad vegetables.", "Slice avocado.", "Arrange salad leaves in a bowl.", "Add turkey, avocado, cucumber and tomatoes.", "Mix lemon juice, olive oil and black pepper.", "Drizzle dressing over salad and serve."]
+  },
+  {
+    "name": "Red Lentil Sweet Potato Curry",
+    "category": "Healthy",
+    "season": "Winter",
+    "cuisine": "Indian",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["150g red lentils", "1 sweet potato", "1 onion", "2 garlic cloves", "200ml light coconut milk", "300ml vegetable broth", "1 teaspoon curry powder", "Fresh spinach", "Olive oil", "Salt"],
+    "steps": ["Rinse lentils.", "Peel and dice sweet potato.", "Chop onion and garlic.", "Heat olive oil in a pot.", "Cook onion and garlic until soft.", "Add sweet potato, lentils, curry powder and broth.", "Simmer for 20 minutes.", "Add coconut milk and spinach.", "Cook until lentils and sweet potato are tender."]
+  },
+  {
+    "name": "Fresh Mediterranean Tomato Salad",
+    "category": "Healthy",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999",
+    "ingredients": ["3 ripe tomatoes", "1 cucumber", "1/2 red onion", "50g feta cheese", "Olives", "Fresh oregano", "Olive oil", "Lemon juice", "Black pepper"],
+    "steps": ["Wash and slice tomatoes and cucumber.", "Thinly slice red onion.", "Arrange vegetables in a serving bowl.", "Add olives and crumbled feta.", "Sprinkle oregano and black pepper.", "Drizzle with olive oil and lemon juice.", "Serve fresh."]
+  },
+    {
+    "name": "Creamy Vegan Coconut Chickpea Curry",
+    "category": "Vegan",
+    "season": "All seasons",
+    "cuisine": "Indian",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398",
+    "ingredients": ["200g chickpeas", "200ml coconut milk", "1 onion", "2 garlic cloves", "1 tomato", "1 tablespoon curry powder", "1 tablespoon olive oil", "Fresh coriander", "Salt"],
+    "steps": ["Chop onion and garlic.", "Heat olive oil in a pan.", "Cook onion and garlic until soft.", "Add tomato and curry powder.", "Add chickpeas and coconut milk.", "Simmer for 15 minutes.", "Season with salt and garnish with coriander."]
+  },
+  {
+    "name": "Vegan Lentil Bolognese",
+    "category": "Vegan",
+    "season": "Winter",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["150g green lentils", "200g spaghetti", "1 onion", "1 carrot", "2 garlic cloves", "400g tomato sauce", "1 tablespoon olive oil", "Dried oregano", "Salt", "Black pepper"],
+    "steps": ["Rinse lentils and cook until tender.", "Cook spaghetti according to package instructions.", "Chop onion, carrot and garlic.", "Heat olive oil in a pan.", "Cook vegetables until soft.", "Add tomato sauce, lentils and oregano.", "Simmer for 15 minutes.", "Serve sauce over spaghetti."]
+  },
+  {
+    "name": "Roasted Sweet Potato and Black Bean Tacos",
+    "category": "Vegan",
+    "season": "Summer",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b",
+    "ingredients": ["2 sweet potatoes", "150g black beans", "6 corn tortillas", "1 avocado", "1 lime", "1 teaspoon paprika", "1 teaspoon cumin", "Fresh coriander", "Olive oil"],
+    "steps": ["Preheat oven to 200°C.", "Peel and dice sweet potatoes.", "Season with olive oil, paprika and cumin.", "Roast for 25 minutes.", "Warm black beans in a small pan.", "Warm tortillas.", "Fill tortillas with sweet potatoes and beans.", "Top with avocado, lime juice and coriander."]
+  },
+  {
+    "name": "Fresh Vegan Mediterranean Couscous",
+    "category": "Vegan",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["150g couscous", "1 cucumber", "2 tomatoes", "1 red bell pepper", "1 lemon", "Fresh parsley", "2 tablespoons olive oil", "Salt", "Black pepper"],
+    "steps": ["Prepare couscous according to package instructions.", "Allow couscous to cool.", "Dice cucumber, tomatoes and bell pepper.", "Chop parsley.", "Combine couscous and vegetables.", "Add lemon juice and olive oil.", "Season and mix well."]
+  },
+  {
+    "name": "Vegan Mushroom and Spinach Risotto",
+    "category": "Vegan",
+    "season": "Autumn",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371",
+    "ingredients": ["180g arborio rice", "150g mushrooms", "100g spinach", "1 onion", "2 garlic cloves", "700ml vegetable broth", "2 tablespoons olive oil", "Salt", "Black pepper"],
+    "steps": ["Chop onion, garlic and mushrooms.", "Heat olive oil in a pan.", "Cook onion and garlic until soft.", "Add mushrooms and cook for 5 minutes.", "Add rice and stir for 2 minutes.", "Gradually add warm vegetable broth while stirring.", "Cook until rice is creamy and tender.", "Stir in spinach and season."]
+  },
+  {
+    "name": "Vegan Chickpea and Avocado Sandwich",
+    "category": "Vegan",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+    "ingredients": ["4 slices whole grain bread", "150g chickpeas", "1 avocado", "1 tablespoon lemon juice", "1 tablespoon tahini", "Lettuce leaves", "1 tomato", "Salt", "Black pepper"],
+    "steps": ["Drain and mash chickpeas in a bowl.", "Mash avocado with lemon juice and tahini.", "Mix avocado with chickpeas.", "Season with salt and pepper.", "Spread mixture over bread slices.", "Add lettuce and tomato.", "Close sandwiches and serve."]
+  },
+  {
+    "name": "Vegan Thai Peanut Noodles",
+    "category": "Vegan",
+    "season": "All seasons",
+    "cuisine": "Thai",
+    "country": "Thailand",
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
+    "ingredients": ["200g rice noodles", "2 tablespoons peanut butter", "2 tablespoons soy sauce", "1 tablespoon lime juice", "1 carrot", "1 red bell pepper", "1 garlic clove", "Fresh coriander", "Water"],
+    "steps": ["Cook rice noodles according to package instructions.", "Mix peanut butter, soy sauce, lime juice and a little water.", "Chop carrot and bell pepper into thin strips.", "Cook garlic and vegetables in a pan.", "Add cooked noodles.", "Pour peanut sauce over noodles.", "Toss well and garnish with coriander."]
+  },
+  {
+    "name": "Vegan Moroccan Vegetable Tagine",
+    "category": "Vegan",
+    "season": "Winter",
+    "cuisine": "Moroccan",
+    "country": "Morocco",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["2 carrots", "1 zucchini", "2 potatoes", "150g chickpeas", "1 onion", "2 tomatoes", "1 teaspoon ginger", "1 teaspoon cumin", "1 teaspoon turmeric", "Olive oil", "Fresh coriander"],
+    "steps": ["Chop all vegetables and onion.", "Heat olive oil in a tagine or pot.", "Cook onion with spices.", "Add tomatoes and stir.", "Add carrots, potatoes and chickpeas.", "Add water and cover.", "Simmer for 20 minutes.", "Add zucchini and cook until all vegetables are tender.", "Garnish with coriander."]
+  },
+  {
+    "name": "Vegan Banana Oat Cookies",
+    "category": "Vegan",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e",
+    "ingredients": ["2 ripe bananas", "150g rolled oats", "2 tablespoons peanut butter", "1 teaspoon cinnamon", "40g dark vegan chocolate chips"],
+    "steps": ["Preheat oven to 180°C.", "Mash bananas in a bowl.", "Add oats, peanut butter and cinnamon.", "Mix until combined.", "Fold in vegan chocolate chips.", "Shape into small cookies.", "Place on a lined baking tray.", "Bake for 12 to 15 minutes."]
+  },
+  {
+    "name": "Vegan Quinoa Stuffed Zucchini",
+    "category": "Vegan",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["2 large zucchinis", "100g quinoa", "100g cooked chickpeas", "1 tomato", "1 onion", "1 garlic clove", "Olive oil", "Fresh parsley", "Salt", "Black pepper"],
+    "steps": ["Preheat oven to 190°C.", "Cut zucchinis lengthwise and scoop out the center.", "Cook quinoa according to package instructions.", "Chop onion, garlic, tomato and zucchini flesh.", "Cook vegetables in olive oil.", "Mix with quinoa and chickpeas.", "Fill zucchini halves with the mixture.", "Bake for 20 to 25 minutes.", "Garnish with parsley."]
+  }
+    ,
+  {
+    "name": "Vegan Creamy Pumpkin Soup",
+    "category": "Vegan",
+    "season": "Autumn",
+    "cuisine": "International",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a",
+    "ingredients": ["400g pumpkin", "1 onion", "2 garlic cloves", "400ml vegetable broth", "150ml coconut milk", "1 tablespoon olive oil", "Salt", "Black pepper"],
+    "steps": ["Peel and dice pumpkin.", "Chop onion and garlic.", "Heat olive oil in a pot.", "Cook onion and garlic until soft.", "Add pumpkin and vegetable broth.", "Simmer for 20 minutes until pumpkin is tender.", "Blend until smooth.", "Add coconut milk and season."]
+  },
+  {
+    "name": "Vegan Falafel Bowl",
+    "category": "Vegan",
+    "season": "All seasons",
+    "cuisine": "Middle Eastern",
+    "country": "Lebanon",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554",
+    "ingredients": ["200g cooked chickpeas", "1 small onion", "2 garlic cloves", "Fresh parsley", "1 teaspoon cumin", "2 tablespoons flour", "1 cucumber", "2 tomatoes", "Tahini sauce"],
+    "steps": ["Mash chickpeas with onion and garlic.", "Add parsley, cumin and flour.", "Mix and shape into small balls.", "Bake at 200°C for 20 to 25 minutes, turning halfway.", "Chop cucumber and tomatoes.", "Arrange vegetables in a bowl.", "Add falafel and drizzle with tahini sauce."]
+  },
+  {
+    "name": "Vegan Stuffed Bell Peppers",
+    "category": "Vegan",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Spain",
+    "image": "https://images.unsplash.com/photo-1505576399274-565b52d4ac71",
+    "ingredients": ["3 bell peppers", "120g cooked rice", "100g black beans", "1 tomato", "1 onion", "1 teaspoon paprika", "Olive oil", "Fresh parsley", "Salt"],
+    "steps": ["Preheat oven to 190°C.", "Cut peppers in half and remove seeds.", "Chop onion and tomato.", "Cook onion and tomato in olive oil.", "Add rice, black beans and paprika.", "Fill pepper halves with the mixture.", "Place in a baking dish.", "Bake for 25 to 30 minutes.", "Garnish with parsley."]
+  },
+  {
+    "name": "Vegan Apple Cinnamon Overnight Oats",
+    "category": "Vegan",
+    "season": "Autumn",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf",
+    "ingredients": ["80g rolled oats", "150ml almond milk", "1 apple", "1 tablespoon chia seeds", "1 teaspoon cinnamon", "1 tablespoon maple syrup", "Chopped walnuts"],
+    "steps": ["Add oats and chia seeds to a jar.", "Pour in almond milk.", "Add cinnamon and maple syrup.", "Grate or dice the apple.", "Mix everything together.", "Cover and refrigerate overnight.", "Top with walnuts before serving."]
+  },
+  {
+    "name": "Vegan Grilled Vegetable Wrap",
+    "category": "Vegan",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Turkey",
+    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f",
+    "ingredients": ["2 whole wheat tortillas", "1 zucchini", "1 red bell pepper", "1 eggplant", "2 tablespoons hummus", "1 tablespoon olive oil", "Fresh lettuce", "Salt", "Black pepper"],
+    "steps": ["Slice zucchini, pepper and eggplant.", "Brush vegetables with olive oil.", "Grill until tender and lightly browned.", "Season with salt and pepper.", "Spread hummus over tortillas.", "Add lettuce and grilled vegetables.", "Roll tightly and serve."]
+  },
+    {
+    "name": "15-Minute Garlic Butter Pasta",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["200g spaghetti", "3 garlic cloves", "30g butter", "2 tablespoons olive oil", "30g grated Parmesan", "Fresh parsley", "Salt", "Black pepper"],
+    "steps": ["Cook spaghetti in salted boiling water.", "Mince garlic.", "Melt butter with olive oil in a pan.", "Add garlic and cook for 1 minute.", "Add drained spaghetti and a little pasta water.", "Mix well.", "Add Parmesan, parsley and black pepper.", "Serve immediately."]
+  },
+  {
+    "name": "Quick Chicken Quesadillas",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Mexican",
+    "country": "Mexico",
+    "image": "https://images.unsplash.com/photo-1618040996337-56904b7850b9",
+    "ingredients": ["2 tortillas", "150g cooked chicken", "80g grated cheddar", "1/2 red bell pepper", "1/2 onion", "1 tablespoon olive oil", "Paprika", "Salt"],
+    "steps": ["Shred cooked chicken.", "Slice pepper and onion.", "Heat olive oil in a pan.", "Cook vegetables for 3 minutes.", "Add chicken and paprika.", "Place filling and cheese on half of each tortilla.", "Fold tortillas.", "Cook in a pan until golden and cheese melts.", "Cut into triangles and serve."]
+  },
+  {
+    "name": "Easy Tomato and Mozzarella Toast",
+    "category": "Quick & Easy",
+    "season": "Summer",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8",
+    "ingredients": ["2 slices bread", "1 tomato", "100g mozzarella", "Fresh basil", "1 tablespoon olive oil", "Black pepper"],
+    "steps": ["Toast bread lightly.", "Slice tomato and mozzarella.", "Arrange tomato and mozzarella on bread.", "Add fresh basil.", "Drizzle with olive oil.", "Season with black pepper and serve."]
+  },
+  {
+    "name": "10-Minute Egg Fried Rice",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    "ingredients": ["300g cooked rice", "2 eggs", "1 carrot", "50g peas", "2 tablespoons soy sauce", "1 tablespoon sesame oil", "2 spring onions"],
+    "steps": ["Beat eggs in a bowl.", "Heat sesame oil in a pan.", "Scramble eggs and set aside.", "Dice carrot and cook with peas.", "Add cooked rice and stir-fry.", "Add soy sauce and scrambled eggs.", "Mix everything together.", "Garnish with spring onions."]
+  },
+  {
+    "name": "Quick Tuna Avocado Wrap",
+    "category": "Quick & Easy",
+    "season": "Summer",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f",
+    "ingredients": ["2 tortillas", "1 can tuna", "1 avocado", "1 tablespoon lemon juice", "Lettuce leaves", "1 tomato", "2 tablespoons plain yogurt", "Black pepper"],
+    "steps": ["Drain tuna.", "Mash avocado with lemon juice.", "Mix tuna with yogurt and black pepper.", "Spread avocado over tortillas.", "Add lettuce and sliced tomato.", "Add tuna mixture.", "Roll tortillas tightly and serve."]
+  },
+  {
+    "name": "Easy Creamy Mushroom Toast",
+    "category": "Quick & Easy",
+    "season": "Autumn",
+    "cuisine": "French",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8",
+    "ingredients": ["200g mushrooms", "2 slices bread", "2 tablespoons cooking cream", "1 garlic clove", "1 tablespoon butter", "Fresh parsley", "Salt", "Black pepper"],
+    "steps": ["Slice mushrooms and mince garlic.", "Melt butter in a pan.", "Cook mushrooms for 5 minutes.", "Add garlic and cook briefly.", "Stir in cooking cream.", "Season with salt and pepper.", "Toast bread.", "Spoon mushrooms over toast and garnish with parsley."]
+  },
+  {
+    "name": "Quick Greek Cucumber Salad",
+    "category": "Quick & Easy",
+    "season": "Summer",
+    "cuisine": "Greek",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999",
+    "ingredients": ["1 cucumber", "2 tomatoes", "1/2 red onion", "50g feta cheese", "8 olives", "1 tablespoon olive oil", "1 teaspoon lemon juice", "Dried oregano"],
+    "steps": ["Wash and chop cucumber and tomatoes.", "Slice red onion.", "Place vegetables in a bowl.", "Add olives and crumbled feta.", "Mix olive oil with lemon juice.", "Pour dressing over salad.", "Sprinkle oregano and serve."]
+  },
+  {
+    "name": "15-Minute Chicken Stir Fry",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    "ingredients": ["250g chicken breast", "1 red bell pepper", "1 carrot", "1 broccoli", "2 tablespoons soy sauce", "1 tablespoon olive oil", "1 garlic clove", "1 teaspoon ginger"],
+    "steps": ["Cut chicken into small strips.", "Chop vegetables.", "Heat olive oil in a pan.", "Cook chicken until fully cooked.", "Add garlic and ginger.", "Add vegetables and stir-fry for 5 minutes.", "Pour in soy sauce.", "Mix well and serve."]
+  },
+  {
+    "name": "Easy Banana Peanut Butter Smoothie",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625",
+    "ingredients": ["1 banana", "250ml milk", "1 tablespoon peanut butter", "2 tablespoons oats", "1 teaspoon honey", "Ice cubes"],
+    "steps": ["Peel and slice banana.", "Add banana, milk, peanut butter and oats to a blender.", "Add honey and ice cubes.", "Blend until smooth.", "Pour into a glass and serve."]
+  },
+  {
+    "name": "Quick Pesto Chicken Sandwich",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+    "ingredients": ["2 sandwich rolls", "150g cooked chicken", "2 tablespoons basil pesto", "2 slices mozzarella", "1 tomato", "Fresh lettuce"],
+    "steps": ["Slice sandwich rolls.", "Spread pesto on both sides.", "Slice cooked chicken and tomato.", "Add chicken, mozzarella and tomato.", "Add lettuce leaves.", "Close sandwiches and serve."]
+  },
+  {
+    "name": "Easy Cheesy Baked Potatoes",
+    "category": "Quick & Easy",
+    "season": "Winter",
+    "cuisine": "International",
+    "country": "United Kingdom",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655",
+    "ingredients": ["2 large potatoes", "80g grated cheddar", "2 tablespoons plain yogurt", "1 spring onion", "1 tablespoon olive oil", "Salt", "Black pepper"],
+    "steps": ["Wash and pierce potatoes with a fork.", "Microwave for 8 to 10 minutes until tender.", "Cut potatoes in half.", "Add yogurt and grated cheddar.", "Season with salt and pepper.", "Return to microwave for 1 minute until cheese melts.", "Garnish with spring onion."]
+  },
+  {
+    "name": "Quick Lemon Garlic Shrimp",
+    "category": "Quick & Easy",
+    "season": "Summer",
+    "cuisine": "Mediterranean",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1625944525533-473f1a3d54e7",
+    "ingredients": ["250g peeled shrimp", "2 garlic cloves", "1 lemon", "1 tablespoon olive oil", "1 tablespoon butter", "Fresh parsley", "Salt", "Black pepper"],
+    "steps": ["Pat shrimp dry.", "Mince garlic.", "Heat olive oil and butter in a pan.", "Add garlic and cook briefly.", "Add shrimp and cook until pink and opaque.", "Add lemon juice, salt and pepper.", "Garnish with parsley and serve."]
+  },
+  {
+    "name": "Easy Caprese Pasta Salad",
+    "category": "Quick & Easy",
+    "season": "Summer",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["200g pasta", "100g cherry tomatoes", "100g mozzarella balls", "Fresh basil", "2 tablespoons olive oil", "1 tablespoon balsamic vinegar", "Salt", "Black pepper"],
+    "steps": ["Cook pasta according to package instructions.", "Drain and cool pasta.", "Halve cherry tomatoes.", "Add mozzarella and basil.", "Mix olive oil and balsamic vinegar.", "Combine dressing with pasta and vegetables.", "Season and serve."]
+  },
+  {
+    "name": "15-Minute Vegetable Omelette",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "French",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8",
+    "ingredients": ["3 eggs", "1/2 red bell pepper", "1/2 onion", "1 small tomato", "30g grated cheese", "1 tablespoon olive oil", "Fresh parsley", "Salt", "Black pepper"],
+    "steps": ["Chop pepper, onion and tomato.", "Beat eggs with salt and pepper.", "Heat olive oil in a non-stick pan.", "Cook vegetables for 3 minutes.", "Pour eggs over vegetables.", "Add grated cheese.", "Cook until eggs are set.", "Fold omelette and garnish with parsley."]
+  },
+  {
+    "name": "Quick Honey Garlic Chicken",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Asian",
+    "country": "China",
+    "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435",
+    "ingredients": ["250g chicken breast", "2 garlic cloves", "2 tablespoons honey", "2 tablespoons soy sauce", "1 tablespoon olive oil", "1 teaspoon sesame seeds", "Spring onions"],
+    "steps": ["Cut chicken into bite-sized pieces.", "Mince garlic.", "Mix honey and soy sauce.", "Heat olive oil in a pan.", "Cook chicken until fully cooked.", "Add garlic and honey mixture.", "Stir until sauce thickens and coats chicken.", "Garnish with sesame seeds and spring onions."]
+  },
+  {
+    "name": "Easy Strawberry Yogurt Bowl",
+    "category": "Quick & Easy",
+    "season": "Summer",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea",
+    "ingredients": ["200g plain yogurt", "100g fresh strawberries", "1 banana", "2 tablespoons granola", "1 teaspoon honey", "1 tablespoon chia seeds"],
+    "steps": ["Wash and slice strawberries.", "Slice banana.", "Place yogurt in a bowl.", "Arrange fruit over yogurt.", "Add granola and chia seeds.", "Drizzle with honey and serve."]
+  },
+  {
+    "name": "Fast Chickpea Spinach Wrap",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Mediterranean",
+    "country": "Turkey",
+    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f",
+    "ingredients": ["2 tortillas", "150g cooked chickpeas", "50g fresh spinach", "2 tablespoons hummus", "1/2 cucumber", "1 tablespoon lemon juice", "Paprika", "Salt"],
+    "steps": ["Drain chickpeas.", "Mash chickpeas lightly with lemon juice and paprika.", "Wash spinach and slice cucumber.", "Spread hummus over tortillas.", "Add spinach, cucumber and chickpeas.", "Season with salt.", "Roll tortillas tightly and serve."]
+  },
+  {
+    "name": "Quick Tomato Basil Gnocchi",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "Italian",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+    "ingredients": ["400g potato gnocchi", "200g tomato sauce", "2 garlic cloves", "1 tablespoon olive oil", "Fresh basil", "30g grated Parmesan", "Salt", "Black pepper"],
+    "steps": ["Cook gnocchi according to package instructions.", "Mince garlic.", "Heat olive oil in a pan.", "Cook garlic briefly.", "Add tomato sauce and simmer for 5 minutes.", "Add drained gnocchi and mix.", "Season with salt and pepper.", "Serve with basil and Parmesan."]
+  },
+  {
+    "name": "Easy Tuna and Corn Salad",
+    "category": "Quick & Easy",
+    "season": "Summer",
+    "cuisine": "International",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+    "ingredients": ["1 can tuna", "100g sweet corn", "1 cucumber", "2 tomatoes", "1 tablespoon lemon juice", "1 tablespoon olive oil", "Fresh parsley", "Salt", "Black pepper"],
+    "steps": ["Drain tuna and corn.", "Dice cucumber and tomatoes.", "Place all ingredients in a bowl.", "Add chopped parsley.", "Mix lemon juice and olive oil.", "Pour dressing over salad.", "Season and serve."]
+  },
+  {
+    "name": "15-Minute Chocolate Banana Mug Cake",
+    "category": "Quick & Easy",
+    "season": "All seasons",
+    "cuisine": "International",
+    "country": "United States",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+    "ingredients": ["1 ripe banana", "4 tablespoons flour", "1 tablespoon cocoa powder", "2 tablespoons milk", "1 tablespoon sugar", "1/4 teaspoon baking powder", "1 tablespoon chocolate chips"],
+    "steps": ["Mash banana in a microwave-safe mug.", "Add flour, cocoa, sugar and baking powder.", "Pour in milk and mix until smooth.", "Fold in chocolate chips.", "Microwave for 1 to 2 minutes until cooked.", "Allow to cool slightly before serving."]
+  }
+]

@@ -123,10 +123,22 @@
       "free": "Free"
     },
     "features": {
-      "global": { "title": "Global Cuisine", "desc": "Recipes from Italy, Japan, Morocco, Mexico, Thailand, and many more countries." },
-      "seasonal": { "title": "Seasonal Selection", "desc": "Discover recipes perfectly suited for each season. Cook with what's fresh." },
-      "favorites": { "title": "Save Favorites", "desc": "Create your personal collection of favorite recipes with a simple click." },
-      "search": { "title": "Easy Search", "desc": "Find any recipe by name or explore by country and cuisine type." }
+      "global": {
+        "title": "Global Cuisine",
+        "desc": "Recipes from Italy, Japan, Morocco, Mexico, Thailand, and many more countries."
+      },
+      "seasonal": {
+        "title": "Seasonal Selection",
+        "desc": "Discover recipes perfectly suited for each season. Cook with what's fresh."
+      },
+      "favorites": {
+        "title": "Save Favorites",
+        "desc": "Create your personal collection of favorite recipes with a simple click."
+      },
+      "search": {
+        "title": "Easy Search",
+        "desc": "Find any recipe by name or explore by country and cuisine type."
+      }
     },
     "cta": {
       "title": "Ready to start cooking?",
@@ -156,5 +168,27 @@
   "common": {
     "loading": "Loading...",
     "by": "by"
+  },
+  "fridge": {
+    "title": "What's in your fridge?",
+    "subtitle": "Tell us what you have and discover what you can cook right now.",
+    "placeholder": "Type an ingredient and press Enter (tomato, egg…)",
+    "addMore": "Add another ingredient…",
+    "add": "Add",
+    "remove": "Remove",
+    "quick": "Quick add",
+    "staples": "I always have salt, pepper, oil and water",
+    "empty": "Add at least one ingredient to see recipes.",
+    "searching": "Searching…",
+    "found": "{{count}} recipes found",
+    "filterAll": "All",
+    "filterReady": "Ready to cook",
+    "filterAlmost": "Missing 1–2",
+    "none": "No recipes match yet. Try adding more ingredients.",
+    "have": "You have {{have}}/{{total}}",
+    "canCook": "You can cook this now!",
+    "missing": "Missing:",
+    "error": "Something went wrong. Please try again.",
+    "nav": "Fridge"
   }
 }

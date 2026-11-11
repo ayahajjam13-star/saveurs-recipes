@@ -75,9 +75,13 @@ function Search() {
 
         if (cancelled) return;
 
-        const recipes = Array.isArray(recipesResponse.data)
-          ? recipesResponse.data
-          : [];
+        
+const recipes = Array.isArray(recipesResponse.data)
+  ? recipesResponse.data
+  : Array.isArray(recipesResponse.data?.data)
+    ? recipesResponse.data.data
+    : [];
+
 
         setAllRecipes(recipes);
 

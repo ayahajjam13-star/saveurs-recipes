@@ -11,6 +11,7 @@ use App\Http\Controllers\Api\MealPlanController;
 use App\Http\Controllers\Api\NewsletterController;
 use App\Http\Controllers\Api\GoogleAuthController;
 use App\Http\Controllers\Api\EmailVerificationController;
+use App\Http\Controllers\FridgeController;
 
 // Auth Routes
 Route::post('/register', [AuthController::class, 'register']);
@@ -73,11 +74,13 @@ Route::middleware('auth:sanctum')->group(function () {
 
 // Recipe Routes (Public)
 Route::get('/recipes', [RecipeController::class, 'index']);
+Route::get('/recipes/category/{category}', [RecipeController::class, 'byCategory']);
 Route::get('/recipes/search', [RecipeController::class, 'search']);
 Route::get('/recipes/search-by-ingredients', [RecipeController::class, 'searchByIngredients']);
 Route::get('/recipes/stats/top-rated', [RecipeController::class, 'topRated']);
 Route::get('/recipes/season/{season}', [RecipeController::class, 'bySeason']);
 Route::get('/recipes/{id}', [RecipeController::class, 'show']);
+Route::post('/recipes/by-fridge', [FridgeController::class, 'search']);
 
 // Comments
 Route::get('/recipes/{recipeId}/comments', [App\Http\Controllers\Api\CommentController::class, 'index']);

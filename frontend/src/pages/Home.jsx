@@ -515,12 +515,12 @@ function Home() {
 
         return (
           <Link
-            key={category.name}
-            to={
-              category.keyword
-                ? `/search?q=${encodeURIComponent(category.keyword)}`
-                : '/search'
-            }
+        key={category.name}
+        to={
+        category.name === 'All Recipes'
+      ? '/search'
+      : `/category/${encodeURIComponent(category.name)}`
+        }
             className="group relative overflow-hidden rounded-[28px] bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:bg-[#292938]"
           >
 

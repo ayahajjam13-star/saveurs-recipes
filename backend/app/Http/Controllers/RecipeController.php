@@ -13,6 +13,15 @@ class RecipeController extends Controller
         return response()->json(Recipe::all());
     }
 
+    // Get recipes by category
+    public function byCategory($category)
+    {
+        $recipes = Recipe::where('category', $category)->get();
+
+        return response()->json($recipes);
+    }
+
+
     // وصفة وحدة
     public function show($id)
     {

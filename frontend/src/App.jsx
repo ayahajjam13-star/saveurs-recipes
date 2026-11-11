@@ -24,6 +24,8 @@ import VerifyEmail from './pages/VerifyEmail';
 import NotFound from './pages/NotFound';
 import PublicProfile from './pages/PublicProfile';
 import AIChef from './pages/AIChef';
+import Fridge from './pages/Fridge';
+import Category from './pages/Category';
 
 function App() {
   const location = useLocation();
@@ -80,6 +82,15 @@ function App() {
             />
 
             <Route
+            path="/fridge"
+            element={
+              <PageTransition>
+                <Fridge />
+              </PageTransition>
+             }
+          />
+
+            <Route
               path="/login"
               element={
                 <PageTransition>
@@ -87,6 +98,15 @@ function App() {
                 </PageTransition>
               }
             />
+
+            <Route
+              path="/category/:category"
+              element={
+              <PageTransition>
+                <Category />
+              </PageTransition>
+              }
+              />
 
             <Route
               path="/register"

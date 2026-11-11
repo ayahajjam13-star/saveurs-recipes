@@ -123,10 +123,22 @@
       "free": "Gratuit"
     },
     "features": {
-      "global": { "title": "Cuisine Mondiale", "desc": "Recettes d'Italie, du Japon, du Maroc, du Mexique, de Thaïlande et bien plus." },
-      "seasonal": { "title": "Sélection Saisonnière", "desc": "Découvrez des recettes parfaitement adaptées à chaque saison." },
-      "favorites": { "title": "Favoris", "desc": "Créez votre collection personnelle de recettes préférées d'un simple clic." },
-      "search": { "title": "Recherche Facile", "desc": "Trouvez n'importe quelle recette par nom ou explorez par pays." }
+      "global": {
+        "title": "Cuisine Mondiale",
+        "desc": "Recettes d'Italie, du Japon, du Maroc, du Mexique, de Thaïlande et bien plus."
+      },
+      "seasonal": {
+        "title": "Sélection Saisonnière",
+        "desc": "Découvrez des recettes parfaitement adaptées à chaque saison."
+      },
+      "favorites": {
+        "title": "Favoris",
+        "desc": "Créez votre collection personnelle de recettes préférées d'un simple clic."
+      },
+      "search": {
+        "title": "Recherche Facile",
+        "desc": "Trouvez n'importe quelle recette par nom ou explorez par pays."
+      }
     },
     "cta": {
       "title": "Prêt à cuisiner ?",
@@ -156,5 +168,27 @@
   "common": {
     "loading": "Chargement...",
     "by": "par"
+  },
+  "fridge": {
+    "title": "Qu'y a-t-il dans votre frigo ?",
+    "subtitle": "Dites-nous ce que vous avez et découvrez ce que vous pouvez cuisiner maintenant.",
+    "placeholder": "Tapez un ingrédient puis Entrée (tomate, œuf…)",
+    "addMore": "Ajouter un autre ingrédient…",
+    "add": "Ajouter",
+    "remove": "Retirer",
+    "quick": "Ajout rapide",
+    "staples": "J'ai toujours du sel, du poivre, de l'huile et de l'eau",
+    "empty": "Ajoutez au moins un ingrédient pour voir les recettes.",
+    "searching": "Recherche…",
+    "found": "{{count}} recettes trouvées",
+    "filterAll": "Toutes",
+    "filterReady": "Prêtes à cuisiner",
+    "filterAlmost": "Il manque 1–2",
+    "none": "Aucune recette pour l'instant. Ajoutez d'autres ingrédients.",
+    "have": "Vous avez {{have}}/{{total}}",
+    "canCook": "Vous pouvez la cuisiner maintenant !",
+    "missing": "Manque :",
+    "error": "Une erreur est survenue. Réessayez.",
+    "nav": "Frigo"
   }
 }

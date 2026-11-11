@@ -22,6 +22,7 @@ import {
   X,
   Sparkles,
   Utensils,
+  Refrigerator,
   ArrowRight
 } from 'lucide-react';
 
@@ -91,6 +92,7 @@ function Navbar() {
     { to: '/', label: t('nav.home', 'Home'), icon: ChefHat },
     { to: '/search', label: t('nav.search', 'Search'), icon: Search },
     { to: '/stats', label: t('nav.stats', 'Stats'), icon: BarChart2 },
+    { to: '/fridge', label: t('fridge.nav', 'Fridge'), icon: Refrigerator },
     { to: '/about', label: t('nav.about', 'About'), icon: Info }
   ];
 
