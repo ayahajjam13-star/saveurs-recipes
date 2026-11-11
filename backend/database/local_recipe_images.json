@@ -1,0 +1,1352 @@
+[
+    {
+        "name":  "Italian Pumpkin Risotto",
+        "category":  null,
+        "image":  "italian-pumpkin-risotto.jpg"
+    },
+    {
+        "name":  "French Onion Soup",
+        "category":  null,
+        "image":  "french-onion-soup.jpg"
+    },
+    {
+        "name":  "American Pumpkin Pie",
+        "category":  null,
+        "image":  "american-pumpkin-pie.jpg"
+    },
+    {
+        "name":  "Hungarian Goulash",
+        "category":  null,
+        "image":  "hungarian-goulash.jpg"
+    },
+    {
+        "name":  "Japanese Mushroom Rice",
+        "category":  null,
+        "image":  "japanese-mushroom-rice.jpg"
+    },
+    {
+        "name":  "Moroccan Chicken Tagine with Prunes",
+        "category":  null,
+        "image":  "moroccan-chicken-tagine-prunes.jpg"
+    },
+    {
+        "name":  "Spanish Mushroom Croquettes",
+        "category":  null,
+        "image":  "spanish-mushroom-croquettes.jpg"
+    },
+    {
+        "name":  "German Apple Strudel",
+        "category":  null,
+        "image":  "german-apple-strudel.jpg"
+    },
+    {
+        "name":  "Korean Kimchi Jjigae",
+        "category":  null,
+        "image":  "korean-kimchi-jjigae.jpg"
+    },
+    {
+        "name":  "British Shepherd\u0027s Pie",
+        "category":  null,
+        "image":  "british-shepherds-pie.jpg"
+    },
+    {
+        "name":  "Irish Colcannon",
+        "category":  null,
+        "image":  "irish-colcannon.jpg"
+    },
+    {
+        "name":  "French Tarte Tatin",
+        "category":  null,
+        "image":  "french-tarte-tatin.jpg"
+    },
+    {
+        "name":  "Polish Pierogi with Potato and Cheese",
+        "category":  null,
+        "image":  "polish-pierogi-potato-cheese.jpg"
+    },
+    {
+        "name":  "Chinese Pumpkin Congee",
+        "category":  null,
+        "image":  "chinese-pumpkin-congee.jpg"
+    },
+    {
+        "name":  "British Sausage and Mash",
+        "category":  null,
+        "image":  "british-sausage-mash.jpg"
+    },
+    {
+        "name":  "Turkish Pumpkin Dessert",
+        "category":  null,
+        "image":  "turkish-pumpkin-dessert.jpg"
+    },
+    {
+        "name":  "Japanese Kabocha Squash Soup",
+        "category":  null,
+        "image":  "japanese-kabocha-squash-soup.jpg"
+    },
+    {
+        "name":  "Spanish Chickpea and Spinach Stew",
+        "category":  null,
+        "image":  "spanish-chickpea-spinach-stew.jpg"
+    },
+    {
+        "name":  "American Apple Crisp",
+        "category":  null,
+        "image":  "american-apple-crisp.jpg"
+    },
+    {
+        "name":  "Georgian Khachapuri",
+        "category":  null,
+        "image":  "georgian-khachapuri.jpg"
+    },
+    {
+        "name":  "Korean Japchae",
+        "category":  null,
+        "image":  "korean-japchae.jpg"
+    },
+    {
+        "name":  "Italian Mushroom Polenta",
+        "category":  null,
+        "image":  "italian-mushroom-polenta.jpg"
+    },
+    {
+        "name":  "Moroccan Bissara",
+        "category":  null,
+        "image":  "moroccan-bissara.jpg"
+    },
+    {
+        "name":  "German Potato Pancakes (Kartoffelpuffer)",
+        "category":  null,
+        "image":  "german-kartoffelpuffer.jpg"
+    },
+    {
+        "name":  "Dutch Stamppot with Kale",
+        "category":  null,
+        "image":  "dutch-stamppot-kale.jpg"
+    },
+    {
+        "name":  "Egyptian Koshari",
+        "category":  null,
+        "image":  "egyptian-koshari.jpg"
+    },
+    {
+        "name":  "Algerian Chakhchoukha",
+        "category":  null,
+        "image":  "algerian-chakhchoukha.jpg"
+    },
+    {
+        "name":  "Syrian Kibbeh",
+        "category":  null,
+        "image":  "syrian-kibbeh.jpg"
+    },
+    {
+        "name":  "French Beef Bourguignon",
+        "category":  null,
+        "image":  "french-beef-bourguignon.jpg"
+    },
+    {
+        "name":  "Italian Lasagna",
+        "category":  null,
+        "image":  "italian-lasagna.jpg"
+    },
+    {
+        "name":  "Mexican Chicken Tortilla Soup",
+        "category":  null,
+        "image":  "mexican-chicken-tortilla-soup.jpg"
+    },
+    {
+        "name":  "Japanese Chicken Ramen",
+        "category":  null,
+        "image":  "japanese-chicken-ramen.jpg"
+    },
+    {
+        "name":  "Indian Butter Chicken",
+        "category":  null,
+        "image":  "indian-butter-chicken.jpg"
+    },
+    {
+        "name":  "Greek Avgolemono Soup",
+        "category":  null,
+        "image":  "greek-avgolemono-soup.jpg"
+    },
+    {
+        "name":  "Swiss Cheese Fondue",
+        "category":  null,
+        "image":  "swiss-cheese-fondue.jpg"
+    },
+    {
+        "name":  "Brazilian Feijoada",
+        "category":  null,
+        "image":  "brazilian-feijoada.jpg"
+    },
+    {
+        "name":  "Irish Beef Guinness Stew",
+        "category":  null,
+        "image":  "irish-beef-guinness-stew.jpg"
+    },
+    {
+        "name":  "Austrian Wiener Schnitzel",
+        "category":  null,
+        "image":  "austrian-wiener-schnitzel.jpg"
+    },
+    {
+        "name":  "Russian Beef Stroganoff",
+        "category":  null,
+        "image":  "russian-beef-stroganoff.jpg"
+    },
+    {
+        "name":  "French Raclette",
+        "category":  null,
+        "image":  "french-raclette.jpg"
+    },
+    {
+        "name":  "Polish Bigos",
+        "category":  null,
+        "image":  "polish-bigos.jpg"
+    },
+    {
+        "name":  "Mexican Pozole Rojo",
+        "category":  null,
+        "image":  "mexican-pozole-rojo.jpg"
+    },
+    {
+        "name":  "Swiss RÃ¶sti",
+        "category":  null,
+        "image":  "swiss-rosti.jpg"
+    },
+    {
+        "name":  "Japanese Oden",
+        "category":  null,
+        "image":  "japanese-oden.jpg"
+    },
+    {
+        "name":  "Hungarian Chicken Paprikash",
+        "category":  null,
+        "image":  "hungarian-chicken-paprikash.jpg"
+    },
+    {
+        "name":  "Filipino Chicken Adobo",
+        "category":  null,
+        "image":  "filipino-chicken-adobo.jpg"
+    },
+    {
+        "name":  "Serbian Ä†evapi",
+        "category":  null,
+        "image":  "serbian-cevapi.jpg"
+    },
+    {
+        "name":  "Norwegian Fish Soup",
+        "category":  null,
+        "image":  "norwegian-fish-soup.jpg"
+    },
+    {
+        "name":  "Chinese Hot Pot",
+        "category":  null,
+        "image":  "chinese-hot-pot.jpg"
+    },
+    {
+        "name":  "Spanish Fabada Asturiana",
+        "category":  null,
+        "image":  "spanish-fabada-asturiana.jpg"
+    },
+    {
+        "name":  "Italian Ribollita",
+        "category":  null,
+        "image":  "italian-ribollita.jpg"
+    },
+    {
+        "name":  "Lebanese Shish Barak",
+        "category":  null,
+        "image":  "lebanese-shish-barak.jpg"
+    },
+    {
+        "name":  "Jamaican Oxtail Stew",
+        "category":  null,
+        "image":  "jamaican-oxtail-stew.jpg"
+    },
+    {
+        "name":  "Egyptian Molokhia",
+        "category":  null,
+        "image":  "egyptian-molokhia.jpg"
+    },
+    {
+        "name":  "Saudi Chicken Kabsa",
+        "category":  null,
+        "image":  "saudi-chicken-kabsa.jpg"
+    },
+    {
+        "name":  "Saudi Jareesh",
+        "category":  null,
+        "image":  "saudi-jareesh.jpg"
+    },
+    {
+        "name":  "Saudi Saleeg",
+        "category":  null,
+        "image":  "saudi-saleeg.jpg"
+    },
+    {
+        "name":  "Moroccan Couscous with Seven Vegetables",
+        "category":  null,
+        "image":  "moroccan-couscous-seven-vegetables.jpg"
+    },
+    {
+        "name":  "Algerian Rechta",
+        "category":  null,
+        "image":  "algerian-rechta.jpg"
+    },
+    {
+        "name":  "Palestinian Maqluba",
+        "category":  null,
+        "image":  "palestinian-maqluba.jpg"
+    },
+    {
+        "name":  "Syrian Shish Barak",
+        "category":  null,
+        "image":  "syrian-shish-barak.jpg"
+    },
+    {
+        "name":  "Italian Pasta Primavera",
+        "category":  null,
+        "image":  "italian-pasta-primavera.jpg"
+    },
+    {
+        "name":  "Greek Spanakopita",
+        "category":  null,
+        "image":  "greek-spanakopita.jpg"
+    },
+    {
+        "name":  "Japanese Chicken Teriyaki",
+        "category":  null,
+        "image":  "japanese-chicken-teriyaki.jpg"
+    },
+    {
+        "name":  "Lebanese Tabbouleh",
+        "category":  null,
+        "image":  "lebanese-tabbouleh.jpg"
+    },
+    {
+        "name":  "Vietnamese Fresh Spring Rolls",
+        "category":  null,
+        "image":  "vietnamese-fresh-spring-rolls.jpg"
+    },
+    {
+        "name":  "Spanish Tortilla EspaÃ±ola",
+        "category":  null,
+        "image":  "spanish-tortilla-espanola.jpg"
+    },
+    {
+        "name":  "Turkish Menemen",
+        "category":  null,
+        "image":  "turkish-menemen.jpg"
+    },
+    {
+        "name":  "French Quiche Lorraine",
+        "category":  null,
+        "image":  "french-quiche-lorraine.jpg"
+    },
+    {
+        "name":  "Indian Palak Paneer",
+        "category":  null,
+        "image":  "indian-palak-paneer.jpg"
+    },
+    {
+        "name":  "American Strawberry Shortcake",
+        "category":  null,
+        "image":  "american-strawberry-shortcake.jpg"
+    },
+    {
+        "name":  "British Chicken and Leek Pie",
+        "category":  null,
+        "image":  "british-chicken-leek-pie.jpg"
+    },
+    {
+        "name":  "Turkish Sigara BÃ¶reÄŸi",
+        "category":  null,
+        "image":  "turkish-sigara-boregi.jpg"
+    },
+    {
+        "name":  "Vietnamese BÃ¡nh XÃ¨o",
+        "category":  null,
+        "image":  "vietnamese-banh-xeo.jpg"
+    },
+    {
+        "name":  "Greek Keftedes",
+        "category":  null,
+        "image":  "greek-keftedes.jpg"
+    },
+    {
+        "name":  "Indian Vegetable Pulao",
+        "category":  null,
+        "image":  "indian-vegetable-pulao.jpg"
+    },
+    {
+        "name":  "Japanese Okonomiyaki",
+        "category":  null,
+        "image":  "japanese-okonomiyaki.jpg"
+    },
+    {
+        "name":  "Spanish Patatas Bravas",
+        "category":  null,
+        "image":  "spanish-patatas-bravas.jpg"
+    },
+    {
+        "name":  "Indonesian Gado-Gado",
+        "category":  null,
+        "image":  "indonesian-gado-gado.jpg"
+    },
+    {
+        "name":  "French Asparagus Quiche",
+        "category":  null,
+        "image":  "french-asparagus-quiche.jpg"
+    },
+    {
+        "name":  "Ethiopian Misir Wot",
+        "category":  null,
+        "image":  "ethiopian-misir-wot.jpg"
+    },
+    {
+        "name":  "Korean Bibimbap",
+        "category":  null,
+        "image":  "korean-bibimbap.jpg"
+    },
+    {
+        "name":  "Italian Arancini",
+        "category":  null,
+        "image":  "italian-arancini.jpg"
+    },
+    {
+        "name":  "Mexican Chiles Rellenos",
+        "category":  null,
+        "image":  "mexican-chiles-rellenos.jpg"
+    },
+    {
+        "name":  "Thai Green Curry",
+        "category":  null,
+        "image":  "thai-green-curry.jpg"
+    },
+    {
+        "name":  "Dutch Asparagus with Ham and Egg",
+        "category":  null,
+        "image":  "dutch-asparagus-ham-egg.jpg"
+    },
+    {
+        "name":  "Tunisian Brik",
+        "category":  null,
+        "image":  "tunisian-brik.jpg"
+    },
+    {
+        "name":  "Algerian Makroud",
+        "category":  null,
+        "image":  "algerian-makroud.jpg"
+    },
+    {
+        "name":  "Palestinian Musakhan",
+        "category":  null,
+        "image":  "palestinian-musakhan.jpg"
+    },
+    {
+        "name":  "Syrian Muhammara",
+        "category":  null,
+        "image":  "syrian-muhammara.jpg"
+    },
+    {
+        "name":  "Syrian Fatteh",
+        "category":  null,
+        "image":  "syrian-fatteh.jpg"
+    },
+    {
+        "name":  "Greek Horiatiki Salad",
+        "category":  null,
+        "image":  "greek-horiatiki-salad.jpg"
+    },
+    {
+        "name":  "Italian Caprese Salad",
+        "category":  null,
+        "image":  "italian-caprese-salad.jpg"
+    },
+    {
+        "name":  "Mexican Fish Tacos",
+        "category":  null,
+        "image":  "mexican-fish-tacos.jpg"
+    },
+    {
+        "name":  "Thai Pad Thai",
+        "category":  null,
+        "image":  "thai-pad-thai.jpg"
+    },
+    {
+        "name":  "Spanish Gazpacho",
+        "category":  null,
+        "image":  "spanish-gazpacho.jpg"
+    },
+    {
+        "name":  "American Classic Cheeseburger",
+        "category":  null,
+        "image":  "american-classic-cheeseburger.jpg"
+    },
+    {
+        "name":  "Japanese Chicken Yakitori",
+        "category":  null,
+        "image":  "japanese-chicken-yakitori.jpg"
+    },
+    {
+        "name":  "Lebanese Chicken Shawarma",
+        "category":  null,
+        "image":  "lebanese-chicken-shawarma.jpg"
+    },
+    {
+        "name":  "Italian Pesto Pasta",
+        "category":  null,
+        "image":  "italian-pesto-pasta.jpg"
+    },
+    {
+        "name":  "Brazilian AÃ§aÃ­ Bowl",
+        "category":  null,
+        "image":  "brazilian-acai-bowl.jpg"
+    },
+    {
+        "name":  "Greek Souvlaki",
+        "category":  null,
+        "image":  "greek-souvlaki.jpg"
+    },
+    {
+        "name":  "Vietnamese BÃºn Cháº£",
+        "category":  null,
+        "image":  "vietnamese-bun-cha.jpg"
+    },
+    {
+        "name":  "Italian Panzanella Salad",
+        "category":  null,
+        "image":  "italian-panzanella-salad.jpg"
+    },
+    {
+        "name":  "Brazilian Moqueca",
+        "category":  null,
+        "image":  "brazilian-moqueca.jpg"
+    },
+    {
+        "name":  "Turkish Ã‡oban SalatasÄ±",
+        "category":  null,
+        "image":  "turkish-coban-salatasi.jpg"
+    },
+    {
+        "name":  "Japanese Cold Soba Noodles",
+        "category":  null,
+        "image":  "japanese-cold-soba-noodles.jpg"
+    },
+    {
+        "name":  "Moroccan Zaalouk",
+        "category":  null,
+        "image":  "moroccan-zaalouk.jpg"
+    },
+    {
+        "name":  "Spanish Pinchos Morunos",
+        "category":  null,
+        "image":  "spanish-pinchos-morunos.jpg"
+    },
+    {
+        "name":  "American Corn Chowder",
+        "category":  null,
+        "image":  "american-corn-chowder.jpg"
+    },
+    {
+        "name":  "Indonesian Nasi Goreng",
+        "category":  null,
+        "image":  "indonesian-nasi-goreng.jpg"
+    },
+    {
+        "name":  "French NiÃ§oise Salad",
+        "category":  null,
+        "image":  "french-nicoise-salad.jpg"
+    },
+    {
+        "name":  "Peruvian Ceviche",
+        "category":  null,
+        "image":  "peruvian-ceviche.jpg"
+    },
+    {
+        "name":  "Lebanese Fattoush",
+        "category":  null,
+        "image":  "lebanese-fattoush.jpg"
+    },
+    {
+        "name":  "Australian Pavlova",
+        "category":  null,
+        "image":  "australian-pavlova.jpg"
+    },
+    {
+        "name":  "Filipino Halo-Halo",
+        "category":  null,
+        "image":  "filipino-halo-halo.jpg"
+    },
+    {
+        "name":  "Egyptian Ful Medames",
+        "category":  null,
+        "image":  "egyptian-ful-medames.jpg"
+    },
+    {
+        "name":  "Egyptian Hawawshi",
+        "category":  null,
+        "image":  "egyptian-hawawshi.jpg"
+    },
+    {
+        "name":  "Tunisian Ojja",
+        "category":  null,
+        "image":  "tunisian-ojja.jpg"
+    },
+    {
+        "name":  "Palestinian Knafeh Nabulsiyeh",
+        "category":  null,
+        "image":  "palestinian-knafeh-nabulsiyeh.jpg"
+    },
+    {
+        "name":  "Fluffy American Pancakes",
+        "category":  null,
+        "image":  "pancakes.jpg"
+    },
+    {
+        "name":  "Avocado Toast with Poached Egg",
+        "category":  null,
+        "image":  "avocado-toast.jpg"
+    },
+    {
+        "name":  "Cheese and Herb Omelette",
+        "category":  null,
+        "image":  "omelette.jpg"
+    },
+    {
+        "name":  "Classic French Toast",
+        "category":  null,
+        "image":  "french-toast.jpg"
+    },
+    {
+        "name":  "Fluffy Buttermilk Pancakes",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Avocado Egg Toast",
+        "category":  "Breakfast",
+        "image":  "https://claraplate.com/wp-content/uploads/2025/05/Avocado-Toast-with-Egg-1.webp"
+    },
+    {
+        "name":  "Berry Yogurt Parfait",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Banana Oat Pancakes",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Spinach and Feta Omelette",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Blueberry Overnight Oats",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1756457892871-88522afffbdc?auto=format\u0026fit=crop\u0026fm=jpg\u0026q=85\u0026w=1200"
+    },
+    {
+        "name":  "Cheese and Herb Scrambled Eggs",
+        "category":  "Breakfast",
+        "image":  "https://eetse.nl/uploads/images/romige-eieren-met-boursin-68d55897bd4aa291947003.png"
+    },
+    {
+        "name":  "Strawberry Banana Smoothie Bowl",
+        "category":  "Breakfast",
+        "image":  "https://frozt.cl/cdn/shop/files/BananaFrutilla_2_e1e212a9-02d5-4953-bd5b-9292810a39f1.png?v=1773412026\u0026width=1445"
+    },
+    {
+        "name":  "Moroccan Msemen with Honey",
+        "category":  "Breakfast",
+        "image":  "https://ledelicedamal.fr/assets/vectors/msemen-new.jpg"
+    },
+    {
+        "name":  "Breakfast Cheese Quesadilla",
+        "category":  "Breakfast",
+        "image":  "https://tastelikemagic.com/assets/images/1744813962089-n2s2vj08.webp"
+    },
+    {
+        "name":  "Apple Cinnamon Porridge",
+        "category":  "Breakfast",
+        "image":  "https://images.ichkoche.at/data/image/17/166092.jpg"
+    },
+    {
+        "name":  "Mushroom Cheese Toast",
+        "category":  "Breakfast",
+        "image":  "https://belappetit.com/assets/images/1764179858152-60kqb5hj.jpg"
+    },
+    {
+        "name":  "Breakfast Egg Muffins",
+        "category":  "Breakfast",
+        "image":  "https://recipesbysilvia.com/wp-content/uploads/2025/05/Savory-Egg-Muffins.png"
+    },
+    {
+        "name":  "Peanut Butter Banana Toast",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Cottage Cheese Fruit Bowl",
+        "category":  "Breakfast",
+        "image":  "https://cdn.shopify.com/s/files/1/0653/8176/1200/files/Cottage_Cheese_Smoothie_Bowls_600x600.png?v=1780077520"
+    },
+    {
+        "name":  "Belgian Style Waffles",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Smoked Salmon Cream Cheese Bagel",
+        "category":  "Breakfast",
+        "image":  "https://chefkochen.com/assets/images/1774734203036-aq205izg.jpg"
+    },
+    {
+        "name":  "Shakshuka Breakfast Eggs",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Cinnamon French Crepes",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Spinach Feta Breakfast Wrap",
+        "category":  "Breakfast",
+        "image":  "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format\u0026fit=crop\u0026w=1200\u0026q=85"
+    },
+    {
+        "name":  "Moroccan Chicken Tagine",
+        "category":  "Lunch",
+        "image":  "moroccan-chicken-tagine-prunes.jpg"
+    },
+    {
+        "name":  "Moroccan Couscous with Vegetables",
+        "category":  "Lunch",
+        "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Moroccan%20cuisine-Couscous%20with%20vegetables.jpg?width=1200"
+    },
+    {
+        "name":  "Grilled Chicken Rice Bowl",
+        "category":  "Lunch",
+        "image":  "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/grilled_chicken_rice_bowl.jpg"
+    },
+    {
+        "name":  "Creamy Mushroom Pasta",
+        "category":  "Lunch",
+        "image":  "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+    },
+    {
+        "name":  "Tuna and Avocado Salad",
+        "category":  "Lunch",
+        "image":  "https://www.platingsandpairings.com/wp-content/uploads/2019/09/avocado-tuna-salad-7-1-1200x1200.jpg"
+    },
+    {
+        "name":  "Beef Vegetable Stir Fry",
+        "category":  "Lunch",
+        "image":  "https://cookaifood.com/bundles/project/images/recipes/1693_1_1695212441.png"
+    },
+    {
+        "name":  "Baked Salmon with Potatoes",
+        "category":  "Lunch",
+        "image":  "https://harvestkitchenorderpage.com/static/images/baked_salmon_dill_potatoes.png"
+    },
+    {
+        "name":  "Chicken Caesar Salad",
+        "category":  "Lunch",
+        "image":  "https://dm2xzko1gj54v.cloudfront.net/landing-blog-post-images/31e2629e-8342-4681-a574-38440fb4361e.png"
+    },
+    {
+        "name":  "Vegetable Fried Rice",
+        "category":  "Lunch",
+        "image":  "https://img.ananinja.com/media/ninja-catalog-42/restaurants/7ogokkvndm0gph79z29xyhxhp2q9/copy-of-.png?q=75\u0026w=1080"
+    },
+    {
+        "name":  "Moroccan Kefta Tagine",
+        "category":  "Lunch",
+        "image":  "https://assets.afcdn.com/story/20260312/2320092_w1376h1032c1.jpg"
+    },
+    {
+        "name":  "Greek Chicken Pita",
+        "category":  "Lunch",
+        "image":  "https://myhomemaderecipe.com/assets/images/Greek-Chicken-Gyros-with-Tzatziki-Sauce-and-Greek-Salad-hero.jpg?w=480"
+    },
+    {
+        "name":  "Lentil Vegetable Soup",
+        "category":  "Lunch",
+        "image":  "https://itsonly.recipes/images/recipeimages/lentil-and-vegetable-soup.webp"
+    },
+    {
+        "name":  "Shrimp Garlic Spaghetti",
+        "category":  "Lunch",
+        "image":  "https://m1.quebecormedia.com/emp/cl_prod/085ad1f5f754ee4e36bb31997c518ec4847304d4/Screenshot-2023-03-06-at-2-13-45-PM.jpg?height=1500\u0026impolicy=resize\u0026width=1500"
+    },
+    {
+        "name":  "Chicken Shawarma Wrap",
+        "category":  "Lunch",
+        "image":  "https://cafezad.com/pluto-images/funnel/images/db44b414-366c-4243-bf9a-8b394e3ab237?fit=cover\u0026w=810"
+    },
+    {
+        "name":  "Caprese Pasta Salad",
+        "category":  "Lunch",
+        "image":  "italian-caprese-salad.jpg"
+    },
+    {
+        "name":  "Moroccan Fish Chermoula",
+        "category":  "Lunch",
+        "image":  "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2"
+    },
+    {
+        "name":  "Stuffed Bell Peppers",
+        "category":  "Lunch",
+        "image":  "https://myrecipespace.com/wp-content/uploads/2025/07/stuffed-peppers-with-rice-and-beef-before_storing.png"
+    },
+    {
+        "name":  "Chicken Pesto Pasta",
+        "category":  "Lunch",
+        "image":  "https://cdn.chellesrecipes.com/images/54dbf186-9506-4737-bc20-e571f8299f52-1_a178ddb9.webp"
+    },
+    {
+        "name":  "Falafel Chickpea Bowl",
+        "category":  "Lunch",
+        "image":  "https://simplegreensmoothies.com/wp-content/uploads/mediterranean-falafel-bowl-vegan-plant-based-featuredimage.jpg"
+    },
+    {
+        "name":  "Beef Burger with Salad",
+        "category":  "Lunch",
+        "image":  "https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+    },
+    {
+        "name":  "Spinach and Ricotta Lasagna",
+        "category":  "Lunch",
+        "image":  "https://images.unsplash.com/photo-1574894709920-11b28e7367e3"
+    },
+    {
+        "name":  "Moroccan Vegetable Briouats",
+        "category":  "Lunch",
+        "image":  "https://www.petitfute.com/medias/mag/48270/originale/AdobeStock_510453981-1024x682.jpg"
+    },
+    {
+        "name":  "Asian Chicken Noodle Bowl",
+        "category":  "Lunch",
+        "image":  "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/medium/sunset_magazine_noodle_bowl.jpg"
+    },
+    {
+        "name":  "Baked Potato with Tuna",
+        "category":  "Lunch",
+        "image":  "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/jacket_potato_and_tuna.jpg"
+    },
+    {
+        "name":  "Chicken and Broccoli Rice",
+        "category":  "Lunch",
+        "image":  "https://simplerecetas.com/assets/images/1737071321187-x2xg5126.webp"
+    },
+    {
+        "name":  "Mediterranean Chickpea Salad",
+        "category":  "Lunch",
+        "image":  "https://myhomemaderecipe.com/assets/images/Easy-Mediterranean-Chickpea-Salad-hero.jpg?w=768"
+    },
+    {
+        "name":  "Grilled Vegetable and Halloumi Wrap",
+        "category":  "Lunch",
+        "image":  "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/halloumi_wrap.jpg"
+    },
+    {
+        "name":  "Moroccan Chicken with Preserved Lemon",
+        "category":  "Dinner",
+        "image":  "https://images.ctfassets.net/rc3dlxapnu6k/dZhVw0Jn5UVYwSypHCqJ3/40d7317f492d420d890e1d9acb4c2169/Marokko_TopDishes_Tajine.jpg?fm=webp\u0026q=50\u0026w=828"
+    },
+    {
+        "name":  "Creamy Garlic Mushroom Chicken",
+        "category":  "Dinner",
+        "image":  "https://www.recettesmania.com/images/recipe/edith-et-sa-cuisine/2026/04/edith-et-sa-cuisine-poulet-cremeux-a-l-ail-et-aux-champignons-le-bistrot-en-25-m-full.jpg"
+    },
+    {
+        "name":  "Baked Salmon with Lemon",
+        "category":  "Dinner",
+        "image":  "https://itsonly.recipes/images/recipeimages/zesty-lemon-herb-salmon.webp"
+    },
+    {
+        "name":  "Vegetable Lasagna",
+        "category":  "Dinner",
+        "image":  "https://images.unsplash.com/photo-1574894709920-11b28e7367e3"
+    },
+    {
+        "name":  "Beef and Broccoli Stir Fry",
+        "category":  "Dinner",
+        "image":  "https://cuisinegenial.com/assets/images/1736037611644-y4nai4b3.webp"
+    },
+    {
+        "name":  "Moroccan Kefta with Tomato Sauce",
+        "category":  "Dinner",
+        "image":  "https://tasteofmaroc.com/wp-content/uploads/2018/02/kefta-tagine-oysy-bigstock-kofta-tajine-kefta-tagine-mo-65105917.jpg"
+    },
+    {
+        "name":  "Creamy Spinach Pasta",
+        "category":  "Dinner",
+        "image":  "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_548/k/Photo/Recipes/2024-12-creamed-spinach-pasta/creamed-spinach-pasta-399"
+    },
+    {
+        "name":  "Stuffed Bell Peppers with Rice",
+        "category":  "Dinner",
+        "image":  "https://www.giallozafferano.com/images/278-27879/Stuffed-Bell-Peppers-with-Rice_780x520_wm.jpg"
+    },
+    {
+        "name":  "Chicken Fajitas",
+        "category":  "Dinner",
+        "image":  "chicken-fajitas.jpg"
+    },
+    {
+        "name":  "Lentil and Vegetable Curry",
+        "category":  "Dinner",
+        "image":  "lentil-vegetable-curry.webp"
+    },
+    {
+        "name":  "Grilled Chicken with Roasted Vegetables",
+        "category":  "Dinner",
+        "image":  "grilled-chicken-roasted-vegetables.png"
+    },
+    {
+        "name":  "Creamy Shrimp Garlic Pasta",
+        "category":  "Dinner",
+        "image":  "creamy-shrimp-garlic-pasta.webp"
+    },
+    {
+        "name":  "Moroccan Vegetable Couscous",
+        "category":  "Dinner",
+        "image":  "moroccan-couscous-seven-vegetables.jpg"
+    },
+    {
+        "name":  "Baked Chicken Parmesan",
+        "category":  "Dinner",
+        "image":  "baked-chicken-parmesan.jpg"
+    },
+    {
+        "name":  "Asian Sesame Chicken Bowl",
+        "category":  "Dinner",
+        "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Sesame_chicken_wth_broccoli.jpg?width=1200"
+    },
+    {
+        "name":  "Baked Eggplant with Tomato and Cheese",
+        "category":  "Dinner",
+        "image":  "baked-eggplant-tomato-cheese.jpg"
+    },
+    {
+        "name":  "Turkey Meatballs with Rice",
+        "category":  "Dinner",
+        "image":  "turkey-meatballs-rice.webp"
+    },
+    {
+        "name":  "Tuna Potato Bake",
+        "category":  "Dinner",
+        "image":  "tuna-potato-bake.jpg"
+    },
+    {
+        "name":  "Chickpea Spinach Coconut Curry",
+        "category":  "Dinner",
+        "image":  "chickpea-spinach-coconut-curry.jpg"
+    },
+    {
+        "name":  "Grilled Beef Kofta with Yogurt Sauce",
+        "category":  "Dinner",
+        "image":  "grilled-beef-kofta-yogurt.png"
+    },
+    {
+        "name":  "Moroccan Harira Soup",
+        "category":  "Dinner",
+        "image":  "moroccan-harira-soup.jpg"
+    },
+    {
+        "name":  "Lemon Herb Roasted Chicken",
+        "category":  "Dinner",
+        "image":  "lemon-herb-roasted-chicken.webp"
+    },
+    {
+        "name":  "Vegetarian Mexican Rice Bowl",
+        "category":  "Dinner",
+        "image":  "vegetarian-mexican-rice-bowl.jpeg"
+    },
+    {
+        "name":  "Baked White Fish with Vegetables",
+        "category":  "Dinner",
+        "image":  "baked-white-fish-vegetables.webp"
+    },
+    {
+        "name":  "Quick Chicken Vegetable Noodles",
+        "category":  "Dinner",
+        "image":  "https://images.unsplash.com/photo-1788601299617-3052a7c8fa70?q=80\u0026w=435\u0026auto=format\u0026fit=crop\u0026ixlib=rb-4.1.0\u0026ixid=NHwxMjA3fDA%3D"
+    },
+    {
+        "name":  "Classic Chocolate Cake",
+        "category":  "Desserts",
+        "image":  "https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+    },
+    {
+        "name":  "Strawberry Cheesecake",
+        "category":  "Desserts",
+        "image":  "https://images.unsplash.com/photo-1533134242443-d4fd215305ad"
+    },
+    {
+        "name":  "Moroccan Orange Cinnamon Cake",
+        "category":  "Desserts",
+        "image":  "moroccan-orange-cinnamon-cake.jpg"
+    },
+    {
+        "name":  "Classic Tiramisu",
+        "category":  "Desserts",
+        "image":  "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9"
+    },
+    {
+        "name":  "Apple Cinnamon Crumble",
+        "category":  "Desserts",
+        "image":  "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2"
+    },
+    {
+        "name":  "Chocolate Brownies",
+        "category":  "Desserts",
+        "image":  "https://images.unsplash.com/photo-1606313564200-e75d5e30476c"
+    },
+    {
+        "name":  "Vanilla Panna Cotta",
+        "category":  "Desserts",
+        "image":  "vanilla-panna-cotta.jpg"
+    },
+    {
+        "name":  "Lemon Drizzle Cake",
+        "category":  "Desserts",
+        "image":  "lemon-drizzle-cake.jpg"
+    },
+    {
+        "name":  "Banana Bread",
+        "category":  "Desserts",
+        "image":  "banana-bread.jpg"
+    },
+    {
+        "name":  "Coconut Rice Pudding",
+        "category":  "Desserts",
+        "image":  "coconut-rice-pudding.jpg"
+    },
+    {
+        "name":  "French Chocolate Mousse",
+        "category":  "Desserts",
+        "image":  "french-chocolate-mousse.jpg"
+    },
+    {
+        "name":  "Carrot Cake with Cream Cheese",
+        "category":  "Desserts",
+        "image":  "carrot-cake-cream-cheese.jpg"
+    },
+    {
+        "name":  "Moroccan Almond Briouats",
+        "category":  "Desserts",
+        "image":  "moroccan-almond-briouats.jpg"
+    },
+    {
+        "name":  "Blueberry Muffins",
+        "category":  "Desserts",
+        "image":  "https://images.unsplash.com/photo-1607958996333-41aef7caefaa"
+    },
+    {
+        "name":  "Strawberry Yogurt Parfait",
+        "category":  "Desserts",
+        "image":  "strawberry-yogurt-parfait.jpg"
+    },
+    {
+        "name":  "Classic CrÃ¨me BrÃ»lÃ©e",
+        "category":  "Desserts",
+        "image":  "classic-creme-brulee.jpg"
+    },
+    {
+        "name":  "Chocolate Chip Cookies",
+        "category":  "Desserts",
+        "image":  "https://images.unsplash.com/photo-1499636136210-6f4ee915583e"
+    },
+    {
+        "name":  "Mango Coconut Pudding",
+        "category":  "Desserts",
+        "image":  "mango-coconut-pudding.jpg"
+    },
+    {
+        "name":  "Cinnamon Sugar Donuts",
+        "category":  "Desserts",
+        "image":  "cinnamon-sugar-donuts.jpg"
+    },
+    {
+        "name":  "Lemon Cheesecake Cups",
+        "category":  "Desserts",
+        "image":  "lemon-cheesecake-cups-new.webp"
+    },
+    {
+        "name":  "Grilled Chicken Quinoa Bowl",
+        "category":  "Healthy",
+        "image":  "grilled-chicken-quinoa-bowl.png"
+    },
+    {
+        "name":  "Healthy Avocado Egg Toast",
+        "category":  "Healthy",
+        "image":  "healthy-avocado-egg-toast.webp"
+    },
+    {
+        "name":  "Baked Salmon with Broccoli",
+        "category":  "Healthy",
+        "image":  "baked-salmon-broccoli.jpg"
+    },
+    {
+        "name":  "Green Spinach Smoothie",
+        "category":  "Healthy",
+        "image":  "green-spinach-smoothie.jpg"
+    },
+    {
+        "name":  "Lentil and Carrot Soup",
+        "category":  "Healthy",
+        "image":  "lentil-carrot-soup.png"
+    },
+    {
+        "name":  "Grilled Chicken Caesar Salad",
+        "category":  "Healthy",
+        "image":  "grilled-chicken-caesar-salad.jpg"
+    },
+    {
+        "name":  "Quinoa Stuffed Bell Peppers",
+        "category":  "Healthy",
+        "image":  "quinoa-stuffed-bell-peppers.webp"
+    },
+    {
+        "name":  "Greek Yogurt Berry Bowl",
+        "category":  "Healthy",
+        "image":  "greek-yogurt-berry-bowl.png"
+    },
+    {
+        "name":  "Baked Sweet Potato with Chickpeas",
+        "category":  "Healthy",
+        "image":  "baked-sweet-potato-chickpeas.jpg"
+    },
+    {
+        "name":  "Tuna and White Bean Salad",
+        "category":  "Healthy",
+        "image":  "tuna-white-bean-salad.jpg"
+    },
+    {
+        "name":  "Oven Roasted Vegetable Bowl",
+        "category":  "Healthy",
+        "image":  "oven-roasted-vegetable-bowl.jpg"
+    },
+    {
+        "name":  "Healthy Chicken Lettuce Wraps",
+        "category":  "Healthy",
+        "image":  "https://plus.unsplash.com/premium_photo-1702660144707-c78d94e09c55?w=500\u0026auto=format\u0026fit=crop\u0026q=60\u0026ixlib=rb-4.1.0\u0026ixid=NHwxMjA3fDA%3D"
+    },
+    {
+        "name":  "Oatmeal Banana Pancakes",
+        "category":  "Healthy",
+        "image":  "https://images.unsplash.com/photo-1528207776546-365bb710ee93"
+    },
+    {
+        "name":  "Mediterranean Baked Cod",
+        "category":  "Healthy",
+        "image":  "mediterranean-baked-cod.webp"
+    },
+    {
+        "name":  "Avocado Chickpea Toast",
+        "category":  "Healthy",
+        "image":  "avocado-chickpea-toast.jpg"
+    },
+    {
+        "name":  "Broccoli and Quinoa Salad",
+        "category":  "Healthy",
+        "image":  "broccoli-quinoa-salad.jpg"
+    },
+    {
+        "name":  "Turkey and Avocado Salad",
+        "category":  "Healthy",
+        "image":  "turkey-avocado-salad.jpg"
+    },
+    {
+        "name":  "Red Lentil Sweet Potato Curry",
+        "category":  "Healthy",
+        "image":  "red-lentil-sweet-potato-curry.webp"
+    },
+    {
+        "name":  "Fresh Mediterranean Tomato Salad",
+        "category":  "Healthy",
+        "image":  "fresh-mediterranean-tomato-salad.webp"
+    },
+    {
+        "name":  "Creamy Vegan Coconut Chickpea Curry",
+        "category":  "Vegan",
+        "image":  "creamy-vegan-coconut-chickpea-curry.png"
+    },
+    {
+        "name":  "Vegan Lentil Bolognese",
+        "category":  "Vegan",
+        "image":  "vegan-lentil-bolognese.png"
+    },
+    {
+        "name":  "Roasted Sweet Potato and Black Bean Tacos",
+        "category":  "Vegan",
+        "image":  "roasted-sweet-potato-black-bean-tacos.jpg"
+    },
+    {
+        "name":  "Fresh Vegan Mediterranean Couscous",
+        "category":  "Vegan",
+        "image":  "fresh-vegan-mediterranean-couscous.jpg"
+    },
+    {
+        "name":  "Vegan Mushroom and Spinach Risotto",
+        "category":  "Vegan",
+        "image":  "vegan-mushroom-spinach-risotto.jpg"
+    },
+    {
+        "name":  "Vegan Chickpea and Avocado Sandwich",
+        "category":  "Vegan",
+        "image":  "https://images.unsplash.com/photo-1528735602780-2552fd46c7af"
+    },
+    {
+        "name":  "Vegan Thai Peanut Noodles",
+        "category":  "Vegan",
+        "image":  "https://images.unsplash.com/photo-1569718212165-3a8278d5f624"
+    },
+    {
+        "name":  "Vegan Moroccan Vegetable Tagine",
+        "category":  "Vegan",
+        "image":  "vegan-moroccan-vegetable-tagine.webp"
+    },
+    {
+        "name":  "Vegan Banana Oat Cookies",
+        "category":  "Vegan",
+        "image":  "vegan-banana-oat-cookies.jpg"
+    },
+    {
+        "name":  "Vegan Quinoa Stuffed Zucchini",
+        "category":  "Vegan",
+        "image":  "vegan-quinoa-stuffed-zucchini.jpg"
+    },
+    {
+        "name":  "Vegan Creamy Pumpkin Soup",
+        "category":  "Vegan",
+        "image":  "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a"
+    },
+    {
+        "name":  "Vegan Falafel Bowl",
+        "category":  "Vegan",
+        "image":  "vegan-falafel-bowl.jpg"
+    },
+    {
+        "name":  "Vegan Stuffed Bell Peppers",
+        "category":  "Vegan",
+        "image":  "vegan-stuffed-bell-peppers.jpg"
+    },
+    {
+        "name":  "Vegan Apple Cinnamon Overnight Oats",
+        "category":  "Vegan",
+        "image":  "vegan-apple-cinnamon-overnight-oats.jpg"
+    },
+    {
+        "name":  "Vegan Grilled Vegetable Wrap",
+        "category":  "Vegan",
+        "image":  "vegan-grilled-vegetable-wrap.jpg"
+    },
+    {
+        "name":  "15-Minute Garlic Butter Pasta",
+        "category":  "Quick \u0026 Easy",
+        "image":  "garlic-butter-pasta.webp"
+    },
+    {
+        "name":  "Quick Chicken Quesadillas",
+        "category":  "Quick \u0026 Easy",
+        "image":  "quick-chicken-quesadillas.webp"
+    },
+    {
+        "name":  "Easy Tomato and Mozzarella Toast",
+        "category":  "Quick \u0026 Easy",
+        "image":  "tomato-mozzarella-toast.jpg"
+    },
+    {
+        "name":  "10-Minute Egg Fried Rice",
+        "category":  "Quick \u0026 Easy",
+        "image":  "egg-fried-rice.jpg"
+    },
+    {
+        "name":  "Quick Tuna Avocado Wrap",
+        "category":  "Quick \u0026 Easy",
+        "image":  "tuna-avocado-wrap.webp"
+    },
+    {
+        "name":  "Easy Creamy Mushroom Toast",
+        "category":  "Quick \u0026 Easy",
+        "image":  "creamy-mushroom-toast.jpg"
+    },
+    {
+        "name":  "Quick Greek Cucumber Salad",
+        "category":  "Quick \u0026 Easy",
+        "image":  "quick-greek-cucumber-salad.webp"
+    },
+    {
+        "name":  "15-Minute Chicken Stir Fry",
+        "category":  "Quick \u0026 Easy",
+        "image":  "https://www.oliveandmango.com/images/uploads/2024_05_28_chicken_stir_fry_1.jpg"
+    },
+    {
+        "name":  "Easy Banana Peanut Butter Smoothie",
+        "category":  "Quick \u0026 Easy",
+        "image":  "banana-peanut-butter-smoothie.jpg"
+    },
+    {
+        "name":  "Quick Pesto Chicken Sandwich",
+        "category":  "Quick \u0026 Easy",
+        "image":  "quick-pesto-chicken-sandwich.jpg"
+    },
+    {
+        "name":  "Easy Cheesy Baked Potatoes",
+        "category":  "Quick \u0026 Easy",
+        "image":  "cheesy-baked-potatoes.jpg"
+    },
+    {
+        "name":  "Quick Lemon Garlic Shrimp",
+        "category":  "Quick \u0026 Easy",
+        "image":  "lemon-garlic-shrimp.png"
+    },
+    {
+        "name":  "Easy Caprese Pasta Salad",
+        "category":  "Quick \u0026 Easy",
+        "image":  "caprese-pasta-salad.webp"
+    },
+    {
+        "name":  "15-Minute Vegetable Omelette",
+        "category":  "Quick \u0026 Easy",
+        "image":  "vegetable-omelette.jpg"
+    },
+    {
+        "name":  "Quick Honey Garlic Chicken",
+        "category":  "Quick \u0026 Easy",
+        "image":  "quick-honey-garlic-chicken.webp"
+    },
+    {
+        "name":  "Easy Strawberry Yogurt Bowl",
+        "category":  "Quick \u0026 Easy",
+        "image":  "easy-strawberry-yogurt-bowl.jpg"
+    },
+    {
+        "name":  "Fast Chickpea Spinach Wrap",
+        "category":  "Quick \u0026 Easy",
+        "image":  "fast-chickpea-spinach-wrap.webp"
+    },
+    {
+        "name":  "Quick Tomato Basil Gnocchi",
+        "category":  "Quick \u0026 Easy",
+        "image":  "quick-tomato-basil-gnocchi.jpg"
+    },
+    {
+        "name":  "Easy Tuna and Corn Salad",
+        "category":  "Quick \u0026 Easy",
+        "image":  "easy-tuna-corn-salad.jpg"
+    },
+    {
+        "name":  "15-Minute Chocolate Banana Mug Cake",
+        "category":  "Quick \u0026 Easy",
+        "image":  "chocolate-banana-mug-cake.jpg"
+    }
+]
