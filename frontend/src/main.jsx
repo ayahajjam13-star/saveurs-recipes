@@ -53,7 +53,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
                   error: {
                     iconTheme: {
-                      primary: '#D77F96',
+                      primary: '#CAB18C',
                       secondary: '#FFFFFF',
                     },
                   },

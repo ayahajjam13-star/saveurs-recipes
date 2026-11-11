@@ -9,11 +9,11 @@
   width: 100%;
   padding: 30px;
   overflow: hidden;
-  border: 1px solid #DCEFF1;
+  border: 1px solid #F0E2DD;
   border-radius: 25px;
   background: #FFFFFF;
-  color: #24515B;
-  box-shadow: 0 10px 35px rgba(36, 81, 91, 0.055);
+  color: #5A3325;
+  box-shadow: 0 10px 35px rgba(90,51,37,0.055);
 }
 
 /* Top Decoration */
@@ -27,10 +27,10 @@
   height: 4px;
   background: linear-gradient(
     90deg,
-    #7ADDF2,
-    #B8E8EE,
-    #CBB7F5,
-    #F2C7DB
+    #EB9D81,
+    #EDC7B9,
+    #E6D6C6,
+    #ECE0CD
   );
 }
 
@@ -52,8 +52,8 @@
   height: 53px;
   flex-shrink: 0;
   border-radius: 17px;
-  background: linear-gradient(135deg, #DDF5F8, #B8E8EE);
-  color: #24515B;
+  background: linear-gradient(135deg, #F7E5DE, #EDC7B9);
+  color: #5A3325;
 }
 
 .rating-heading-text {
@@ -63,7 +63,7 @@
 .rating-form-eyebrow {
   display: block;
   margin-bottom: 5px;
-  color: #69AEB9;
+  color: #B77F6B;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 1.7px;
@@ -71,14 +71,14 @@
 
 .rating-form-heading h3 {
   margin: 0;
-  color: #24515B;
+  color: #5A3325;
   font-size: 21px;
   font-weight: 800;
 }
 
 .rating-form-heading p {
   margin: 5px 0 0;
-  color: #829DA3;
+  color: #A28B83;
   font-size: 12px;
   line-height: 1.6;
 }
@@ -92,8 +92,8 @@
   margin-left: auto;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #FCEEF4;
-  color: #D58DAA;
+  background: #FAF6F0;
+  color: #CAB698;
 }
 
 /* Stars Section */
@@ -103,18 +103,18 @@
   flex-direction: column;
   align-items: center;
   padding: 25px 15px 22px;
-  border: 1px solid #E3F1F3;
+  border: 1px solid #F3E7E3;
   border-radius: 19px;
   background: linear-gradient(
     135deg,
-    #F5FBFC,
-    #EFFAFC
+    #FCF7F5,
+    #FCF3EF
   );
 }
 
 .rating-stars-section h4 {
   margin: 0 0 17px;
-  color: #426B74;
+  color: #735043;
   font-size: 13px;
   font-weight: 700;
   text-align: center;
@@ -134,10 +134,10 @@
   width: 45px;
   height: 45px;
   padding: 0;
-  border: 1px solid #DCEBED;
+  border: 1px solid #EDE1DC;
   border-radius: 13px;
   background: #FFFFFF;
-  color: #B9C9CC;
+  color: #CCBEB9;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -161,13 +161,13 @@
   gap: 7px;
   min-height: 25px;
   margin-top: 15px;
-  color: #91A9AE;
+  color: #AD9992;
   font-size: 11px;
   font-weight: 600;
 }
 
 .rating-selected-label.selected {
-  color: #24515B;
+  color: #5A3325;
 }
 
 .rating-score-number {
@@ -176,15 +176,15 @@
 }
 
 .rating-score-divider {
-  color: #9BB3B8;
+  color: #B7A39C;
 }
 
 .rating-score-description {
   margin-left: 4px;
   padding: 5px 10px;
   border-radius: 20px;
-  background: #E0F4F6;
-  color: #367D89;
+  background: #F5E6E1;
+  color: #874D38;
   font-size: 10px;
   font-weight: 800;
 }
@@ -200,22 +200,22 @@
   align-items: center;
   gap: 9px;
   margin-bottom: 11px;
-  color: #24515B;
+  color: #5A3325;
   font-size: 12px;
   font-weight: 800;
 }
 
 .rating-label-icon {
   display: flex;
-  color: #63AEBB;
+  color: #B97B65;
 }
 
 .rating-optional {
   margin-left: auto;
   padding: 5px 9px;
   border-radius: 20px;
-  background: #F1EAFB;
-  color: #9275BB;
+  background: #F7F2EE;
+  color: #AA9886;
   font-size: 8px;
   font-weight: 800;
   letter-spacing: 0.7px;
@@ -231,12 +231,12 @@
   min-height: 125px;
   padding: 16px;
   padding-bottom: 35px;
-  border: 1px solid #DCEBED;
+  border: 1px solid #EDE1DC;
   border-radius: 15px;
   outline: none;
   resize: vertical;
-  background: #F8FCFD;
-  color: #24515B;
+  background: #FDF9F8;
+  color: #5A3325;
   font: inherit;
   font-size: 12px;
   line-height: 1.7;
@@ -244,20 +244,20 @@
 }
 
 .rating-form textarea::placeholder {
-  color: #9BB5BA;
+  color: #B9A49C;
 }
 
 .rating-form textarea:focus {
-  border-color: #7ADDF2;
+  border-color: #EB9D81;
   background: #FFFFFF;
-  box-shadow: 0 0 0 4px rgba(122, 221, 242, 0.13);
+  box-shadow: 0 0 0 4px rgba(235,157,129,0.13);
 }
 
 .rating-character-count {
   position: absolute;
   right: 13px;
   bottom: 11px;
-  color: #9AB3B8;
+  color: #B7A29B;
   font-size: 10px;
   pointer-events: none;
 }
@@ -275,19 +275,19 @@
   padding: 13px 22px;
   border: none;
   border-radius: 14px;
-  background: #24515B;
+  background: #5A3325;
   color: #FFFFFF;
   font-size: 13px;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 7px 18px rgba(36, 81, 91, 0.15);
+  box-shadow: 0 7px 18px rgba(90,51,37,0.15);
   transition: all 0.25s ease;
 }
 
 .rating-submit-button:hover:not(:disabled) {
-  background: #367987;
+  background: #854D38;
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(36, 81, 91, 0.2);
+  box-shadow: 0 10px 22px rgba(90,51,37,0.2);
 }
 
 .rating-submit-button:disabled {
@@ -329,13 +329,13 @@
   justify-content: center;
   gap: 7px;
   margin: 16px 0 0;
-  color: #8AA5AA;
+  color: #A9938B;
   font-size: 10px;
   text-align: center;
 }
 
 .rating-form-note svg {
-  color: #70B7C2;
+  color: #C08772;
   flex-shrink: 0;
 }
 
@@ -348,16 +348,16 @@
   width: 100%;
   padding: 38px 28px;
   overflow: hidden;
-  border: 1px solid #DCEFF1;
+  border: 1px solid #F0E2DD;
   border-radius: 25px;
   background: linear-gradient(
     145deg,
     #FFFFFF 0%,
-    #F1FAFB 100%
+    #FBF4F1 100%
   );
-  color: #24515B;
+  color: #5A3325;
   text-align: center;
-  box-shadow: 0 10px 35px rgba(36, 81, 91, 0.055);
+  box-shadow: 0 10px 35px rgba(90,51,37,0.055);
 }
 
 .rating-login-decoration {
@@ -370,8 +370,8 @@
   width: 37px;
   height: 37px;
   border-radius: 50%;
-  background: #FCEEF4;
-  color: #D58DAA;
+  background: #FAF6F0;
+  color: #CAB698;
 }
 
 .rating-login-icon {
@@ -382,14 +382,14 @@
   height: 67px;
   margin: 0 auto 18px;
   border-radius: 21px;
-  background: linear-gradient(135deg, #DDF5F8, #B8E8EE);
-  color: #24515B;
+  background: linear-gradient(135deg, #F7E5DE, #EDC7B9);
+  color: #5A3325;
 }
 
 .rating-login-eyebrow {
   display: block;
   margin-bottom: 9px;
-  color: #69AEB9;
+  color: #B77F6B;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -397,7 +397,7 @@
 
 .rating-login-card h3 {
   margin: 0;
-  color: #24515B;
+  color: #5A3325;
   font-family: Georgia, serif;
   font-size: 24px;
   font-weight: 700;
@@ -406,7 +406,7 @@
 .rating-login-card p {
   max-width: 390px;
   margin: 13px auto 22px;
-  color: #78969D;
+  color: #9C8279;
   font-size: 13px;
   line-height: 1.8;
 }
@@ -418,17 +418,17 @@
   gap: 10px;
   padding: 13px 24px;
   border-radius: 30px;
-  background: #24515B;
+  background: #5A3325;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 800;
   text-decoration: none;
-  box-shadow: 0 6px 16px rgba(36, 81, 91, 0.15);
+  box-shadow: 0 6px 16px rgba(90,51,37,0.15);
   transition: all 0.25s ease;
 }
 
 .rating-login-link:hover {
-  background: #367987;
+  background: #854D38;
   transform: translateY(-3px);
 }
 
@@ -439,8 +439,8 @@
   gap: 8px;
   margin-top: 25px;
   padding-top: 17px;
-  border-top: 1px solid #E3F0F2;
-  color: #8BA6AC;
+  border-top: 1px solid #F2E7E3;
+  color: #AB948C;
   font-size: 10px;
   letter-spacing: 1px;
 }
@@ -450,44 +450,44 @@
 ========================================= */
 
 .dark .rating-form {
-  background: #193B43;
-  border-color: rgba(184, 232, 238, 0.15);
-  color: #EAF8FA;
+  background: #42251A;
+  border-color: rgba(237,199,185,0.15);
+  color: #FAEEEA;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
 }
 
 .dark .rating-form-heading h3,
 .dark .rating-comment-section label {
-  color: #EAF8FA;
+  color: #FAEEEA;
 }
 
 .dark .rating-form-heading p {
-  color: #A5C3C9;
+  color: #C8AFA6;
 }
 
 .dark .rating-heading-icon {
-  background: rgba(122, 221, 242, 0.16);
-  color: #7ADDF2;
+  background: rgba(235,157,129,0.16);
+  color: #EB9D81;
 }
 
 .dark .rating-heading-decoration {
-  background: rgba(242, 199, 219, 0.13);
-  color: #F2C7DB;
+  background: rgba(236,224,205,0.13);
+  color: #ECE0CD;
 }
 
 .dark .rating-stars-section {
-  background: #214A53;
-  border-color: rgba(184, 232, 238, 0.13);
+  background: #522F22;
+  border-color: rgba(237,199,185,0.13);
 }
 
 .dark .rating-stars-section h4 {
-  color: #D5EDF0;
+  color: #EFDDD6;
 }
 
 .dark .rating-star-button {
-  background: #193B43;
-  border-color: rgba(184, 232, 238, 0.2);
-  color: #75969D;
+  background: #42251A;
+  border-color: rgba(237,199,185,0.2);
+  color: #9C8076;
 }
 
 .dark .rating-star-button.active {
@@ -497,73 +497,73 @@
 }
 
 .dark .rating-selected-label.selected {
-  color: #EAF8FA;
+  color: #FAEEEA;
 }
 
 .dark .rating-score-description {
-  background: rgba(122, 221, 242, 0.14);
-  color: #7ADDF2;
+  background: rgba(235,157,129,0.14);
+  color: #EB9D81;
 }
 
 .dark .rating-optional {
-  background: rgba(203, 183, 245, 0.15);
-  color: #CBB7F5;
+  background: rgba(230,214,198,0.15);
+  color: #E6D6C6;
 }
 
 .dark .rating-form textarea {
-  background: #214A53;
-  border-color: rgba(184, 232, 238, 0.18);
-  color: #F4FBFC;
+  background: #522F22;
+  border-color: rgba(237,199,185,0.18);
+  color: #FCF6F4;
 }
 
 .dark .rating-form textarea:focus {
-  background: #24515B;
-  border-color: #7ADDF2;
+  background: #5A3325;
+  border-color: #EB9D81;
 }
 
 .dark .rating-form textarea::placeholder {
-  color: #91B5BC;
+  color: #BB9D92;
 }
 
 .dark .rating-submit-button {
-  background: #7ADDF2;
-  color: #173B43;
+  background: #EB9D81;
+  color: #422318;
 }
 
 .dark .rating-submit-button:hover:not(:disabled) {
-  background: #B8E8EE;
+  background: #EDC7B9;
 }
 
 .dark .rating-spinner {
-  border-color: rgba(23, 59, 67, 0.25);
-  border-top-color: #173B43;
+  border-color: rgba(66,35,24,0.25);
+  border-top-color: #422318;
 }
 
 .dark .rating-form-note {
-  color: #A5C3C9;
+  color: #C8AFA6;
 }
 
 .dark .rating-login-card {
-  background: linear-gradient(145deg, #193B43, #214A53);
-  border-color: rgba(184, 232, 238, 0.15);
+  background: linear-gradient(145deg, #42251A, #522F22);
+  border-color: rgba(237,199,185,0.15);
 }
 
 .dark .rating-login-card h3 {
-  color: #EAF8FA;
+  color: #FAEEEA;
 }
 
 .dark .rating-login-card p {
-  color: #A5C3C9;
+  color: #C8AFA6;
 }
 
 .dark .rating-login-icon {
-  background: rgba(122, 221, 242, 0.16);
-  color: #7ADDF2;
+  background: rgba(235,157,129,0.16);
+  color: #EB9D81;
 }
 
 .dark .rating-login-footer {
-  border-color: rgba(184, 232, 238, 0.13);
-  color: #A5C3C9;
+  border-color: rgba(237,199,185,0.13);
+  color: #C8AFA6;
 }
 
 /* =========================================

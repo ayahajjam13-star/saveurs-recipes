@@ -105,28 +105,28 @@ export default function CommentsSection({ recipeId }) {
       className="mt-14 sm:mt-16"
     >
       {/* Section Header */}
-      <div className="relative mb-8 overflow-hidden rounded-[28px] border border-[#B8E8EE]/70 dark:border-[#24515B] bg-gradient-to-r from-[#B8E8EE]/45 via-white to-[#F2C7DB]/30 dark:from-[#173B43] dark:via-[#173B43] dark:to-[#3B2C45] p-5 sm:p-7">
+      <div className="relative mb-8 overflow-hidden rounded-[18px] border border-[#EDC7B9]/70 dark:border-[#5A3325] bg-gradient-to-r from-[#EDC7B9]/45 via-white to-[#ECE0CD]/30 dark:from-[#422318] dark:via-[#422318] dark:to-[#3F3832] p-5 sm:p-7">
 
-        <div className="absolute -top-12 -right-10 w-36 h-36 rounded-full bg-[#7ADDF2]/20 blur-2xl pointer-events-none" />
+        <div className="absolute -top-12 -right-10 w-36 h-36 rounded-full bg-[#EB9D81]/20 blur-2xl pointer-events-none" />
 
-        <div className="absolute -bottom-12 -left-10 w-36 h-36 rounded-full bg-[#CBB7F5]/20 blur-2xl pointer-events-none" />
+        <div className="absolute -bottom-12 -left-10 w-36 h-36 rounded-full bg-[#E6D6C6]/20 blur-2xl pointer-events-none" />
 
         <div className="relative flex flex-wrap items-center justify-between gap-5">
 
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-2xl bg-[#7ADDF2]/30 border border-[#7ADDF2]/40 flex items-center justify-center shadow-sm">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-2xl bg-[#EB9D81]/30 border border-[#EB9D81]/40 flex items-center justify-center shadow-sm">
               <MessageSquare
                 size={24}
-                className="text-[#24515B] dark:text-[#B8E8EE]"
+                className="text-[#5A3325] dark:text-[#EDC7B9]"
               />
             </div>
 
             <div>
-              <span className="text-[10px] sm:text-xs font-bold tracking-[2px] uppercase text-[#438C9B] dark:text-[#B8E8EE]">
+              <span className="text-[10px] sm:text-xs font-bold tracking-[2px] uppercase text-[#995B45] dark:text-[#EDC7B9]">
                 {getText('SAVEURS COMMUNITY', 'COMMUNAUTÉ SAVEURS', 'مجتمع سافور')}
               </span>
 
-              <h3 className="text-xl sm:text-2xl font-bold text-[#24515B] dark:text-white mt-1">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#5A3325] dark:text-white mt-1">
                 {getText(
                   'Community Thoughts',
                   'Avis de la communauté',
@@ -134,7 +134,7 @@ export default function CommentsSection({ recipeId }) {
                 )}
               </h3>
 
-              <p className="text-xs sm:text-sm text-[#557780] dark:text-[#B8CDD1] mt-1">
+              <p className="text-xs sm:text-sm text-[#7F6156] dark:text-[#D0BFB9] mt-1">
                 {getText(
                   'Share your experience with this recipe',
                   'Partagez votre expérience avec cette recette',
@@ -144,17 +144,17 @@ export default function CommentsSection({ recipeId }) {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/80 dark:bg-[#24515B]/60 border border-[#B8E8EE] dark:border-[#416C75] shadow-sm">
+          <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/80 dark:bg-[#5A3325]/60 border border-[#EDC7B9] dark:border-[#744F42] shadow-sm">
             <MessageCircle
               size={16}
-              className="text-[#438C9B] dark:text-[#B8E8EE]"
+              className="text-[#995B45] dark:text-[#EDC7B9]"
             />
 
-            <span className="text-sm font-bold text-[#24515B] dark:text-white">
+            <span className="text-sm font-bold text-[#5A3325] dark:text-white">
               {comments.length}
             </span>
 
-            <span className="text-xs text-[#557780] dark:text-[#B8CDD1]">
+            <span className="text-xs text-[#7F6156] dark:text-[#D0BFB9]">
               {getText('Comments', 'Commentaires', 'تعليقات')}
             </span>
           </div>
@@ -166,17 +166,17 @@ export default function CommentsSection({ recipeId }) {
       {user ? (
         <form
           onSubmit={handleSubmit}
-          className="relative mb-9 overflow-hidden rounded-[28px] border border-[#B8E8EE]/70 dark:border-[#24515B] bg-white dark:bg-[#173B43] p-5 sm:p-7 shadow-sm"
+          className="relative mb-9 overflow-hidden rounded-[18px] border border-[#EDC7B9]/70 dark:border-[#5A3325] bg-white dark:bg-[#422318] p-5 sm:p-7 shadow-sm"
         >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#7ADDF2] via-[#CBB7F5] to-[#BFE8C8]" />
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#EB9D81] via-[#E6D6C6] to-[#EADFC8]" />
 
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 rounded-xl bg-[#F2C7DB]/35 flex items-center justify-center">
-              <Sparkles size={19} className="text-[#B8759A]" />
+            <div className="w-10 h-10 rounded-xl bg-[#ECE0CD]/35 flex items-center justify-center">
+              <Sparkles size={19} className="text-[#AE9B7F]" />
             </div>
 
             <div>
-              <h4 className="font-bold text-[#24515B] dark:text-white text-sm sm:text-base">
+              <h4 className="font-bold text-[#5A3325] dark:text-white text-sm sm:text-base">
                 {getText(
                   'Leave a comment',
                   'Laisser un commentaire',
@@ -184,7 +184,7 @@ export default function CommentsSection({ recipeId }) {
                 )}
               </h4>
 
-              <p className="text-[11px] text-[#71949B] dark:text-[#A9C6CC] mt-0.5">
+              <p className="text-[11px] text-[#9A7D72] dark:text-[#CBB3AA] mt-0.5">
                 {getText(
                   'Your opinion matters to our community',
                   'Votre avis compte pour notre communauté',
@@ -205,19 +205,19 @@ export default function CommentsSection({ recipeId }) {
               )}
               maxLength={1000}
               rows={4}
-              className="w-full p-4 rounded-2xl bg-[#F4FBFC] dark:bg-[#204951] border border-[#B8E8EE] dark:border-[#416C75] text-[#24515B] dark:text-white placeholder:text-[#8CAEB5] dark:placeholder:text-[#9AB8BE] focus:outline-none focus:border-[#7ADDF2] focus:ring-4 focus:ring-[#7ADDF2]/15 transition-all resize-none text-sm leading-7"
+              className="w-full p-4 rounded-2xl bg-[#FCF6F4] dark:bg-[#502E21] border border-[#EDC7B9] dark:border-[#744F42] text-[#5A3325] dark:text-white placeholder:text-[#B4978D] dark:placeholder:text-[#BDA49B] focus:outline-none focus:border-[#EB9D81] focus:ring-4 focus:ring-[#EB9D81]/15 transition-all resize-none text-sm leading-7"
             />
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-3 mt-4">
-            <span className="text-[11px] font-medium text-[#86AAB1] dark:text-[#A9C6CC]">
+            <span className="text-[11px] font-medium text-[#B09287] dark:text-[#CBB3AA]">
               {newComment.length}/1000
             </span>
 
             <button
               type="submit"
               disabled={loading || !newComment.trim()}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#24515B] text-white text-xs sm:text-sm font-bold hover:bg-[#347382] hover:shadow-lg hover:shadow-[#24515B]/15 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:shadow-none"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#5A3325] text-white text-xs sm:text-sm font-bold hover:bg-[#804A36] hover:shadow-lg hover:shadow-[#5A3325]/15 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:shadow-none"
             >
               {loading ? (
                 <>
@@ -249,20 +249,20 @@ export default function CommentsSection({ recipeId }) {
         </form>
       ) : (
         /* Login Prompt */
-        <div className="relative mb-9 overflow-hidden rounded-[28px] border border-[#B8E8EE] dark:border-[#24515B] bg-gradient-to-r from-[#B8E8EE]/35 to-[#CBB7F5]/20 dark:from-[#173B43] dark:to-[#302C47] p-5 sm:p-7">
+        <div className="relative mb-9 overflow-hidden rounded-[18px] border border-[#EDC7B9] dark:border-[#5A3325] bg-gradient-to-r from-[#EDC7B9]/35 to-[#E6D6C6]/20 dark:from-[#422318] dark:to-[#403A33] p-5 sm:p-7">
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
 
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 shrink-0 rounded-2xl bg-white/80 dark:bg-[#24515B] flex items-center justify-center">
+              <div className="w-12 h-12 shrink-0 rounded-2xl bg-white/80 dark:bg-[#5A3325] flex items-center justify-center">
                 <UserRound
                   size={22}
-                  className="text-[#438C9B] dark:text-[#B8E8EE]"
+                  className="text-[#995B45] dark:text-[#EDC7B9]"
                 />
               </div>
 
               <div className="text-center sm:text-start">
-                <h4 className="font-bold text-[#24515B] dark:text-white text-sm sm:text-base mb-1">
+                <h4 className="font-bold text-[#5A3325] dark:text-white text-sm sm:text-base mb-1">
                   {getText(
                     'Join the conversation!',
                     'Rejoignez la conversation !',
@@ -270,7 +270,7 @@ export default function CommentsSection({ recipeId }) {
                   )}
                 </h4>
 
-                <p className="text-xs text-[#668C94] dark:text-[#B8CDD1]">
+                <p className="text-xs text-[#937367] dark:text-[#D0BFB9]">
                   {getText(
                     'Log in to share your thoughts.',
                     'Connectez-vous pour partager votre avis.',
@@ -282,7 +282,7 @@ export default function CommentsSection({ recipeId }) {
 
             <Link
               to="/login"
-              className="inline-flex items-center gap-2 shrink-0 px-6 py-3 rounded-full bg-[#24515B] text-white text-xs font-bold hover:bg-[#347382] transition-all shadow-sm"
+              className="inline-flex items-center gap-2 shrink-0 px-6 py-3 rounded-full bg-[#5A3325] text-white text-xs font-bold hover:bg-[#804A36] transition-all shadow-sm"
             >
               {getText(
                 'Log In',
@@ -302,14 +302,14 @@ export default function CommentsSection({ recipeId }) {
 
         {fetching ? (
           <div className="flex flex-col items-center justify-center py-12 gap-3">
-            <div className="w-12 h-12 rounded-full bg-[#B8E8EE]/40 dark:bg-[#24515B] flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full bg-[#EDC7B9]/40 dark:bg-[#5A3325] flex items-center justify-center">
               <LoaderCircle
                 size={25}
-                className="animate-spin text-[#438C9B] dark:text-[#B8E8EE]"
+                className="animate-spin text-[#995B45] dark:text-[#EDC7B9]"
               />
             </div>
 
-            <p className="text-xs text-[#71949B] dark:text-[#A9C6CC]">
+            <p className="text-xs text-[#9A7D72] dark:text-[#CBB3AA]">
               {getText('Loading comments...', 'Chargement...', 'جاري تحميل التعليقات...')}
             </p>
           </div>
@@ -317,13 +317,13 @@ export default function CommentsSection({ recipeId }) {
           comments.map((comment, index) => (
             <article
               key={comment.id}
-              className="group relative overflow-hidden rounded-[24px] border border-[#B8E8EE]/60 dark:border-[#24515B] bg-white dark:bg-[#173B43] p-5 sm:p-6 hover:border-[#7ADDF2] dark:hover:border-[#438C9B] hover:shadow-lg hover:shadow-[#24515B]/5 transition-all duration-300"
+              className="group relative overflow-hidden rounded-[18px] border border-[#EDC7B9]/60 dark:border-[#5A3325] bg-white dark:bg-[#422318] p-5 sm:p-6 hover:border-[#EB9D81] dark:hover:border-[#995B45] hover:shadow-lg hover:shadow-[#5A3325]/5 transition-all duration-300"
             >
-              <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#7ADDF2] via-[#CBB7F5] to-[#BFE8C8] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#EB9D81] via-[#E6D6C6] to-[#EADFC8] opacity-0 group-hover:opacity-100 transition-opacity" />
 
               <div className="flex items-start gap-3 sm:gap-4">
 
-                <div className="w-11 h-11 shrink-0 rounded-2xl bg-gradient-to-br from-[#B8E8EE] to-[#7ADDF2] flex items-center justify-center text-[#24515B] font-bold text-base shadow-sm">
+                <div className="w-11 h-11 shrink-0 rounded-2xl bg-gradient-to-br from-[#EDC7B9] to-[#EB9D81] flex items-center justify-center text-[#5A3325] font-bold text-base shadow-sm">
                   {getInitial(comment.user?.name) || (
                     <UserRound size={19} />
                   )}
@@ -338,12 +338,12 @@ export default function CommentsSection({ recipeId }) {
                       onClick={(e) => {
                         if (!comment.user?.id) e.preventDefault();
                       }}
-                      className="font-bold text-sm text-[#24515B] dark:text-white hover:text-[#438C9B] dark:hover:text-[#7ADDF2] transition-colors"
+                      className="font-bold text-sm text-[#5A3325] dark:text-white hover:text-[#995B45] dark:hover:text-[#EB9D81] transition-colors"
                     >
                       {comment.user?.name || 'User'}
                     </Link>
 
-                    <span className="text-[10px] sm:text-[11px] px-3 py-1 rounded-full bg-[#B8E8EE]/30 dark:bg-[#24515B] text-[#668C94] dark:text-[#B8CDD1] font-medium">
+                    <span className="text-[10px] sm:text-[11px] px-3 py-1 rounded-full bg-[#EDC7B9]/30 dark:bg-[#5A3325] text-[#937367] dark:text-[#D0BFB9] font-medium">
                       {new Date(comment.created_at).toLocaleDateString(
                         i18n.language === 'ar' ? 'ar' :
                         i18n.language === 'fr' ? 'fr-FR' : 'en-US'
@@ -352,13 +352,13 @@ export default function CommentsSection({ recipeId }) {
 
                   </div>
 
-                  <p className="text-sm text-[#557780] dark:text-[#C1D7DB] leading-7 whitespace-pre-wrap break-words">
+                  <p className="text-sm text-[#7F6156] dark:text-[#DAC8C2] leading-7 whitespace-pre-wrap break-words">
                     {comment.content}
                   </p>
 
                   <div className="flex items-center gap-1.5 mt-4">
-                    <Heart size={12} className="text-[#D99BB9]" />
-                    <span className="text-[10px] text-[#91ADB3] dark:text-[#91B4BB]">
+                    <Heart size={12} className="text-[#D0BEA4]" />
+                    <span className="text-[10px] text-[#B29A92] dark:text-[#BA9D92]">
                       {getText('Community member', 'Membre de la communauté', 'عضو في المجتمع')}
                     </span>
                   </div>
@@ -369,16 +369,16 @@ export default function CommentsSection({ recipeId }) {
           ))
         ) : (
           /* Empty State */
-          <div className="relative overflow-hidden py-12 px-5 text-center rounded-[28px] bg-gradient-to-br from-[#B8E8EE]/25 via-white to-[#CBB7F5]/15 dark:from-[#173B43] dark:via-[#173B43] dark:to-[#302C47] border border-dashed border-[#7ADDF2]/70 dark:border-[#416C75]">
+          <div className="relative overflow-hidden py-12 px-5 text-center rounded-[18px] bg-gradient-to-br from-[#EDC7B9]/25 via-white to-[#E6D6C6]/15 dark:from-[#422318] dark:via-[#422318] dark:to-[#403A33] border border-dashed border-[#EB9D81]/70 dark:border-[#744F42]">
 
-            <div className="w-16 h-16 mx-auto mb-5 rounded-[22px] bg-[#B8E8EE]/50 dark:bg-[#24515B] flex items-center justify-center">
+            <div className="w-16 h-16 mx-auto mb-5 rounded-[18px] bg-[#EDC7B9]/50 dark:bg-[#5A3325] flex items-center justify-center">
               <MessageSquare
                 size={27}
-                className="text-[#438C9B] dark:text-[#B8E8EE]"
+                className="text-[#995B45] dark:text-[#EDC7B9]"
               />
             </div>
 
-            <h4 className="text-lg font-bold text-[#24515B] dark:text-white mb-2">
+            <h4 className="text-lg font-bold text-[#5A3325] dark:text-white mb-2">
               {getText(
                 'No comments yet',
                 'Aucun commentaire',
@@ -386,7 +386,7 @@ export default function CommentsSection({ recipeId }) {
               )}
             </h4>
 
-            <p className="text-xs text-[#71949B] dark:text-[#A9C6CC] max-w-xs mx-auto leading-6">
+            <p className="text-xs text-[#9A7D72] dark:text-[#CBB3AA] max-w-xs mx-auto leading-6">
               {getText(
                 'Be the first to share your thoughts!',
                 'Soyez le premier à partager votre avis !',
@@ -395,9 +395,9 @@ export default function CommentsSection({ recipeId }) {
             </p>
 
             <div className="flex justify-center gap-2 mt-5">
-              <span className="w-2 h-2 rounded-full bg-[#7ADDF2]" />
-              <span className="w-2 h-2 rounded-full bg-[#CBB7F5]" />
-              <span className="w-2 h-2 rounded-full bg-[#BFE8C8]" />
+              <span className="w-2 h-2 rounded-full bg-[#EB9D81]" />
+              <span className="w-2 h-2 rounded-full bg-[#E6D6C6]" />
+              <span className="w-2 h-2 rounded-full bg-[#EADFC8]" />
             </div>
 
           </div>

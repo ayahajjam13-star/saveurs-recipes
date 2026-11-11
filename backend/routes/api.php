@@ -11,7 +11,7 @@ use App\Http\Controllers\Api\MealPlanController;
 use App\Http\Controllers\Api\NewsletterController;
 use App\Http\Controllers\Api\GoogleAuthController;
 use App\Http\Controllers\Api\EmailVerificationController;
-use App\Http\Controllers\FridgeController;
+use App\Http\Controllers\Api\FridgeController;
 
 // Auth Routes
 Route::post('/register', [AuthController::class, 'register']);

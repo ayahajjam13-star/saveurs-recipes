@@ -19,8 +19,8 @@ export default {
         'guava-green': '#718B68',
         'guava-light': '#A8BA9B',
 
-        'guava-pink': '#E88FA5',
-        'guava-soft': '#F3B9C7',
+        'guava-pink': '#DBC29C',
+        'guava-soft': '#EADAC2',
 
         'guava-peach': '#F5D8C8',
 
@@ -55,7 +55,7 @@ export default {
         // Keep old classes working
         // =====================================
 
-        'orange-accent': '#E88FA5',
+        'orange-accent': '#DBC29C',
       },
 
       // =====================================
@@ -78,7 +78,7 @@ export default {
 
         'card-hover': '0 15px 35px rgba(40, 34, 30, 0.10)',
 
-        'pink': '0 8px 25px rgba(232, 143, 165, 0.20)',
+        'pink': '0 8px 25px rgba(219,194,156,0.20)',
       },
 
       // =====================================

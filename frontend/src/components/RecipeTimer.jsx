@@ -213,34 +213,34 @@ function RecipeTimer({ onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#163F48]/65 p-4 backdrop-blur-lg"
+      className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#472417]/65 p-4 backdrop-blur-lg"
       onClick={onClose}
     >
       <div
         role="dialog"
         aria-modal="true"
         aria-labelledby="timer-title"
-        className="relative my-auto w-full max-w-[470px] overflow-hidden rounded-[32px] border border-white/70 bg-[#F9FDFD] shadow-[0_30px_100px_rgba(18,60,70,0.28)] animate-fade-in"
+        className="relative my-auto w-full max-w-[470px] overflow-hidden rounded-[18px] border border-white/70 bg-[#FDFAF9] shadow-[0_30px_100px_rgba(69,32,19,0.28)] animate-fade-in"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Decorative background */}
-        <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[#B8E8EE]/40 blur-2xl" />
-        <div className="pointer-events-none absolute -bottom-20 -left-16 h-48 w-48 rounded-full bg-[#F2C7DB]/30 blur-2xl" />
+        <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[#EDC7B9]/40 blur-2xl" />
+        <div className="pointer-events-none absolute -bottom-20 -left-16 h-48 w-48 rounded-full bg-[#ECE0CD]/30 blur-2xl" />
 
         <div className="relative p-6 sm:p-8">
 
           {/* Top bar */}
           <div className="mb-7 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#B8E8EE]/50 text-[#24515B]">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#EDC7B9]/50 text-[#5A3325]">
                 <ChefHat size={23} />
               </div>
 
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-[2.5px] text-[#5C929B]">
+                <p className="text-[10px] font-bold uppercase tracking-[2.5px] text-[#996E5E]">
                   Saveurs Kitchen
                 </p>
-                <p className="text-sm font-bold text-[#24515B]">
+                <p className="text-sm font-bold text-[#5A3325]">
                   Cooking companion
                 </p>
               </div>
@@ -250,7 +250,7 @@ function RecipeTimer({ onClose }) {
               type="button"
               onClick={onClose}
               aria-label="Close timer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#66858A] shadow-sm transition-all hover:bg-[#F2C7DB] hover:text-[#24515B]"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#897067] shadow-sm transition-all hover:bg-[#ECE0CD] hover:text-[#5A3325]"
             >
               <X size={19} />
             </button>
@@ -258,21 +258,21 @@ function RecipeTimer({ onClose }) {
 
           {/* Title */}
           <div className="mb-7 text-center">
-            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#B8E8EE] bg-white/80 px-4 py-2">
-              <Sparkles size={13} className="text-[#5C929B]" />
-              <span className="text-[10px] font-bold uppercase tracking-[2px] text-[#5C929B]">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#EDC7B9] bg-white/80 px-4 py-2">
+              <Sparkles size={13} className="text-[#996E5E]" />
+              <span className="text-[10px] font-bold uppercase tracking-[2px] text-[#996E5E]">
                 A little time, a lot of flavor
               </span>
             </div>
 
             <h2
               id="timer-title"
-              className="font-serif text-3xl font-bold tracking-tight text-[#24515B] sm:text-4xl"
+              className="font-serif text-3xl font-bold tracking-tight text-[#5A3325] sm:text-4xl"
             >
               Cooking Timer
             </h2>
 
-            <p className="mt-2 text-sm text-[#78969B]">
+            <p className="mt-2 text-sm text-[#9A8279]">
               Make every minute count.
             </p>
           </div>
@@ -292,7 +292,7 @@ function RecipeTimer({ onClose }) {
                     cy="50"
                     r="44"
                     fill="none"
-                    stroke="#E4F1F2"
+                    stroke="#F2E8E4"
                     strokeWidth="5"
                   />
 
@@ -301,7 +301,7 @@ function RecipeTimer({ onClose }) {
                     cy="50"
                     r="44"
                     fill="none"
-                    stroke={isFinished ? '#BFE8C8' : '#7ADDF2'}
+                    stroke={isFinished ? '#EADFC8' : '#EB9D81'}
                     strokeWidth="5"
                     strokeLinecap="round"
                     strokeDasharray={circumference}
@@ -312,36 +312,36 @@ function RecipeTimer({ onClose }) {
                   />
                 </svg>
 
-                <div className="absolute inset-3 flex flex-col items-center justify-center rounded-full bg-white shadow-[inset_0_0_30px_rgba(184,232,238,0.25)]">
+                <div className="absolute inset-3 flex flex-col items-center justify-center rounded-full bg-white shadow-[inset_0_0_30px_rgba(237,199,185,0.25)]">
                   {isFinished ? (
                     <>
-                      <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-[#BFE8C8]/35 text-[#4E9A70]">
+                      <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-[#EADFC8]/35 text-[#4E9A70]">
                         <CheckCircle2 size={36} />
                       </div>
 
-                      <p className="font-serif text-2xl font-bold text-[#24515B]">
+                      <p className="font-serif text-2xl font-bold text-[#5A3325]">
                         Time's Up!
                       </p>
 
-                      <p className="mt-2 text-xs text-[#78969B]">
+                      <p className="mt-2 text-xs text-[#9A8279]">
                         Your recipe is ready
                       </p>
                     </>
                   ) : (
                     <>
-                      <div className="mb-2 flex items-center gap-2 text-[#6CAAB5]">
+                      <div className="mb-2 flex items-center gap-2 text-[#B3806E]">
                         <Timer size={17} />
                         <span className="text-[10px] font-bold uppercase tracking-[2px]">
                           {isPaused ? 'On pause' : 'Time remaining'}
                         </span>
                       </div>
 
-                      <p className="font-serif text-[58px] font-bold leading-none tracking-tight text-[#24515B] tabular-nums">
+                      <p className="font-serif text-[58px] font-bold leading-none tracking-tight text-[#5A3325] tabular-nums">
                         {formatTime(timeLeft)}
                       </p>
 
                       <p className={`mt-3 text-xs font-semibold ${
-                        isPaused ? 'text-[#C17D9D]' : 'text-[#5C929B]'
+                        isPaused ? 'text-[#B7A487]' : 'text-[#996E5E]'
                       }`}>
                         {isPaused ? 'Take your time' : 'Cooking in progress'}
                       </p>
@@ -353,17 +353,17 @@ function RecipeTimer({ onClose }) {
               {!isFinished && (
                 <div className="mx-auto mb-7 max-w-[260px]">
                   <div className="mb-2 flex items-center justify-between text-xs">
-                    <span className="font-medium text-[#78969B]">
+                    <span className="font-medium text-[#9A8279]">
                       Cooking progress
                     </span>
-                    <span className="font-bold text-[#24515B]">
+                    <span className="font-bold text-[#5A3325]">
                       {Math.round(progress)}%
                     </span>
                   </div>
 
-                  <div className="h-2 overflow-hidden rounded-full bg-[#E4F1F2]">
+                  <div className="h-2 overflow-hidden rounded-full bg-[#F2E8E4]">
                     <div
-                      className="h-full rounded-full bg-gradient-to-r from-[#B8E8EE] to-[#7ADDF2] transition-all duration-300"
+                      className="h-full rounded-full bg-gradient-to-r from-[#EDC7B9] to-[#EB9D81] transition-all duration-300"
                       style={{ width: `${progress}%` }}
                     />
                   </div>
@@ -376,7 +376,7 @@ function RecipeTimer({ onClose }) {
                     type="button"
                     onClick={handlePause}
                     aria-label={isPaused ? 'Resume timer' : 'Pause timer'}
-                    className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#24515B] text-white shadow-lg shadow-[#24515B]/15 transition-all hover:-translate-y-1 hover:bg-[#34717D]"
+                    className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#5A3325] text-white shadow-lg shadow-[#5A3325]/15 transition-all hover:-translate-y-1 hover:bg-[#7B4836]"
                   >
                     {isPaused ? (
                       <Play size={22} fill="currentColor" />
@@ -389,7 +389,7 @@ function RecipeTimer({ onClose }) {
                 <button
                   type="button"
                   onClick={handleReset}
-                  className="flex h-14 items-center justify-center gap-2 rounded-2xl border border-[#B8E8EE] bg-white px-7 text-sm font-bold text-[#24515B] transition-all hover:bg-[#EAF8F9]"
+                  className="flex h-14 items-center justify-center gap-2 rounded-2xl border border-[#EDC7B9] bg-white px-7 text-sm font-bold text-[#5A3325] transition-all hover:bg-[#F9EEEA]"
                 >
                   <RotateCcw size={17} />
                   {isFinished ? 'New timer' : 'Reset timer'}
@@ -401,8 +401,8 @@ function RecipeTimer({ onClose }) {
               {/* Quick presets */}
               <div className="mb-7">
                 <div className="mb-4 flex items-center justify-center gap-2">
-                  <Clock3 size={15} className="text-[#6CAAB5]" />
-                  <p className="text-[10px] font-bold uppercase tracking-[2px] text-[#78969B]">
+                  <Clock3 size={15} className="text-[#B3806E]" />
+                  <p className="text-[10px] font-bold uppercase tracking-[2px] text-[#9A8279]">
                     Choose a duration
                   </p>
                 </div>
@@ -418,17 +418,17 @@ function RecipeTimer({ onClose }) {
                         onClick={() => handlePreset(mins)}
                         className={`group rounded-2xl border px-2 py-4 transition-all duration-200 ${
                           selected
-                            ? 'border-[#7ADDF2] bg-[#DFF7FA] shadow-sm shadow-[#7ADDF2]/20'
-                            : 'border-[#E4F1F2] bg-white hover:-translate-y-0.5 hover:border-[#B8E8EE] hover:bg-[#F0FAFB]'
+                            ? 'border-[#EB9D81] bg-[#F9E7E0] shadow-sm shadow-[#EB9D81]/20'
+                            : 'border-[#F2E8E4] bg-white hover:-translate-y-0.5 hover:border-[#EDC7B9] hover:bg-[#FBF3F0]'
                         }`}
                       >
                         <span className={`block font-serif text-2xl font-bold ${
-                          selected ? 'text-[#24515B]' : 'text-[#52777E]'
+                          selected ? 'text-[#5A3325]' : 'text-[#7D5E53]'
                         }`}>
                           {mins}
                         </span>
 
-                        <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[1px] text-[#8AA6AA]">
+                        <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[1px] text-[#A9938B]">
                           minutes
                         </span>
                       </button>
@@ -438,20 +438,20 @@ function RecipeTimer({ onClose }) {
               </div>
 
               {/* Custom time */}
-              <div className="mb-6 rounded-[24px] border border-[#E4F1F2] bg-white/80 p-5">
+              <div className="mb-6 rounded-[18px] border border-[#F2E8E4] bg-white/80 p-5">
                 <div className="mb-5 text-center">
-                  <p className="text-sm font-bold text-[#24515B]">
+                  <p className="text-sm font-bold text-[#5A3325]">
                     Custom duration
                   </p>
-                  <p className="mt-1 text-xs text-[#91A9AC]">
+                  <p className="mt-1 text-xs text-[#AB9992]">
                     Set the perfect time for your recipe
                   </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   {/* Minutes */}
-                  <div className="rounded-2xl bg-[#EFF9FA] p-3">
-                    <p className="mb-3 text-center text-[10px] font-bold uppercase tracking-[1.5px] text-[#71949A]">
+                  <div className="rounded-2xl bg-[#FAF2EF] p-3">
+                    <p className="mb-3 text-center text-[10px] font-bold uppercase tracking-[1.5px] text-[#997C72]">
                       Minutes
                     </p>
 
@@ -460,7 +460,7 @@ function RecipeTimer({ onClose }) {
                         type="button"
                         onClick={() => changeMinutes(-1)}
                         aria-label="Decrease minutes"
-                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#52777E] transition hover:bg-[#B8E8EE]"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#7D5E53] transition hover:bg-[#EDC7B9]"
                       >
                         <Minus size={14} />
                       </button>
@@ -476,7 +476,7 @@ function RecipeTimer({ onClose }) {
                           );
                           setIsFinished(false);
                         }}
-                        className="w-full min-w-0 bg-transparent text-center font-serif text-3xl font-bold text-[#24515B] outline-none tabular-nums"
+                        className="w-full min-w-0 bg-transparent text-center font-serif text-3xl font-bold text-[#5A3325] outline-none tabular-nums"
                         aria-label="Minutes"
                       />
 
@@ -484,7 +484,7 @@ function RecipeTimer({ onClose }) {
                         type="button"
                         onClick={() => changeMinutes(1)}
                         aria-label="Increase minutes"
-                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#52777E] transition hover:bg-[#B8E8EE]"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#7D5E53] transition hover:bg-[#EDC7B9]"
                       >
                         <Plus size={14} />
                       </button>
@@ -492,8 +492,8 @@ function RecipeTimer({ onClose }) {
                   </div>
 
                   {/* Seconds */}
-                  <div className="rounded-2xl bg-[#FDF1F6] p-3">
-                    <p className="mb-3 text-center text-[10px] font-bold uppercase tracking-[1.5px] text-[#B17E98]">
+                  <div className="rounded-2xl bg-[#FBF8F3] p-3">
+                    <p className="mb-3 text-center text-[10px] font-bold uppercase tracking-[1.5px] text-[#A99B86]">
                       Seconds
                     </p>
 
@@ -502,7 +502,7 @@ function RecipeTimer({ onClose }) {
                         type="button"
                         onClick={() => changeSeconds(-1)}
                         aria-label="Decrease seconds"
-                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#A16D88] transition hover:bg-[#F2C7DB]"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#998B75] transition hover:bg-[#ECE0CD]"
                       >
                         <Minus size={14} />
                       </button>
@@ -518,7 +518,7 @@ function RecipeTimer({ onClose }) {
                           );
                           setIsFinished(false);
                         }}
-                        className="w-full min-w-0 bg-transparent text-center font-serif text-3xl font-bold text-[#24515B] outline-none tabular-nums"
+                        className="w-full min-w-0 bg-transparent text-center font-serif text-3xl font-bold text-[#5A3325] outline-none tabular-nums"
                         aria-label="Seconds"
                       />
 
@@ -526,7 +526,7 @@ function RecipeTimer({ onClose }) {
                         type="button"
                         onClick={() => changeSeconds(1)}
                         aria-label="Increase seconds"
-                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#A16D88] transition hover:bg-[#F2C7DB]"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#998B75] transition hover:bg-[#ECE0CD]"
                       >
                         <Plus size={14} />
                       </button>
@@ -534,8 +534,8 @@ function RecipeTimer({ onClose }) {
                   </div>
                 </div>
 
-                <p className="mt-4 text-center text-[11px] text-[#91A9AC]">
-                  Selected time: <span className="font-bold text-[#52777E]">{formatTime(totalTime)}</span>
+                <p className="mt-4 text-center text-[11px] text-[#AB9992]">
+                  Selected time: <span className="font-bold text-[#7D5E53]">{formatTime(totalTime)}</span>
                 </p>
               </div>
 
@@ -543,7 +543,7 @@ function RecipeTimer({ onClose }) {
               <button
                 type="button"
                 onClick={handleStart}
-                className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-[#24515B] py-4 text-sm font-bold text-white shadow-lg shadow-[#24515B]/15 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#34717D] hover:shadow-xl"
+                className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-[#5A3325] py-4 text-sm font-bold text-white shadow-lg shadow-[#5A3325]/15 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#7B4836] hover:shadow-xl"
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15">
                   <Play size={16} fill="currentColor" />
@@ -554,9 +554,9 @@ function RecipeTimer({ onClose }) {
           )}
 
           {/* Footer */}
-          <div className="mt-7 flex items-center justify-center gap-2 border-t border-[#E4F1F2] pt-5">
-            <Bell size={14} className="text-[#6CAAB5]" />
-            <p className="text-[10px] text-[#91A9AC]">
+          <div className="mt-7 flex items-center justify-center gap-2 border-t border-[#F2E8E4] pt-5">
+            <Bell size={14} className="text-[#B3806E]" />
+            <p className="text-[10px] text-[#AB9992]">
               We'll let you know when your timer is complete.
             </p>
           </div>
@@ -564,11 +564,11 @@ function RecipeTimer({ onClose }) {
 
         {/* Bottom decoration */}
         <div className="flex h-1.5">
-          <div className="flex-1 bg-[#B8E8EE]" />
-          <div className="flex-1 bg-[#7ADDF2]" />
-          <div className="flex-1 bg-[#F2C7DB]" />
-          <div className="flex-1 bg-[#CBB7F5]" />
-          <div className="flex-1 bg-[#BFE8C8]" />
+          <div className="flex-1 bg-[#EDC7B9]" />
+          <div className="flex-1 bg-[#EB9D81]" />
+          <div className="flex-1 bg-[#ECE0CD]" />
+          <div className="flex-1 bg-[#E6D6C6]" />
+          <div className="flex-1 bg-[#EADFC8]" />
         </div>
       </div>
     </div>

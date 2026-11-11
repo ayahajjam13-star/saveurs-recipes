@@ -109,7 +109,7 @@ function Fridge() {
     img?.startsWith('http') ? img : img ? `/images/${img}` : null;
 
   return (
-    <div className="min-h-screen bg-[#E0E4E7] dark:bg-[#18211F]" dir={i18n.dir()}>
+    <div className="min-h-screen bg-[#FAF6EF] dark:bg-[#1C1410]" dir={i18n.dir()}>
       <SEO
         title={t('fridge.title', "What's in your fridge?")}
         description={t('fridge.subtitle', 'Tell us what you have and discover what you can cook right now.')}
@@ -118,24 +118,24 @@ function Fridge() {
       <div className="max-w-6xl mx-auto px-5 py-12 md:py-16">
         {/* Header */}
         <header className="text-center max-w-2xl mx-auto">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#77A39A]/20 text-[#3F6B62] dark:text-[#9BBCAC] mb-5">
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#C8582A]/20 text-[#A8441F] dark:text-[#E08A5F] mb-5">
             <Refrigerator size={28} />
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#26322F] dark:text-white">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#2A1A12] dark:text-white">
             {t('fridge.title', "What's in your fridge?")}
           </h1>
-          <p className="mt-4 text-[#4A5855] dark:text-white/70">
+          <p className="mt-4 text-[#5A4538] dark:text-white/70">
             {t('fridge.subtitle', 'Tell us what you have and discover what you can cook right now.')}
           </p>
         </header>
 
         {/* Input card */}
-        <section className="mt-10 max-w-3xl mx-auto rounded-[28px] bg-white dark:bg-[#26322F] border border-[#D5DCDD] dark:border-white/10 p-5 md:p-7 shadow-[0_8px_28px_rgba(60,90,82,0.07)]">
-          <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-[#D5DCDD] dark:border-white/15 px-3 py-2 focus-within:border-[#77A39A] transition-colors">
+        <section className="mt-10 max-w-3xl mx-auto rounded-[18px] bg-white dark:bg-[#2A1A12] border border-[#E8DCCB] dark:border-white/10 p-5 md:p-7 shadow-[0_8px_28px_rgba(89,68,61,0.07)]">
+          <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-[#E8DCCB] dark:border-white/15 px-3 py-2 focus-within:border-[#C8582A] transition-colors">
             {tags.map((tag) => (
               <span
                 key={tag.value}
-                className="inline-flex items-center gap-1.5 rounded-full bg-[#D0DDC4] text-[#26322F] pl-3 pr-1.5 py-1 text-sm"
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#EADFC8] text-[#2A1A12] pl-3 pr-1.5 py-1 text-sm"
               >
                 {tag.label}
                 <button
@@ -158,7 +158,7 @@ function Fridge() {
                   ? t('fridge.addMore', 'Add another ingredient…')
                   : t('fridge.placeholder', 'Type an ingredient and press Enter (tomato, egg, طماطم…)')
               }
-              className="flex-1 min-w-[180px] bg-transparent outline-none py-2 text-[#26322F] dark:text-white placeholder:text-[#7C8A87]"
+              className="flex-1 min-w-[180px] bg-transparent outline-none py-2 text-[#2A1A12] dark:text-white placeholder:text-[#8A7565]"
             />
 
             <button
@@ -166,14 +166,14 @@ function Fridge() {
               onClick={() => addTag(input)}
               disabled={!input.trim()}
               aria-label={t('fridge.add', 'Add')}
-              className="w-9 h-9 rounded-full bg-[#3F6B62] text-white flex items-center justify-center disabled:opacity-40"
+              className="w-9 h-9 rounded-full bg-[#A8441F] text-white flex items-center justify-center disabled:opacity-40"
             >
               <Plus size={18} />
             </button>
           </div>
 
           {/* Quick picks */}
-          <p className="mt-5 mb-2 text-xs font-semibold uppercase tracking-wider text-[#7C8A87]">
+          <p className="mt-5 mb-2 text-xs font-semibold uppercase tracking-wider text-[#8A7565]">
             {t('fridge.quick', 'Quick add')}
           </p>
           <div className="flex flex-wrap gap-2">
@@ -184,27 +184,27 @@ function Fridge() {
                   key={item.key}
                   type="button"
                   onClick={() =>
-                    active ? removeTag(item.key) : addTag(item.key, `${item.emoji} ${labelOf(item)}`)
+                    active ? removeTag(item.key) : addTag(item.key, labelOf(item))
                   }
                   className={`rounded-full px-3 py-1.5 text-sm border transition-colors ${
                     active
-                      ? 'bg-[#3F6B62] text-white border-[#3F6B62]'
-                      : 'bg-white dark:bg-transparent text-[#26322F] dark:text-white border-[#D5DCDD] dark:border-white/15 hover:border-[#77A39A]'
+                      ? 'bg-[#A8441F] text-white border-[#A8441F]'
+                      : 'bg-white dark:bg-transparent text-[#2A1A12] dark:text-white border-[#E8DCCB] dark:border-white/15 hover:border-[#C8582A]'
                   }`}
                 >
-                  {item.emoji} {labelOf(item)}
+                  {labelOf(item)}
                 </button>
               );
             })}
           </div>
 
           {/* Staples */}
-          <label className="mt-5 flex items-center gap-2 text-sm text-[#4A5855] dark:text-white/70 cursor-pointer select-none">
+          <label className="mt-5 flex items-center gap-2 text-sm text-[#5A4538] dark:text-white/70 cursor-pointer select-none">
             <input
               type="checkbox"
               checked={assumeStaples}
               onChange={(e) => setAssumeStaples(e.target.checked)}
-              className="accent-[#3F6B62] w-4 h-4"
+              className="accent-[#A8441F] w-4 h-4"
             />
             {t('fridge.staples', 'I always have salt, pepper, oil and water')}
           </label>
@@ -213,7 +213,7 @@ function Fridge() {
         {/* Results */}
         <section className="mt-12">
           {tags.length === 0 && (
-            <p className="text-center text-[#7C8A87]">
+            <p className="text-center text-[#8A7565]">
               {t('fridge.empty', 'Add at least one ingredient to see recipes.')}
             </p>
           )}
@@ -221,7 +221,7 @@ function Fridge() {
           {tags.length > 0 && (
             <>
               <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
-                <h2 className="font-serif text-2xl font-bold text-[#26322F] dark:text-white">
+                <h2 className="font-serif text-2xl font-bold text-[#2A1A12] dark:text-white">
                   {loading
                     ? t('fridge.searching', 'Searching…')
                     : t('fridge.found', '{{count}} recipes found', { count: visible.length })}
@@ -235,8 +235,8 @@ function Fridge() {
                       onClick={() => setFilter(f)}
                       className={`rounded-full px-4 py-1.5 text-sm border transition-colors ${
                         filter === f
-                          ? 'bg-[#77A39A] text-white border-[#77A39A]'
-                          : 'bg-white dark:bg-transparent text-[#26322F] dark:text-white border-[#D5DCDD] dark:border-white/15'
+                          ? 'bg-[#C8582A] text-white border-[#C8582A]'
+                          : 'bg-white dark:bg-transparent text-[#2A1A12] dark:text-white border-[#E8DCCB] dark:border-white/15'
                       }`}
                     >
                       {f === 'all' && t('fridge.filterAll', 'All')}
@@ -247,10 +247,10 @@ function Fridge() {
                 </div>
               </div>
 
-              {error && <p className="text-center text-[#B07BA0]">{error}</p>}
+              {error && <p className="text-center text-[#A8683A]">{error}</p>}
 
               {!loading && !error && visible.length === 0 && (
-                <div className="text-center py-10 text-[#7C8A87]">
+                <div className="text-center py-10 text-[#8A7565]">
                   <ChefHat className="mx-auto mb-3" size={32} />
                   {t('fridge.none', 'No recipes match yet. Try adding more ingredients.')}
                 </div>
@@ -263,9 +263,9 @@ function Fridge() {
                     <Link
                       key={r.id}
                       to={`/recipe/${r.id}`}
-                      className="group overflow-hidden rounded-[24px] bg-white dark:bg-[#26322F] border border-[#D5DCDD] dark:border-white/10 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(98,157,142,0.17)] transition-all duration-300"
+                      className="group overflow-hidden rounded-[18px] bg-white dark:bg-[#2A1A12] border border-[#E8DCCB] dark:border-white/10 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(156,114,99,0.17)] transition-all duration-300"
                     >
-                      <div className="aspect-[16/10] bg-[#E0E4E7] overflow-hidden">
+                      <div className="aspect-[16/10] bg-[#FAF6EF] overflow-hidden">
                         {img && (
                           <img
                             src={img}
@@ -277,36 +277,36 @@ function Fridge() {
                       </div>
 
                       <div className="p-5">
-                        <p className="text-xs uppercase tracking-wider text-[#7C8A87]">
+                        <p className="text-xs uppercase tracking-wider text-[#8A7565]">
                           {r.cuisine} · {r.country}
                         </p>
-                        <h3 className="mt-1 font-serif text-xl font-bold text-[#26322F] dark:text-white leading-snug">
+                        <h3 className="mt-1 font-serif text-xl font-bold text-[#2A1A12] dark:text-white leading-snug">
                           {r.name}
                         </h3>
 
                         {/* Progress */}
                         <div className="mt-4">
                           <div className="flex items-center justify-between text-sm mb-1.5">
-                            <span className="font-semibold text-[#3F6B62] dark:text-[#9BBCAC]">
+                            <span className="font-semibold text-[#A8441F] dark:text-[#E08A5F]">
                               {t('fridge.have', 'You have {{have}}/{{total}}', { have: r.have, total: r.total })}
                             </span>
-                            <span className="text-[#7C8A87]">{r.percent}%</span>
+                            <span className="text-[#8A7565]">{r.percent}%</span>
                           </div>
-                          <div className="h-2 rounded-full bg-[#E0E4E7] dark:bg-white/10 overflow-hidden">
+                          <div className="h-2 rounded-full bg-[#FAF6EF] dark:bg-white/10 overflow-hidden">
                             <div
-                              className="h-full rounded-full bg-gradient-to-r from-[#9BBCAC] to-[#77A39A]"
+                              className="h-full rounded-full bg-gradient-to-r from-[#E08A5F] to-[#C8582A]"
                               style={{ width: `${r.percent}%` }}
                             />
                           </div>
                         </div>
 
                         {r.can_cook ? (
-                          <p className="mt-4 flex items-center gap-1.5 text-sm font-medium text-[#3F6B62] dark:text-[#9BBCAC]">
+                          <p className="mt-4 flex items-center gap-1.5 text-sm font-medium text-[#A8441F] dark:text-[#E08A5F]">
                             <CheckCircle2 size={16} />
                             {t('fridge.canCook', 'You can cook this now!')}
                           </p>
                         ) : (
-                          <p className="mt-4 text-sm text-[#4A5855] dark:text-white/70">
+                          <p className="mt-4 text-sm text-[#5A4538] dark:text-white/70">
                             <span className="font-semibold">{t('fridge.missing', 'Missing:')}</span>{' '}
                             {r.missing.slice(0, 3).join(' · ')}
                             {r.missing.length > 3 &&

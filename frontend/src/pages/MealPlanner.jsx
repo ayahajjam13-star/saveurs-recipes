@@ -205,31 +205,31 @@ function MealPlanner() {
 
   if (!user) {
     return (
-      <main className="flex min-h-[85vh] items-center justify-center bg-[#F7FCFD] px-5 py-16 dark:bg-[#172D35]">
-        <section className="relative w-full max-w-xl overflow-hidden rounded-[36px] border border-[#B8E8EE] bg-white p-9 text-center shadow-xl shadow-[#24515B]/5 dark:border-white/10 dark:bg-[#203C46] sm:p-14">
-          <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[#7ADDF2]/20 blur-3xl" />
-          <div className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-[#CBB7F5]/20 blur-3xl" />
+      <main className="flex min-h-[85vh] items-center justify-center bg-[#FDF9F7] px-5 py-16 dark:bg-[#341F18]">
+        <section className="relative w-full max-w-xl overflow-hidden rounded-[18px] border border-[#EDC7B9] bg-white p-9 text-center shadow-xl shadow-[#5A3325]/5 dark:border-white/10 dark:bg-[#452B21] sm:p-14">
+          <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[#EB9D81]/20 blur-3xl" />
+          <div className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-[#E6D6C6]/20 blur-3xl" />
 
-          <div className="relative mx-auto mb-7 flex h-20 w-20 items-center justify-center rounded-[26px] bg-[#DDF5F7] text-[#24515B]">
+          <div className="relative mx-auto mb-7 flex h-20 w-20 items-center justify-center rounded-[18px] bg-[#F6E4DE] text-[#5A3325]">
             <CalendarDays size={34} />
           </div>
 
-          <p className="relative mb-3 text-[10px] font-black uppercase tracking-[0.25em] text-[#398B9A]">
+          <p className="relative mb-3 text-[10px] font-black uppercase tracking-[0.25em] text-[#98543B]">
             Your personal food planner
           </p>
 
-          <h1 className="relative font-serif text-4xl font-black text-[#24515B] dark:text-white sm:text-5xl">
+          <h1 className="relative font-serif text-4xl font-black text-[#5A3325] dark:text-white sm:text-5xl">
             Make room for
-            <span className="block italic text-[#398B9A]">delicious days.</span>
+            <span className="block italic text-[#98543B]">delicious days.</span>
           </h1>
 
-          <p className="relative mx-auto mt-5 max-w-sm text-sm leading-7 text-[#66858D] dark:text-gray-300">
+          <p className="relative mx-auto mt-5 max-w-sm text-sm leading-7 text-[#8C7167] dark:text-gray-300">
             Sign in to organize your weekly meals, save your favourite recipes and make every week easier.
           </p>
 
           <Link
             to="/login"
-            className="relative mt-9 inline-flex items-center gap-3 rounded-full bg-[#7ADDF2] px-8 py-4 text-sm font-black text-[#24515B] shadow-lg shadow-[#7ADDF2]/20 transition-all hover:-translate-y-1 hover:bg-[#B8E8EE]"
+            className="relative mt-9 inline-flex items-center gap-3 rounded-full bg-[#EB9D81] px-8 py-4 text-sm font-black text-[#5A3325] shadow-lg shadow-[#EB9D81]/20 transition-all hover:-translate-y-1 hover:bg-[#EDC7B9]"
           >
             Sign in to start
             <ArrowUpRight size={18} />
@@ -240,22 +240,22 @@ function MealPlanner() {
   }
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#F7FCFD] pb-20 text-[#24515B] dark:bg-[#172D35] dark:text-white">
+    <main className="min-h-screen overflow-hidden bg-[#FDF9F7] pb-20 text-[#5A3325] dark:bg-[#341F18] dark:text-white">
 
       {/* TOP INTRO */}
-      <section className="relative overflow-hidden bg-[#24515B] text-white">
-        <div className="absolute -right-24 -top-32 h-96 w-96 rounded-full bg-[#7ADDF2]/15 blur-3xl" />
-        <div className="absolute -bottom-40 left-[25%] h-96 w-96 rounded-full bg-[#CBB7F5]/15 blur-3xl" />
+      <section className="relative overflow-hidden bg-[#5A3325] text-white">
+        <div className="absolute -right-24 -top-32 h-96 w-96 rounded-full bg-[#EB9D81]/15 blur-3xl" />
+        <div className="absolute -bottom-40 left-[25%] h-96 w-96 rounded-full bg-[#E6D6C6]/15 blur-3xl" />
 
         <div className="relative mx-auto max-w-[1400px] px-5 pb-20 pt-12 sm:px-8 md:pb-28 md:pt-16 lg:px-12">
 
           <div className="mb-14 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#7ADDF2] text-[#24515B]">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#EB9D81] text-[#5A3325]">
                 <ChefHat size={23} />
               </div>
               <div>
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#B8E8EE]">
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#EDC7B9]">
                   SAVEURS
                 </p>
                 <p className="text-xs font-semibold text-white/65">
@@ -265,7 +265,7 @@ function MealPlanner() {
             </div>
 
             <div className="flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2.5">
-              <Sparkles size={14} className="text-[#7ADDF2]" />
+              <Sparkles size={14} className="text-[#EB9D81]" />
               <span className="text-[9px] font-black uppercase tracking-[0.16em] text-white/85">
                 Plan · Cook · Enjoy
               </span>
@@ -275,14 +275,14 @@ function MealPlanner() {
           <div className="grid items-center gap-10 md:grid-cols-[1.15fr_0.85fr]">
 
             <div>
-              <p className="mb-5 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-[#7ADDF2]">
-                <span className="h-px w-7 bg-[#7ADDF2]" />
+              <p className="mb-5 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-[#EB9D81]">
+                <span className="h-px w-7 bg-[#EB9D81]" />
                 A little planning, a lot of flavour
               </p>
 
               <h1 className="max-w-3xl font-serif text-5xl font-black leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl">
                 Your week,
-                <span className="block italic text-[#B8E8EE]">
+                <span className="block italic text-[#EDC7B9]">
                   beautifully
                 </span>
                 planned.
@@ -300,7 +300,7 @@ function MealPlanner() {
                     setPickerOpen('monday');
                     setSearchQuery('');
                   }}
-                  className="inline-flex items-center gap-2 rounded-full bg-[#7ADDF2] px-6 py-3.5 text-xs font-black text-[#24515B] transition-all hover:-translate-y-1 hover:bg-[#B8E8EE]"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#EB9D81] px-6 py-3.5 text-xs font-black text-[#5A3325] transition-all hover:-translate-y-1 hover:bg-[#EDC7B9]"
                 >
                   <Plus size={17} />
                   Add a recipe
@@ -319,42 +319,42 @@ function MealPlanner() {
             {/* HERO VISUAL */}
             <div className="relative mx-auto flex min-h-[290px] w-full max-w-[430px] items-center justify-center">
 
-              <div className="absolute h-64 w-64 rounded-full border border-dashed border-[#B8E8EE]/30 sm:h-80 sm:w-80" />
-              <div className="absolute h-52 w-52 rounded-full bg-[#7ADDF2]/15 blur-2xl sm:h-64 sm:w-64" />
+              <div className="absolute h-64 w-64 rounded-full border border-dashed border-[#EDC7B9]/30 sm:h-80 sm:w-80" />
+              <div className="absolute h-52 w-52 rounded-full bg-[#EB9D81]/15 blur-2xl sm:h-64 sm:w-64" />
 
-              <div className="relative flex h-56 w-56 rotate-[-5deg] flex-col items-center justify-center rounded-[42px] border border-white/20 bg-gradient-to-br from-[#DDF5F7] to-[#7ADDF2] shadow-2xl shadow-black/20 sm:h-64 sm:w-64">
+              <div className="relative flex h-56 w-56 rotate-[-5deg] flex-col items-center justify-center rounded-[42px] border border-white/20 bg-gradient-to-br from-[#F6E4DE] to-[#EB9D81] shadow-2xl shadow-black/20 sm:h-64 sm:w-64">
                 <span className="text-7xl drop-shadow-lg sm:text-8xl">🥗</span>
-                <p className="mt-3 font-serif text-2xl font-black italic text-[#24515B]">
+                <p className="mt-3 font-serif text-2xl font-black italic text-[#5A3325]">
                   Fresh & lovely
                 </p>
-                <span className="mt-1 text-[9px] font-black uppercase tracking-[0.2em] text-[#398B9A]">
+                <span className="mt-1 text-[9px] font-black uppercase tracking-[0.2em] text-[#98543B]">
                   Every single day
                 </span>
               </div>
 
-              <div className="absolute -left-1 top-8 rotate-[-8deg] rounded-2xl bg-white px-4 py-3 text-[#24515B] shadow-xl sm:left-0">
+              <div className="absolute -left-1 top-8 rotate-[-8deg] rounded-2xl bg-white px-4 py-3 text-[#5A3325] shadow-xl sm:left-0">
                 <div className="flex items-center gap-2">
-                  <Coffee size={16} className="text-[#398B9A]" />
+                  <Coffee size={16} className="text-[#98543B]" />
                   <span className="text-[10px] font-black">Breakfast</span>
                 </div>
               </div>
 
-              <div className="absolute -right-1 top-20 rotate-[7deg] rounded-2xl bg-[#B8E8EE] px-4 py-3 text-[#24515B] shadow-xl sm:right-0">
+              <div className="absolute -right-1 top-20 rotate-[7deg] rounded-2xl bg-[#EDC7B9] px-4 py-3 text-[#5A3325] shadow-xl sm:right-0">
                 <div className="flex items-center gap-2">
                   <Sun size={16} />
                   <span className="text-[10px] font-black">Lunch time</span>
                 </div>
               </div>
 
-              <div className="absolute bottom-5 left-2 rotate-[5deg] rounded-2xl bg-[#CBB7F5] px-4 py-3 text-[#40365F] shadow-xl sm:left-3">
+              <div className="absolute bottom-5 left-2 rotate-[5deg] rounded-2xl bg-[#E6D6C6] px-4 py-3 text-[#554A40] shadow-xl sm:left-3">
                 <div className="flex items-center gap-2">
                   <Moon size={16} />
                   <span className="text-[10px] font-black">Dinner</span>
                 </div>
               </div>
 
-              <span className="absolute bottom-4 right-4 text-4xl text-[#B8E8EE]">✳</span>
-              <span className="absolute right-10 top-3 text-3xl text-[#7ADDF2]">✳</span>
+              <span className="absolute bottom-4 right-4 text-4xl text-[#EDC7B9]">✳</span>
+              <span className="absolute right-10 top-3 text-3xl text-[#EB9D81]">✳</span>
             </div>
           </div>
         </div>
@@ -364,19 +364,19 @@ function MealPlanner() {
       <div className="relative z-10 mx-auto -mt-8 max-w-[1400px] px-5 sm:px-8 lg:px-12">
 
         {/* WEEK CONTROL */}
-        <section className="rounded-[26px] border border-[#B8E8EE] bg-white p-5 shadow-xl shadow-[#24515B]/5 dark:border-white/10 dark:bg-[#203C46] sm:p-7">
+        <section className="rounded-[18px] border border-[#EDC7B9] bg-white p-5 shadow-xl shadow-[#5A3325]/5 dark:border-white/10 dark:bg-[#452B21] sm:p-7">
           <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-center">
 
             <div className="flex items-center gap-4">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#DDF5F7] text-[#24515B]">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#F6E4DE] text-[#5A3325]">
                 <CalendarDays size={27} />
               </div>
 
               <div>
-                <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#398B9A]">
+                <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#98543B]">
                   YOUR WEEK AT A GLANCE
                 </p>
-                <h2 className="mt-1 font-serif text-2xl font-black text-[#24515B] dark:text-white sm:text-3xl">
+                <h2 className="mt-1 font-serif text-2xl font-black text-[#5A3325] dark:text-white sm:text-3xl">
                   {formattedRange}
                 </h2>
               </div>
@@ -386,7 +386,7 @@ function MealPlanner() {
               <button
                 type="button"
                 onClick={goToCurrentWeek}
-                className="rounded-full border border-[#B8E8EE] px-4 py-3 text-[10px] font-black uppercase tracking-wider text-[#398B9A] transition-colors hover:bg-[#EFFAFC] dark:border-white/15 dark:hover:bg-white/10"
+                className="rounded-full border border-[#EDC7B9] px-4 py-3 text-[10px] font-black uppercase tracking-wider text-[#98543B] transition-colors hover:bg-[#FCF3EF] dark:border-white/15 dark:hover:bg-white/10"
               >
                 This week
               </button>
@@ -395,7 +395,7 @@ function MealPlanner() {
                 type="button"
                 onClick={() => changeWeek(-1)}
                 aria-label="Previous week"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#EFFAFC] text-[#24515B] transition-all hover:bg-[#B8E8EE] dark:bg-white/10 dark:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#FCF3EF] text-[#5A3325] transition-all hover:bg-[#EDC7B9] dark:bg-white/10 dark:text-white"
               >
                 <ChevronLeft size={20} />
               </button>
@@ -404,38 +404,38 @@ function MealPlanner() {
                 type="button"
                 onClick={() => changeWeek(1)}
                 aria-label="Next week"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#24515B] text-white transition-all hover:bg-[#398B9A]"
+                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#5A3325] text-white transition-all hover:bg-[#98543B]"
               >
                 <ChevronRight size={20} />
               </button>
             </div>
           </div>
 
-          <div className="mt-7 grid grid-cols-3 gap-3 border-t border-[#B8E8EE]/60 pt-6 dark:border-white/10">
+          <div className="mt-7 grid grid-cols-3 gap-3 border-t border-[#EDC7B9]/60 pt-6 dark:border-white/10">
 
             <div>
-              <p className="text-[9px] font-black uppercase tracking-wider text-[#8AAAB0]">
+              <p className="text-[9px] font-black uppercase tracking-wider text-[#AF958B]">
                 Planned meals
               </p>
-              <p className="mt-1 font-serif text-3xl font-black text-[#24515B] dark:text-white">
+              <p className="mt-1 font-serif text-3xl font-black text-[#5A3325] dark:text-white">
                 {totalMeals}
               </p>
             </div>
 
-            <div className="border-x border-[#B8E8EE]/60 px-4 dark:border-white/10">
-              <p className="text-[9px] font-black uppercase tracking-wider text-[#8AAAB0]">
+            <div className="border-x border-[#EDC7B9]/60 px-4 dark:border-white/10">
+              <p className="text-[9px] font-black uppercase tracking-wider text-[#AF958B]">
                 Active days
               </p>
-              <p className="mt-1 font-serif text-3xl font-black text-[#398B9A]">
-                {plannedDays}<span className="text-base text-[#8AAAB0]">/7</span>
+              <p className="mt-1 font-serif text-3xl font-black text-[#98543B]">
+                {plannedDays}<span className="text-base text-[#AF958B]">/7</span>
               </p>
             </div>
 
             <div className="pl-1">
-              <p className="text-[9px] font-black uppercase tracking-wider text-[#8AAAB0]">
+              <p className="text-[9px] font-black uppercase tracking-wider text-[#AF958B]">
                 Days to enjoy
               </p>
-              <p className="mt-1 font-serif text-3xl font-black text-[#8170B5]">
+              <p className="mt-1 font-serif text-3xl font-black text-[#A49281]">
                 {7 - plannedDays}
               </p>
             </div>
@@ -446,15 +446,15 @@ function MealPlanner() {
         <section className="mt-10">
           <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
             <div>
-              <p className="mb-2 text-[9px] font-black uppercase tracking-[0.22em] text-[#398B9A]">
+              <p className="mb-2 text-[9px] font-black uppercase tracking-[0.22em] text-[#98543B]">
                 Choose your day
               </p>
-              <h2 className="font-serif text-3xl font-black text-[#24515B] dark:text-white">
+              <h2 className="font-serif text-3xl font-black text-[#5A3325] dark:text-white">
                 Your weekly rhythm
               </h2>
             </div>
 
-            <p className="text-xs text-[#8AAAB0]">
+            <p className="text-xs text-[#AF958B]">
               Select a day to jump to its menu
             </p>
           </div>
@@ -477,23 +477,23 @@ function MealPlanner() {
                   }}
                   className={`rounded-2xl border p-3 text-center transition-all duration-200 sm:p-4 ${
                     isSelected
-                      ? 'border-[#24515B] bg-[#24515B] text-white shadow-lg shadow-[#24515B]/15'
-                      : 'border-[#B8E8EE] bg-white text-[#24515B] hover:-translate-y-1 hover:bg-[#EFFAFC] dark:border-white/10 dark:bg-[#203C46] dark:text-white dark:hover:bg-[#294752]'
+                      ? 'border-[#5A3325] bg-[#5A3325] text-white shadow-lg shadow-[#5A3325]/15'
+                      : 'border-[#EDC7B9] bg-white text-[#5A3325] hover:-translate-y-1 hover:bg-[#FCF3EF] dark:border-white/10 dark:bg-[#452B21] dark:text-white dark:hover:bg-[#51342A]'
                   }`}
                 >
                   <span className="block text-xl">{day.emoji}</span>
                   <span className={`mt-2 block text-[9px] font-black tracking-wider ${
-                    isSelected ? 'text-[#B8E8EE]' : 'text-[#8AAAB0]'
+                    isSelected ? 'text-[#EDC7B9]' : 'text-[#AF958B]'
                   }`}>
                     {day.short}
                   </span>
                   <span className={`mt-1 block font-serif text-lg font-black ${
-                    isSelected ? 'text-white' : 'text-[#24515B] dark:text-white'
+                    isSelected ? 'text-white' : 'text-[#5A3325] dark:text-white'
                   }`}>
                     {formatDate(getDateForDay(weekStart, index))}
                   </span>
                   <span className={`mt-1 block text-[9px] font-bold ${
-                    isSelected ? 'text-white/60' : 'text-[#8AAAB0]'
+                    isSelected ? 'text-white/60' : 'text-[#AF958B]'
                   }`}>
                     {count} {count === 1 ? 'meal' : 'meals'}
                   </span>
@@ -510,23 +510,23 @@ function MealPlanner() {
           <div>
             <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="mb-2 text-[9px] font-black uppercase tracking-[0.22em] text-[#398B9A]">
+                <p className="mb-2 text-[9px] font-black uppercase tracking-[0.22em] text-[#98543B]">
                   The plan
                 </p>
-                <h2 className="font-serif text-3xl font-black text-[#24515B] dark:text-white sm:text-4xl">
-                  The daily menu<span className="text-[#7ADDF2]">.</span>
+                <h2 className="font-serif text-3xl font-black text-[#5A3325] dark:text-white sm:text-4xl">
+                  The daily menu<span className="text-[#EB9D81]">.</span>
                 </h2>
               </div>
 
-              <span className="rounded-full bg-[#DDF5F7] px-4 py-2 text-[9px] font-black uppercase tracking-wider text-[#398B9A]">
+              <span className="rounded-full bg-[#F6E4DE] px-4 py-2 text-[9px] font-black uppercase tracking-wider text-[#98543B]">
                 7 days · 1 week
               </span>
             </div>
 
             {loading ? (
-              <div className="rounded-[26px] border border-[#B8E8EE] bg-white py-24 text-center dark:border-white/10 dark:bg-[#203C46]">
-                <div className="mx-auto h-12 w-12 animate-spin rounded-full border-4 border-[#B8E8EE] border-t-[#398B9A]" />
-                <p className="mt-5 text-xs font-bold text-[#66858D]">
+              <div className="rounded-[18px] border border-[#EDC7B9] bg-white py-24 text-center dark:border-white/10 dark:bg-[#452B21]">
+                <div className="mx-auto h-12 w-12 animate-spin rounded-full border-4 border-[#EDC7B9] border-t-[#98543B]" />
+                <p className="mt-5 text-xs font-bold text-[#8C7167]">
                   Preparing your weekly menu...
                 </p>
               </div>
@@ -542,40 +542,40 @@ function MealPlanner() {
                       key={day.key}
                       id={`day-${day.key}`}
                       onMouseEnter={() => setSelectedDay(day.key)}
-                      className={`scroll-mt-8 overflow-hidden rounded-[25px] border bg-white transition-all duration-300 dark:bg-[#203C46] ${
+                      className={`scroll-mt-8 overflow-hidden rounded-[18px] border bg-white transition-all duration-300 dark:bg-[#452B21] ${
                         isSelected
-                          ? 'border-[#7ADDF2] shadow-lg shadow-[#7ADDF2]/10'
-                          : 'border-[#B8E8EE]/70 shadow-sm dark:border-white/10'
+                          ? 'border-[#EB9D81] shadow-lg shadow-[#EB9D81]/10'
+                          : 'border-[#EDC7B9]/70 shadow-sm dark:border-white/10'
                       }`}
                     >
                       {/* DAY HEADER */}
-                      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#B8E8EE]/50 bg-[#F3FBFC] px-5 py-5 dark:border-white/10 dark:bg-[#1C3540] sm:px-7">
+                      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#EDC7B9]/50 bg-[#FCF6F3] px-5 py-5 dark:border-white/10 dark:bg-[#3F261D] sm:px-7">
 
                         <div className="flex items-center gap-4">
                           <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-2xl ${
                             index % 3 === 0
-                              ? 'bg-[#DDF5F7]'
+                              ? 'bg-[#F6E4DE]'
                               : index % 3 === 1
-                                ? 'bg-[#EDE8FA]'
-                                : 'bg-[#E7F5E9]'
+                                ? 'bg-[#F5F1EC]'
+                                : 'bg-[#F4ECE0]'
                           }`}>
                             {day.emoji}
                           </div>
 
                           <div>
                             <div className="flex flex-wrap items-center gap-2">
-                              <h3 className="font-serif text-xl font-black text-[#24515B] dark:text-white sm:text-2xl">
+                              <h3 className="font-serif text-xl font-black text-[#5A3325] dark:text-white sm:text-2xl">
                                 {day.label}
                               </h3>
 
                               {dayMeals.length > 0 && (
-                                <span className="rounded-full bg-[#BFE8C8] px-2.5 py-1 text-[8px] font-black uppercase tracking-wider text-[#35634A]">
+                                <span className="rounded-full bg-[#EADFC8] px-2.5 py-1 text-[8px] font-black uppercase tracking-wider text-[#35634A]">
                                   Planned
                                 </span>
                               )}
                             </div>
 
-                            <p className="mt-1 text-[10px] font-semibold text-[#8AAAB0]">
+                            <p className="mt-1 text-[10px] font-semibold text-[#AF958B]">
                               {formatDate(date, {
                                 day: 'numeric',
                                 month: 'long',
@@ -591,7 +591,7 @@ function MealPlanner() {
                             setPickerOpen(day.key);
                             setSearchQuery('');
                           }}
-                          className="inline-flex items-center gap-2 rounded-full bg-[#24515B] px-4 py-2.5 text-[10px] font-black text-white transition-all hover:bg-[#398B9A]"
+                          className="inline-flex items-center gap-2 rounded-full bg-[#5A3325] px-4 py-2.5 text-[10px] font-black text-white transition-all hover:bg-[#98543B]"
                         >
                           <Plus size={15} />
                           Add meal
@@ -601,16 +601,16 @@ function MealPlanner() {
                       {/* DAY MEALS */}
                       <div className="p-5 sm:p-6">
                         {dayMeals.length === 0 ? (
-                          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#B8DCE1] bg-[#FBFEFE] px-5 py-9 text-center dark:border-white/15 dark:bg-[#1C3540] sm:flex-row sm:justify-between sm:text-left">
+                          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#E0C3B9] bg-[#FEFCFB] px-5 py-9 text-center dark:border-white/15 dark:bg-[#3F261D] sm:flex-row sm:justify-between sm:text-left">
                             <div className="flex flex-col items-center gap-3 sm:flex-row">
-                              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#DDF5F7] text-[#398B9A]">
+                              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F6E4DE] text-[#98543B]">
                                 <Utensils size={20} />
                               </div>
                               <div>
-                                <p className="text-sm font-black text-[#24515B] dark:text-white">
+                                <p className="text-sm font-black text-[#5A3325] dark:text-white">
                                   Nothing on the menu yet
                                 </p>
-                                <p className="mt-1 text-xs text-[#8AAAB0]">
+                                <p className="mt-1 text-xs text-[#AF958B]">
                                   Add a recipe to make this day delicious.
                                 </p>
                               </div>
@@ -623,7 +623,7 @@ function MealPlanner() {
                                 setPickerOpen(day.key);
                                 setSearchQuery('');
                               }}
-                              className="mt-4 text-xs font-black text-[#398B9A] transition-colors hover:text-[#24515B] sm:mt-0"
+                              className="mt-4 text-xs font-black text-[#98543B] transition-colors hover:text-[#5A3325] sm:mt-0"
                             >
                               + Choose a recipe
                             </button>
@@ -633,11 +633,11 @@ function MealPlanner() {
                             {dayMeals.map((recipe) => (
                               <div
                                 key={recipe.id}
-                                className="group relative flex min-w-0 items-center gap-3 rounded-2xl border border-[#B8E8EE]/60 bg-white p-3 transition-all hover:border-[#7ADDF2] hover:shadow-md dark:border-white/10 dark:bg-[#1C3540]"
+                                className="group relative flex min-w-0 items-center gap-3 rounded-2xl border border-[#EDC7B9]/60 bg-white p-3 transition-all hover:border-[#EB9D81] hover:shadow-md dark:border-white/10 dark:bg-[#3F261D]"
                               >
                                 <Link
                                   to={`/recipe/${recipe.id}`}
-                                  className="h-[76px] w-[76px] shrink-0 overflow-hidden rounded-xl bg-[#DDF5F7]"
+                                  className="h-[76px] w-[76px] shrink-0 overflow-hidden rounded-xl bg-[#F6E4DE]"
                                 >
                                   <img
                                     src={getImageUrl(recipe.image)}
@@ -652,19 +652,19 @@ function MealPlanner() {
                                 <div className="min-w-0 flex-1">
                                   <Link
                                     to={`/recipe/${recipe.id}`}
-                                    className="line-clamp-2 text-sm font-black text-[#24515B] transition-colors hover:text-[#398B9A] dark:text-white"
+                                    className="line-clamp-2 text-sm font-black text-[#5A3325] transition-colors hover:text-[#98543B] dark:text-white"
                                   >
                                     {recipe.name}
                                   </Link>
 
-                                  <p className="mt-2 flex items-center gap-1.5 text-[10px] font-semibold text-[#8AAAB0]">
+                                  <p className="mt-2 flex items-center gap-1.5 text-[10px] font-semibold text-[#AF958B]">
                                     <BookOpen size={12} />
                                     {recipe.cuisine || 'Delicious recipe'}
                                   </p>
 
                                   <Link
                                     to={`/recipe/${recipe.id}`}
-                                    className="mt-2 inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-wider text-[#398B9A]"
+                                    className="mt-2 inline-flex items-center gap-1 text-[9px] font-black uppercase tracking-wider text-[#98543B]"
                                   >
                                     View recipe
                                     <ArrowUpRight size={12} />
@@ -675,7 +675,7 @@ function MealPlanner() {
                                   type="button"
                                   onClick={() => handleRemoveRecipe(day.key, recipe.id)}
                                   aria-label={`Remove ${recipe.name}`}
-                                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[#8AAAB0] transition-all hover:bg-[#FCE9EF] hover:text-[#C15E78] dark:hover:bg-white/10"
+                                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[#AF958B] transition-all hover:bg-[#F9F4EC] hover:text-[#B2966D] dark:hover:bg-white/10"
                                 >
                                   <Trash2 size={15} />
                                 </button>
@@ -695,12 +695,12 @@ function MealPlanner() {
           <aside className="space-y-5 lg:sticky lg:top-6">
 
             {/* WEEKLY PROGRESS */}
-            <section className="overflow-hidden rounded-[26px] bg-[#24515B] p-6 text-white">
+            <section className="overflow-hidden rounded-[18px] bg-[#5A3325] p-6 text-white">
               <div className="flex items-center justify-between">
-                <span className="text-[9px] font-black uppercase tracking-[0.2em] text-[#B8E8EE]">
+                <span className="text-[9px] font-black uppercase tracking-[0.2em] text-[#EDC7B9]">
                   Your progress
                 </span>
-                <LayoutDashboard size={18} className="text-[#7ADDF2]" />
+                <LayoutDashboard size={18} className="text-[#EB9D81]" />
               </div>
 
               <div className="mt-7">
@@ -714,7 +714,7 @@ function MealPlanner() {
 
               <div className="mt-6 h-2 overflow-hidden rounded-full bg-white/15">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-[#B8E8EE] to-[#7ADDF2] transition-all duration-500"
+                  className="h-full rounded-full bg-gradient-to-r from-[#EDC7B9] to-[#EB9D81] transition-all duration-500"
                   style={{ width: `${(plannedDays / 7) * 100}%` }}
                 />
               </div>
@@ -726,16 +726,16 @@ function MealPlanner() {
             </section>
 
             {/* MEAL IDEAS */}
-            <section className="rounded-[26px] border border-[#B8E8EE] bg-white p-6 dark:border-white/10 dark:bg-[#203C46]">
+            <section className="rounded-[18px] border border-[#EDC7B9] bg-white p-6 dark:border-white/10 dark:bg-[#452B21]">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EDE8FA] text-[#8170B5]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F5F1EC] text-[#A49281]">
                   <Sparkles size={19} />
                 </div>
                 <div>
-                  <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#398B9A]">
+                  <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#98543B]">
                     A little reminder
                   </p>
-                  <h3 className="font-serif text-xl font-black text-[#24515B] dark:text-white">
+                  <h3 className="font-serif text-xl font-black text-[#5A3325] dark:text-white">
                     Keep it balanced
                   </h3>
                 </div>
@@ -743,55 +743,55 @@ function MealPlanner() {
 
               <div className="mt-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#DDF5F7] text-lg">🥑</span>
+                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#F6E4DE] text-lg">🥑</span>
                   <div>
-                    <p className="text-xs font-black text-[#24515B] dark:text-white">Fresh ingredients</p>
-                    <p className="mt-0.5 text-[10px] text-[#8AAAB0]">Add some colour to your plate.</p>
+                    <p className="text-xs font-black text-[#5A3325] dark:text-white">Fresh ingredients</p>
+                    <p className="mt-0.5 text-[10px] text-[#AF958B]">Add some colour to your plate.</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#E7F5E9] text-lg">🥦</span>
+                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#F4ECE0] text-lg">🥦</span>
                   <div>
-                    <p className="text-xs font-black text-[#24515B] dark:text-white">Variety matters</p>
-                    <p className="mt-0.5 text-[10px] text-[#8AAAB0]">Explore different recipes.</p>
+                    <p className="text-xs font-black text-[#5A3325] dark:text-white">Variety matters</p>
+                    <p className="mt-0.5 text-[10px] text-[#AF958B]">Explore different recipes.</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#FCEEF4] text-lg">🍓</span>
+                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#FAF6F0] text-lg">🍓</span>
                   <div>
-                    <p className="text-xs font-black text-[#24515B] dark:text-white">Enjoy every bite</p>
-                    <p className="mt-0.5 text-[10px] text-[#8AAAB0]">Make time for the food you love.</p>
+                    <p className="text-xs font-black text-[#5A3325] dark:text-white">Enjoy every bite</p>
+                    <p className="mt-0.5 text-[10px] text-[#AF958B]">Make time for the food you love.</p>
                   </div>
                 </div>
               </div>
             </section>
 
             {/* SHOPPING LIST CTA */}
-            <section className="relative overflow-hidden rounded-[26px] border border-[#B8E8EE] bg-gradient-to-br from-[#DDF5F7] to-[#B8E8EE] p-6">
+            <section className="relative overflow-hidden rounded-[18px] border border-[#EDC7B9] bg-gradient-to-br from-[#F6E4DE] to-[#EDC7B9] p-6">
               <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-white/40 blur-2xl" />
 
               <div className="relative">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#24515B] shadow-sm">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#5A3325] shadow-sm">
                   <ShoppingCart size={22} />
                 </div>
 
-                <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#398B9A]">
+                <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#98543B]">
                   Next step
                 </p>
 
-                <h3 className="mt-2 font-serif text-2xl font-black text-[#24515B]">
+                <h3 className="mt-2 font-serif text-2xl font-black text-[#5A3325]">
                   Ready to shop?
                 </h3>
 
-                <p className="mt-2 text-xs leading-6 text-[#527982]">
+                <p className="mt-2 text-xs leading-6 text-[#815F53]">
                   Take your planned meals and turn them into one organized shopping list.
                 </p>
 
                 <Link
                   to="/shopping-list"
-                  className="mt-6 flex items-center justify-center gap-2 rounded-full bg-[#24515B] px-5 py-3.5 text-[10px] font-black uppercase tracking-wider text-white transition-all hover:bg-[#398B9A]"
+                  className="mt-6 flex items-center justify-center gap-2 rounded-full bg-[#5A3325] px-5 py-3.5 text-[10px] font-black uppercase tracking-wider text-white transition-all hover:bg-[#98543B]"
                 >
                   Open shopping list
                   <ArrowUpRight size={15} />
@@ -803,37 +803,37 @@ function MealPlanner() {
             <button
               type="button"
               onClick={() => setPrintOpen(true)}
-              className="flex w-full items-center justify-between rounded-[22px] border border-[#B8E8EE] bg-white p-5 text-left transition-all hover:border-[#7ADDF2] hover:shadow-md dark:border-white/10 dark:bg-[#203C46]"
+              className="flex w-full items-center justify-between rounded-[18px] border border-[#EDC7B9] bg-white p-5 text-left transition-all hover:border-[#EB9D81] hover:shadow-md dark:border-white/10 dark:bg-[#452B21]"
             >
               <span className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EDE8FA] text-[#8170B5]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F5F1EC] text-[#A49281]">
                   <Printer size={19} />
                 </span>
                 <span>
-                  <span className="block text-xs font-black text-[#24515B] dark:text-white">
+                  <span className="block text-xs font-black text-[#5A3325] dark:text-white">
                     Print your week
                   </span>
-                  <span className="mt-1 block text-[10px] text-[#8AAAB0]">
+                  <span className="mt-1 block text-[10px] text-[#AF958B]">
                     Keep your menu close
                   </span>
                 </span>
               </span>
-              <ArrowUpRight size={17} className="text-[#398B9A]" />
+              <ArrowUpRight size={17} className="text-[#98543B]" />
             </button>
           </aside>
         </section>
 
         {/* BOTTOM MESSAGE */}
-        <section className="mt-16 overflow-hidden rounded-[28px] border border-[#B8E8EE] bg-white dark:border-white/10 dark:bg-[#203C46]">
+        <section className="mt-16 overflow-hidden rounded-[18px] border border-[#EDC7B9] bg-white dark:border-white/10 dark:bg-[#452B21]">
           <div className="grid items-center gap-5 px-7 py-8 sm:grid-cols-[1fr_auto] sm:px-10">
             <div>
-              <p className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-[#398B9A]">
+              <p className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-[#98543B]">
                 A week full of possibilities
               </p>
-              <h2 className="font-serif text-2xl font-black text-[#24515B] dark:text-white sm:text-3xl">
+              <h2 className="font-serif text-2xl font-black text-[#5A3325] dark:text-white sm:text-3xl">
                 Good food, good mood.
               </h2>
-              <p className="mt-2 text-xs text-[#8AAAB0]">
+              <p className="mt-2 text-xs text-[#AF958B]">
                 Made with love, planned with Saveurs.
               </p>
             </div>
@@ -860,7 +860,7 @@ function MealPlanner() {
       {/* RECIPE PICKER */}
       {pickerOpen && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#142F37]/70 p-4 backdrop-blur-md"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#361E15]/70 p-4 backdrop-blur-md"
           onClick={(e) => {
             if (e.target === e.currentTarget) {
               setPickerOpen(null);
@@ -868,15 +868,15 @@ function MealPlanner() {
             }
           }}
         >
-          <section className="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-[30px] border border-[#B8E8EE] bg-[#F7FCFD] shadow-2xl dark:border-white/10 dark:bg-[#203C46]">
+          <section className="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-[18px] border border-[#EDC7B9] bg-[#FDF9F7] shadow-2xl dark:border-white/10 dark:bg-[#452B21]">
 
             {/* MODAL HEADER */}
-            <div className="relative overflow-hidden bg-[#24515B] px-6 py-7 text-white sm:px-8">
-              <div className="absolute -right-12 -top-20 h-48 w-48 rounded-full bg-[#7ADDF2]/20 blur-3xl" />
+            <div className="relative overflow-hidden bg-[#5A3325] px-6 py-7 text-white sm:px-8">
+              <div className="absolute -right-12 -top-20 h-48 w-48 rounded-full bg-[#EB9D81]/20 blur-3xl" />
 
               <div className="relative flex items-start justify-between gap-4">
                 <div>
-                  <p className="mb-2 text-[9px] font-black uppercase tracking-[0.22em] text-[#7ADDF2]">
+                  <p className="mb-2 text-[9px] font-black uppercase tracking-[0.22em] text-[#EB9D81]">
                     Build your weekly menu
                   </p>
 
@@ -905,7 +905,7 @@ function MealPlanner() {
               <div className="relative mt-7">
                 <Search
                   size={18}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-[#398B9A]"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-[#98543B]"
                 />
 
                 <input
@@ -913,7 +913,7 @@ function MealPlanner() {
                   placeholder="Search by recipe name..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full rounded-2xl border border-white/20 bg-white py-4 pl-12 pr-4 text-sm font-semibold text-[#24515B] outline-none placeholder:text-[#8AAAB0] focus:border-[#7ADDF2]"
+                  className="w-full rounded-2xl border border-white/20 bg-white py-4 pl-12 pr-4 text-sm font-semibold text-[#5A3325] outline-none placeholder:text-[#AF958B] focus:border-[#EB9D81]"
                 />
               </div>
             </div>
@@ -922,25 +922,25 @@ function MealPlanner() {
             <div className="flex-1 overflow-y-auto p-5 sm:p-7">
               {filteredRecipes.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
-                  <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#DDF5F7] text-[#398B9A]">
+                  <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#F6E4DE] text-[#98543B]">
                     <Search size={27} />
                   </div>
 
-                  <h3 className="font-serif text-2xl font-black text-[#24515B] dark:text-white">
+                  <h3 className="font-serif text-2xl font-black text-[#5A3325] dark:text-white">
                     No recipes found
                   </h3>
 
-                  <p className="mt-2 text-xs text-[#8AAAB0]">
+                  <p className="mt-2 text-xs text-[#AF958B]">
                     Try another name or a different search.
                   </p>
                 </div>
               ) : (
                 <>
                   <div className="mb-5 flex items-center justify-between gap-3">
-                    <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#398B9A]">
+                    <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#98543B]">
                       Choose your favourite
                     </p>
-                    <span className="rounded-full bg-[#DDF5F7] px-3 py-1.5 text-[9px] font-black text-[#398B9A]">
+                    <span className="rounded-full bg-[#F6E4DE] px-3 py-1.5 text-[9px] font-black text-[#98543B]">
                       {Math.min(filteredRecipes.length, 30)} recipes
                     </span>
                   </div>
@@ -951,9 +951,9 @@ function MealPlanner() {
                         key={recipe.id}
                         type="button"
                         onClick={() => handleAddRecipe(pickerOpen, recipe.id)}
-                        className="group flex min-w-0 items-center gap-3 rounded-2xl border border-[#B8E8EE] bg-white p-3 text-left transition-all hover:-translate-y-0.5 hover:border-[#7ADDF2] hover:shadow-md dark:border-white/10 dark:bg-[#1C3540]"
+                        className="group flex min-w-0 items-center gap-3 rounded-2xl border border-[#EDC7B9] bg-white p-3 text-left transition-all hover:-translate-y-0.5 hover:border-[#EB9D81] hover:shadow-md dark:border-white/10 dark:bg-[#3F261D]"
                       >
-                        <div className="h-[76px] w-[76px] shrink-0 overflow-hidden rounded-xl bg-[#DDF5F7]">
+                        <div className="h-[76px] w-[76px] shrink-0 overflow-hidden rounded-xl bg-[#F6E4DE]">
                           <img
                             src={getImageUrl(recipe.image)}
                             alt={recipe.name}
@@ -965,16 +965,16 @@ function MealPlanner() {
                         </div>
 
                         <div className="min-w-0 flex-1">
-                          <p className="line-clamp-2 text-sm font-black text-[#24515B] transition-colors group-hover:text-[#398B9A] dark:text-white">
+                          <p className="line-clamp-2 text-sm font-black text-[#5A3325] transition-colors group-hover:text-[#98543B] dark:text-white">
                             {recipe.name}
                           </p>
 
-                          <p className="mt-2 text-[10px] font-semibold text-[#8AAAB0]">
+                          <p className="mt-2 text-[10px] font-semibold text-[#AF958B]">
                             {recipe.cuisine || 'World Cuisine'}
                           </p>
                         </div>
 
-                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#DDF5F7] text-[#24515B] transition-all group-hover:bg-[#7ADDF2]">
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F6E4DE] text-[#5A3325] transition-all group-hover:bg-[#EB9D81]">
                           <Plus size={17} />
                         </span>
                       </button>
@@ -984,8 +984,8 @@ function MealPlanner() {
               )}
             </div>
 
-            <div className="border-t border-[#B8E8EE] bg-white px-6 py-4 text-center dark:border-white/10 dark:bg-[#1C3540]">
-              <p className="text-[10px] font-semibold text-[#8AAAB0]">
+            <div className="border-t border-[#EDC7B9] bg-white px-6 py-4 text-center dark:border-white/10 dark:bg-[#3F261D]">
+              <p className="text-[10px] font-semibold text-[#AF958B]">
                 Select a recipe to add it to your day.
               </p>
             </div>

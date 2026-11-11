@@ -25,6 +25,7 @@ import NotFound from './pages/NotFound';
 import PublicProfile from './pages/PublicProfile';
 import AIChef from './pages/AIChef';
 import Fridge from './pages/Fridge';
+import Cuisines from './pages/Cuisines';
 import Category from './pages/Category';
 
 function App() {
@@ -77,6 +78,15 @@ function App() {
               element={
                 <PageTransition>
                   <Search />
+                </PageTransition>
+              }
+            />
+
+            <Route
+              path="/cuisines"
+              element={
+                <PageTransition>
+                  <Cuisines />
                 </PageTransition>
               }
             />

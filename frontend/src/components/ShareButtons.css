@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-  color: #24515B;
+  color: #5A3325;
   font-size: 13px;
   font-weight: 750;
 }
@@ -28,8 +28,8 @@
   width: 34px;
   height: 34px;
   border-radius: 11px;
-  background: #DDF5F8;
-  color: #367D89;
+  background: #F7E5DE;
+  color: #874D38;
 }
 
 /* Buttons Container */
@@ -51,10 +51,10 @@
   width: 39px;
   height: 39px;
   flex-shrink: 0;
-  border: 1px solid #E1EFF1;
+  border: 1px solid #F1E5E1;
   border-radius: 13px;
-  background: #F5FAFB;
-  color: #527982;
+  background: #FBF7F5;
+  color: #815F53;
   cursor: pointer;
   transition:
     transform 0.22s ease,
@@ -66,7 +66,7 @@
 
 .saveurs-share-button:hover {
   transform: translateY(-4px);
-  box-shadow: 0 7px 15px rgba(36, 81, 91, 0.12);
+  box-shadow: 0 7px 15px rgba(90,51,37,0.12);
 }
 
 .saveurs-share-button:active {
@@ -74,7 +74,7 @@
 }
 
 .saveurs-share-button:focus-visible {
-  outline: 2px solid #7ADDF2;
+  outline: 2px solid #EB9D81;
   outline-offset: 3px;
 }
 
@@ -100,14 +100,14 @@
 
 .share-copy:hover,
 .share-copy.is-copied {
-  background: #BFE8C8;
-  border-color: #BFE8C8;
-  color: #24515B;
+  background: #EADFC8;
+  border-color: #EADFC8;
+  color: #5A3325;
 }
 
 .share-native:hover {
-  background: #CBB7F5;
-  border-color: #CBB7F5;
+  background: #E6D6C6;
+  border-color: #E6D6C6;
   color: #FFFFFF;
 }
 
@@ -122,7 +122,7 @@
   max-width: 140px;
   padding: 6px 10px;
   border-radius: 8px;
-  background: #24515B;
+  background: #5A3325;
   color: #FFFFFF;
   font-size: 10px;
   font-weight: 650;
@@ -142,7 +142,7 @@
   left: 50%;
   transform: translateX(-50%);
   border: 5px solid transparent;
-  border-top-color: #24515B;
+  border-top-color: #5A3325;
 }
 
 .saveurs-share-button:hover .saveurs-share-tooltip,
@@ -156,18 +156,18 @@
 ========================================= */
 
 .dark .saveurs-share-heading {
-  color: #EAF8FA;
+  color: #FAEEEA;
 }
 
 .dark .saveurs-share-icon {
-  background: rgba(122, 221, 242, 0.15);
-  color: #7ADDF2;
+  background: rgba(235,157,129,0.15);
+  color: #EB9D81;
 }
 
 .dark .saveurs-share-button {
-  background: #214A53;
-  border-color: rgba(184, 232, 238, 0.15);
-  color: #C5E0E4;
+  background: #522F22;
+  border-color: rgba(237,199,185,0.15);
+  color: #E3CEC6;
 }
 
 .dark .share-twitter:hover {
@@ -190,14 +190,14 @@
 
 .dark .share-copy:hover,
 .dark .share-copy.is-copied {
-  background: #BFE8C8;
-  border-color: #BFE8C8;
-  color: #24515B;
+  background: #EADFC8;
+  border-color: #EADFC8;
+  color: #5A3325;
 }
 
 .dark .share-native:hover {
-  background: #9278BD;
-  border-color: #9278BD;
+  background: #AC9B89;
+  border-color: #AC9B89;
   color: #FFFFFF;
 }
 

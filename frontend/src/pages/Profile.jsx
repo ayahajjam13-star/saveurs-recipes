@@ -188,10 +188,10 @@ function Profile() {
   };
 
   const inputClass =
-    'w-full rounded-xl border border-[#B8E8EE] bg-[#F5FCFD] px-4 py-3.5 text-[#24515B] placeholder:text-[#78999F] outline-none transition-all focus:border-[#7ADDF2] focus:bg-white focus:ring-4 focus:ring-[#7ADDF2]/15 dark:border-[#39636B] dark:bg-[#193940] dark:text-white dark:placeholder:text-[#A4C5CA] dark:focus:bg-[#20454D]';
+    'w-full rounded-xl border border-[#EDC7B9] bg-[#FDF7F5] px-4 py-3.5 text-[#5A3325] placeholder:text-[#9E8379] outline-none transition-all focus:border-[#EB9D81] focus:bg-white focus:ring-4 focus:ring-[#EB9D81]/15 dark:border-[#6A473A] dark:bg-[#3F241A] dark:text-white dark:placeholder:text-[#C9AFA5] dark:focus:bg-[#4C2D21]';
 
   const labelClass =
-    'mb-2.5 block text-sm font-semibold text-[#24515B] dark:text-[#E4F7F8]';
+    'mb-2.5 block text-sm font-semibold text-[#5A3325] dark:text-[#F8EAE4]';
 
   const passwordInput = (
     value,
@@ -213,7 +213,7 @@ function Profile() {
       <button
         type="button"
         onClick={() => setVisible(!visible)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-[#63939D] transition-colors hover:text-[#24515B] dark:hover:text-[#B8E8EE]"
+        className="absolute right-4 top-1/2 -translate-y-1/2 text-[#9C7364] transition-colors hover:text-[#5A3325] dark:hover:text-[#EDC7B9]"
         aria-label={visible ? 'Hide password' : 'Show password'}
       >
         {visible ? <EyeOff size={19} /> : <Eye size={19} />}
@@ -224,13 +224,13 @@ function Profile() {
   if (!user) return null;
 
   return (
-    <div className="min-h-screen bg-[#F1FAFB] text-[#24515B] transition-colors dark:bg-[#102D34] dark:text-[#E8F8F9]">
+    <div className="min-h-screen bg-[#FBF4F1] text-[#5A3325] transition-colors dark:bg-[#331A11] dark:text-[#F9EDE8]">
 
       {/* Page heading */}
-      <div className="border-b border-[#B8E8EE]/70 bg-white dark:border-[#39636B] dark:bg-[#173941]">
+      <div className="border-b border-[#EDC7B9]/70 bg-white dark:border-[#6A473A] dark:bg-[#402318]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 sm:px-8">
           <div>
-            <div className="mb-1 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#4D9EAA]">
+            <div className="mb-1 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#A8674F]">
               <Settings2 size={15} />
               Account settings
             </div>
@@ -242,7 +242,7 @@ function Profile() {
           <button
             type="button"
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 rounded-full border border-[#B8E8EE] px-4 py-2.5 text-sm font-semibold text-[#397C88] transition hover:bg-[#E8F8FA] dark:border-[#39636B] dark:text-[#B8E8EE] dark:hover:bg-[#24515B]"
+            className="flex items-center gap-2 rounded-full border border-[#EDC7B9] px-4 py-2.5 text-sm font-semibold text-[#864F3B] transition hover:bg-[#FAEDE8] dark:border-[#6A473A] dark:text-[#EDC7B9] dark:hover:bg-[#5A3325]"
           >
             <ChefHat size={17} />
             <span className="hidden sm:inline">Back to Saveurs</span>
@@ -254,10 +254,10 @@ function Profile() {
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-8 sm:py-12">
 
         {/* Profile identity card */}
-        <section className="relative mb-8 overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#B8E8EE] via-[#DDF5F6] to-[#C7F0F0] p-6 shadow-[0_15px_45px_rgba(65,151,163,0.12)] sm:p-9 dark:from-[#24515B] dark:via-[#1B4650] dark:to-[#193940]">
+        <section className="relative mb-8 overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#EDC7B9] via-[#F5E4DE] to-[#EFD2C8] p-6 shadow-[0_15px_45px_rgba(161,92,67,0.12)] sm:p-9 dark:from-[#5A3325] dark:via-[#4F2A1C] dark:to-[#3F241A]">
           <div className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full border-[35px] border-white/20" />
-          <div className="pointer-events-none absolute -bottom-32 right-1/3 h-64 w-64 rounded-full bg-[#7ADDF2]/30 blur-3xl" />
-          <div className="pointer-events-none absolute -left-20 bottom-0 h-48 w-48 rounded-full bg-[#CBB7F5]/30 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-32 right-1/3 h-64 w-64 rounded-full bg-[#EB9D81]/30 blur-3xl" />
+          <div className="pointer-events-none absolute -left-20 bottom-0 h-48 w-48 rounded-full bg-[#E6D6C6]/30 blur-3xl" />
 
           <div className="relative flex flex-col items-center gap-7 sm:flex-row sm:items-center">
 
@@ -271,34 +271,34 @@ function Profile() {
                     className="h-full w-full object-cover"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-[#7ADDF2] text-4xl font-extrabold text-[#24515B]">
+                  <div className="flex h-full w-full items-center justify-center bg-[#EB9D81] text-4xl font-extrabold text-[#5A3325]">
                     {initials}
                   </div>
                 )}
               </div>
 
-              <div className="absolute -bottom-3 -right-3 flex h-11 w-11 items-center justify-center rounded-2xl border-4 border-[#DDF5F6] bg-[#24515B] text-white shadow-lg dark:border-[#24515B]">
+              <div className="absolute -bottom-3 -right-3 flex h-11 w-11 items-center justify-center rounded-2xl border-4 border-[#F5E4DE] bg-[#5A3325] text-white shadow-lg dark:border-[#5A3325]">
                 <ChefHat size={20} />
               </div>
             </div>
 
             {/* User details */}
             <div className="min-w-0 flex-1 text-center sm:text-left">
-              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/50 bg-white/40 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-[#397C88] dark:border-white/20 dark:bg-white/10 dark:text-[#DDF5F6]">
+              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/50 bg-white/40 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-[#864F3B] dark:border-white/20 dark:bg-white/10 dark:text-[#F5E4DE]">
                 <Sparkles size={14} />
                 Your Saveurs account
               </div>
 
-              <h2 className="break-words text-3xl font-extrabold tracking-tight text-[#24515B] sm:text-4xl dark:text-white">
+              <h2 className="break-words text-3xl font-extrabold tracking-tight text-[#5A3325] sm:text-4xl dark:text-white">
                 {user.name}
               </h2>
 
-              <p className="mt-2 flex items-center justify-center gap-2 text-sm text-[#397C88] sm:justify-start dark:text-[#DDF5F6]/80">
+              <p className="mt-2 flex items-center justify-center gap-2 text-sm text-[#864F3B] sm:justify-start dark:text-[#F5E4DE]/80">
                 <Mail size={16} />
                 <span className="break-all">{user.email}</span>
               </p>
 
-              <p className="mt-3 max-w-lg text-sm leading-relaxed text-[#397C88] dark:text-[#DDF5F6]/75">
+              <p className="mt-3 max-w-lg text-sm leading-relaxed text-[#864F3B] dark:text-[#F5E4DE]/75">
                 Your kitchen, your recipes, your personal space. Keep your account up to date!
               </p>
 
@@ -315,7 +315,7 @@ function Profile() {
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
                   disabled={avatarLoading}
-                  className="inline-flex items-center gap-2 rounded-xl bg-[#24515B] px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#326B76] disabled:cursor-not-allowed disabled:opacity-60 dark:bg-[#B8E8EE] dark:text-[#24515B] dark:hover:bg-white"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[#5A3325] px-5 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#744534] disabled:cursor-not-allowed disabled:opacity-60 dark:bg-[#EDC7B9] dark:text-[#5A3325] dark:hover:bg-white"
                 >
                   {avatarLoading ? (
                     <LoaderCircle size={17} className="animate-spin" />
@@ -342,21 +342,21 @@ function Profile() {
                 )}
               </div>
 
-              <p className="mt-3 text-xs text-[#397C88] dark:text-[#DDF5F6]/60">
+              <p className="mt-3 text-xs text-[#864F3B] dark:text-[#F5E4DE]/60">
                 JPG, PNG or other image formats · Maximum 2MB
               </p>
             </div>
 
             {/* Account status */}
             <div className="hidden shrink-0 self-start rounded-2xl border border-white/50 bg-white/35 p-4 sm:block dark:border-white/10 dark:bg-white/10">
-              <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#397C88] dark:text-[#DDF5F6]">
+              <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#864F3B] dark:text-[#F5E4DE]">
                 <CheckCircle2 size={16} />
                 Account
               </div>
-              <p className="text-lg font-extrabold text-[#24515B] dark:text-white">
+              <p className="text-lg font-extrabold text-[#5A3325] dark:text-white">
                 Active
               </p>
-              <p className="mt-1 text-xs text-[#397C88] dark:text-[#DDF5F6]/70">
+              <p className="mt-1 text-xs text-[#864F3B] dark:text-[#F5E4DE]/70">
                 Welcome back!
               </p>
             </div>
@@ -365,45 +365,45 @@ function Profile() {
 
         {/* Statistics */}
         <section className="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div className="group relative overflow-hidden rounded-3xl border border-[#B8E8EE] bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[#7ADDF2]/15 dark:border-[#39636B] dark:bg-[#173941]">
-            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#B8E8EE]/40 transition-transform group-hover:scale-125 dark:bg-[#7ADDF2]/10" />
+          <div className="group relative overflow-hidden rounded-[18px] border border-[#EDC7B9] bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[#EB9D81]/15 dark:border-[#6A473A] dark:bg-[#402318]">
+            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#EDC7B9]/40 transition-transform group-hover:scale-125 dark:bg-[#EB9D81]/10" />
 
             <div className="relative flex items-center justify-between">
               <div>
-                <p className="text-sm font-semibold text-[#63939D] dark:text-[#A4C5CA]">
+                <p className="text-sm font-semibold text-[#9C7364] dark:text-[#C9AFA5]">
                   Saved recipes
                 </p>
-                <p className="mt-2 text-4xl font-extrabold text-[#24515B] dark:text-white">
+                <p className="mt-2 text-4xl font-extrabold text-[#5A3325] dark:text-white">
                   {stats.favorites}
                 </p>
-                <p className="mt-2 text-xs text-[#63939D] dark:text-[#A4C5CA]">
+                <p className="mt-2 text-xs text-[#9C7364] dark:text-[#C9AFA5]">
                   Your favorite dishes
                 </p>
               </div>
 
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#B8E8EE]/60 text-[#398B99] transition-transform group-hover:rotate-6 dark:bg-[#24515B] dark:text-[#B8E8EE]">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#EDC7B9]/60 text-[#97543B] transition-transform group-hover:rotate-6 dark:bg-[#5A3325] dark:text-[#EDC7B9]">
                 <Heart size={29} />
               </div>
             </div>
           </div>
 
-          <div className="group relative overflow-hidden rounded-3xl border border-[#D9D0F5] bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[#CBB7F5]/15 dark:border-[#594D79] dark:bg-[#173941]">
-            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#CBB7F5]/30 transition-transform group-hover:scale-125 dark:bg-[#CBB7F5]/10" />
+          <div className="group relative overflow-hidden rounded-[18px] border border-[#ECE2D9] bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[#E6D6C6]/15 dark:border-[#6E6358] dark:bg-[#402318]">
+            <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#E6D6C6]/30 transition-transform group-hover:scale-125 dark:bg-[#E6D6C6]/10" />
 
             <div className="relative flex items-center justify-between">
               <div>
-                <p className="text-sm font-semibold text-[#8C79B6] dark:text-[#CBB7F5]">
+                <p className="text-sm font-semibold text-[#A79888] dark:text-[#E6D6C6]">
                   Recipe ratings
                 </p>
-                <p className="mt-2 text-4xl font-extrabold text-[#24515B] dark:text-white">
+                <p className="mt-2 text-4xl font-extrabold text-[#5A3325] dark:text-white">
                   {stats.ratings}
                 </p>
-                <p className="mt-2 text-xs text-[#8C79B6] dark:text-[#CBB7F5]">
+                <p className="mt-2 text-xs text-[#A79888] dark:text-[#E6D6C6]">
                   Your recipe reviews
                 </p>
               </div>
 
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#CBB7F5]/35 text-[#8C79B6] transition-transform group-hover:rotate-6 dark:bg-[#594D79]/50 dark:text-[#CBB7F5]">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#E6D6C6]/35 text-[#A79888] transition-transform group-hover:rotate-6 dark:bg-[#6E6358]/50 dark:text-[#E6D6C6]">
                 <Star size={29} />
               </div>
             </div>
@@ -414,17 +414,17 @@ function Profile() {
         <div className="grid grid-cols-1 items-start gap-7 lg:grid-cols-[1.1fr_0.9fr]">
 
           {/* Personal information */}
-          <section className="overflow-hidden rounded-3xl border border-[#B8E8EE] bg-white shadow-sm dark:border-[#39636B] dark:bg-[#173941]">
-            <div className="border-b border-[#DDF2F4] bg-[#F5FCFD] px-6 py-6 dark:border-[#39636B] dark:bg-[#1C424A] sm:px-8">
+          <section className="overflow-hidden rounded-[18px] border border-[#EDC7B9] bg-white shadow-sm dark:border-[#6A473A] dark:bg-[#402318]">
+            <div className="border-b border-[#F3E3DE] bg-[#FDF7F5] px-6 py-6 dark:border-[#6A473A] dark:bg-[#49291D] sm:px-8">
               <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#B8E8EE] text-[#24515B]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#EDC7B9] text-[#5A3325]">
                   <CircleUserRound size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-extrabold text-[#24515B] dark:text-white">
+                  <h3 className="text-xl font-extrabold text-[#5A3325] dark:text-white">
                     Personal information
                   </h3>
-                  <p className="mt-1 text-sm text-[#63939D] dark:text-[#A4C5CA]">
+                  <p className="mt-1 text-sm text-[#9C7364] dark:text-[#C9AFA5]">
                     Edit your account details
                   </p>
                 </div>
@@ -437,7 +437,7 @@ function Profile() {
                   Full name
                 </label>
                 <div className="relative">
-                  <UserRound size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#63939D]" />
+                  <UserRound size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9C7364]" />
                   <input
                     type="text"
                     value={name}
@@ -455,7 +455,7 @@ function Profile() {
                   Email address
                 </label>
                 <div className="relative">
-                  <Mail size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#63939D]" />
+                  <Mail size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9C7364]" />
                   <input
                     type="email"
                     value={user.email || ''}
@@ -463,17 +463,17 @@ function Profile() {
                     className={`${inputClass} cursor-not-allowed pl-11 opacity-70`}
                   />
                 </div>
-                <p className="mt-2 text-xs text-[#78999F] dark:text-[#A4C5CA]">
+                <p className="mt-2 text-xs text-[#9E8379] dark:text-[#C9AFA5]">
                   Your email address cannot be changed here.
                 </p>
               </div>
 
               <div>
                 <div className="mb-2.5 flex items-center justify-between gap-3">
-                  <label className="text-sm font-semibold text-[#24515B] dark:text-[#E4F7F8]">
+                  <label className="text-sm font-semibold text-[#5A3325] dark:text-[#F8EAE4]">
                     About me
                   </label>
-                  <span className="rounded-full bg-[#E5F7F8] px-3 py-1 text-xs font-bold text-[#4D9EAA] dark:bg-[#24515B] dark:text-[#B8E8EE]">
+                  <span className="rounded-full bg-[#F8EAE5] px-3 py-1 text-xs font-bold text-[#A8674F] dark:bg-[#5A3325] dark:text-[#EDC7B9]">
                     {bio.length}/500
                   </span>
                 </div>
@@ -488,15 +488,15 @@ function Profile() {
                 />
               </div>
 
-              <div className="flex flex-col gap-3 border-t border-[#E1F2F3] pt-5 dark:border-[#39636B] sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-xs text-[#78999F] dark:text-[#A4C5CA]">
+              <div className="flex flex-col gap-3 border-t border-[#F3E6E1] pt-5 dark:border-[#6A473A] sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-xs text-[#9E8379] dark:text-[#C9AFA5]">
                   Make sure your information is correct.
                 </p>
 
                 <button
                   type="submit"
                   disabled={loading}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#24515B] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#24515B]/15 transition hover:-translate-y-0.5 hover:bg-[#326B76] disabled:cursor-not-allowed disabled:opacity-60 dark:bg-[#7ADDF2] dark:text-[#173941] dark:hover:bg-[#B8E8EE]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#5A3325] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#5A3325]/15 transition hover:-translate-y-0.5 hover:bg-[#744534] disabled:cursor-not-allowed disabled:opacity-60 dark:bg-[#EB9D81] dark:text-[#402318] dark:hover:bg-[#EDC7B9]"
                 >
                   {loading ? (
                     <LoaderCircle size={18} className="animate-spin" />
@@ -510,17 +510,17 @@ function Profile() {
           </section>
 
           {/* Password settings */}
-          <section className="overflow-hidden rounded-3xl border border-[#B8E8EE] bg-white shadow-sm dark:border-[#39636B] dark:bg-[#173941]">
-            <div className="border-b border-[#DDF2F4] bg-[#F5FCFD] px-6 py-6 dark:border-[#39636B] dark:bg-[#1C424A] sm:px-8">
+          <section className="overflow-hidden rounded-[18px] border border-[#EDC7B9] bg-white shadow-sm dark:border-[#6A473A] dark:bg-[#402318]">
+            <div className="border-b border-[#F3E3DE] bg-[#FDF7F5] px-6 py-6 dark:border-[#6A473A] dark:bg-[#49291D] sm:px-8">
               <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#CBB7F5]/40 text-[#8067AE] dark:bg-[#594D79]/60 dark:text-[#D9C9FF]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#E6D6C6]/40 text-[#9C8B79] dark:bg-[#6E6358]/60 dark:text-[#F2E4D6]">
                   <KeyRound size={23} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-extrabold text-[#24515B] dark:text-white">
+                  <h3 className="text-xl font-extrabold text-[#5A3325] dark:text-white">
                     Security
                   </h3>
-                  <p className="mt-1 text-sm text-[#63939D] dark:text-[#A4C5CA]">
+                  <p className="mt-1 text-sm text-[#9C7364] dark:text-[#C9AFA5]">
                     Keep your account protected
                   </p>
                 </div>
@@ -567,14 +567,14 @@ function Profile() {
                 )}
               </div>
 
-              <div className="rounded-2xl border border-[#CBB7F5]/40 bg-[#F6F2FF] p-4 dark:border-[#594D79] dark:bg-[#302A43]">
+              <div className="rounded-2xl border border-[#E6D6C6]/40 bg-[#FCF8F5] p-4 dark:border-[#6E6358] dark:bg-[#3D3730]">
                 <div className="flex items-start gap-3">
-                  <ShieldCheck size={21} className="mt-0.5 shrink-0 text-[#8067AE] dark:text-[#D9C9FF]" />
+                  <ShieldCheck size={21} className="mt-0.5 shrink-0 text-[#9C8B79] dark:text-[#F2E4D6]" />
                   <div>
-                    <p className="text-sm font-bold text-[#65518B] dark:text-[#E4D9FF]">
+                    <p className="text-sm font-bold text-[#7C6E5F] dark:text-[#F6ECE3]">
                       Password safety
                     </p>
-                    <p className="mt-1 text-xs leading-relaxed text-[#8067AE] dark:text-[#CBB7F5]">
+                    <p className="mt-1 text-xs leading-relaxed text-[#9C8B79] dark:text-[#E6D6C6]">
                       Choose a strong password and never share it with anyone.
                     </p>
                   </div>
@@ -584,7 +584,7 @@ function Profile() {
               <button
                 type="submit"
                 disabled={passwordLoading}
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#4D8290] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#4D8290]/15 transition hover:-translate-y-0.5 hover:bg-[#326B76] disabled:cursor-not-allowed disabled:opacity-60 dark:bg-[#7ADDF2] dark:text-[#173941] dark:hover:bg-[#B8E8EE]"
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#8E604F] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#8E604F]/15 transition hover:-translate-y-0.5 hover:bg-[#744534] disabled:cursor-not-allowed disabled:opacity-60 dark:bg-[#EB9D81] dark:text-[#402318] dark:hover:bg-[#EDC7B9]"
               >
                 {passwordLoading ? (
                   <LoaderCircle size={18} className="animate-spin" />
@@ -598,17 +598,17 @@ function Profile() {
         </div>
 
         {/* Logout section */}
-        <section className="mt-8 overflow-hidden rounded-3xl border border-red-200 bg-white dark:border-red-900/40 dark:bg-[#173941]">
+        <section className="mt-8 overflow-hidden rounded-[18px] border border-red-200 bg-white dark:border-red-900/40 dark:bg-[#402318]">
           <div className="flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between sm:px-8">
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-red-50 text-red-500 dark:bg-red-950/40">
                 <LogOut size={23} />
               </div>
               <div>
-                <h3 className="font-extrabold text-[#24515B] dark:text-white">
+                <h3 className="font-extrabold text-[#5A3325] dark:text-white">
                   Sign out of your account
                 </h3>
-                <p className="mt-1 text-sm text-[#78999F] dark:text-[#A4C5CA]">
+                <p className="mt-1 text-sm text-[#9E8379] dark:text-[#C9AFA5]">
                   You can always come back to your favorite recipes.
                 </p>
               </div>
@@ -626,10 +626,10 @@ function Profile() {
         </section>
 
         {/* Bottom note */}
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-2 text-center text-xs font-medium text-[#63939D] dark:text-[#A4C5CA]">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-2 text-center text-xs font-medium text-[#9C7364] dark:text-[#C9AFA5]">
           <ImagePlus size={15} />
           <span>Made with love</span>
-          <span className="text-[#7ADDF2]">♥</span>
+          <span className="text-[#EB9D81]">♥</span>
           <span>by Saveurs</span>
         </div>
       </main>

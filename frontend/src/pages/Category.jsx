@@ -65,34 +65,34 @@ function Category() {
 
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-[#398C98] hover:text-[#24515B] font-semibold mb-10 transition-colors"
+            className="inline-flex items-center gap-2 text-[#96533B] hover:text-[#5A3325] font-semibold mb-10 transition-colors"
           >
             <ArrowLeft size={18} />
             Back to Home
           </Link>
 
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#B8E8EE]/50 text-[#398C98] mb-5">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#EDC7B9]/50 text-[#96533B] mb-5">
               <ChefHat size={30} />
             </div>
 
-            <p className="text-[#398C98] uppercase tracking-[3px] text-xs font-bold mb-3">
+            <p className="text-[#96533B] uppercase tracking-[3px] text-xs font-bold mb-3">
               Explore our collection
             </p>
 
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#24515B] dark:text-white mb-4">
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#5A3325] dark:text-white mb-4">
               {categoryName} Recipes
             </h1>
 
-            <p className="text-[#7A9292] dark:text-gray-400 max-w-xl mx-auto">
+            <p className="text-[#91817B] dark:text-gray-400 max-w-xl mx-auto">
               Discover delicious recipes selected especially for you.
             </p>
           </div>
 
           {loading ? (
             <div className="text-center py-20">
-              <div className="w-12 h-12 border-4 border-[#B8E8EE] border-t-[#398C98] rounded-full animate-spin mx-auto mb-4" />
-              <p className="text-[#398C98] font-semibold">
+              <div className="w-12 h-12 border-4 border-[#EDC7B9] border-t-[#96533B] rounded-full animate-spin mx-auto mb-4" />
+              <p className="text-[#96533B] font-semibold">
                 Loading recipes...
               </p>
             </div>
@@ -101,7 +101,7 @@ function Category() {
               <p className="text-red-500 mb-5">{error}</p>
               <button
                 onClick={() => window.location.reload()}
-                className="px-6 py-3 rounded-full bg-[#B8E8EE] text-[#24515B] font-bold"
+                className="px-6 py-3 rounded-full bg-[#EDC7B9] text-[#5A3325] font-bold"
               >
                 Try Again
               </button>
@@ -109,22 +109,22 @@ function Category() {
           ) : recipes.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-5xl mb-5">🍽️</p>
-              <h2 className="text-2xl font-bold text-[#24515B] dark:text-white mb-3">
+              <h2 className="text-2xl font-bold text-[#5A3325] dark:text-white mb-3">
                 No recipes found
               </h2>
-              <p className="text-[#7A9292] mb-6">
+              <p className="text-[#91817B] mb-6">
                 There are no recipes in this category yet.
               </p>
               <Link
                 to="/search"
-                className="inline-flex px-6 py-3 rounded-full bg-[#B8E8EE] text-[#24515B] font-bold"
+                className="inline-flex px-6 py-3 rounded-full bg-[#EDC7B9] text-[#5A3325] font-bold"
               >
                 View all recipes
               </Link>
             </div>
           ) : (
             <>
-              <p className="text-[#7A9292] dark:text-gray-400 mb-7 font-medium">
+              <p className="text-[#91817B] dark:text-gray-400 mb-7 font-medium">
                 {recipes.length} recipes found
               </p>
 

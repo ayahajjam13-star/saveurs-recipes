@@ -96,7 +96,7 @@ class AIController extends Controller
         }
     }
 
-    // 🔥 الدالة الجديدة (للشات بوت AI Chef)
+    // 🔥 الشات بوت AI Chef: وصفات السيت أولا + وصفات من برا إلا ما كايناش
     public function chat(Request $request)
     {
         $request->validate([
@@ -108,25 +108,56 @@ class AIController extends Controller
             return response()->json(['message' => 'AI service not configured'], 500);
         }
 
-        // جيب غير 20 وصفة باش الـ Prompt ما يطولش
-        $recipes = Recipe::select('name', 'country')->take(20)->get();
-        $recipeList = $recipes->map(fn($r) => "- {$r->name} ({$r->country})")->implode("\n");
+        $message = trim($request->message);
 
-        $prompt = "You are Chef Saveurs. User said: \"{$request->message}\".\n" .
-                  "Recipes available:\n{$recipeList}\n" .
-                  "Reply in the same language. If the user mentions ingredients, suggest 1-3 recipes from the list. Keep it short (max 3 sentences).";
+        // 1) قلب فالوصفات ديال السيت على الكلمات المهمة فالرسالة (الاسم أو المكونات)
+        $words = collect(preg_split('/[^\p{L}]+/u', mb_strtolower($message), -1, PREG_SPLIT_NO_EMPTY))
+            ->filter(fn($w) => mb_strlen($w) >= 3)
+            ->unique()
+            ->take(6)
+            ->values();
+
+        $siteRecipes = collect();
+        if ($words->isNotEmpty()) {
+            $siteRecipes = Recipe::select('id', 'name', 'country')
+                ->where(function ($q) use ($words) {
+                    foreach ($words as $w) {
+                        $q->orWhere('name', 'like', "%{$w}%")
+                          ->orWhere('ingredients', 'like', "%{$w}%");
+                    }
+                })
+                ->limit(8)
+                ->get();
+        }
+
+        $siteList = $siteRecipes->isNotEmpty()
+            ? $siteRecipes->map(fn($r) => "- {$r->name} ({$r->country})")->implode("\n")
+            : '(none found on the site for this request)';
+
+        $system = "You are Chef Saveurs, a friendly cooking assistant for the recipe website Saveurs.\n" .
+            "Always reply in the same language and dialect as the user (for Moroccan Darija, answer in Darija using Arabic script).\n" .
+            "Rules:\n" .
+            "1. If the list of Saveurs recipes below matches the request, recommend up to 3 of them first, using their exact names.\n" .
+            "2. If fewer than 3 match, or none, ALSO suggest well-known recipes from anywhere in the world that fit the request. " .
+            "Mark each of these with the label '(not on Saveurs yet)' and give 1 short line about it and its main ingredients.\n" .
+            "3. Never claim that a recipe is on Saveurs unless it appears in the list.\n" .
+            "4. If the user asks how to cook a specific dish, give clear short steps and ingredient amounts.\n" .
+            "5. Keep answers practical and concise.";
+
+        $user = "Saveurs recipes relevant to the request:\n{$siteList}\n\nUser message: \"{$message}\"";
 
         try {
             $response = Http::withHeaders([
                 'Content-Type' => 'application/json',
                 'Authorization' => "Bearer {$apiKey}",
-            ])->post("https://api.groq.com/openai/v1/chat/completions", [
+            ])->timeout(40)->post("https://api.groq.com/openai/v1/chat/completions", [
                 'model' => 'openai/gpt-oss-20b',
                 'messages' => [
-                    ['role' => 'user', 'content' => $prompt],
+                    ['role' => 'system', 'content' => $system],
+                    ['role' => 'user', 'content' => $user],
                 ],
                 'temperature' => 0.6,
-                'max_tokens' => 200,
+                'max_tokens' => 1200,
             ]);
 
             if (!$response->successful()) {
@@ -137,11 +168,12 @@ class AIController extends Controller
             $aiReply = $data['choices'][0]['message']['content'] ?? '';
 
             if (empty(trim($aiReply))) {
-                $aiReply = "I'm here to help! Try asking me about a specific ingredient like 'chicken' or 'apple'.";
+                $aiReply = "I'm here to help! Try asking me about an ingredient like 'chicken' or a dish like 'lasagna'.";
             }
 
             return response()->json([
                 'reply' => $aiReply,
+                'site_recipes' => $siteRecipes,
             ]);
 
         } catch (\Throwable $e) {

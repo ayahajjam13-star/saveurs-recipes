@@ -3,10 +3,10 @@ function SkeletonCard() {
   return (
     <div
       className="
-        group overflow-hidden rounded-[26px]
-        bg-white dark:bg-[#193B43]
-        border border-[#DCEFF1] dark:border-white/10
-        shadow-[0_8px_28px_rgba(36,81,91,0.06)]
+        group overflow-hidden rounded-[18px]
+        bg-white dark:bg-[#42251A]
+        border border-[#F0E2DD] dark:border-white/10
+        shadow-[0_8px_28px_rgba(90,51,37,0.06)]
         animate-pulse
       "
       aria-label="Loading recipe"
@@ -15,7 +15,7 @@ function SkeletonCard() {
       {/* Image Skeleton */}
       <div className="
         relative aspect-[4/3] overflow-hidden
-        bg-[#DDF5F8] dark:bg-[#214A53]
+        bg-[#F7E5DE] dark:bg-[#522F22]
       ">
         <div className="
           absolute inset-0
@@ -55,41 +55,41 @@ function SkeletonCard() {
         <div className="mb-5 flex items-center justify-between gap-3">
           <div className="
             h-3 w-24 rounded-full
-            bg-[#B8E8EE] dark:bg-[#38616A]
+            bg-[#EDC7B9] dark:bg-[#694639]
           " />
 
           <div className="
             h-3 w-16 rounded-full
-            bg-[#F2C7DB] dark:bg-[#76566A]
+            bg-[#ECE0CD] dark:bg-[#71685B]
           " />
         </div>
 
         {/* Recipe Title */}
         <div className="
           mb-2 h-6 w-full rounded-lg
-          bg-[#DCEFF1] dark:bg-[#38616A]
+          bg-[#F0E2DD] dark:bg-[#694639]
         " />
 
         <div className="
           mb-5 h-6 w-2/3 rounded-lg
-          bg-[#DCEFF1] dark:bg-[#38616A]
+          bg-[#F0E2DD] dark:bg-[#694639]
         " />
 
         {/* Description */}
         <div className="
           mb-2 h-3 w-full rounded-full
-          bg-[#EAF6F7] dark:bg-[#2B535C]
+          bg-[#F7EEEA] dark:bg-[#5B392C]
         " />
 
         <div className="
           h-3 w-4/5 rounded-full
-          bg-[#EAF6F7] dark:bg-[#2B535C]
+          bg-[#F7EEEA] dark:bg-[#5B392C]
         " />
 
         {/* Divider */}
         <div className="
           my-5 border-t
-          border-[#DCEFF1] dark:border-white/10
+          border-[#F0E2DD] dark:border-white/10
         " />
 
         {/* Footer */}
@@ -98,18 +98,18 @@ function SkeletonCard() {
           <div className="flex items-center gap-2">
             <div className="
               h-9 w-9 rounded-full
-              bg-[#B8E8EE] dark:bg-[#38616A]
+              bg-[#EDC7B9] dark:bg-[#694639]
             " />
 
             <div className="
               h-3 w-20 rounded-full
-              bg-[#DCEFF1] dark:bg-[#38616A]
+              bg-[#F0E2DD] dark:bg-[#694639]
             " />
           </div>
 
           <div className="
             h-3 w-16 rounded-full
-            bg-[#BFE8C8] dark:bg-[#426C59]
+            bg-[#EADFC8] dark:bg-[#6B4E43]
           " />
         </div>
       </div>

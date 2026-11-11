@@ -33,8 +33,8 @@ function LanguageSwitcher() {
               text-xs font-bold transition-all duration-300
               ${
                 isActive
-                  ? 'border-[#7ADDF2] bg-[#7ADDF2] text-[#24515B] shadow-md'
-                  : 'border-[#B8E8EE] bg-white text-[#397D88] hover:bg-[#B8E8EE] dark:border-white/10 dark:bg-white/5 dark:text-[#B8E8EE] dark:hover:bg-white/10'
+                  ? 'border-[#EB9D81] bg-[#EB9D81] text-[#5A3325] shadow-md'
+                  : 'border-[#EDC7B9] bg-white text-[#864F3B] hover:bg-[#EDC7B9] dark:border-white/10 dark:bg-white/5 dark:text-[#EDC7B9] dark:hover:bg-white/10'
               }
             `}
           >

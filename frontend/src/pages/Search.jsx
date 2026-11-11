@@ -230,7 +230,7 @@ const recipes = Array.isArray(recipesResponse.data)
     Boolean(ingredientQuery.trim());
 
   return (
-    <main className="min-h-screen bg-[#F5FAF9] dark:bg-[#172B2E] text-[#24515B] dark:text-[#EAF8F7] transition-colors duration-500">
+    <main className="min-h-screen bg-[#FAF6F5] dark:bg-[#2D1D18] text-[#5A3325] dark:text-[#F8EEEA] transition-colors duration-500">
 
       <SEO
         title="Search Recipes"
@@ -241,11 +241,11 @@ const recipes = Array.isArray(recipesResponse.data)
       {/* HERO */}
       <section className="relative overflow-hidden">
 
-        <div className="absolute inset-0 bg-gradient-to-br from-[#DDF5F4] via-[#F2FAF8] to-[#F9EAF2] dark:from-[#1D4145] dark:via-[#1B3539] dark:to-[#3A303E]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#F4E4DE] via-[#FAF4F2] to-[#F7F3EC] dark:from-[#44281E] dark:via-[#38231C] dark:to-[#3B3734]" />
 
-        <div className="absolute -top-28 -right-20 w-80 h-80 rounded-full bg-[#7ADDF2]/30 blur-3xl" />
-        <div className="absolute bottom-0 -left-24 w-96 h-96 rounded-full bg-[#F2C7DB]/40 blur-3xl" />
-        <div className="absolute top-20 left-1/2 w-40 h-40 rounded-full bg-[#BFE8C8]/30 blur-3xl" />
+        <div className="absolute -top-28 -right-20 w-80 h-80 rounded-full bg-[#EB9D81]/30 blur-3xl" />
+        <div className="absolute bottom-0 -left-24 w-96 h-96 rounded-full bg-[#ECE0CD]/40 blur-3xl" />
+        <div className="absolute top-20 left-1/2 w-40 h-40 rounded-full bg-[#EADFC8]/30 blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 pt-16 md:pt-24 pb-24 md:pb-32">
 
@@ -255,20 +255,20 @@ const recipes = Array.isArray(recipesResponse.data)
             <div className="max-w-2xl">
 
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/70 dark:bg-white/10 border border-white/80 dark:border-white/10 shadow-sm mb-8">
-                <Sparkles size={15} className="text-[#D18AAE]" />
-                <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#39717A] dark:text-[#B8E8EE]">
+                <Sparkles size={15} className="text-[#C6B295]" />
+                <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#784B3B] dark:text-[#EDC7B9]">
                   Your recipe discovery space
                 </span>
               </div>
 
-              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[1.08] tracking-tight text-[#24515B] dark:text-white mb-6">
+              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[1.08] tracking-tight text-[#5A3325] dark:text-white mb-6">
                 A little search,
-                <span className="block italic font-normal text-[#54AEB9] dark:text-[#7ADDF2]">
+                <span className="block italic font-normal text-[#B67057] dark:text-[#EB9D81]">
                   a lot of flavor.
                 </span>
               </h1>
 
-              <p className="max-w-lg text-[#55767B] dark:text-[#C2D9D9] text-base md:text-lg leading-8 mb-9">
+              <p className="max-w-lg text-[#7A6056] dark:text-[#D8C8C3] text-base md:text-lg leading-8 mb-9">
                 Find the recipes you love, explore new ingredients and let your next delicious idea begin here.
               </p>
 
@@ -280,8 +280,8 @@ const recipes = Array.isArray(recipesResponse.data)
                   onClick={() => switchMode('name')}
                   className={`flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${
                     searchMode === 'name'
-                      ? 'bg-[#24515B] text-white shadow-lg shadow-[#24515B]/20'
-                      : 'text-[#55767B] dark:text-[#D1E6E5] hover:bg-white/80 dark:hover:bg-white/10'
+                      ? 'bg-[#5A3325] text-white shadow-lg shadow-[#5A3325]/20'
+                      : 'text-[#7A6056] dark:text-[#E5D7D2] hover:bg-white/80 dark:hover:bg-white/10'
                   }`}
                 >
                   <SearchIcon size={17} />
@@ -293,8 +293,8 @@ const recipes = Array.isArray(recipesResponse.data)
                   onClick={() => switchMode('ingredients')}
                   className={`flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${
                     searchMode === 'ingredients'
-                      ? 'bg-[#24515B] text-white shadow-lg shadow-[#24515B]/20'
-                      : 'text-[#55767B] dark:text-[#D1E6E5] hover:bg-white/80 dark:hover:bg-white/10'
+                      ? 'bg-[#5A3325] text-white shadow-lg shadow-[#5A3325]/20'
+                      : 'text-[#7A6056] dark:text-[#E5D7D2] hover:bg-white/80 dark:hover:bg-white/10'
                   }`}
                 >
                   <Carrot size={17} />
@@ -309,10 +309,10 @@ const recipes = Array.isArray(recipesResponse.data)
                   onSubmit={handleNameSearch}
                   className="max-w-2xl"
                 >
-                  <div className="group flex items-center gap-2 bg-white dark:bg-[#29464A] rounded-2xl p-2 shadow-xl shadow-[#24515B]/10 border border-white dark:border-white/10 focus-within:ring-4 focus-within:ring-[#7ADDF2]/30 transition-all">
+                  <div className="group flex items-center gap-2 bg-white dark:bg-[#49322A] rounded-2xl p-2 shadow-xl shadow-[#5A3325]/10 border border-white dark:border-white/10 focus-within:ring-4 focus-within:ring-[#EB9D81]/30 transition-all">
 
-                    <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-[#DDF5F4] dark:bg-[#365D60] flex items-center justify-center">
-                      <SearchIcon size={21} className="text-[#398B96] dark:text-[#B8E8EE]" />
+                    <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-[#F4E4DE] dark:bg-[#5F4237] flex items-center justify-center">
+                      <SearchIcon size={21} className="text-[#94533B] dark:text-[#EDC7B9]" />
                     </div>
 
                     <input
@@ -320,7 +320,7 @@ const recipes = Array.isArray(recipesResponse.data)
                       value={query}
                       onChange={(e) => setQuery(e.target.value)}
                       placeholder="Try pasta, chicken, tagine..."
-                      className="flex-1 min-w-0 bg-transparent outline-none px-2 py-3 text-sm md:text-base text-[#24515B] dark:text-white placeholder:text-[#91A9AA] dark:placeholder:text-[#A7C0C0]"
+                      className="flex-1 min-w-0 bg-transparent outline-none px-2 py-3 text-sm md:text-base text-[#5A3325] dark:text-white placeholder:text-[#A99892] dark:placeholder:text-[#BFAEA8]"
                     />
 
                     {query && (
@@ -330,7 +330,7 @@ const recipes = Array.isArray(recipesResponse.data)
                           setQuery('');
                           setResults(allRecipes);
                         }}
-                        className="p-2 text-[#91A9AA] hover:text-[#D18AAE]"
+                        className="p-2 text-[#A99892] hover:text-[#C6B295]"
                         aria-label="Clear search"
                       >
                         <X size={18} />
@@ -339,7 +339,7 @@ const recipes = Array.isArray(recipesResponse.data)
 
                     <button
                       type="submit"
-                      className="flex items-center gap-2 px-5 md:px-7 py-4 rounded-xl bg-[#54AEB9] hover:bg-[#398F9A] text-white text-sm font-bold transition-all shadow-md shadow-[#54AEB9]/20"
+                      className="flex items-center gap-2 px-5 md:px-7 py-4 rounded-xl bg-[#B67057] hover:bg-[#98543B] text-white text-sm font-bold transition-all shadow-md shadow-[#B67057]/20"
                     >
                       <span>Search</span>
                       <ArrowRight size={16} />
@@ -352,9 +352,9 @@ const recipes = Array.isArray(recipesResponse.data)
                   onSubmit={handleIngredientSearch}
                   className="max-w-2xl"
                 >
-                  <div className="group flex items-center gap-2 bg-white dark:bg-[#29464A] rounded-2xl p-2 shadow-xl shadow-[#24515B]/10 border border-white dark:border-white/10 focus-within:ring-4 focus-within:ring-[#BFE8C8]/40 transition-all">
+                  <div className="group flex items-center gap-2 bg-white dark:bg-[#49322A] rounded-2xl p-2 shadow-xl shadow-[#5A3325]/10 border border-white dark:border-white/10 focus-within:ring-4 focus-within:ring-[#EADFC8]/40 transition-all">
 
-                    <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-[#E5F5E8] dark:bg-[#365B4A] flex items-center justify-center">
+                    <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-[#F4ECE0] dark:bg-[#5A4037] flex items-center justify-center">
                       <Carrot size={21} className="text-[#5E9B70]" />
                     </div>
 
@@ -363,14 +363,14 @@ const recipes = Array.isArray(recipesResponse.data)
                       value={ingredientQuery}
                       onChange={(e) => setIngredientQuery(e.target.value)}
                       placeholder="Chicken, tomatoes, onion..."
-                      className="flex-1 min-w-0 bg-transparent outline-none px-2 py-3 text-sm md:text-base text-[#24515B] dark:text-white placeholder:text-[#91A9AA] dark:placeholder:text-[#A7C0C0]"
+                      className="flex-1 min-w-0 bg-transparent outline-none px-2 py-3 text-sm md:text-base text-[#5A3325] dark:text-white placeholder:text-[#A99892] dark:placeholder:text-[#BFAEA8]"
                     />
 
                     {ingredientQuery && (
                       <button
                         type="button"
                         onClick={() => setIngredientQuery('')}
-                        className="p-2 text-[#91A9AA] hover:text-[#D18AAE]"
+                        className="p-2 text-[#A99892] hover:text-[#C6B295]"
                         aria-label="Clear ingredients"
                       >
                         <X size={18} />
@@ -389,17 +389,17 @@ const recipes = Array.isArray(recipesResponse.data)
                 </form>
               )}
 
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-6 text-xs text-[#66888C] dark:text-[#B7D0D0]">
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-6 text-xs text-[#8B7167] dark:text-[#CFBEB8]">
                 <span className="flex items-center gap-1.5">
                   <Leaf size={14} className="text-[#72B98A]" />
                   Fresh inspiration
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <ChefHat size={14} className="text-[#54AEB9]" />
+                  <ChefHat size={14} className="text-[#B67057]" />
                   Every kind of cuisine
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Flower2 size={14} className="text-[#D18AAE]" />
+                  <Flower2 size={14} className="text-[#C6B295]" />
                   Made for food lovers
                 </span>
               </div>
@@ -409,36 +409,36 @@ const recipes = Array.isArray(recipesResponse.data)
             {/* RIGHT DECORATIVE COMPOSITION */}
             <div className="hidden lg:flex justify-center items-center relative min-h-[390px]">
 
-              <div className="absolute w-[330px] h-[330px] rounded-full border border-[#54AEB9]/20" />
-              <div className="absolute w-[270px] h-[270px] rounded-full border border-dashed border-[#D18AAE]/40" />
+              <div className="absolute w-[330px] h-[330px] rounded-full border border-[#B67057]/20" />
+              <div className="absolute w-[270px] h-[270px] rounded-full border border-dashed border-[#C6B295]/40" />
 
-              <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-[#B8E8EE] via-[#E9F8F4] to-[#F2C7DB] shadow-2xl shadow-[#24515B]/10 flex items-center justify-center">
+              <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-[#EDC7B9] via-[#F8EDE9] to-[#ECE0CD] shadow-2xl shadow-[#5A3325]/10 flex items-center justify-center">
                 <div className="w-52 h-52 rounded-full bg-white/70 backdrop-blur-sm flex flex-col items-center justify-center text-center shadow-inner">
-                  <div className="w-16 h-16 rounded-2xl bg-[#DDF5F4] flex items-center justify-center mb-3">
-                    <Utensils size={30} className="text-[#398F9A]" />
+                  <div className="w-16 h-16 rounded-2xl bg-[#F4E4DE] flex items-center justify-center mb-3">
+                    <Utensils size={30} className="text-[#98543B]" />
                   </div>
-                  <span className="font-serif text-2xl italic text-[#24515B]">
+                  <span className="font-serif text-2xl italic text-[#5A3325]">
                     Find your
                   </span>
-                  <span className="font-serif text-2xl italic text-[#54AEB9]">
+                  <span className="font-serif text-2xl italic text-[#B67057]">
                     next favorite
                   </span>
                 </div>
               </div>
 
-              <div className="absolute top-5 right-12 w-16 h-16 rounded-2xl bg-white dark:bg-[#29464A] shadow-xl flex items-center justify-center rotate-12">
+              <div className="absolute top-5 right-12 w-16 h-16 rounded-2xl bg-white dark:bg-[#49322A] shadow-xl flex items-center justify-center rotate-12">
                 <Carrot size={29} className="text-[#72B98A]" />
               </div>
 
-              <div className="absolute bottom-12 right-4 w-14 h-14 rounded-full bg-[#F2C7DB] shadow-lg flex items-center justify-center -rotate-12">
-                <Sparkles size={24} className="text-[#A85E85]" />
+              <div className="absolute bottom-12 right-4 w-14 h-14 rounded-full bg-[#ECE0CD] shadow-lg flex items-center justify-center -rotate-12">
+                <Sparkles size={24} className="text-[#9D8869]" />
               </div>
 
-              <div className="absolute bottom-5 left-7 w-16 h-16 rounded-2xl bg-[#BFE8C8] shadow-lg flex items-center justify-center rotate-12">
+              <div className="absolute bottom-5 left-7 w-16 h-16 rounded-2xl bg-[#EADFC8] shadow-lg flex items-center justify-center rotate-12">
                 <Leaf size={28} className="text-[#4D9564]" />
               </div>
 
-              <div className="absolute top-12 left-6 w-12 h-12 rounded-full bg-[#CBB7F5] shadow-lg flex items-center justify-center">
+              <div className="absolute top-12 left-6 w-12 h-12 rounded-full bg-[#E6D6C6] shadow-lg flex items-center justify-center">
                 <Flower2 size={23} className="text-white" />
               </div>
 
@@ -448,7 +448,7 @@ const recipes = Array.isArray(recipesResponse.data)
         </div>
 
         {/* BOTTOM CURVE */}
-        <div className="absolute bottom-0 left-0 right-0 h-10 bg-[#F5FAF9] dark:bg-[#172B2E] rounded-t-[50%]" />
+        <div className="absolute bottom-0 left-0 right-0 h-10 bg-[#FAF6F5] dark:bg-[#2D1D18] rounded-t-[50%]" />
 
       </section>
 
@@ -456,7 +456,7 @@ const recipes = Array.isArray(recipesResponse.data)
       {searchMode === 'name' && (
         <section className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 -mt-2">
 
-          <div className="bg-white dark:bg-[#223C40] rounded-3xl border border-[#D8ECEA] dark:border-white/10 shadow-lg shadow-[#24515B]/5 overflow-hidden">
+          <div className="bg-white dark:bg-[#3F2A23] rounded-[18px] border border-[#ECDED8] dark:border-white/10 shadow-lg shadow-[#5A3325]/5 overflow-hidden">
 
             <button
               type="button"
@@ -464,43 +464,43 @@ const recipes = Array.isArray(recipesResponse.data)
               className="w-full flex items-center justify-between gap-4 px-6 md:px-8 py-5 text-left"
             >
               <div className="flex items-center gap-4">
-                <div className="w-11 h-11 rounded-2xl bg-[#DDF5F4] dark:bg-[#365D60] flex items-center justify-center">
-                  <SlidersHorizontal size={20} className="text-[#398F9A] dark:text-[#B8E8EE]" />
+                <div className="w-11 h-11 rounded-2xl bg-[#F4E4DE] dark:bg-[#5F4237] flex items-center justify-center">
+                  <SlidersHorizontal size={20} className="text-[#98543B] dark:text-[#EDC7B9]" />
                 </div>
 
                 <div>
-                  <h2 className="font-serif text-xl text-[#24515B] dark:text-white">
+                  <h2 className="font-serif text-xl text-[#5A3325] dark:text-white">
                     Refine your discovery
                   </h2>
-                  <p className="text-xs text-[#91A9AA] mt-1">
+                  <p className="text-xs text-[#A99892] mt-1">
                     Choose your season, cuisine and preference
                   </p>
                 </div>
               </div>
 
-              <div className={`w-9 h-9 rounded-full bg-[#F0F8F7] dark:bg-white/10 flex items-center justify-center transition-transform ${filtersOpen ? 'rotate-180' : ''}`}>
-                <ArrowDownUp size={17} className="text-[#54AEB9]" />
+              <div className={`w-9 h-9 rounded-full bg-[#F8F2F0] dark:bg-white/10 flex items-center justify-center transition-transform ${filtersOpen ? 'rotate-180' : ''}`}>
+                <ArrowDownUp size={17} className="text-[#B67057]" />
               </div>
             </button>
 
             {filtersOpen && (
               <div className="px-6 md:px-8 pb-7">
 
-                <div className="h-px bg-[#E7F1F0] dark:bg-white/10 mb-6" />
+                <div className="h-px bg-[#F1EAE7] dark:bg-white/10 mb-6" />
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
                   {/* SEASON */}
                   <div>
-                    <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#66888C] dark:text-[#B7D0D0] mb-3">
-                      <Flower2 size={15} className="text-[#D18AAE]" />
+                    <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8B7167] dark:text-[#CFBEB8] mb-3">
+                      <Flower2 size={15} className="text-[#C6B295]" />
                       Season
                     </label>
 
                     <select
                       value={selectedSeason}
                       onChange={(e) => setSelectedSeason(e.target.value)}
-                      className="w-full px-4 py-3.5 rounded-xl bg-[#F5FAF9] dark:bg-[#29464A] border border-[#DCECEA] dark:border-white/10 text-sm text-[#24515B] dark:text-white outline-none focus:ring-2 focus:ring-[#7ADDF2]/50 transition-all"
+                      className="w-full px-4 py-3.5 rounded-xl bg-[#FAF6F5] dark:bg-[#49322A] border border-[#ECE0DC] dark:border-white/10 text-sm text-[#5A3325] dark:text-white outline-none focus:ring-2 focus:ring-[#EB9D81]/50 transition-all"
                     >
                       {seasonKeys.map(season => (
                         <option key={season} value={season}>
@@ -514,15 +514,15 @@ const recipes = Array.isArray(recipesResponse.data)
 
                   {/* CUISINE */}
                   <div>
-                    <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#66888C] dark:text-[#B7D0D0] mb-3">
-                      <Utensils size={15} className="text-[#54AEB9]" />
+                    <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8B7167] dark:text-[#CFBEB8] mb-3">
+                      <Utensils size={15} className="text-[#B67057]" />
                       Cuisine
                     </label>
 
                     <select
                       value={selectedCuisine}
                       onChange={(e) => setSelectedCuisine(e.target.value)}
-                      className="w-full px-4 py-3.5 rounded-xl bg-[#F5FAF9] dark:bg-[#29464A] border border-[#DCECEA] dark:border-white/10 text-sm text-[#24515B] dark:text-white outline-none focus:ring-2 focus:ring-[#7ADDF2]/50 transition-all"
+                      className="w-full px-4 py-3.5 rounded-xl bg-[#FAF6F5] dark:bg-[#49322A] border border-[#ECE0DC] dark:border-white/10 text-sm text-[#5A3325] dark:text-white outline-none focus:ring-2 focus:ring-[#EB9D81]/50 transition-all"
                     >
                       {cuisines.map(cuisine => (
                         <option key={cuisine} value={cuisine}>
@@ -534,15 +534,15 @@ const recipes = Array.isArray(recipesResponse.data)
 
                   {/* SORT */}
                   <div>
-                    <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#66888C] dark:text-[#B7D0D0] mb-3">
-                      <ArrowDownUp size={15} className="text-[#9B82CE]" />
+                    <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8B7167] dark:text-[#CFBEB8] mb-3">
+                      <ArrowDownUp size={15} className="text-[#BBA895]" />
                       Sort recipes
                     </label>
 
                     <select
                       value={sortBy}
                       onChange={(e) => setSortBy(e.target.value)}
-                      className="w-full px-4 py-3.5 rounded-xl bg-[#F5FAF9] dark:bg-[#29464A] border border-[#DCECEA] dark:border-white/10 text-sm text-[#24515B] dark:text-white outline-none focus:ring-2 focus:ring-[#7ADDF2]/50 transition-all"
+                      className="w-full px-4 py-3.5 rounded-xl bg-[#FAF6F5] dark:bg-[#49322A] border border-[#ECE0DC] dark:border-white/10 text-sm text-[#5A3325] dark:text-white outline-none focus:ring-2 focus:ring-[#EB9D81]/50 transition-all"
                     >
                       <option value="default">Recommended</option>
                       <option value="az">Name: A - Z</option>
@@ -553,31 +553,31 @@ const recipes = Array.isArray(recipesResponse.data)
                 </div>
 
                 {hasActiveFilters && (
-                  <div className="flex flex-wrap items-center justify-between gap-4 mt-6 pt-5 border-t border-[#E7F1F0] dark:border-white/10">
+                  <div className="flex flex-wrap items-center justify-between gap-4 mt-6 pt-5 border-t border-[#F1EAE7] dark:border-white/10">
 
                     <div className="flex flex-wrap gap-2">
 
                       {query && (
-                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-[#DDF5F4] dark:bg-[#365D60] text-[#39818A] dark:text-[#B8E8EE] text-xs font-semibold">
+                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-[#F4E4DE] dark:bg-[#5F4237] text-[#88503B] dark:text-[#EDC7B9] text-xs font-semibold">
                           <SearchIcon size={13} />
                           {query}
                         </span>
                       )}
 
                       {selectedSeason !== 'All' && (
-                        <span className="px-3 py-2 rounded-full bg-[#F8E8F0] dark:bg-[#513C4B] text-[#A85E85] text-xs font-semibold">
+                        <span className="px-3 py-2 rounded-full bg-[#F6F1EA] dark:bg-[#4E483F] text-[#9D8869] text-xs font-semibold">
                           {selectedSeason}
                         </span>
                       )}
 
                       {selectedCuisine !== 'All' && (
-                        <span className="px-3 py-2 rounded-full bg-[#E5F5E8] dark:bg-[#365B4A] text-[#4D9564] text-xs font-semibold">
+                        <span className="px-3 py-2 rounded-full bg-[#F4ECE0] dark:bg-[#5A4037] text-[#4D9564] text-xs font-semibold">
                           {selectedCuisine}
                         </span>
                       )}
 
                       {sortBy !== 'default' && (
-                        <span className="px-3 py-2 rounded-full bg-[#EEE8FA] dark:bg-[#44395B] text-[#8871B8] text-xs font-semibold">
+                        <span className="px-3 py-2 rounded-full bg-[#F5F1EC] dark:bg-[#524A42] text-[#A69483] text-xs font-semibold">
                           {sortBy === 'az' ? 'A - Z' : 'Z - A'}
                         </span>
                       )}
@@ -587,7 +587,7 @@ const recipes = Array.isArray(recipesResponse.data)
                     <button
                       type="button"
                       onClick={clearAllFilters}
-                      className="inline-flex items-center gap-2 text-xs font-bold text-[#D18AAE] hover:text-[#B66D91] transition-colors"
+                      className="inline-flex items-center gap-2 text-xs font-bold text-[#C6B295] hover:text-[#AB9778] transition-colors"
                     >
                       <RotateCcw size={14} />
                       Reset filters
@@ -612,33 +612,33 @@ const recipes = Array.isArray(recipesResponse.data)
 
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <span className="w-8 h-px bg-[#54AEB9]" />
-                <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#54AEB9]">
+                <span className="w-8 h-px bg-[#B67057]" />
+                <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#B67057]">
                   The collection
                 </span>
               </div>
 
-              <h2 className="font-serif text-3xl md:text-4xl text-[#24515B] dark:text-white">
+              <h2 className="font-serif text-3xl md:text-4xl text-[#5A3325] dark:text-white">
                 {searchMode === 'ingredients'
                   ? 'Recipes with your ingredients'
                   : 'Explore the recipes'}
               </h2>
 
-              <p className="text-sm text-[#91A9AA] mt-2">
+              <p className="text-sm text-[#A99892] mt-2">
                 A little inspiration for your next meal.
               </p>
             </div>
 
-            <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white dark:bg-[#223C40] border border-[#DCECEA] dark:border-white/10 shadow-sm">
-              <div className="w-9 h-9 rounded-xl bg-[#DDF5F4] dark:bg-[#365D60] flex items-center justify-center">
-                <BookOpen size={18} className="text-[#398F9A] dark:text-[#B8E8EE]" />
+            <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white dark:bg-[#3F2A23] border border-[#ECE0DC] dark:border-white/10 shadow-sm">
+              <div className="w-9 h-9 rounded-xl bg-[#F4E4DE] dark:bg-[#5F4237] flex items-center justify-center">
+                <BookOpen size={18} className="text-[#98543B] dark:text-[#EDC7B9]" />
               </div>
 
               <div>
-                <p className="text-lg font-bold text-[#24515B] dark:text-white leading-none">
+                <p className="text-lg font-bold text-[#5A3325] dark:text-white leading-none">
                   {filteredResults.length}
                 </p>
-                <p className="text-[10px] uppercase tracking-wider text-[#91A9AA] mt-1">
+                <p className="text-[10px] uppercase tracking-wider text-[#A99892] mt-1">
                   Recipes found
                 </p>
               </div>
@@ -651,8 +651,8 @@ const recipes = Array.isArray(recipesResponse.data)
         {loading && (
           <div>
             <div className="mb-8">
-              <div className="h-8 w-64 rounded-lg bg-[#DCECEA] dark:bg-white/10 animate-pulse mb-3" />
-              <div className="h-4 w-40 rounded-lg bg-[#E7F1F0] dark:bg-white/5 animate-pulse" />
+              <div className="h-8 w-64 rounded-lg bg-[#ECE0DC] dark:bg-white/10 animate-pulse mb-3" />
+              <div className="h-4 w-40 rounded-lg bg-[#F1EAE7] dark:bg-white/5 animate-pulse" />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -667,21 +667,21 @@ const recipes = Array.isArray(recipesResponse.data)
         {!loading && filteredResults.length === 0 && (
           <div className="max-w-2xl mx-auto py-10">
 
-            <div className="bg-white dark:bg-[#223C40] rounded-[2rem] border border-[#DCECEA] dark:border-white/10 p-8 md:p-12 text-center shadow-lg shadow-[#24515B]/5">
+            <div className="bg-white dark:bg-[#3F2A23] rounded-[2rem] border border-[#ECE0DC] dark:border-white/10 p-8 md:p-12 text-center shadow-lg shadow-[#5A3325]/5">
 
-              <div className="w-20 h-20 mx-auto rounded-[1.7rem] bg-[#F8E8F0] dark:bg-[#513C4B] flex items-center justify-center mb-6 rotate-3">
-                <SearchX size={34} className="text-[#D18AAE]" />
+              <div className="w-20 h-20 mx-auto rounded-[1.7rem] bg-[#F6F1EA] dark:bg-[#4E483F] flex items-center justify-center mb-6 rotate-3">
+                <SearchX size={34} className="text-[#C6B295]" />
               </div>
 
-              <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#D18AAE]">
+              <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#C6B295]">
                 Nothing here yet
               </span>
 
-              <h3 className="font-serif text-3xl text-[#24515B] dark:text-white mt-3 mb-3">
+              <h3 className="font-serif text-3xl text-[#5A3325] dark:text-white mt-3 mb-3">
                 No recipes found
               </h3>
 
-              <p className="text-sm leading-7 text-[#819B9D] dark:text-[#B7D0D0] max-w-sm mx-auto mb-7">
+              <p className="text-sm leading-7 text-[#9C8982] dark:text-[#CFBEB8] max-w-sm mx-auto mb-7">
                 {searchMode === 'ingredients'
                   ? 'Try fewer ingredients or change your ingredient list to discover more recipes.'
                   : 'Try another keyword or adjust your filters. Your next favorite recipe might be just one search away.'}
@@ -690,7 +690,7 @@ const recipes = Array.isArray(recipesResponse.data)
               <button
                 type="button"
                 onClick={clearAllFilters}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#24515B] hover:bg-[#34717B] text-white text-sm font-semibold transition-all shadow-lg shadow-[#24515B]/15"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#5A3325] hover:bg-[#794836] text-white text-sm font-semibold transition-all shadow-lg shadow-[#5A3325]/15"
               >
                 <RotateCcw size={16} />
                 Explore all recipes
@@ -720,32 +720,32 @@ const recipes = Array.isArray(recipesResponse.data)
       {/* BOTTOM SIGNATURE */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 pb-16">
 
-        <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#DDF5F4] via-[#EAF7F0] to-[#F8EAF1] dark:from-[#25494D] dark:via-[#294B43] dark:to-[#493747] px-7 md:px-12 py-9 md:py-11">
+        <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#F4E4DE] via-[#F4ECE0] to-[#F6F2EC] dark:from-[#4C3026] dark:via-[#4A322A] dark:to-[#46413A] px-7 md:px-12 py-9 md:py-11">
 
           <div className="absolute -right-10 -top-20 w-64 h-64 rounded-full bg-white/30 blur-2xl" />
-          <div className="absolute -left-10 -bottom-24 w-64 h-64 rounded-full bg-[#7ADDF2]/20 blur-2xl" />
+          <div className="absolute -left-10 -bottom-24 w-64 h-64 rounded-full bg-[#EB9D81]/20 blur-2xl" />
 
           <div className="relative flex flex-col md:flex-row items-center justify-between gap-6">
 
             <div className="text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start gap-2 text-[#54AEB9] dark:text-[#B8E8EE] mb-3">
+              <div className="flex items-center justify-center md:justify-start gap-2 text-[#B67057] dark:text-[#EDC7B9] mb-3">
                 <Sparkles size={16} />
                 <span className="text-[10px] font-bold uppercase tracking-[0.25em]">
                   A world of flavor
                 </span>
               </div>
 
-              <h3 className="font-serif text-2xl md:text-3xl text-[#24515B] dark:text-white">
+              <h3 className="font-serif text-2xl md:text-3xl text-[#5A3325] dark:text-white">
                 Every great meal starts with an idea.
               </h3>
 
-              <p className="text-sm text-[#66888C] dark:text-[#C2D9D9] mt-2">
+              <p className="text-sm text-[#8B7167] dark:text-[#D8C8C3] mt-2">
                 Keep exploring. Keep discovering. Keep cooking.
               </p>
             </div>
 
             <div className="w-16 h-16 flex-shrink-0 rounded-2xl bg-white/70 dark:bg-white/10 flex items-center justify-center shadow-sm rotate-6">
-              <ChefHat size={31} className="text-[#54AEB9] dark:text-[#B8E8EE]" />
+              <ChefHat size={31} className="text-[#B67057] dark:text-[#EDC7B9]" />
             </div>
 
           </div>

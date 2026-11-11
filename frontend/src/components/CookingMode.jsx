@@ -104,7 +104,7 @@ function CookingMode({ recipe, onClose }) {
         }}
       >
         <div>
-          <p style={{ color: '#E88FA5', fontSize: '12px' }}>
+          <p style={{ color: '#DBC29C', fontSize: '12px' }}>
             COOKING MODE
           </p>
 
@@ -138,7 +138,7 @@ function CookingMode({ recipe, onClose }) {
             style={{
               padding: '10px 14px',
               borderRadius: '10px',
-              backgroundColor: '#E88FA5',
+              backgroundColor: '#DBC29C',
               color: 'white',
               cursor: 'pointer'
             }}
@@ -159,7 +159,7 @@ function CookingMode({ recipe, onClose }) {
           style={{
             height: '100%',
             width: `${progress}%`,
-            backgroundColor: '#E88FA5',
+            backgroundColor: '#DBC29C',
             transition: 'width 0.3s'
           }}
         />
@@ -190,7 +190,7 @@ function CookingMode({ recipe, onClose }) {
                 cursor: 'pointer',
                 backgroundColor:
                   index === currentStep
-                    ? '#E88FA5'
+                    ? '#DBC29C'
                     : completedSteps.includes(index)
                     ? '#A8B995'
                     : '#F5D8C8',
@@ -240,7 +240,7 @@ function CookingMode({ recipe, onClose }) {
           >
             <p
               style={{
-                color: '#E88FA5',
+                color: '#DBC29C',
                 fontWeight: 'bold',
                 letterSpacing: '2px',
                 marginBottom: '20px'
@@ -254,8 +254,8 @@ function CookingMode({ recipe, onClose }) {
                 width: '65px',
                 height: '65px',
                 borderRadius: '18px',
-                backgroundColor: '#FCE8ED',
-                color: '#D77F96',
+                backgroundColor: '#F9F3EB',
+                color: '#CAB18C',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -342,7 +342,7 @@ function CookingMode({ recipe, onClose }) {
               padding: '15px',
               borderRadius: '12px',
               border: 'none',
-              backgroundColor: isLastStep ? '#A8B995' : '#E88FA5',
+              backgroundColor: isLastStep ? '#A8B995' : '#DBC29C',
               color: 'white',
               fontWeight: 'bold',
               cursor: 'pointer'

@@ -32,10 +32,10 @@ function RecipeCard({ recipe }) {
   const preparationTime = (recipe.steps?.length || 0) * 5;
 
   return (
-    <article className="group relative overflow-hidden rounded-[30px] bg-white dark:bg-[#28221E] border border-[#E8F1EF] dark:border-white/10 shadow-[0_8px_28px_rgba(50,100,100,0.07)] hover:shadow-[0_18px_40px_rgba(80,170,175,0.17)] hover:-translate-y-2 transition-all duration-500">
+    <article className="group relative overflow-hidden rounded-[18px] bg-white dark:bg-[#28221E] border border-[#F1EBE8] dark:border-white/10 shadow-[0_8px_28px_rgba(99,64,51,0.07)] hover:shadow-[0_18px_40px_rgba(173,106,82,0.17)] hover:-translate-y-2 transition-all duration-500">
 
       {/* Large Food Photography */}
-      <div className="relative aspect-[4/5] overflow-hidden bg-[#E5F5F1]">
+      <div className="relative aspect-[4/5] overflow-hidden bg-[#F5E9E5]">
 
         <Link
           to={`/recipe/${recipe.id}`}
@@ -52,7 +52,7 @@ function RecipeCard({ recipe }) {
               }}
             />
           ) : (
-            <div className="flex items-center justify-center w-full h-full text-7xl bg-gradient-to-br from-[#B8E8EE] via-[#F2C7DB] to-[#BFE8C8]">
+            <div className="flex items-center justify-center w-full h-full text-7xl bg-gradient-to-br from-[#EDC7B9] via-[#ECE0CD] to-[#EADFC8]">
               🍓
             </div>
           )}
@@ -74,14 +74,14 @@ function RecipeCard({ recipe }) {
             strokeWidth={2}
             className={
               favorite
-                ? 'fill-[#E88FAF] text-[#E88FAF]'
-                : 'text-[#8C8997] hover:text-[#E88FAF]'
+                ? 'fill-[#DBC29C] text-[#DBC29C]'
+                : 'text-[#93908C] hover:text-[#DBC29C]'
             }
           />
         </button>
 
         {/* Chef Label */}
-        <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#BFE8C8]/95 text-[#386B50] text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+        <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#EADFC8]/95 text-[#386B50] text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
           <Star size={12} fill="currentColor" />
           Chef's choice
         </div>
@@ -107,15 +107,15 @@ function RecipeCard({ recipe }) {
       <div className="px-5 py-4 flex items-center justify-between">
 
         <div className="flex items-center gap-2">
-          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#F2C7DB]/35 text-[#C77F9D]">
+          <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#ECE0CD]/35 text-[#BCA88A]">
             <Star size={16} fill="currentColor" />
           </span>
 
           <div>
-            <p className="text-sm font-bold text-[#465B5D] dark:text-white">
+            <p className="text-sm font-bold text-[#5C4C47] dark:text-white">
               4.8
             </p>
-            <p className="text-[10px] text-[#9BA9A7]">
+            <p className="text-[10px] text-[#A99F9B]">
               Food lovers
             </p>
           </div>
@@ -124,7 +124,7 @@ function RecipeCard({ recipe }) {
         <Link
           to={`/recipe/${recipe.id}`}
           aria-label={`View ${recipe.name}`}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#B8E8EE]/45 text-[#398C98] hover:bg-[#7ADDF2] hover:text-[#285E68] transition-all duration-300 text-xs font-bold"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#EDC7B9]/45 text-[#96533B] hover:bg-[#EB9D81] hover:text-[#663A2A] transition-all duration-300 text-xs font-bold"
         >
           View recipe
           <ArrowUpRight size={16} />

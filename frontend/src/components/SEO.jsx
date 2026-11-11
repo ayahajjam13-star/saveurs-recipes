@@ -45,7 +45,7 @@ function SEO({
 
       <meta
         name="theme-color"
-        content="#B8E8EE"
+        content="#EDC7B9"
       />
 
       <meta name="robots" content="index, follow" />

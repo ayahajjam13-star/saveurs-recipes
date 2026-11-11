@@ -11,8 +11,8 @@
   align-items: center;
   overflow: hidden;
   padding: 90px 8%;
-  background: #B8E8EE;
-  color: #24515B;
+  background: #EDC7B9;
+  color: #5A3325;
 }
 
 /* Background image */
@@ -36,10 +36,10 @@
   background:
     linear-gradient(
       90deg,
-      rgba(184, 232, 238, 0.97) 0%,
-      rgba(184, 232, 238, 0.91) 38%,
-      rgba(184, 232, 238, 0.52) 68%,
-      rgba(184, 232, 238, 0.12) 100%
+      rgba(237,199,185,0.97) 0%,
+      rgba(237,199,185,0.91) 38%,
+      rgba(237,199,185,0.52) 68%,
+      rgba(237,199,185,0.12) 100%
     );
 }
 
@@ -57,7 +57,7 @@
   height: 340px;
   top: -160px;
   right: 8%;
-  background: rgba(242, 199, 219, 0.42);
+  background: rgba(236,224,205,0.42);
   filter: blur(2px);
 }
 
@@ -66,7 +66,7 @@
   height: 260px;
   bottom: -130px;
   right: 27%;
-  background: rgba(203, 183, 245, 0.35);
+  background: rgba(230,214,198,0.35);
 }
 
 .hero-decoration-three {
@@ -108,10 +108,10 @@
   gap: 12px;
   margin-bottom: 27px;
   padding: 10px 17px;
-  border: 1px solid rgba(36, 81, 91, 0.13);
+  border: 1px solid rgba(90,51,37,0.13);
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.55);
-  color: #24515B;
+  color: #5A3325;
   backdrop-filter: blur(12px);
   font-size: 10px;
   font-weight: 800;
@@ -119,21 +119,21 @@
 }
 
 .hero-eyebrow svg {
-  color: #8C70C8;
+  color: #B29C86;
 }
 
 .hero-eyebrow i {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #D88EAF;
+  background: #CDB899;
 }
 
 /* Heading */
 
 .hero-content h1 {
   margin: 0;
-  color: #24515B;
+  color: #5A3325;
   font-family: inherit;
   font-size: clamp(42px, 5.4vw, 72px);
   font-weight: 850;
@@ -143,7 +143,7 @@
 
 .hero-content h1 em {
   position: relative;
-  color: #8B70C7;
+  color: #B19C86;
   font-family: Georgia, serif;
   font-weight: 500;
   font-style: italic;
@@ -157,7 +157,7 @@
   bottom: 1px;
   height: 7px;
   border-radius: 50%;
-  background: rgba(242, 199, 219, 0.85);
+  background: rgba(236,224,205,0.85);
   z-index: -1;
 }
 
@@ -166,7 +166,7 @@
 .hero-description {
   max-width: 510px;
   margin: 25px 0 32px;
-  color: #426B73;
+  color: #725043;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.9;
@@ -198,15 +198,15 @@
 
 .hero-primary {
   color: #FFFFFF;
-  background: #24515B;
-  box-shadow: 0 9px 22px rgba(36, 81, 91, 0.2);
+  background: #5A3325;
+  box-shadow: 0 9px 22px rgba(90,51,37,0.2);
 }
 
 .hero-primary:hover {
   color: #FFFFFF;
-  background: #326A75;
+  background: #734534;
   transform: translateY(-4px);
-  box-shadow: 0 13px 25px rgba(36, 81, 91, 0.25);
+  box-shadow: 0 13px 25px rgba(90,51,37,0.25);
 }
 
 .hero-primary svg {
@@ -218,16 +218,16 @@
 }
 
 .hero-secondary {
-  color: #24515B;
-  border: 1px solid rgba(36, 81, 91, 0.22);
+  color: #5A3325;
+  border: 1px solid rgba(90,51,37,0.22);
   background: rgba(255, 255, 255, 0.48);
   backdrop-filter: blur(10px);
 }
 
 .hero-secondary:hover {
-  color: #24515B;
-  border-color: #8B70C7;
-  background: rgba(203, 183, 245, 0.35);
+  color: #5A3325;
+  border-color: #B19C86;
+  background: rgba(230,214,198,0.35);
   transform: translateY(-4px);
 }
 
@@ -253,13 +253,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  color: #24515B;
+  color: #5A3325;
   background: rgba(255, 255, 255, 0.65);
 }
 
 .hero-stat-icon-pink {
-  color: #A85D83;
-  background: rgba(242, 199, 219, 0.7);
+  color: #9D8868;
+  background: rgba(236,224,205,0.7);
 }
 
 .hero-stat div:last-child {
@@ -269,13 +269,13 @@
 }
 
 .hero-stat strong {
-  color: #24515B;
+  color: #5A3325;
   font-size: 20px;
   font-weight: 850;
 }
 
 .hero-stat span {
-  color: #52757C;
+  color: #7B5E53;
   font-size: 11px;
   font-weight: 650;
 }
@@ -283,7 +283,7 @@
 .hero-stat-divider {
   width: 1px;
   height: 38px;
-  background: rgba(36, 81, 91, 0.2);
+  background: rgba(90,51,37,0.2);
 }
 
 /* Floating card */
@@ -300,7 +300,7 @@
   border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 17px;
   background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 12px 35px rgba(36, 81, 91, 0.12);
+  box-shadow: 0 12px 35px rgba(90,51,37,0.12);
   backdrop-filter: blur(16px);
   animation: floatingCard 4s ease-in-out infinite;
 }
@@ -322,8 +322,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  color: #B75E88;
-  background: #F2C7DB;
+  color: #AA916B;
+  background: #ECE0CD;
 }
 
 .hero-floating-card > div:nth-child(2) {
@@ -333,18 +333,18 @@
 }
 
 .hero-floating-card strong {
-  color: #24515B;
+  color: #5A3325;
   font-size: 12px;
 }
 
 .hero-floating-card span {
-  color: #66858B;
+  color: #8A7067;
   font-size: 10px;
 }
 
 .hero-floating-star {
   margin-left: 7px;
-  color: #A88BD9;
+  color: #C5B29E;
 }
 
 /* Scroll indicator */
@@ -356,7 +356,7 @@
   display: flex;
   align-items: center;
   gap: 13px;
-  color: #426B73;
+  color: #725043;
   font-size: 10px;
   font-weight: 750;
   letter-spacing: 1px;
@@ -367,13 +367,13 @@
 }
 
 .hero-scroll:hover {
-  color: #8B70C7;
+  color: #B19C86;
 }
 
 .hero-scroll-line {
   width: 34px;
   height: 1px;
-  background: rgba(36, 81, 91, 0.35);
+  background: rgba(90,51,37,0.35);
 }
 
 /* Side label */
@@ -382,7 +382,7 @@
   position: absolute;
   top: 50%;
   right: 25px;
-  color: rgba(36, 81, 91, 0.55);
+  color: rgba(90,51,37,0.55);
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 3px;
@@ -395,27 +395,27 @@
 ========================================= */
 
 .dark .saveurs-hero {
-  background: #193B43;
-  color: #E8F8FA;
+  background: #42251A;
+  color: #FAEDE8;
 }
 
 .dark .hero-overlay {
   background:
     linear-gradient(
       90deg,
-      rgba(25, 59, 67, 0.97) 0%,
-      rgba(25, 59, 67, 0.91) 38%,
-      rgba(25, 59, 67, 0.65) 70%,
-      rgba(25, 59, 67, 0.35) 100%
+      rgba(66,37,26,0.97) 0%,
+      rgba(66,37,26,0.91) 38%,
+      rgba(66,37,26,0.65) 70%,
+      rgba(66,37,26,0.35) 100%
     );
 }
 
 .dark .hero-decoration-one {
-  background: rgba(180, 115, 151, 0.16);
+  background: rgba(170,152,125,0.16);
 }
 
 .dark .hero-decoration-two {
-  background: rgba(139, 112, 199, 0.15);
+  background: rgba(177,156,134,0.15);
 }
 
 .dark .hero-decoration-three {
@@ -423,99 +423,99 @@
 }
 
 .dark .hero-eyebrow {
-  color: #D7F4F7;
-  border-color: rgba(184, 232, 238, 0.15);
+  color: #F6E0D8;
+  border-color: rgba(237,199,185,0.15);
   background: rgba(255, 255, 255, 0.07);
 }
 
 .dark .hero-content h1 {
-  color: #E8F8FA;
+  color: #FAEDE8;
 }
 
 .dark .hero-content h1 em {
-  color: #CBB7F5;
+  color: #E6D6C6;
 }
 
 .dark .hero-content h1 em::after {
-  background: rgba(242, 199, 219, 0.25);
+  background: rgba(236,224,205,0.25);
 }
 
 .dark .hero-description {
-  color: #B5D5D9;
+  color: #D8BFB6;
 }
 
 .dark .hero-primary {
-  color: #193B43;
-  background: #B8E8EE;
+  color: #42251A;
+  background: #EDC7B9;
 }
 
 .dark .hero-primary:hover {
-  color: #193B43;
-  background: #7ADDF2;
+  color: #42251A;
+  background: #EB9D81;
 }
 
 .dark .hero-secondary {
-  color: #D7F4F7;
-  border-color: rgba(184, 232, 238, 0.25);
+  color: #F6E0D8;
+  border-color: rgba(237,199,185,0.25);
   background: rgba(255, 255, 255, 0.07);
 }
 
 .dark .hero-secondary:hover {
-  color: #E8F8FA;
-  border-color: #CBB7F5;
-  background: rgba(203, 183, 245, 0.12);
+  color: #FAEDE8;
+  border-color: #E6D6C6;
+  background: rgba(230,214,198,0.12);
 }
 
 .dark .hero-stat-icon {
-  color: #B8E8EE;
-  background: rgba(184, 232, 238, 0.12);
+  color: #EDC7B9;
+  background: rgba(237,199,185,0.12);
 }
 
 .dark .hero-stat-icon-pink {
-  color: #F2C7DB;
-  background: rgba(242, 199, 219, 0.12);
+  color: #ECE0CD;
+  background: rgba(236,224,205,0.12);
 }
 
 .dark .hero-stat strong {
-  color: #E8F8FA;
+  color: #FAEDE8;
 }
 
 .dark .hero-stat span {
-  color: #A9C9CE;
+  color: #CDB3AA;
 }
 
 .dark .hero-stat-divider {
-  background: rgba(184, 232, 238, 0.2);
+  background: rgba(237,199,185,0.2);
 }
 
 .dark .hero-floating-card {
-  border-color: rgba(184, 232, 238, 0.12);
-  background: rgba(35, 76, 85, 0.9);
+  border-color: rgba(237,199,185,0.12);
+  background: rgba(84,49,36,0.9);
 }
 
 .dark .hero-floating-icon {
-  color: #F2C7DB;
-  background: rgba(242, 199, 219, 0.15);
+  color: #ECE0CD;
+  background: rgba(236,224,205,0.15);
 }
 
 .dark .hero-floating-card strong {
-  color: #E8F8FA;
+  color: #FAEDE8;
 }
 
 .dark .hero-floating-card span {
-  color: #A9C9CE;
+  color: #CDB3AA;
 }
 
 .dark .hero-scroll {
-  color: #B5D5D9;
+  color: #D8BFB6;
 }
 
 .dark .hero-scroll-line {
-  background: rgba(184, 232, 238, 0.3);
+  background: rgba(237,199,185,0.3);
 }
 
 .dark .hero-side-label {
-  color: rgba(184, 232, 238, 0.45);
+  color: rgba(237,199,185,0.45);
 }
 
 /* =========================================
@@ -552,18 +552,18 @@
   .hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(184, 232, 238, 0.96) 0%,
-      rgba(184, 232, 238, 0.9) 55%,
-      rgba(184, 232, 238, 0.65) 100%
+      rgba(237,199,185,0.96) 0%,
+      rgba(237,199,185,0.9) 55%,
+      rgba(237,199,185,0.65) 100%
     );
   }
 
   .dark .hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(25, 59, 67, 0.97) 0%,
-      rgba(25, 59, 67, 0.9) 60%,
-      rgba(25, 59, 67, 0.75) 100%
+      rgba(66,37,26,0.97) 0%,
+      rgba(66,37,26,0.9) 60%,
+      rgba(66,37,26,0.75) 100%
     );
   }
 
